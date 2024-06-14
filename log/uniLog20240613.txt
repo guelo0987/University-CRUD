@@ -1,0 +1,1338 @@
+2024-06-13 19:36:53.192 -04:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.ObjectPool.ObjectPool`1[Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext]' while attempting to activate 'Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2024-06-13 19:36:53.225 -04:00 [ERR] Hosting failed to start
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.ObjectPool.ObjectPool`1[Microsoft.AspNetCore.HttpLogging.HttpLoggingInterceptorContext]' while attempting to activate 'Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-06-13 19:37:12.972 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:37:12.998 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:37:12.998 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:37:12.998 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:37:13.631 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger - null null
+2024-06-13 19:37:13.681 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger - 301 0 null 52.1109ms
+2024-06-13 19:37:13.686 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:37:13.757 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 71.5354ms
+2024-06-13 19:37:13.779 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui.css - null null
+2024-06-13 19:37:13.779 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-13 19:37:13.779 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - null null
+2024-06-13 19:37:13.799 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-13 19:37:13.799 -04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-13 19:37:13.799 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-13 19:37:13.802 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 23.2842ms
+2024-06-13 19:37:13.803 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 23.3624ms
+2024-06-13 19:37:13.803 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui.css - 200 143943 text/css 23.9425ms
+2024-06-13 19:37:13.882 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:37:13.891 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/favicon-32x32.png - null null
+2024-06-13 19:37:13.891 -04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-13 19:37:13.891 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/favicon-32x32.png - 200 628 image/png 0.4899ms
+2024-06-13 19:37:13.938 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserController" for actions - CRUD.Controllers.UserController.Login (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:37:13.953 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 71.2108ms
+2024-06-13 19:37:46.484 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:37:46.503 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 19.2464ms
+2024-06-13 19:37:46.560 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:37:46.618 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.5787ms
+2024-06-13 19:38:15.513 -04:00 [INF] Application is shutting down...
+2024-06-13 19:46:53.798 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:46:53.823 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:46:53.824 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:46:53.824 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:46:54.371 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:46:54.487 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 119.5956ms
+2024-06-13 19:46:54.552 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:46:54.623 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserController" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:46:54.640 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 88.1495ms
+2024-06-13 19:47:03.333 -04:00 [INF] Application is shutting down...
+2024-06-13 19:47:49.369 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:47:49.398 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:47:49.398 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:47:49.398 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:47:49.858 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:47:49.957 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 101.1853ms
+2024-06-13 19:47:50.009 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:47:50.052 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserController" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:47:50.063 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 54.3022ms
+2024-06-13 19:49:37.853 -04:00 [INF] Application is shutting down...
+2024-06-13 19:50:04.590 -04:00 [DBG] Hosting starting
+2024-06-13 19:50:04.667 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:50:04.668 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 19:50:04.668 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:50:04.668 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:50:04.668 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:50:04.668 -04:00 [DBG] Hosting started
+2024-06-13 19:50:05.043 -04:00 [DBG] Connection id "0HN4C0E68KC8N" received FIN.
+2024-06-13 19:50:05.050 -04:00 [DBG] Connection id "0HN4C0E68KC8N" accepted.
+2024-06-13 19:50:05.050 -04:00 [DBG] Connection id "0HN4C0E68KC8N" started.
+2024-06-13 19:50:05.057 -04:00 [DBG] Connection id "0HN4C0E68KC8N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:50:05.062 -04:00 [DBG] Connection id "0HN4C0E68KC8N" disconnecting.
+2024-06-13 19:50:05.066 -04:00 [DBG] Connection id "0HN4C0E68KC8N" stopped.
+2024-06-13 19:50:05.161 -04:00 [DBG] Connection id "0HN4C0E68KC8O" accepted.
+2024-06-13 19:50:05.161 -04:00 [DBG] Connection id "0HN4C0E68KC8O" started.
+2024-06-13 19:50:05.161 -04:00 [DBG] Connection id "0HN4C0E68KC8P" accepted.
+2024-06-13 19:50:05.161 -04:00 [DBG] Connection id "0HN4C0E68KC8P" started.
+2024-06-13 19:50:05.181 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:50:05.183 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 19:50:05.285 -04:00 [DBG] Connection id "0HN4C0E68KC8O" completed keep alive response.
+2024-06-13 19:50:05.286 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 107.4499ms
+2024-06-13 19:50:05.342 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:50:05.377 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserController" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:50:05.386 -04:00 [DBG] Connection id "0HN4C0E68KC8O" completed keep alive response.
+2024-06-13 19:50:05.386 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 44.6934ms
+2024-06-13 19:51:29.991 -04:00 [INF] Application is shutting down...
+2024-06-13 19:51:29.993 -04:00 [DBG] Hosting stopping
+2024-06-13 19:51:30.000 -04:00 [DBG] Connection id "0HN4C0E68KC8O" disconnecting.
+2024-06-13 19:51:30.000 -04:00 [DBG] Connection id "0HN4C0E68KC8P" disconnecting.
+2024-06-13 19:51:30.001 -04:00 [DBG] Connection id "0HN4C0E68KC8P" stopped.
+2024-06-13 19:51:30.001 -04:00 [DBG] Connection id "0HN4C0E68KC8O" stopped.
+2024-06-13 19:51:30.001 -04:00 [DBG] Connection id "0HN4C0E68KC8P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:51:30.001 -04:00 [DBG] Connection id "0HN4C0E68KC8O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:51:30.006 -04:00 [DBG] Hosting stopped
+2024-06-13 19:51:32.747 -04:00 [DBG] Hosting starting
+2024-06-13 19:51:32.825 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:51:32.825 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 19:51:32.825 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:51:32.826 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:51:32.826 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:51:32.826 -04:00 [DBG] Hosting started
+2024-06-13 19:51:33.211 -04:00 [DBG] Connection id "0HN4C0F0HFDP9" received FIN.
+2024-06-13 19:51:33.216 -04:00 [DBG] Connection id "0HN4C0F0HFDP9" accepted.
+2024-06-13 19:51:33.216 -04:00 [DBG] Connection id "0HN4C0F0HFDP9" started.
+2024-06-13 19:51:33.223 -04:00 [DBG] Connection id "0HN4C0F0HFDP9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:51:33.226 -04:00 [DBG] Connection id "0HN4C0F0HFDP9" disconnecting.
+2024-06-13 19:51:33.229 -04:00 [DBG] Connection id "0HN4C0F0HFDP9" stopped.
+2024-06-13 19:51:33.320 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" accepted.
+2024-06-13 19:51:33.320 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" started.
+2024-06-13 19:51:33.320 -04:00 [DBG] Connection id "0HN4C0F0HFDPB" accepted.
+2024-06-13 19:51:33.320 -04:00 [DBG] Connection id "0HN4C0F0HFDPB" started.
+2024-06-13 19:51:33.352 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:51:33.357 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 19:51:33.465 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" completed keep alive response.
+2024-06-13 19:51:33.467 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 117.3986ms
+2024-06-13 19:51:33.538 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:51:33.572 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:51:33.578 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" completed keep alive response.
+2024-06-13 19:51:33.578 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 40.3233ms
+2024-06-13 19:52:33.280 -04:00 [INF] Application is shutting down...
+2024-06-13 19:52:33.281 -04:00 [DBG] Hosting stopping
+2024-06-13 19:52:33.289 -04:00 [DBG] Connection id "0HN4C0F0HFDPB" disconnecting.
+2024-06-13 19:52:33.289 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" disconnecting.
+2024-06-13 19:52:33.291 -04:00 [DBG] Connection id "0HN4C0F0HFDPB" stopped.
+2024-06-13 19:52:33.291 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" stopped.
+2024-06-13 19:52:33.291 -04:00 [DBG] Connection id "0HN4C0F0HFDPB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:52:33.291 -04:00 [DBG] Connection id "0HN4C0F0HFDPA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:52:33.295 -04:00 [DBG] Hosting stopped
+2024-06-13 19:53:38.796 -04:00 [DBG] Hosting starting
+2024-06-13 19:53:38.871 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:53:38.871 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 19:53:38.871 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:53:38.872 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:53:38.872 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:53:38.872 -04:00 [DBG] Hosting started
+2024-06-13 19:53:39.260 -04:00 [DBG] Connection id "0HN4C0G63IAB3" received FIN.
+2024-06-13 19:53:39.267 -04:00 [DBG] Connection id "0HN4C0G63IAB3" accepted.
+2024-06-13 19:53:39.267 -04:00 [DBG] Connection id "0HN4C0G63IAB3" started.
+2024-06-13 19:53:39.274 -04:00 [DBG] Connection id "0HN4C0G63IAB3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:53:39.279 -04:00 [DBG] Connection id "0HN4C0G63IAB3" disconnecting.
+2024-06-13 19:53:39.283 -04:00 [DBG] Connection id "0HN4C0G63IAB3" stopped.
+2024-06-13 19:53:39.383 -04:00 [DBG] Connection id "0HN4C0G63IAB4" accepted.
+2024-06-13 19:53:39.383 -04:00 [DBG] Connection id "0HN4C0G63IAB4" started.
+2024-06-13 19:53:39.383 -04:00 [DBG] Connection id "0HN4C0G63IAB5" accepted.
+2024-06-13 19:53:39.383 -04:00 [DBG] Connection id "0HN4C0G63IAB5" started.
+2024-06-13 19:53:39.398 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:53:39.401 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 19:53:39.506 -04:00 [DBG] Connection id "0HN4C0G63IAB4" completed keep alive response.
+2024-06-13 19:53:39.507 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 110.5223ms
+2024-06-13 19:53:39.564 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:53:39.599 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserController" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:53:39.607 -04:00 [DBG] Connection id "0HN4C0G63IAB4" completed keep alive response.
+2024-06-13 19:53:39.607 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 43.1376ms
+2024-06-13 19:53:47.080 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:53:47.085 -04:00 [DBG] Connection id "0HN4C0G63IAB4" completed keep alive response.
+2024-06-13 19:53:47.085 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 4.6989ms
+2024-06-13 19:53:47.152 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:53:47.152 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserController" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:53:47.153 -04:00 [DBG] Connection id "0HN4C0G63IAB4" completed keep alive response.
+2024-06-13 19:53:47.153 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 1.317ms
+2024-06-13 19:55:36.661 -04:00 [INF] Application is shutting down...
+2024-06-13 19:55:36.662 -04:00 [DBG] Hosting stopping
+2024-06-13 19:55:36.670 -04:00 [DBG] Connection id "0HN4C0G63IAB4" disconnecting.
+2024-06-13 19:55:36.670 -04:00 [DBG] Connection id "0HN4C0G63IAB5" disconnecting.
+2024-06-13 19:55:36.671 -04:00 [DBG] Connection id "0HN4C0G63IAB5" stopped.
+2024-06-13 19:55:36.671 -04:00 [DBG] Connection id "0HN4C0G63IAB4" stopped.
+2024-06-13 19:55:36.671 -04:00 [DBG] Connection id "0HN4C0G63IAB5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:55:36.671 -04:00 [DBG] Connection id "0HN4C0G63IAB4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:55:36.674 -04:00 [DBG] Hosting stopped
+2024-06-13 19:55:58.115 -04:00 [DBG] Hosting starting
+2024-06-13 19:55:58.182 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 19:55:58.183 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 19:55:58.183 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 19:55:58.183 -04:00 [INF] Hosting environment: Development
+2024-06-13 19:55:58.183 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 19:55:58.183 -04:00 [DBG] Hosting started
+2024-06-13 19:55:58.559 -04:00 [DBG] Connection id "0HN4C0HFK10D1" received FIN.
+2024-06-13 19:55:58.567 -04:00 [DBG] Connection id "0HN4C0HFK10D1" accepted.
+2024-06-13 19:55:58.568 -04:00 [DBG] Connection id "0HN4C0HFK10D1" started.
+2024-06-13 19:55:58.575 -04:00 [DBG] Connection id "0HN4C0HFK10D1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:55:58.579 -04:00 [DBG] Connection id "0HN4C0HFK10D1" disconnecting.
+2024-06-13 19:55:58.583 -04:00 [DBG] Connection id "0HN4C0HFK10D1" stopped.
+2024-06-13 19:55:58.676 -04:00 [DBG] Connection id "0HN4C0HFK10D2" accepted.
+2024-06-13 19:55:58.676 -04:00 [DBG] Connection id "0HN4C0HFK10D2" started.
+2024-06-13 19:55:58.676 -04:00 [DBG] Connection id "0HN4C0HFK10D3" accepted.
+2024-06-13 19:55:58.676 -04:00 [DBG] Connection id "0HN4C0HFK10D3" started.
+2024-06-13 19:55:58.691 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:55:58.693 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 19:55:58.789 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:55:58.791 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 101.9636ms
+2024-06-13 19:55:58.846 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:55:58.917 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:55:58.924 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:55:58.924 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 78.7927ms
+2024-06-13 19:56:29.792 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:29.810 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:29.810 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 18.4357ms
+2024-06-13 19:56:29.862 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:29.865 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:29.874 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:29.875 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 13.4259ms
+2024-06-13 19:56:30.472 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:30.473 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.473 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.2859ms
+2024-06-13 19:56:30.508 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:30.508 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:30.509 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.509 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 0.9791ms
+2024-06-13 19:56:30.670 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:30.670 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.670 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4605ms
+2024-06-13 19:56:30.703 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:30.703 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:30.704 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.704 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 1.2079ms
+2024-06-13 19:56:30.825 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:30.825 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.825 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.6506ms
+2024-06-13 19:56:30.852 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:30.852 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:30.853 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.853 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 0.8485ms
+2024-06-13 19:56:30.990 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:30.991 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:30.991 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.9042ms
+2024-06-13 19:56:31.019 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:31.020 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:31.021 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:31.022 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 2.4979ms
+2024-06-13 19:56:31.155 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:31.156 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:31.156 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.6572ms
+2024-06-13 19:56:31.183 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:31.184 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:31.184 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:31.184 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 0.8952ms
+2024-06-13 19:56:31.320 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 19:56:31.321 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:31.321 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1563ms
+2024-06-13 19:56:31.349 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 19:56:31.350 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/UserAdd" for actions - CRUD.Controllers.UserController.CreateEstudiante (CRUD),CRUD.Controllers.UserController.Login (CRUD). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 19:56:31.351 -04:00 [DBG] Connection id "0HN4C0HFK10D2" completed keep alive response.
+2024-06-13 19:56:31.351 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 1.7447ms
+2024-06-13 19:57:25.936 -04:00 [INF] Application is shutting down...
+2024-06-13 19:57:25.937 -04:00 [DBG] Hosting stopping
+2024-06-13 19:57:25.945 -04:00 [DBG] Connection id "0HN4C0HFK10D2" disconnecting.
+2024-06-13 19:57:25.945 -04:00 [DBG] Connection id "0HN4C0HFK10D3" disconnecting.
+2024-06-13 19:57:25.946 -04:00 [DBG] Connection id "0HN4C0HFK10D2" stopped.
+2024-06-13 19:57:25.946 -04:00 [DBG] Connection id "0HN4C0HFK10D3" stopped.
+2024-06-13 19:57:25.946 -04:00 [DBG] Connection id "0HN4C0HFK10D2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:57:25.946 -04:00 [DBG] Connection id "0HN4C0HFK10D3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 19:57:25.950 -04:00 [DBG] Hosting stopped
+2024-06-13 20:00:31.644 -04:00 [DBG] Hosting starting
+2024-06-13 20:00:31.717 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 20:00:31.717 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 20:00:31.718 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 20:00:31.718 -04:00 [INF] Hosting environment: Development
+2024-06-13 20:00:31.718 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 20:00:31.718 -04:00 [DBG] Hosting started
+2024-06-13 20:00:32.111 -04:00 [DBG] Connection id "0HN4C0K14QJ4P" received FIN.
+2024-06-13 20:00:32.119 -04:00 [DBG] Connection id "0HN4C0K14QJ4P" accepted.
+2024-06-13 20:00:32.119 -04:00 [DBG] Connection id "0HN4C0K14QJ4P" started.
+2024-06-13 20:00:32.126 -04:00 [DBG] Connection id "0HN4C0K14QJ4P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:00:32.130 -04:00 [DBG] Connection id "0HN4C0K14QJ4P" disconnecting.
+2024-06-13 20:00:32.134 -04:00 [DBG] Connection id "0HN4C0K14QJ4P" stopped.
+2024-06-13 20:00:32.233 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" accepted.
+2024-06-13 20:00:32.233 -04:00 [DBG] Connection id "0HN4C0K14QJ4R" accepted.
+2024-06-13 20:00:32.233 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" started.
+2024-06-13 20:00:32.233 -04:00 [DBG] Connection id "0HN4C0K14QJ4R" started.
+2024-06-13 20:00:32.260 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:00:32.263 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 20:00:32.370 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" completed keep alive response.
+2024-06-13 20:00:32.370 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 112.0603ms
+2024-06-13 20:00:32.425 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:00:32.537 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" completed keep alive response.
+2024-06-13 20:00:32.537 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.3257ms
+2024-06-13 20:02:43.845 -04:00 [DBG] Connection id "0HN4C0K14QJ4R" disconnecting.
+2024-06-13 20:02:43.845 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" disconnecting.
+2024-06-13 20:02:43.849 -04:00 [DBG] Connection id "0HN4C0K14QJ4R" stopped.
+2024-06-13 20:02:43.849 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" stopped.
+2024-06-13 20:02:43.850 -04:00 [DBG] Connection id "0HN4C0K14QJ4R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:02:43.852 -04:00 [DBG] Connection id "0HN4C0K14QJ4Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:09:36.275 -04:00 [DBG] Connection id "0HN4C0K14QJ4S" accepted.
+2024-06-13 20:09:36.277 -04:00 [DBG] Connection id "0HN4C0K14QJ4S" started.
+2024-06-13 20:09:36.279 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - application/json 511
+2024-06-13 20:09:36.285 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-13 20:09:36.285 -04:00 [INF] CORS policy execution successful.
+2024-06-13 20:09:36.289 -04:00 [DBG] POST requests are not supported
+2024-06-13 20:09:36.290 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 20:09:36.291 -04:00 [DBG] Connection id "0HN4C0K14QJ4S" completed keep alive response.
+2024-06-13 20:09:36.291 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - 404 0 null 12.0561ms
+2024-06-13 20:09:36.292 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5104/api/User/CreateEstudiante, Response status code: 404
+2024-06-13 20:09:36.293 -04:00 [DBG] Connection id "0HN4C0K14QJ4S", Request id "0HN4C0K14QJ4S:00000001": started reading request body.
+2024-06-13 20:09:36.293 -04:00 [DBG] Connection id "0HN4C0K14QJ4S", Request id "0HN4C0K14QJ4S:00000001": done reading request body.
+2024-06-13 20:09:54.200 -04:00 [INF] Application is shutting down...
+2024-06-13 20:09:54.202 -04:00 [DBG] Hosting stopping
+2024-06-13 20:09:54.209 -04:00 [DBG] Connection id "0HN4C0K14QJ4S" disconnecting.
+2024-06-13 20:09:54.209 -04:00 [DBG] Connection id "0HN4C0K14QJ4S" stopped.
+2024-06-13 20:09:54.209 -04:00 [DBG] Connection id "0HN4C0K14QJ4S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:09:54.213 -04:00 [DBG] Hosting stopped
+2024-06-13 20:09:57.751 -04:00 [DBG] Hosting starting
+2024-06-13 20:09:57.821 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 20:09:57.822 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 20:09:57.822 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 20:09:57.822 -04:00 [INF] Hosting environment: Development
+2024-06-13 20:09:57.822 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 20:09:57.822 -04:00 [DBG] Hosting started
+2024-06-13 20:09:58.223 -04:00 [DBG] Connection id "0HN4C0P9RM5FH" received FIN.
+2024-06-13 20:09:58.227 -04:00 [DBG] Connection id "0HN4C0P9RM5FH" accepted.
+2024-06-13 20:09:58.227 -04:00 [DBG] Connection id "0HN4C0P9RM5FH" started.
+2024-06-13 20:09:58.232 -04:00 [DBG] Connection id "0HN4C0P9RM5FH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:09:58.236 -04:00 [DBG] Connection id "0HN4C0P9RM5FH" disconnecting.
+2024-06-13 20:09:58.239 -04:00 [DBG] Connection id "0HN4C0P9RM5FH" stopped.
+2024-06-13 20:09:58.336 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" accepted.
+2024-06-13 20:09:58.336 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" started.
+2024-06-13 20:09:58.336 -04:00 [DBG] Connection id "0HN4C0P9RM5FJ" accepted.
+2024-06-13 20:09:58.336 -04:00 [DBG] Connection id "0HN4C0P9RM5FJ" started.
+2024-06-13 20:09:58.353 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:09:58.362 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 20:09:58.473 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:09:58.474 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 124.8692ms
+2024-06-13 20:09:58.532 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:09:58.636 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:09:58.636 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.382ms
+2024-06-13 20:10:29.410 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - application/json-patch+json 508
+2024-06-13 20:10:29.418 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-13 20:10:29.418 -04:00 [INF] CORS policy execution successful.
+2024-06-13 20:10:29.423 -04:00 [DBG] POST requests are not supported
+2024-06-13 20:10:29.424 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 20:10:29.426 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:10:29.427 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - 404 0 null 16.442ms
+2024-06-13 20:10:29.430 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5104/api/User/CreateEstudiante, Response status code: 404
+2024-06-13 20:10:29.431 -04:00 [DBG] Connection id "0HN4C0P9RM5FI", Request id "0HN4C0P9RM5FI:00000003": started reading request body.
+2024-06-13 20:10:29.432 -04:00 [DBG] Connection id "0HN4C0P9RM5FI", Request id "0HN4C0P9RM5FI:00000003": done reading request body.
+2024-06-13 20:10:44.260 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - application/json-patch+json 508
+2024-06-13 20:10:44.261 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-13 20:10:44.261 -04:00 [INF] CORS policy execution successful.
+2024-06-13 20:10:44.261 -04:00 [DBG] POST requests are not supported
+2024-06-13 20:10:44.261 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:10:44.261 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - 404 0 null 1.7475ms
+2024-06-13 20:10:44.262 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5104/api/User/CreateEstudiante, Response status code: 404
+2024-06-13 20:10:44.262 -04:00 [DBG] Connection id "0HN4C0P9RM5FI", Request id "0HN4C0P9RM5FI:00000004": started reading request body.
+2024-06-13 20:10:44.262 -04:00 [DBG] Connection id "0HN4C0P9RM5FI", Request id "0HN4C0P9RM5FI:00000004": done reading request body.
+2024-06-13 20:10:55.224 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:10:55.227 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:10:55.227 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 3.7994ms
+2024-06-13 20:10:55.307 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:10:55.322 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:10:55.322 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.1132ms
+2024-06-13 20:11:42.842 -04:00 [DBG] Connection id "0HN4C0P9RM5FJ" received FIN.
+2024-06-13 20:11:42.844 -04:00 [DBG] Connection id "0HN4C0P9RM5FJ" disconnecting.
+2024-06-13 20:11:42.844 -04:00 [DBG] Connection id "0HN4C0P9RM5FJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:11:42.847 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - application/json 508
+2024-06-13 20:11:42.848 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-13 20:11:42.848 -04:00 [INF] CORS policy execution successful.
+2024-06-13 20:11:42.848 -04:00 [DBG] POST requests are not supported
+2024-06-13 20:11:42.848 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" completed keep alive response.
+2024-06-13 20:11:42.848 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/User/CreateEstudiante - 404 0 null 0.7834ms
+2024-06-13 20:11:42.848 -04:00 [DBG] Connection id "0HN4C0P9RM5FJ" stopped.
+2024-06-13 20:11:42.848 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5104/api/User/CreateEstudiante, Response status code: 404
+2024-06-13 20:11:42.848 -04:00 [DBG] Connection id "0HN4C0P9RM5FI", Request id "0HN4C0P9RM5FI:00000007": started reading request body.
+2024-06-13 20:11:42.848 -04:00 [DBG] Connection id "0HN4C0P9RM5FI", Request id "0HN4C0P9RM5FI:00000007": done reading request body.
+2024-06-13 20:12:06.556 -04:00 [INF] Application is shutting down...
+2024-06-13 20:12:06.557 -04:00 [DBG] Hosting stopping
+2024-06-13 20:12:06.563 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" disconnecting.
+2024-06-13 20:12:06.563 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" stopped.
+2024-06-13 20:12:06.563 -04:00 [DBG] Connection id "0HN4C0P9RM5FI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:12:06.565 -04:00 [DBG] Hosting stopped
+2024-06-13 20:22:06.934 -04:00 [DBG] Hosting starting
+2024-06-13 20:22:07.008 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 20:22:07.008 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 20:22:07.008 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 20:22:07.008 -04:00 [INF] Hosting environment: Development
+2024-06-13 20:22:07.008 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 20:22:07.008 -04:00 [DBG] Hosting started
+2024-06-13 20:22:07.359 -04:00 [DBG] Connection id "0HN4C10358V1J" received FIN.
+2024-06-13 20:22:07.363 -04:00 [DBG] Connection id "0HN4C10358V1J" accepted.
+2024-06-13 20:22:07.363 -04:00 [DBG] Connection id "0HN4C10358V1J" started.
+2024-06-13 20:22:07.367 -04:00 [DBG] Connection id "0HN4C10358V1J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:22:07.368 -04:00 [DBG] Connection id "0HN4C10358V1J" disconnecting.
+2024-06-13 20:22:07.370 -04:00 [DBG] Connection id "0HN4C10358V1J" stopped.
+2024-06-13 20:22:07.481 -04:00 [DBG] Connection id "0HN4C10358V1K" accepted.
+2024-06-13 20:22:07.482 -04:00 [DBG] Connection id "0HN4C10358V1L" accepted.
+2024-06-13 20:22:07.482 -04:00 [DBG] Connection id "0HN4C10358V1L" started.
+2024-06-13 20:22:07.482 -04:00 [DBG] Connection id "0HN4C10358V1K" started.
+2024-06-13 20:22:07.556 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:22:07.559 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 20:22:07.669 -04:00 [DBG] Connection id "0HN4C10358V1K" completed keep alive response.
+2024-06-13 20:22:07.670 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 116.6176ms
+2024-06-13 20:22:07.730 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:22:07.849 -04:00 [DBG] Connection id "0HN4C10358V1K" completed keep alive response.
+2024-06-13 20:22:07.849 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.7786ms
+2024-06-13 20:22:13.874 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 20:22:13.879 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 20:22:13.880 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 20:22:13.882 -04:00 [DBG] Connection id "0HN4C10358V1K" completed keep alive response.
+2024-06-13 20:22:13.882 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 8.305ms
+2024-06-13 20:22:13.885 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 20:22:26.721 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 20:22:26.723 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 20:22:26.723 -04:00 [DBG] Connection id "0HN4C10358V1K" completed keep alive response.
+2024-06-13 20:22:26.723 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 2.2418ms
+2024-06-13 20:22:26.723 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 20:22:32.760 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 20:22:32.761 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 20:22:32.762 -04:00 [DBG] Connection id "0HN4C10358V1K" completed keep alive response.
+2024-06-13 20:22:32.762 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 2.0776ms
+2024-06-13 20:22:32.762 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 20:22:36.548 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 20:22:36.549 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 20:22:36.550 -04:00 [DBG] Connection id "0HN4C10358V1K" completed keep alive response.
+2024-06-13 20:22:36.550 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 1.5437ms
+2024-06-13 20:22:36.550 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 20:23:17.654 -04:00 [INF] Application is shutting down...
+2024-06-13 20:23:17.655 -04:00 [DBG] Hosting stopping
+2024-06-13 20:23:17.660 -04:00 [DBG] Connection id "0HN4C10358V1K" disconnecting.
+2024-06-13 20:23:17.660 -04:00 [DBG] Connection id "0HN4C10358V1L" disconnecting.
+2024-06-13 20:23:17.661 -04:00 [DBG] Connection id "0HN4C10358V1K" stopped.
+2024-06-13 20:23:17.661 -04:00 [DBG] Connection id "0HN4C10358V1L" stopped.
+2024-06-13 20:23:17.661 -04:00 [DBG] Connection id "0HN4C10358V1K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:23:17.662 -04:00 [DBG] Connection id "0HN4C10358V1L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:23:17.665 -04:00 [DBG] Hosting stopped
+2024-06-13 20:23:52.880 -04:00 [DBG] Hosting starting
+2024-06-13 20:23:52.953 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 20:23:52.954 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 20:23:52.954 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 20:23:52.954 -04:00 [INF] Hosting environment: Development
+2024-06-13 20:23:52.954 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 20:23:52.954 -04:00 [DBG] Hosting started
+2024-06-13 20:23:53.347 -04:00 [DBG] Connection id "0HN4C112O1LTN" received FIN.
+2024-06-13 20:23:53.355 -04:00 [DBG] Connection id "0HN4C112O1LTN" accepted.
+2024-06-13 20:23:53.356 -04:00 [DBG] Connection id "0HN4C112O1LTN" started.
+2024-06-13 20:23:53.361 -04:00 [DBG] Connection id "0HN4C112O1LTN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:23:53.365 -04:00 [DBG] Connection id "0HN4C112O1LTN" disconnecting.
+2024-06-13 20:23:53.369 -04:00 [DBG] Connection id "0HN4C112O1LTN" stopped.
+2024-06-13 20:23:53.464 -04:00 [DBG] Connection id "0HN4C112O1LTO" accepted.
+2024-06-13 20:23:53.465 -04:00 [DBG] Connection id "0HN4C112O1LTO" started.
+2024-06-13 20:23:53.465 -04:00 [DBG] Connection id "0HN4C112O1LTP" accepted.
+2024-06-13 20:23:53.465 -04:00 [DBG] Connection id "0HN4C112O1LTP" started.
+2024-06-13 20:23:53.481 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:23:53.483 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 20:23:53.587 -04:00 [DBG] Connection id "0HN4C112O1LTO" completed keep alive response.
+2024-06-13 20:23:53.588 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 109.5307ms
+2024-06-13 20:23:53.641 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:23:53.720 -04:00 [DBG] Connection id "0HN4C112O1LTO" completed keep alive response.
+2024-06-13 20:23:53.721 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.6464ms
+2024-06-13 20:23:54.782 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:23:54.787 -04:00 [DBG] Connection id "0HN4C112O1LTO" completed keep alive response.
+2024-06-13 20:23:54.788 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 7.1363ms
+2024-06-13 20:23:54.856 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:23:54.860 -04:00 [DBG] Connection id "0HN4C112O1LTO" completed keep alive response.
+2024-06-13 20:23:54.860 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.541ms
+2024-06-13 20:23:59.664 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 20:23:59.667 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 20:23:59.668 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 20:23:59.670 -04:00 [DBG] Connection id "0HN4C112O1LTO" completed keep alive response.
+2024-06-13 20:23:59.670 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 6.6747ms
+2024-06-13 20:23:59.672 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 20:25:11.819 -04:00 [DBG] Hosting starting
+2024-06-13 20:25:11.894 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 20:25:11.895 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 20:25:11.895 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 20:25:11.895 -04:00 [INF] Hosting environment: Development
+2024-06-13 20:25:11.895 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 20:25:11.895 -04:00 [DBG] Hosting started
+2024-06-13 20:25:12.277 -04:00 [DBG] Connection id "0HN4C11Q8PF0V" received FIN.
+2024-06-13 20:25:12.282 -04:00 [DBG] Connection id "0HN4C11Q8PF0V" accepted.
+2024-06-13 20:25:12.283 -04:00 [DBG] Connection id "0HN4C11Q8PF0V" started.
+2024-06-13 20:25:12.288 -04:00 [DBG] Connection id "0HN4C11Q8PF0V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:25:12.290 -04:00 [DBG] Connection id "0HN4C11Q8PF0V" disconnecting.
+2024-06-13 20:25:12.293 -04:00 [DBG] Connection id "0HN4C11Q8PF0V" stopped.
+2024-06-13 20:25:12.396 -04:00 [DBG] Connection id "0HN4C11Q8PF10" accepted.
+2024-06-13 20:25:12.397 -04:00 [DBG] Connection id "0HN4C11Q8PF10" started.
+2024-06-13 20:25:12.397 -04:00 [DBG] Connection id "0HN4C11Q8PF11" accepted.
+2024-06-13 20:25:12.397 -04:00 [DBG] Connection id "0HN4C11Q8PF11" started.
+2024-06-13 20:25:12.415 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 20:25:12.417 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 20:25:12.528 -04:00 [DBG] Connection id "0HN4C11Q8PF10" completed keep alive response.
+2024-06-13 20:25:12.529 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 116.7676ms
+2024-06-13 20:25:12.582 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 20:25:12.675 -04:00 [DBG] Connection id "0HN4C11Q8PF10" completed keep alive response.
+2024-06-13 20:25:12.675 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.7858ms
+2024-06-13 20:25:18.158 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 20:25:18.161 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 20:25:18.162 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 20:25:18.163 -04:00 [DBG] Connection id "0HN4C11Q8PF10" completed keep alive response.
+2024-06-13 20:25:18.163 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 5.3166ms
+2024-06-13 20:25:18.164 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 20:26:00.790 -04:00 [INF] Application is shutting down...
+2024-06-13 20:26:00.792 -04:00 [DBG] Hosting stopping
+2024-06-13 20:26:00.799 -04:00 [DBG] Connection id "0HN4C11Q8PF11" disconnecting.
+2024-06-13 20:26:00.799 -04:00 [DBG] Connection id "0HN4C11Q8PF10" disconnecting.
+2024-06-13 20:26:00.800 -04:00 [DBG] Connection id "0HN4C11Q8PF10" stopped.
+2024-06-13 20:26:00.800 -04:00 [DBG] Connection id "0HN4C11Q8PF11" stopped.
+2024-06-13 20:26:00.801 -04:00 [DBG] Connection id "0HN4C11Q8PF10" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:26:00.801 -04:00 [DBG] Connection id "0HN4C11Q8PF11" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 20:26:00.805 -04:00 [DBG] Hosting stopped
+2024-06-13 20:33:24.955 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:33:25.199 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:33:25.436 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:33:35.741 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:33:35.989 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:33:35.996 -04:00 [DBG] Creating DbConnection.
+2024-06-13 20:33:36.013 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-13 20:33:36.015 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-13 20:33:36.016 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.118 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.120 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:33:36.123 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-13 20:33:36.123 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-13 20:33:36.125 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:33:36.142 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:33:36.143 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.146 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-13 20:33:36.147 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:33:36.147 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:33:36.147 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:33:36.147 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.147 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.148 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:33:36.156 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:33:36.156 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.157 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:33:36.157 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.157 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.157 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:33:36.157 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:33:36.157 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:33:36.157 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:33:36.159 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:33:36.159 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.159 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:33:36.159 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:33:36.159 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:33:36.159 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:33:36.159 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.159 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.159 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:33:36.162 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:33:36.162 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.162 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:33:36.167 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.168 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.168 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-13 20:33:36.168 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:33:36.168 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:33:36.168 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:33:36.171 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:33:36.172 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-13 20:33:36.173 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-13 20:33:36.173 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.173 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:33:36.179 -04:00 [INF] Applying migration '20240614003325_Nother'.
+2024-06-13 20:33:36.187 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.187 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.188 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-13 20:33:36.192 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-13 20:33:36.192 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:33:36.192 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:33:36.193 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:33:36.193 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240614003325_Nother', N'9.0.0-preview.5.24306.3');
+2024-06-13 20:33:36.195 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240614003325_Nother', N'9.0.0-preview.5.24306.3');
+2024-06-13 20:33:36.196 -04:00 [DBG] Committing transaction.
+2024-06-13 20:33:36.205 -04:00 [DBG] Committed transaction.
+2024-06-13 20:33:36.205 -04:00 [DBG] Disposing transaction.
+2024-06-13 20:33:36.205 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.205 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:33:36.206 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:33:36.206 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-13 20:33:36.207 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-13 20:43:21.587 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:43:22.034 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:43:22.293 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:43:30.846 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:43:31.311 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:43:31.319 -04:00 [DBG] Creating DbConnection.
+2024-06-13 20:43:31.337 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-13 20:43:31.339 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-13 20:43:31.340 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.432 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.435 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:43:31.437 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-13 20:43:31.437 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-13 20:43:31.440 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:43:31.454 -04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:43:31.455 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.458 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-13 20:43:31.459 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:43:31.459 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:43:31.459 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:43:31.459 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.459 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.460 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:43:31.479 -04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:43:31.479 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.479 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:43:31.479 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.479 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.479 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:43:31.479 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:43:31.479 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:43:31.479 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:43:31.481 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:43:31.481 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.481 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:43:31.481 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:43:31.481 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:43:31.481 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:43:31.481 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.481 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.481 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:43:31.482 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:43:31.482 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.482 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:43:31.488 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.488 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.488 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-13 20:43:31.488 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:43:31.488 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:43:31.488 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:43:31.491 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:43:31.492 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-13 20:43:31.492 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-13 20:43:31.492 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.492 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:43:31.497 -04:00 [INF] Applying migration '20240614004322_AddSeedEstudiante'.
+2024-06-13 20:43:31.536 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.536 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.537 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-13 20:43:31.543 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-13 20:43:31.544 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:43:31.544 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:43:31.544 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:43:31.544 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] ON;
+INSERT INTO [Estudiantes] ([Id], [CarreraId], [CiudadEstudiante], [CodigoCarrera], [CondicionAcademica], [ContraseñaEstudiante], [CorreoEstudiante], [CreditosAprobados], [DireccionEstudiante], [FechaIngreso], [IndiceGeneral], [IndicePeriodo], [Nacionalidad], [NombreEstudiante], [PeriodosCursados], [SexoEstudiante], [TelefonoEstudiante])
+VALUES (1, 1, N'Santo Domingo', N'SIS', N'Regular', N'$2a$11$kaYO4qoKsihxP0IlrgaKIelTd40FVeDtNjtO50vMcw5XdGPvQFyUq', N'juan.perez@example.com', 60, N'123 Calle Principal', '2024-06-13T20:43:21.7514030-04:00', 3.5, 3.8, N'Dominicana', N'Juan Perez', 3, N'Masculino', N'809-555-1234');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] OFF;
+2024-06-13 20:43:31.575 -04:00 [ERR] Failed executing DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] ON;
+INSERT INTO [Estudiantes] ([Id], [CarreraId], [CiudadEstudiante], [CodigoCarrera], [CondicionAcademica], [ContraseñaEstudiante], [CorreoEstudiante], [CreditosAprobados], [DireccionEstudiante], [FechaIngreso], [IndiceGeneral], [IndicePeriodo], [Nacionalidad], [NombreEstudiante], [PeriodosCursados], [SexoEstudiante], [TelefonoEstudiante])
+VALUES (1, 1, N'Santo Domingo', N'SIS', N'Regular', N'$2a$11$kaYO4qoKsihxP0IlrgaKIelTd40FVeDtNjtO50vMcw5XdGPvQFyUq', N'juan.perez@example.com', 60, N'123 Calle Principal', '2024-06-13T20:43:21.7514030-04:00', 3.5, 3.8, N'Dominicana', N'Juan Perez', 3, N'Masculino', N'809-555-1234');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] OFF;
+2024-06-13 20:43:31.577 -04:00 [DBG] Disposing transaction.
+2024-06-13 20:43:31.577 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.577 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:43:31.578 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:43:31.578 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-13 20:43:31.579 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-13 20:44:21.342 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:44:21.840 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:44:21.848 -04:00 [DBG] Creating DbConnection.
+2024-06-13 20:44:21.865 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-13 20:44:21.867 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-13 20:44:21.869 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:21.965 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:21.968 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:44:21.970 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-13 20:44:21.970 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-13 20:44:21.972 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:44:21.989 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:44:21.989 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:21.992 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-13 20:44:21.993 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:44:21.993 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:44:21.993 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:44:21.993 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:21.994 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:21.994 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:44:22.003 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:44:22.003 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.003 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:44:22.003 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.003 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.003 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:44:22.003 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:44:22.003 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:44:22.003 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:44:22.006 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:44:22.006 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.006 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:44:22.006 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:44:22.006 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:44:22.006 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:44:22.006 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.006 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.006 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:44:22.009 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:44:22.009 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.009 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:44:22.014 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.014 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.014 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-13 20:44:22.014 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:44:22.014 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:44:22.014 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:44:22.017 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:44:22.018 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-13 20:44:22.018 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-13 20:44:22.018 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.018 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:44:22.024 -04:00 [INF] Applying migration '20240614004322_AddSeedEstudiante'.
+2024-06-13 20:44:22.062 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.063 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.064 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-13 20:44:22.068 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-13 20:44:22.069 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:44:22.069 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:44:22.069 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:44:22.069 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] ON;
+INSERT INTO [Estudiantes] ([Id], [CarreraId], [CiudadEstudiante], [CodigoCarrera], [CondicionAcademica], [ContraseñaEstudiante], [CorreoEstudiante], [CreditosAprobados], [DireccionEstudiante], [FechaIngreso], [IndiceGeneral], [IndicePeriodo], [Nacionalidad], [NombreEstudiante], [PeriodosCursados], [SexoEstudiante], [TelefonoEstudiante])
+VALUES (1, 1, N'Santo Domingo', N'SIS', N'Regular', N'$2a$11$kaYO4qoKsihxP0IlrgaKIelTd40FVeDtNjtO50vMcw5XdGPvQFyUq', N'juan.perez@example.com', 60, N'123 Calle Principal', '2024-06-13T20:43:21.7514030-04:00', 3.5, 3.8, N'Dominicana', N'Juan Perez', 3, N'Masculino', N'809-555-1234');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] OFF;
+2024-06-13 20:44:22.074 -04:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] ON;
+INSERT INTO [Estudiantes] ([Id], [CarreraId], [CiudadEstudiante], [CodigoCarrera], [CondicionAcademica], [ContraseñaEstudiante], [CorreoEstudiante], [CreditosAprobados], [DireccionEstudiante], [FechaIngreso], [IndiceGeneral], [IndicePeriodo], [Nacionalidad], [NombreEstudiante], [PeriodosCursados], [SexoEstudiante], [TelefonoEstudiante])
+VALUES (1, 1, N'Santo Domingo', N'SIS', N'Regular', N'$2a$11$kaYO4qoKsihxP0IlrgaKIelTd40FVeDtNjtO50vMcw5XdGPvQFyUq', N'juan.perez@example.com', 60, N'123 Calle Principal', '2024-06-13T20:43:21.7514030-04:00', 3.5, 3.8, N'Dominicana', N'Juan Perez', 3, N'Masculino', N'809-555-1234');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] OFF;
+2024-06-13 20:44:22.076 -04:00 [DBG] Disposing transaction.
+2024-06-13 20:44:22.076 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.076 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:44:22.077 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:44:22.077 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-13 20:44:22.078 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-13 20:45:39.315 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:45:39.770 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:45:40.039 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:45:48.519 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:45:49.053 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:45:49.061 -04:00 [DBG] Creating DbConnection.
+2024-06-13 20:45:49.082 -04:00 [DBG] Created DbConnection. (17ms).
+2024-06-13 20:45:49.087 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-13 20:45:49.093 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.235 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.237 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:45:49.240 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-13 20:45:49.240 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-13 20:45:49.242 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:45:49.257 -04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:45:49.258 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.261 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-13 20:45:49.262 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:45:49.262 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:45:49.262 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:45:49.262 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.262 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.262 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:45:49.272 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:45:49.272 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.273 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:45:49.274 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.274 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.274 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:45:49.274 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:45:49.275 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:45:49.275 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:45:49.281 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:45:49.281 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.281 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:45:49.281 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:45:49.282 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:45:49.282 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:45:49.282 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.282 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.282 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:45:49.288 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:45:49.288 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.288 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:45:49.300 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.300 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.300 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-13 20:45:49.300 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:45:49.300 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:45:49.301 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:45:49.302 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:45:49.303 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-13 20:45:49.304 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-13 20:45:49.304 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.304 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:45:49.309 -04:00 [INF] Applying migration '20240614004322_AddSeedEstudiante'.
+2024-06-13 20:45:49.374 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.374 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.376 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-13 20:45:49.381 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-13 20:45:49.381 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:45:49.381 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:45:49.381 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:45:49.381 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] ON;
+INSERT INTO [Estudiantes] ([Id], [CarreraId], [CiudadEstudiante], [CodigoCarrera], [CondicionAcademica], [ContraseñaEstudiante], [CorreoEstudiante], [CreditosAprobados], [DireccionEstudiante], [FechaIngreso], [IndiceGeneral], [IndicePeriodo], [Nacionalidad], [NombreEstudiante], [PeriodosCursados], [SexoEstudiante], [TelefonoEstudiante])
+VALUES (1, 1, N'Santo Domingo', N'SIS', N'Regular', N'$2a$11$kaYO4qoKsihxP0IlrgaKIelTd40FVeDtNjtO50vMcw5XdGPvQFyUq', N'juan.perez@example.com', 60, N'123 Calle Principal', '2024-06-13T20:43:21.7514030-04:00', 3.5, 3.8, N'Dominicana', N'Juan Perez', 3, N'Masculino', N'809-555-1234');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] OFF;
+2024-06-13 20:45:49.386 -04:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] ON;
+INSERT INTO [Estudiantes] ([Id], [CarreraId], [CiudadEstudiante], [CodigoCarrera], [CondicionAcademica], [ContraseñaEstudiante], [CorreoEstudiante], [CreditosAprobados], [DireccionEstudiante], [FechaIngreso], [IndiceGeneral], [IndicePeriodo], [Nacionalidad], [NombreEstudiante], [PeriodosCursados], [SexoEstudiante], [TelefonoEstudiante])
+VALUES (1, 1, N'Santo Domingo', N'SIS', N'Regular', N'$2a$11$kaYO4qoKsihxP0IlrgaKIelTd40FVeDtNjtO50vMcw5XdGPvQFyUq', N'juan.perez@example.com', 60, N'123 Calle Principal', '2024-06-13T20:43:21.7514030-04:00', 3.5, 3.8, N'Dominicana', N'Juan Perez', 3, N'Masculino', N'809-555-1234');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CarreraId', N'CiudadEstudiante', N'CodigoCarrera', N'CondicionAcademica', N'ContraseñaEstudiante', N'CorreoEstudiante', N'CreditosAprobados', N'DireccionEstudiante', N'FechaIngreso', N'IndiceGeneral', N'IndicePeriodo', N'Nacionalidad', N'NombreEstudiante', N'PeriodosCursados', N'SexoEstudiante', N'TelefonoEstudiante') AND [object_id] = OBJECT_ID(N'[Estudiantes]'))
+    SET IDENTITY_INSERT [Estudiantes] OFF;
+2024-06-13 20:45:49.388 -04:00 [DBG] Disposing transaction.
+2024-06-13 20:45:49.388 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.388 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:45:49.388 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:45:49.389 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-13 20:45:49.389 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-13 20:59:35.000 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:59:35.262 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:59:35.531 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:59:46.017 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 20:59:46.279 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 20:59:46.287 -04:00 [DBG] Creating DbConnection.
+2024-06-13 20:59:46.304 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-13 20:59:46.306 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-13 20:59:46.308 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.411 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.413 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:59:46.415 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-13 20:59:46.416 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-13 20:59:46.418 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:59:46.442 -04:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:59:46.443 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.446 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-13 20:59:46.447 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:59:46.447 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:59:46.447 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:59:46.447 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.448 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.448 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:59:46.459 -04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:59:46.459 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.459 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:59:46.459 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.459 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.459 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:59:46.459 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.459 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.459 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:59:46.463 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 20:59:46.463 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.463 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:59:46.464 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-13 20:59:46.464 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:59:46.464 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-13 20:59:46.464 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.464 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.464 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:59:46.465 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 20:59:46.465 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.465 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:59:46.470 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.470 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.470 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-13 20:59:46.470 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:59:46.470 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-13 20:59:46.471 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:59:46.480 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 20:59:46.481 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-13 20:59:46.481 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-13 20:59:46.482 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.482 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:59:46.488 -04:00 [INF] Applying migration '20240614005935_Initial'.
+2024-06-13 20:59:46.526 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.526 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.527 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-13 20:59:46.532 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-13 20:59:46.533 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:59:46.533 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.533 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.533 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Carreras] (
+    [CarreraId] int NOT NULL IDENTITY,
+    [NombreCarrera] nvarchar(max) NOT NULL,
+    [DuracionPeriodos] nvarchar(max) NOT NULL,
+    [TotalCreditos] nvarchar(max) NOT NULL,
+    [Departamento] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Carreras] PRIMARY KEY ([CarreraId])
+);
+2024-06-13 20:59:46.560 -04:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Carreras] (
+    [CarreraId] int NOT NULL IDENTITY,
+    [NombreCarrera] nvarchar(max) NOT NULL,
+    [DuracionPeriodos] nvarchar(max) NOT NULL,
+    [TotalCreditos] nvarchar(max) NOT NULL,
+    [Departamento] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Carreras] PRIMARY KEY ([CarreraId])
+);
+2024-06-13 20:59:46.560 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:59:46.560 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.560 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.560 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Estudiantes] (
+    [Id] int NOT NULL IDENTITY,
+    [NombreEstudiante] nvarchar(100) NOT NULL,
+    [DireccionEstudiante] nvarchar(200) NOT NULL,
+    [Nacionalidad] nvarchar(50) NOT NULL,
+    [SexoEstudiante] nvarchar(1) NOT NULL,
+    [CiudadEstudiante] nvarchar(100) NOT NULL,
+    [TelefonoEstudiante] nvarchar(15) NOT NULL,
+    [CorreoEstudiante] nvarchar(100) NOT NULL,
+    [FechaIngreso] datetime2 NOT NULL,
+    [PeriodosCursados] int NULL,
+    [IndiceGeneral] decimal(18,2) NULL,
+    [IndicePeriodo] decimal(18,2) NULL,
+    [CondicionAcademica] nvarchar(50) NOT NULL,
+    [CreditosAprobados] int NULL,
+    [CodigoCarrera] nvarchar(10) NULL,
+    [ContraseñaEstudiante] nvarchar(100) NOT NULL,
+    [CarreraId] int NOT NULL,
+    CONSTRAINT [PK_Estudiantes] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Estudiantes_Carreras_CarreraId] FOREIGN KEY ([CarreraId]) REFERENCES [Carreras] ([CarreraId])
+);
+2024-06-13 20:59:46.564 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Estudiantes] (
+    [Id] int NOT NULL IDENTITY,
+    [NombreEstudiante] nvarchar(100) NOT NULL,
+    [DireccionEstudiante] nvarchar(200) NOT NULL,
+    [Nacionalidad] nvarchar(50) NOT NULL,
+    [SexoEstudiante] nvarchar(1) NOT NULL,
+    [CiudadEstudiante] nvarchar(100) NOT NULL,
+    [TelefonoEstudiante] nvarchar(15) NOT NULL,
+    [CorreoEstudiante] nvarchar(100) NOT NULL,
+    [FechaIngreso] datetime2 NOT NULL,
+    [PeriodosCursados] int NULL,
+    [IndiceGeneral] decimal(18,2) NULL,
+    [IndicePeriodo] decimal(18,2) NULL,
+    [CondicionAcademica] nvarchar(50) NOT NULL,
+    [CreditosAprobados] int NULL,
+    [CodigoCarrera] nvarchar(10) NULL,
+    [ContraseñaEstudiante] nvarchar(100) NOT NULL,
+    [CarreraId] int NOT NULL,
+    CONSTRAINT [PK_Estudiantes] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Estudiantes_Carreras_CarreraId] FOREIGN KEY ([CarreraId]) REFERENCES [Carreras] ([CarreraId])
+);
+2024-06-13 20:59:46.564 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:59:46.564 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.564 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.564 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Estudiantes_CarreraId] ON [Estudiantes] ([CarreraId]);
+2024-06-13 20:59:46.566 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Estudiantes_CarreraId] ON [Estudiantes] ([CarreraId]);
+2024-06-13 20:59:46.566 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-13 20:59:46.566 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.566 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-13 20:59:46.566 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240614005935_Initial', N'9.0.0-preview.5.24306.3');
+2024-06-13 20:59:46.574 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240614005935_Initial', N'9.0.0-preview.5.24306.3');
+2024-06-13 20:59:46.574 -04:00 [DBG] Committing transaction.
+2024-06-13 20:59:46.579 -04:00 [DBG] Committed transaction.
+2024-06-13 20:59:46.580 -04:00 [DBG] Disposing transaction.
+2024-06-13 20:59:46.580 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.580 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-13 20:59:46.581 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 20:59:46.581 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-13 20:59:46.582 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-13 21:00:52.057 -04:00 [DBG] Hosting starting
+2024-06-13 21:00:52.137 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 21:00:52.138 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 21:00:52.138 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 21:00:52.138 -04:00 [INF] Hosting environment: Development
+2024-06-13 21:00:52.138 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 21:00:52.138 -04:00 [DBG] Hosting started
+2024-06-13 21:00:52.499 -04:00 [DBG] Connection id "0HN4C1LO3H3LP" received FIN.
+2024-06-13 21:00:52.506 -04:00 [DBG] Connection id "0HN4C1LO3H3LP" accepted.
+2024-06-13 21:00:52.506 -04:00 [DBG] Connection id "0HN4C1LO3H3LP" started.
+2024-06-13 21:00:52.515 -04:00 [DBG] Connection id "0HN4C1LO3H3LP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:00:52.520 -04:00 [DBG] Connection id "0HN4C1LO3H3LP" disconnecting.
+2024-06-13 21:00:52.524 -04:00 [DBG] Connection id "0HN4C1LO3H3LP" stopped.
+2024-06-13 21:00:52.574 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" accepted.
+2024-06-13 21:00:52.574 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" started.
+2024-06-13 21:00:52.574 -04:00 [DBG] Connection id "0HN4C1LO3H3LR" accepted.
+2024-06-13 21:00:52.574 -04:00 [DBG] Connection id "0HN4C1LO3H3LR" started.
+2024-06-13 21:00:52.590 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 21:00:52.592 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 21:00:52.695 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:00:52.696 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 108.2562ms
+2024-06-13 21:00:52.753 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 21:00:52.827 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:00:52.827 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.6587ms
+2024-06-13 21:00:58.765 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Carrera - null null
+2024-06-13 21:00:58.771 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 21:00:58.773 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 21:00:58.775 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:00:58.776 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Carrera - 404 0 null 11.7249ms
+2024-06-13 21:00:58.779 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/Carrera, Response status code: 404
+2024-06-13 21:02:59.937 -04:00 [DBG] Connection id "0HN4C1LO3H3LR" received FIN.
+2024-06-13 21:02:59.939 -04:00 [DBG] Connection id "0HN4C1LO3H3LR" disconnecting.
+2024-06-13 21:02:59.941 -04:00 [DBG] Connection id "0HN4C1LO3H3LR" stopped.
+2024-06-13 21:02:59.944 -04:00 [DBG] Connection id "0HN4C1LO3H3LR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:02:59.945 -04:00 [DBG] Connection id "0HN4C1LO3H3LS" accepted.
+2024-06-13 21:02:59.945 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 21:02:59.946 -04:00 [DBG] Connection id "0HN4C1LO3H3LS" started.
+2024-06-13 21:02:59.951 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:02:59.951 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 6.0429ms
+2024-06-13 21:03:00.005 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 21:03:00.018 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:03:00.019 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.1082ms
+2024-06-13 21:03:00.640 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 21:03:00.641 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:03:00.641 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.8387ms
+2024-06-13 21:03:00.692 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 21:03:00.704 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:03:00.704 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.2668ms
+2024-06-13 21:03:00.846 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 21:03:00.848 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:03:00.848 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.7831ms
+2024-06-13 21:03:00.911 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 21:03:00.937 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:03:00.937 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.427ms
+2024-06-13 21:03:07.850 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-13 21:03:07.852 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 21:03:07.859 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" completed keep alive response.
+2024-06-13 21:03:07.864 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 404 0 null 14.6827ms
+2024-06-13 21:03:07.869 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/api/CarreraApi, Response status code: 404
+2024-06-13 21:05:11.362 -04:00 [DBG] Connection id "0HN4C1LO3H3LS" disconnecting.
+2024-06-13 21:05:11.362 -04:00 [DBG] Connection id "0HN4C1LO3H3LS" stopped.
+2024-06-13 21:05:11.362 -04:00 [DBG] Connection id "0HN4C1LO3H3LS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:05:18.371 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" disconnecting.
+2024-06-13 21:05:18.371 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" stopped.
+2024-06-13 21:05:18.371 -04:00 [DBG] Connection id "0HN4C1LO3H3LQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:07:10.478 -04:00 [INF] Application is shutting down...
+2024-06-13 21:07:10.480 -04:00 [DBG] Hosting stopping
+2024-06-13 21:07:10.489 -04:00 [DBG] Hosting stopped
+2024-06-13 21:08:03.860 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-13 21:08:03.903 -04:00 [DBG] Hosting starting
+2024-06-13 21:08:03.939 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-13 21:08:03.939 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-13 21:08:03.939 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 21:08:03.940 -04:00 [INF] Hosting environment: Development
+2024-06-13 21:08:03.940 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-13 21:08:03.940 -04:00 [DBG] Hosting started
+2024-06-13 21:08:04.292 -04:00 [DBG] Connection id "0HN4C1POPE09R" received FIN.
+2024-06-13 21:08:04.299 -04:00 [DBG] Connection id "0HN4C1POPE09R" accepted.
+2024-06-13 21:08:04.299 -04:00 [DBG] Connection id "0HN4C1POPE09R" started.
+2024-06-13 21:08:04.307 -04:00 [DBG] Connection id "0HN4C1POPE09R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:08:04.312 -04:00 [DBG] Connection id "0HN4C1POPE09R" disconnecting.
+2024-06-13 21:08:04.315 -04:00 [DBG] Connection id "0HN4C1POPE09R" stopped.
+2024-06-13 21:08:04.437 -04:00 [DBG] Connection id "0HN4C1POPE09S" accepted.
+2024-06-13 21:08:04.437 -04:00 [DBG] Connection id "0HN4C1POPE09T" accepted.
+2024-06-13 21:08:04.437 -04:00 [DBG] Connection id "0HN4C1POPE09S" started.
+2024-06-13 21:08:04.437 -04:00 [DBG] Connection id "0HN4C1POPE09T" started.
+2024-06-13 21:08:04.453 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-13 21:08:04.455 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-13 21:08:04.536 -04:00 [DBG] Connection id "0HN4C1POPE09S" completed keep alive response.
+2024-06-13 21:08:04.537 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 85.721ms
+2024-06-13 21:08:04.603 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-13 21:08:04.667 -04:00 [DBG] Connection id "0HN4C1POPE09S" completed keep alive response.
+2024-06-13 21:08:04.668 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.5518ms
+2024-06-13 21:08:07.584 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-13 21:08:07.596 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 21:08:07.597 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-13 21:08:07.615 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-13 21:08:07.617 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-13 21:08:07.617 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-13 21:08:07.619 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-13 21:08:07.634 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-13 21:08:07.635 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-13 21:08:07.635 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-13 21:08:07.635 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-13 21:08:07.635 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-13 21:08:07.635 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-13 21:08:07.635 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-13 21:08:07.707 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-13 21:08:07.717 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-13 21:08:07.720 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-13 21:08:07.720 -04:00 [INF] Obteniendo Carreras
+2024-06-13 21:08:08.142 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-06-13 21:08:08.165 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()'
+2024-06-13 21:08:08.194 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 558.0622ms
+2024-06-13 21:08:08.195 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-13 21:08:08.195 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Method not found: 'Void Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor..ctor(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies, Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies, Microsoft.EntityFrameworkCore.Query.QueryCompilationContext)'.
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor..ctor(QueryableMethodTranslatingExpressionVisitorDependencies dependencies, RelationalQueryableMethodTranslatingExpressionVisitorDependencies relationalDependencies, QueryCompilationContext queryCompilationContext, ISqlServerSingletonOptions sqlServerSingletonOptions)
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitorFactory.Create(QueryCompilationContext queryCompilationContext)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CRUD.Controllers.CarreraController.GetCarreras() in /Users/miguelcruz/Desktop/University-Backend/CRUD/Controllers/CarreraController.cs:line 39
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 21:08:08.212 -04:00 [DBG] Connection id "0HN4C1POPE09S" completed keep alive response.
+2024-06-13 21:08:08.213 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-13 21:08:08.215 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 500 null text/html; charset=utf-8 631.7489ms
+2024-06-13 21:08:08.253 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/favicon.ico - null null
+2024-06-13 21:08:08.253 -04:00 [DBG] The request path  does not match the path filter
+2024-06-13 21:08:08.254 -04:00 [DBG] No candidates found for the request path '/favicon.ico'
+2024-06-13 21:08:08.254 -04:00 [DBG] Request did not match any endpoints
+2024-06-13 21:08:08.254 -04:00 [DBG] Connection id "0HN4C1POPE09S" completed keep alive response.
+2024-06-13 21:08:08.254 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/favicon.ico - 404 0 null 1.0512ms
+2024-06-13 21:08:08.255 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5104/favicon.ico, Response status code: 404
+2024-06-13 21:09:13.581 -04:00 [INF] Application is shutting down...
+2024-06-13 21:09:13.583 -04:00 [DBG] Hosting stopping
+2024-06-13 21:09:13.594 -04:00 [DBG] Connection id "0HN4C1POPE09T" disconnecting.
+2024-06-13 21:09:13.594 -04:00 [DBG] Connection id "0HN4C1POPE09S" disconnecting.
+2024-06-13 21:09:13.595 -04:00 [DBG] Connection id "0HN4C1POPE09S" stopped.
+2024-06-13 21:09:13.595 -04:00 [DBG] Connection id "0HN4C1POPE09T" stopped.
+2024-06-13 21:09:13.595 -04:00 [DBG] Connection id "0HN4C1POPE09T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:09:13.595 -04:00 [DBG] Connection id "0HN4C1POPE09S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-13 21:09:13.600 -04:00 [DBG] Hosting stopped
