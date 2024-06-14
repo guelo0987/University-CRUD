@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace CRUD.Models;
 
-public partial class Carrera
+public  class Carrera
 {
     public int CarreraId { get; set; }
 

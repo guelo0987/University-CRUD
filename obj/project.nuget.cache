@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t7lo0R62BNRhG74k4I7PStu4zMZeo0JJF6rSnLe1itaSHr2leQ/MZ/JOlBE5PcI2i1db+aMjph4d9T0oJ1mG6g==",
+  "dgSpecHash": "cGXJf8bG+zVXtgJViIK/4IZ8GZvm5mB7VprgaWyMGJGifuu33kd8VRBlLUkV7qA1ls12Swlnsvcfxst/UQsd9w==",
   "success": true,
   "projectFilePath": "/Users/miguelcruz/Desktop/University-Backend/CRUD/CRUD.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "/Users/miguelcruz/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
-    "/Users/miguelcruz/.nuget/packages/microsoft.aspnetcore.jsonpatch/8.0.0/microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
+    "/Users/miguelcruz/.nuget/packages/microsoft.aspnetcore.jsonpatch/9.0.0-preview.5.24306.11/microsoft.aspnetcore.jsonpatch.9.0.0-preview.5.24306.11.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/8.0.0/microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/microsoft.aspnetcore.openapi/8.0.2/microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

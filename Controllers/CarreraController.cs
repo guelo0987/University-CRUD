@@ -2,6 +2,7 @@ using CRUD.Context;
 
 using CRUD.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD.Controllers;
@@ -106,6 +107,83 @@ public class CarreraController:ControllerBase
         return Ok(obj);
 
     }
+    
+    
+    
+    //Editar una carrera
+    [HttpPut("{id:int}",Name = "EditCarrera")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Carrera> EditCarrera(int id, [FromBody] Carrera carrera)
+    {
+
+        if (carrera == null || id != carrera.CarreraId || id==0)
+        {
+            _logger.LogInformation("No se puedo obtener la carrera");
+            return BadRequest();
+        }
+
+        var obj = _db.Carreras.FirstOrDefault(u => u.CarreraId == id);
+
+        if (obj == null)
+        {
+            _logger.LogInformation("La carrera"+id+"No fue encontrada");
+            return NotFound();
+        }
+
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Atributos Invalidos");
+            ModelState.AddModelError("","Atributos invalidos");
+            return BadRequest(ModelState);
+        }
+
+        obj.NombreCarrera = carrera.NombreCarrera;
+        obj.Departamento = carrera.Departamento;
+        obj.DuracionPeriodos = carrera.DuracionPeriodos;
+        obj.TotalCreditos = carrera.TotalCreditos;
+        
+        _logger.LogInformation("Carrera con el id: "+id+" editada");
+        return NoContent();
+    }
+    
+    
+    
+    //Patch
+    [HttpPatch("{id:int}", Name = "PatchCarrera")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Carrera> PatchCarrera(int id, JsonPatchDocument<Carrera> patchDocument)
+    {
+
+        if (patchDocument == null || id == 0)
+        {
+            return BadRequest();
+        }
+
+        var obj = _db.Carreras.FirstOrDefault(u => u.CarreraId == id);
+
+        if (obj == null)
+        {  
+            _logger.LogInformation("No encontrado");
+            return NotFound();
+        }
+        
+        patchDocument.ApplyTo(obj,ModelState);
+
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Atributos Invalidos");
+            ModelState.AddModelError("","Atributos invalidos");
+            return BadRequest(ModelState);
+        }
+        
+        _logger.LogInformation("Carrera Patcheada");
+        return NoContent();
+    }
+    
     
     
     
