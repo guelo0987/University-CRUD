@@ -81,7 +81,7 @@ public class CarreraController:ControllerBase
     
     
     //Obtener una Carrera
-    [HttpGet("{id:int}", Name = "GetCarrera")]
+    [HttpGet("id:int", Name = "GetCarrera")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -111,7 +111,7 @@ public class CarreraController:ControllerBase
     
     
     //Editar una carrera
-    [HttpPut("{id:int}",Name = "EditCarrera")]
+    [HttpPut("id:int",Name = "EditCarrera")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -151,7 +151,7 @@ public class CarreraController:ControllerBase
     
     
     //Patch
-    [HttpPatch("{id:int}", Name = "PatchCarrera")]
+    [HttpPatch("id:int", Name = "PatchCarrera")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -182,6 +182,38 @@ public class CarreraController:ControllerBase
         
         _logger.LogInformation("Carrera Patcheada");
         return NoContent();
+    }
+
+
+
+    [HttpDelete("id:int", Name = "DeleteCarrera")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+    public ActionResult<Carrera> DeleteEstudiante(int id)
+    {
+
+        if (id <= 0)
+        {
+            _logger.LogError("Error al eliminar la carrera " +id);
+            return BadRequest();
+
+        }
+
+        var obj = _db.Carreras.FirstOrDefault(u => u.CarreraId == id);
+
+        if (obj == null)
+        {
+            return NotFound();
+
+        }
+
+        _db.Carreras.Remove(obj);
+        _db.SaveChanges();
+
+        return NoContent();
+
     }
     
     

@@ -108,6 +108,14 @@ public class EstudianteController : ControllerBase
         return Ok(obj);
 
     }
+    
+    
+    
+    
+    
+    
+    
+    
 
     
     

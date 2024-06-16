@@ -27,7 +27,7 @@ public  class Estudiante
     public string TelefonoEstudiante { get; set; } = null!;
 
     [MaxLength(100)]
-    public string CorreoEstudiante { get; set; } = null!;
+     public string CorreoEstudiante { get; set; } = null!;
 
     public DateTime FechaIngreso { get; set; } = DateTime.Now;
 
