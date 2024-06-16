@@ -143,6 +143,8 @@ public class CarreraController:ControllerBase
         obj.Departamento = carrera.Departamento;
         obj.DuracionPeriodos = carrera.DuracionPeriodos;
         obj.TotalCreditos = carrera.TotalCreditos;
+
+        _db.SaveChanges();
         
         _logger.LogInformation("Carrera con el id: "+id+" editada");
         return NoContent();
@@ -179,6 +181,8 @@ public class CarreraController:ControllerBase
             ModelState.AddModelError("","Atributos invalidos");
             return BadRequest(ModelState);
         }
+
+        _db.SaveChanges();
         
         _logger.LogInformation("Carrera Patcheada");
         return NoContent();

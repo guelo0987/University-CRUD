@@ -1,0 +1,1147 @@
+2024-06-16 18:02:36.589 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-16 18:02:36.639 -04:00 [DBG] Hosting starting
+2024-06-16 18:02:36.679 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-16 18:02:36.679 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-16 18:02:36.679 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-16 18:02:36.680 -04:00 [INF] Hosting environment: Development
+2024-06-16 18:02:36.680 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-16 18:02:36.680 -04:00 [DBG] Hosting started
+2024-06-16 18:02:36.800 -04:00 [DBG] Connection id "0HN4EA0457IE7" received FIN.
+2024-06-16 18:02:36.804 -04:00 [DBG] Connection id "0HN4EA0457IE7" accepted.
+2024-06-16 18:02:36.805 -04:00 [DBG] Connection id "0HN4EA0457IE7" started.
+2024-06-16 18:02:36.809 -04:00 [DBG] Connection id "0HN4EA0457IE7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:02:36.810 -04:00 [DBG] Connection id "0HN4EA0457IE7" disconnecting.
+2024-06-16 18:02:36.812 -04:00 [DBG] Connection id "0HN4EA0457IE7" stopped.
+2024-06-16 18:02:36.955 -04:00 [DBG] Connection id "0HN4EA0457IE8" accepted.
+2024-06-16 18:02:36.955 -04:00 [DBG] Connection id "0HN4EA0457IE8" started.
+2024-06-16 18:02:36.955 -04:00 [DBG] Connection id "0HN4EA0457IE9" accepted.
+2024-06-16 18:02:36.955 -04:00 [DBG] Connection id "0HN4EA0457IE9" started.
+2024-06-16 18:02:36.972 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:02:36.974 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-16 18:02:37.049 -04:00 [DBG] Connection id "0HN4EA0457IE8" completed keep alive response.
+2024-06-16 18:02:37.050 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 80.3182ms
+2024-06-16 18:02:37.067 -04:00 [DBG] Connection id "0HN4EA0457IEA" accepted.
+2024-06-16 18:02:37.067 -04:00 [DBG] Connection id "0HN4EA0457IEA" started.
+2024-06-16 18:02:37.068 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - null null
+2024-06-16 18:02:37.068 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-16 18:02:37.068 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui.css - null null
+2024-06-16 18:02:37.082 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-16 18:02:37.082 -04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-16 18:02:37.084 -04:00 [DBG] Connection id "0HN4EA0457IE8" completed keep alive response.
+2024-06-16 18:02:37.084 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui.css - 200 152034 text/css 16.4386ms
+2024-06-16 18:02:37.084 -04:00 [DBG] Connection id "0HN4EA0457IEA" completed keep alive response.
+2024-06-16 18:02:37.084 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 16.7824ms
+2024-06-16 18:02:37.086 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-16 18:02:37.086 -04:00 [DBG] Connection id "0HN4EA0457IE9" completed keep alive response.
+2024-06-16 18:02:37.087 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 19.0255ms
+2024-06-16 18:02:37.201 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:02:37.345 -04:00 [DBG] Connection id "0HN4EA0457IE9" completed keep alive response.
+2024-06-16 18:02:37.347 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.0653ms
+2024-06-16 18:02:49.175 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-16 18:02:49.176 -04:00 [DBG] The request path  does not match the path filter
+2024-06-16 18:02:49.177 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-16 18:02:49.202 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-16 18:02:49.205 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-16 18:02:49.206 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:02:49.207 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:02:49.225 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:02:49.225 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:02:49.226 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:02:49.226 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:02:49.226 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:02:49.226 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:02:49.227 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:02:49.306 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-16 18:02:49.317 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:02:49.319 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-16 18:02:49.320 -04:00 [INF] Obteniendo Carreras
+2024-06-16 18:02:49.740 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:02:49.763 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()'
+2024-06-16 18:02:49.910 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-16 18:02:49.927 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:02:49.940 -04:00 [DBG] Created DbConnection. (12ms).
+2024-06-16 18:02:49.942 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:02:50.075 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:02:50.077 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:02:50.080 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-16 18:02:50.081 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-06-16 18:02:50.085 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:02:50.108 -04:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:02:50.131 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:02:50.143 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:02:50.147 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 36ms reading results.
+2024-06-16 18:02:50.149 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:02:50.153 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-16 18:02:50.155 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetCarreras (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 833.6636ms.
+2024-06-16 18:02:50.156 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-16 18:02:50.157 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-16 18:02:50.157 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 18:02:50.158 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.Carrera, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 18:02:50.209 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 981.8894ms
+2024-06-16 18:02:50.209 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:02:50.209 -04:00 [DBG] Connection id "0HN4EA0457IE9" completed keep alive response.
+2024-06-16 18:02:50.210 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:02:50.212 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:02:50.213 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-06-16 18:02:50.214 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 200 139 application/json; charset=utf-8 1038.9718ms
+2024-06-16 18:03:06.265 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Estudiante - null null
+2024-06-16 18:03:06.266 -04:00 [DBG] The request path  does not match the path filter
+2024-06-16 18:03:06.270 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Estudiante'
+2024-06-16 18:03:06.270 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD)' with route pattern 'api/Estudiante' is valid for the request path '/api/Estudiante'
+2024-06-16 18:03:06.271 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD)'
+2024-06-16 18:03:06.271 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD)'
+2024-06-16 18:03:06.274 -04:00 [INF] Route matched with {action = "GetEstudiantes", controller = "Estudiante"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Estudiante] GetEstudiantes() on controller CRUD.Controllers.EstudianteController (CRUD).
+2024-06-16 18:03:06.274 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:03:06.274 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:03:06.275 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:03:06.275 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:03:06.275 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:03:06.275 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteController (CRUD)
+2024-06-16 18:03:06.278 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteController (CRUD)
+2024-06-16 18:03:06.278 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD) - Validation state: "Valid"
+2024-06-16 18:03:06.279 -04:00 [INF] Obteniendo Estudiantes
+2024-06-16 18:03:06.292 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:03:06.293 -04:00 [DBG] Compiling query expression: 
+'DbSet<Estudiante>()'
+2024-06-16 18:03:06.298 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Estudiante>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Estudiante.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Estudiante.CarreraId (int) Required FK Index, 1], [Property: Estudiante.CiudadEstudiante (string) Required MaxLength(100), 2], [Property: Estudiante.CodigoCarrera (string) MaxLength(10), 3], [Property: Estudiante.CondicionAcademica (string) Required MaxLength(50), 4], [Property: Estudiante.ContraseñaEstudiante (string) Required MaxLength(100), 5], [Property: Estudiante.CorreoEstudiante (string) Required MaxLength(100), 6], [Property: Estudiante.CreditosAprobados (int?), 7], [Property: Estudiante.DireccionEstudiante (string) Required MaxLength(200), 8], [Property: Estudiante.FechaIngreso (DateTime) Required, 9], [Property: Estudiante.IndiceGeneral (decimal?), 10], [Property: Estudiante.IndicePeriodo (decimal?), 11], [Property: Estudiante.Nacionalidad (string) Required MaxLength(50), 12], [Property: Estudiante.NombreEstudiante (string) Required MaxLength(100), 13], [Property: Estudiante.PeriodosCursados (int?), 14], [Property: Estudiante.SexoEstudiante (string) Required MaxLength(1), 15], [Property: Estudiante.TelefonoEstudiante (string) Required MaxLength(15), 16] }
+        SELECT e.Id, e.CarreraId, e.CiudadEstudiante, e.CodigoCarrera, e.CondicionAcademica, e.ContraseñaEstudiante, e.CorreoEstudiante, e.CreditosAprobados, e.DireccionEstudiante, e.FechaIngreso, e.IndiceGeneral, e.IndicePeriodo, e.Nacionalidad, e.NombreEstudiante, e.PeriodosCursados, e.SexoEstudiante, e.TelefonoEstudiante
+        FROM Estudiantes AS e) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Estudiante entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Estudiante instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Estudiante);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Estudiante.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Estudiante").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Estudiante)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Estudiante")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Estudiante")]: 
+                        {
+                            return 
+                            {
+                                Estudiante instance;
+                                instance = new Estudiante();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(1);
+                                instance.<CiudadEstudiante>k__BackingField = dataReader.GetString(2);
+                                instance.<CodigoCarrera>k__BackingField = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+                                instance.<CondicionAcademica>k__BackingField = dataReader.GetString(4);
+                                instance.<ContraseñaEstudiante>k__BackingField = dataReader.GetString(5);
+                                instance.<CorreoEstudiante>k__BackingField = dataReader.GetString(6);
+                                instance.<CreditosAprobados>k__BackingField = dataReader.IsDBNull(7) ? default(int?) : (int?)dataReader.GetInt32(7);
+                                instance.<DireccionEstudiante>k__BackingField = dataReader.GetString(8);
+                                instance.<FechaIngreso>k__BackingField = dataReader.GetDateTime(9);
+                                instance.<IndiceGeneral>k__BackingField = dataReader.IsDBNull(10) ? default(decimal?) : (decimal?)dataReader.GetDecimal(10);
+                                instance.<IndicePeriodo>k__BackingField = dataReader.IsDBNull(11) ? default(decimal?) : (decimal?)dataReader.GetDecimal(11);
+                                instance.<Nacionalidad>k__BackingField = dataReader.GetString(12);
+                                instance.<NombreEstudiante>k__BackingField = dataReader.GetString(13);
+                                instance.<PeriodosCursados>k__BackingField = dataReader.IsDBNull(14) ? default(int?) : (int?)dataReader.GetInt32(14);
+                                instance.<SexoEstudiante>k__BackingField = dataReader.GetString(15);
+                                instance.<TelefonoEstudiante>k__BackingField = dataReader.GetString(16);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Estudiante")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Estudiante)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-16 18:03:06.301 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:03:06.301 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:03:06.301 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:06.302 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:06.303 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:03:06.303 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:03:06.303 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:03:06.303 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CodigoCarrera], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+2024-06-16 18:03:06.308 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CodigoCarrera], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+2024-06-16 18:03:06.313 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:03:06.340 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:03:06.340 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:03:06.340 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:03:06.340 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:03:06.340 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 32ms reading results.
+2024-06-16 18:03:06.341 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:06.341 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:03:06.341 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 62.5632ms.
+2024-06-16 18:03:06.341 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-16 18:03:06.341 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-16 18:03:06.341 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 18:03:06.341 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Estudiante, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 18:03:06.348 -04:00 [INF] Executed action CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD) in 73.3271ms
+2024-06-16 18:03:06.348 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteController.GetEstudiantes (CRUD)'
+2024-06-16 18:03:06.348 -04:00 [DBG] Connection id "0HN4EA0457IE9" completed keep alive response.
+2024-06-16 18:03:06.348 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:03:06.348 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:06.348 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:03:06.348 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Estudiante - 200 2122 application/json; charset=utf-8 83.3247ms
+2024-06-16 18:03:38.706 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - application/json-patch+json 138
+2024-06-16 18:03:38.707 -04:00 [DBG] PUT requests are not supported
+2024-06-16 18:03:38.709 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-16 18:03:38.709 -04:00 [INF] CORS policy execution successful.
+2024-06-16 18:03:38.710 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:03:38.710 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)' with route pattern 'api/CarreraApi/id:int' is valid for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:03:38.710 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-16 18:03:38.710 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-16 18:03:38.722 -04:00 [INF] Route matched with {action = "EditCarrera", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] EditCarrera(Int32, CRUD.Models.Carrera) on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:03:38.722 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:03:38.722 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:03:38.722 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:03:38.722 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:03:38.722 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:03:38.722 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:03:38.724 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:03:38.727 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:03:38.728 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-06-16 18:03:38.729 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:03:38.729 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:03:38.729 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:03:38.729 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-06-16 18:03:38.731 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-16 18:03:38.731 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' using the name '' in request data ...
+2024-06-16 18:03:38.732 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-16 18:03:38.732 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-16 18:03:38.735 -04:00 [DBG] Connection id "0HN4EA0457IE9", Request id "0HN4EA0457IE9:00000005": started reading request body.
+2024-06-16 18:03:38.735 -04:00 [DBG] Connection id "0HN4EA0457IE9", Request id "0HN4EA0457IE9:00000005": done reading request body.
+2024-06-16 18:03:38.753 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-16 18:03:38.753 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-16 18:03:38.753 -04:00 [DBG] Attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-16 18:03:38.757 -04:00 [DBG] Done attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-16 18:03:38.757 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.EditCarrera (CRUD) - Validation state: "Valid"
+2024-06-16 18:03:38.785 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:03:38.792 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()
+    .FirstOrDefault(u => u.CarreraId == __id_0)'
+2024-06-16 18:03:38.833 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT TOP(1) c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c
+        WHERE c.CarreraId == @__id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-16 18:03:38.837 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:03:38.837 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:03:38.837 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:38.837 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:38.837 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:03:38.837 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:03:38.840 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-06-16 18:03:38.847 -04:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:03:38.859 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:03:38.859 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:03:38.859 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:03:38.859 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:03:38.859 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:38.859 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:03:38.859 -04:00 [INF] Carrera con el id: 1 editada
+2024-06-16 18:03:38.859 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.EditCarrera (CRUD), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 102.6891ms.
+2024-06-16 18:03:38.860 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-16 18:03:38.860 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.EditCarrera (CRUD) in 137.5345ms
+2024-06-16 18:03:38.860 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-16 18:03:38.860 -04:00 [DBG] Connection id "0HN4EA0457IE9" completed keep alive response.
+2024-06-16 18:03:38.860 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:03:38.860 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:38.860 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:03:38.860 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - 204 null null 154.0095ms
+2024-06-16 18:03:50.277 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-16 18:03:50.277 -04:00 [DBG] The request path  does not match the path filter
+2024-06-16 18:03:50.277 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-16 18:03:50.277 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-16 18:03:50.277 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:03:50.277 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:03:50.278 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:03:50.278 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:03:50.278 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:03:50.278 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:03:50.278 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:03:50.278 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:03:50.278 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:03:50.278 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:03:50.278 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-16 18:03:50.278 -04:00 [INF] Obteniendo Carreras
+2024-06-16 18:03:50.279 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:03:50.279 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:03:50.279 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:03:50.279 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:50.280 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:50.280 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:03:50.280 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:03:50.280 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:03:50.280 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:03:50.284 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:03:50.285 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:03:50.285 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:03:50.285 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:03:50.285 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:50.285 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:03:50.285 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetCarreras (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.6895ms.
+2024-06-16 18:03:50.285 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-16 18:03:50.285 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-16 18:03:50.285 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 18:03:50.285 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.Carrera, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 18:03:50.285 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 7.5128ms
+2024-06-16 18:03:50.285 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:03:50.285 -04:00 [DBG] Connection id "0HN4EA0457IE9" completed keep alive response.
+2024-06-16 18:03:50.285 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:03:50.285 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:03:50.285 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:03:50.285 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 200 139 application/json; charset=utf-8 8.3527ms
+2024-06-16 18:03:58.274 -04:00 [INF] Application is shutting down...
+2024-06-16 18:03:58.275 -04:00 [DBG] Hosting stopping
+2024-06-16 18:03:58.278 -04:00 [DBG] Connection id "0HN4EA0457IE8" disconnecting.
+2024-06-16 18:03:58.278 -04:00 [DBG] Connection id "0HN4EA0457IE9" disconnecting.
+2024-06-16 18:03:58.278 -04:00 [DBG] Connection id "0HN4EA0457IEA" disconnecting.
+2024-06-16 18:03:58.279 -04:00 [DBG] Connection id "0HN4EA0457IE8" stopped.
+2024-06-16 18:03:58.279 -04:00 [DBG] Connection id "0HN4EA0457IEA" stopped.
+2024-06-16 18:03:58.279 -04:00 [DBG] Connection id "0HN4EA0457IE9" stopped.
+2024-06-16 18:03:58.279 -04:00 [DBG] Connection id "0HN4EA0457IE8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:03:58.279 -04:00 [DBG] Connection id "0HN4EA0457IEA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:03:58.279 -04:00 [DBG] Connection id "0HN4EA0457IE9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:03:58.281 -04:00 [DBG] Hosting stopped
+2024-06-16 18:04:44.603 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-16 18:04:44.647 -04:00 [DBG] Hosting starting
+2024-06-16 18:04:44.680 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-16 18:04:44.680 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-16 18:04:44.681 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-16 18:04:44.681 -04:00 [INF] Hosting environment: Development
+2024-06-16 18:04:44.681 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-16 18:04:44.681 -04:00 [DBG] Hosting started
+2024-06-16 18:04:45.046 -04:00 [DBG] Connection id "0HN4EA1AC8V57" received FIN.
+2024-06-16 18:04:45.055 -04:00 [DBG] Connection id "0HN4EA1AC8V57" accepted.
+2024-06-16 18:04:45.056 -04:00 [DBG] Connection id "0HN4EA1AC8V57" started.
+2024-06-16 18:04:45.064 -04:00 [DBG] Connection id "0HN4EA1AC8V57" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:04:45.066 -04:00 [DBG] Connection id "0HN4EA1AC8V57" disconnecting.
+2024-06-16 18:04:45.070 -04:00 [DBG] Connection id "0HN4EA1AC8V57" stopped.
+2024-06-16 18:04:45.167 -04:00 [DBG] Connection id "0HN4EA1AC8V58" accepted.
+2024-06-16 18:04:45.167 -04:00 [DBG] Connection id "0HN4EA1AC8V59" accepted.
+2024-06-16 18:04:45.167 -04:00 [DBG] Connection id "0HN4EA1AC8V58" started.
+2024-06-16 18:04:45.167 -04:00 [DBG] Connection id "0HN4EA1AC8V59" started.
+2024-06-16 18:04:45.184 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:04:45.186 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-16 18:04:45.259 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:04:45.260 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 77.7941ms
+2024-06-16 18:04:45.410 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:04:45.538 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:04:45.539 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.9774ms
+2024-06-16 18:04:46.713 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:04:46.714 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:04:46.714 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.9339ms
+2024-06-16 18:04:46.807 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:04:46.830 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:04:46.830 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.7932ms
+2024-06-16 18:04:50.207 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:04:50.208 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:04:50.209 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.4835ms
+2024-06-16 18:04:50.260 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:04:50.286 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:04:50.286 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.7583ms
+2024-06-16 18:05:34.672 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi/id:int?id=1 - null null
+2024-06-16 18:05:34.675 -04:00 [DBG] The request path  does not match the path filter
+2024-06-16 18:05:34.677 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-16 18:05:34.705 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:05:34.708 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetEstudiante (CRUD)' with route pattern 'api/CarreraApi/id:int' is valid for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:05:34.708 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetEstudiante (CRUD)'
+2024-06-16 18:05:34.710 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetEstudiante (CRUD)'
+2024-06-16 18:05:34.721 -04:00 [INF] Route matched with {action = "GetEstudiante", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Estudiante] GetEstudiante(Int32) on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:05:34.721 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:05:34.721 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:05:34.721 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:05:34.721 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:05:34.721 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:05:34.722 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:05:34.788 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-16 18:05:34.799 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:05:34.802 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:05:34.802 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-06-16 18:05:34.803 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:05:34.803 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:05:34.803 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:05:34.803 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-06-16 18:05:34.807 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetEstudiante (CRUD) - Validation state: "Valid"
+2024-06-16 18:05:35.374 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:05:35.427 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()
+    .FirstOrDefault(u => u.CarreraId == __id_0)'
+2024-06-16 18:05:35.634 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT TOP(1) c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c
+        WHERE c.CarreraId == @__id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-16 18:05:35.654 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:05:35.670 -04:00 [DBG] Created DbConnection. (14ms).
+2024-06-16 18:05:35.672 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:05:35.812 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:05:35.815 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:05:35.819 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-06-16 18:05:35.823 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2024-06-16 18:05:35.829 -04:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:05:35.858 -04:00 [INF] Executed DbCommand (31ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:05:35.882 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:05:35.896 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:05:35.901 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 39ms reading results.
+2024-06-16 18:05:35.903 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:05:35.907 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-16 18:05:35.908 -04:00 [INF] Carrera1Encontrada
+2024-06-16 18:05:35.910 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1099.0398ms.
+2024-06-16 18:05:35.911 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-16 18:05:35.912 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-16 18:05:35.913 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 18:05:35.913 -04:00 [INF] Executing OkObjectResult, writing value of type 'CRUD.Models.Carrera'.
+2024-06-16 18:05:35.968 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetEstudiante (CRUD) in 1244.986ms
+2024-06-16 18:05:35.968 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetEstudiante (CRUD)'
+2024-06-16 18:05:35.968 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:05:35.969 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:05:35.970 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:05:35.972 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-06-16 18:05:35.972 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi/id:int?id=1 - 200 137 application/json; charset=utf-8 1299.5684ms
+2024-06-16 18:06:56.808 -04:00 [DBG] Connection id "0HN4EA1AC8V59" disconnecting.
+2024-06-16 18:06:56.812 -04:00 [DBG] Connection id "0HN4EA1AC8V59" stopped.
+2024-06-16 18:06:56.812 -04:00 [DBG] Connection id "0HN4EA1AC8V59" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:07:25.779 -04:00 [DBG] Connection id "0HN4EA1AC8V5A" accepted.
+2024-06-16 18:07:25.779 -04:00 [DBG] Connection id "0HN4EA1AC8V5A" started.
+2024-06-16 18:07:25.780 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:25.781 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:25.781 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1463ms
+2024-06-16 18:07:25.848 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:25.866 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:25.866 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.9312ms
+2024-06-16 18:07:26.841 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:26.843 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:26.843 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.965ms
+2024-06-16 18:07:26.893 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:26.902 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:26.902 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6315ms
+2024-06-16 18:07:27.026 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:27.027 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.027 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1074ms
+2024-06-16 18:07:27.067 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:27.074 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.074 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.9695ms
+2024-06-16 18:07:27.204 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:27.205 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.205 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4833ms
+2024-06-16 18:07:27.237 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:27.245 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.245 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.6272ms
+2024-06-16 18:07:27.368 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:27.368 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.368 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5147ms
+2024-06-16 18:07:27.399 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:27.406 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.406 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.5301ms
+2024-06-16 18:07:27.536 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:27.536 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.536 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4799ms
+2024-06-16 18:07:27.571 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:27.577 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.577 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.8251ms
+2024-06-16 18:07:27.711 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:27.711 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.711 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4194ms
+2024-06-16 18:07:27.742 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:27.760 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.760 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.4775ms
+2024-06-16 18:07:27.852 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:27.852 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.853 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.7573ms
+2024-06-16 18:07:27.901 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:27.911 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:27.911 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.8436ms
+2024-06-16 18:07:28.019 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:28.022 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:28.022 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 3.0511ms
+2024-06-16 18:07:28.053 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:28.069 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:28.069 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.5972ms
+2024-06-16 18:07:28.194 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-16 18:07:28.194 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:28.194 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1276ms
+2024-06-16 18:07:28.227 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-16 18:07:28.243 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:28.243 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.3329ms
+2024-06-16 18:07:37.358 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - application/json-patch+json 138
+2024-06-16 18:07:37.359 -04:00 [DBG] PUT requests are not supported
+2024-06-16 18:07:37.361 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-16 18:07:37.361 -04:00 [INF] CORS policy execution successful.
+2024-06-16 18:07:37.362 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:07:37.362 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)' with route pattern 'api/CarreraApi/id:int' is valid for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:07:37.363 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-16 18:07:37.363 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-16 18:07:37.368 -04:00 [INF] Route matched with {action = "EditCarrera", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] EditCarrera(Int32, CRUD.Models.Carrera) on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:07:37.368 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:07:37.368 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:07:37.368 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:07:37.368 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:07:37.368 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:07:37.369 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:07:37.370 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:07:37.370 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:07:37.371 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-06-16 18:07:37.371 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:07:37.371 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:07:37.371 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:07:37.371 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-06-16 18:07:37.371 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-16 18:07:37.372 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' using the name '' in request data ...
+2024-06-16 18:07:37.373 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-16 18:07:37.373 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-16 18:07:37.381 -04:00 [DBG] Connection id "0HN4EA1AC8V58", Request id "0HN4EA1AC8V58:0000001C": started reading request body.
+2024-06-16 18:07:37.382 -04:00 [DBG] Connection id "0HN4EA1AC8V58", Request id "0HN4EA1AC8V58:0000001C": done reading request body.
+2024-06-16 18:07:37.416 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-16 18:07:37.416 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-16 18:07:37.416 -04:00 [DBG] Attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-16 18:07:37.422 -04:00 [DBG] Done attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-16 18:07:37.422 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.EditCarrera (CRUD) - Validation state: "Valid"
+2024-06-16 18:07:37.434 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:07:37.436 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:07:37.437 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:07:37.437 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.438 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.438 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:07:37.438 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:07:37.438 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:07:37.438 -04:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:07:37.444 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:07:37.444 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:07:37.444 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:07:37.444 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:07:37.444 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.444 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:07:37.445 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-16 18:07:37.447 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-16 18:07:37.455 -04:00 [DBG] The unchanged property 'Carrera.Departamento' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-16 18:07:37.460 -04:00 [DBG] An entity of type 'Carrera' tracked by 'MyDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:07:37.461 -04:00 [DBG] The unchanged property 'Carrera.DuracionPeriodos' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-16 18:07:37.461 -04:00 [DBG] The unchanged property 'Carrera.NombreCarrera' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-16 18:07:37.462 -04:00 [DBG] The unchanged property 'Carrera.TotalCreditos' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-16 18:07:37.463 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-16 18:07:37.495 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.496 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.496 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:07:37.496 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:07:37.497 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:07:37.497 -04:00 [DBG] Executing DbCommand [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carreras] SET [Departamento] = @p0, [DuracionPeriodos] = @p1, [NombreCarrera] = @p2, [TotalCreditos] = @p3
+OUTPUT 1
+WHERE [CarreraId] = @p4;
+2024-06-16 18:07:37.513 -04:00 [INF] Executed DbCommand (17ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carreras] SET [Departamento] = @p0, [DuracionPeriodos] = @p1, [NombreCarrera] = @p2, [TotalCreditos] = @p3
+OUTPUT 1
+WHERE [CarreraId] = @p4;
+2024-06-16 18:07:37.515 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:07:37.515 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-06-16 18:07:37.515 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.516 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:07:37.518 -04:00 [DBG] An entity of type 'Carrera' tracked by 'MyDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:07:37.518 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-16 18:07:37.518 -04:00 [INF] Carrera con el id: 1 editada
+2024-06-16 18:07:37.519 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.EditCarrera (CRUD), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 96.6339ms.
+2024-06-16 18:07:37.519 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-16 18:07:37.519 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.EditCarrera (CRUD) in 150.4509ms
+2024-06-16 18:07:37.519 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-16 18:07:37.519 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:37.519 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:07:37.519 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:37.519 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:07:37.519 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - 204 null null 161.4857ms
+2024-06-16 18:07:46.383 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-16 18:07:46.384 -04:00 [DBG] The request path  does not match the path filter
+2024-06-16 18:07:46.386 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-16 18:07:46.386 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-16 18:07:46.386 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:07:46.387 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:07:46.389 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:07:46.389 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:07:46.389 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:07:46.389 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:07:46.389 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:07:46.389 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:07:46.390 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:07:46.393 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:07:46.393 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-16 18:07:46.393 -04:00 [INF] Obteniendo Carreras
+2024-06-16 18:07:46.434 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:07:46.436 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()'
+2024-06-16 18:07:46.438 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-16 18:07:46.439 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:07:46.439 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:07:46.439 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:46.440 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:46.440 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:07:46.440 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:07:46.440 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:07:46.440 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:07:46.444 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:07:46.445 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:07:46.445 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:07:46.445 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:07:46.445 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:46.445 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:07:46.445 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetCarreras (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.7031ms.
+2024-06-16 18:07:46.445 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-16 18:07:46.445 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-16 18:07:46.445 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 18:07:46.445 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.Carrera, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 18:07:46.446 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 56.5188ms
+2024-06-16 18:07:46.446 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:07:46.446 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:07:46.446 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:07:46.446 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:07:46.446 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:07:46.446 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 200 136 application/json; charset=utf-8 64.2555ms
+2024-06-16 18:08:19.433 -04:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5104/api/CarreraApi/id:int?id=1 - application/json-patch+json 90
+2024-06-16 18:08:19.433 -04:00 [DBG] PATCH requests are not supported
+2024-06-16 18:08:19.433 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-16 18:08:19.433 -04:00 [INF] CORS policy execution successful.
+2024-06-16 18:08:19.437 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:08:19.437 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.PatchCarrera (CRUD)' with route pattern 'api/CarreraApi/id:int' is valid for the request path '/api/CarreraApi/id:int'
+2024-06-16 18:08:19.437 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.PatchCarrera (CRUD)'
+2024-06-16 18:08:19.437 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.PatchCarrera (CRUD)'
+2024-06-16 18:08:19.441 -04:00 [INF] Route matched with {action = "PatchCarrera", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] PatchCarrera(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]) on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:08:19.441 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:08:19.441 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:08:19.441 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:08:19.441 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:08:19.441 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:08:19.441 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:08:19.442 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:08:19.442 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:08:19.442 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-06-16 18:08:19.442 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:08:19.442 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-16 18:08:19.442 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-06-16 18:08:19.442 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-06-16 18:08:19.442 -04:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]' ...
+2024-06-16 18:08:19.443 -04:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]' using the name '' in request data ...
+2024-06-16 18:08:19.443 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-16 18:08:19.445 -04:00 [DBG] Connection id "0HN4EA1AC8V58", Request id "0HN4EA1AC8V58:0000001E": started reading request body.
+2024-06-16 18:08:19.445 -04:00 [DBG] Connection id "0HN4EA1AC8V58", Request id "0HN4EA1AC8V58:0000001E": done reading request body.
+2024-06-16 18:08:19.469 -04:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]'.
+2024-06-16 18:08:19.470 -04:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]'.
+2024-06-16 18:08:19.470 -04:00 [DBG] Attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]' ...
+2024-06-16 18:08:19.470 -04:00 [DBG] Done attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CRUD.Models.Carrera]'.
+2024-06-16 18:08:19.470 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.PatchCarrera (CRUD) - Validation state: "Valid"
+2024-06-16 18:08:19.471 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:08:19.471 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:08:19.471 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:08:19.471 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.471 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.471 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:08:19.471 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:08:19.471 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:08:19.471 -04:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:08:19.474 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-16 18:08:19.474 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:08:19.474 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:08:19.474 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:08:19.474 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.474 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:08:19.478 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-16 18:08:19.478 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-16 18:08:19.478 -04:00 [DBG] The unchanged property 'Carrera.Departamento' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-16 18:08:19.478 -04:00 [DBG] An entity of type 'Carrera' tracked by 'MyDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:08:19.478 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-16 18:08:19.479 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.479 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.479 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:08:19.479 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:08:19.479 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:08:19.479 -04:00 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carreras] SET [Departamento] = @p0
+OUTPUT 1
+WHERE [CarreraId] = @p1;
+2024-06-16 18:08:19.486 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carreras] SET [Departamento] = @p0
+OUTPUT 1
+WHERE [CarreraId] = @p1;
+2024-06-16 18:08:19.487 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:08:19.487 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:08:19.487 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.487 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:08:19.487 -04:00 [DBG] An entity of type 'Carrera' tracked by 'MyDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:08:19.487 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-16 18:08:19.487 -04:00 [INF] Carrera Patcheada
+2024-06-16 18:08:19.487 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.PatchCarrera (CRUD), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 17.0119ms.
+2024-06-16 18:08:19.487 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-16 18:08:19.487 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.PatchCarrera (CRUD) in 46.0156ms
+2024-06-16 18:08:19.487 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.PatchCarrera (CRUD)'
+2024-06-16 18:08:19.487 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:08:19.487 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:08:19.487 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:19.487 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:08:19.487 -04:00 [INF] Request finished HTTP/1.1 PATCH http://localhost:5104/api/CarreraApi/id:int?id=1 - 204 null null 54.8496ms
+2024-06-16 18:08:25.307 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-16 18:08:25.308 -04:00 [DBG] The request path  does not match the path filter
+2024-06-16 18:08:25.309 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-16 18:08:25.309 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-16 18:08:25.309 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:08:25.309 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:08:25.309 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-16 18:08:25.309 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 18:08:25.309 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 18:08:25.309 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 18:08:25.309 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 18:08:25.309 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 18:08:25.309 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:08:25.310 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-16 18:08:25.310 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-16 18:08:25.310 -04:00 [INF] Obteniendo Carreras
+2024-06-16 18:08:25.311 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-16 18:08:25.312 -04:00 [DBG] Creating DbConnection.
+2024-06-16 18:08:25.312 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-16 18:08:25.312 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:25.313 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:25.313 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-16 18:08:25.313 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:08:25.313 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-16 18:08:25.314 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:08:25.319 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-16 18:08:25.319 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-16 18:08:25.319 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-16 18:08:25.319 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-16 18:08:25.320 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:25.320 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-16 18:08:25.320 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetCarreras (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.077ms.
+2024-06-16 18:08:25.320 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-16 18:08:25.320 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-16 18:08:25.320 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 18:08:25.320 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.Carrera, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 18:08:25.321 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 11.3225ms
+2024-06-16 18:08:25.321 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-16 18:08:25.321 -04:00 [DBG] Connection id "0HN4EA1AC8V58" completed keep alive response.
+2024-06-16 18:08:25.321 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-16 18:08:25.321 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-16 18:08:25.321 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-16 18:08:25.321 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 200 135 application/json; charset=utf-8 14.1932ms
+2024-06-16 18:08:33.357 -04:00 [INF] Application is shutting down...
+2024-06-16 18:08:33.358 -04:00 [DBG] Hosting stopping
+2024-06-16 18:08:33.361 -04:00 [DBG] Connection id "0HN4EA1AC8V58" disconnecting.
+2024-06-16 18:08:33.361 -04:00 [DBG] Connection id "0HN4EA1AC8V5A" disconnecting.
+2024-06-16 18:08:33.361 -04:00 [DBG] Connection id "0HN4EA1AC8V58" stopped.
+2024-06-16 18:08:33.361 -04:00 [DBG] Connection id "0HN4EA1AC8V5A" stopped.
+2024-06-16 18:08:33.361 -04:00 [DBG] Connection id "0HN4EA1AC8V5A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:08:33.361 -04:00 [DBG] Connection id "0HN4EA1AC8V58" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 18:08:33.364 -04:00 [DBG] Hosting stopped
