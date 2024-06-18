@@ -120,7 +120,7 @@ public class EstudianteController : ControllerBase
     
     
     
-    //Login Estudiantes
+    //Login Estudiantes, and Jwt Authentication Token
     [HttpPost("LoginEstudiante", Name = "LoginEstudiante")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
