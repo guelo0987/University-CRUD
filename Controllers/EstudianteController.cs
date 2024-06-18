@@ -1,7 +1,12 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using CRUD.Context;
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using PassHash;
 
 namespace CRUD.Controllers;
@@ -12,11 +17,13 @@ public class EstudianteController : ControllerBase
 {
     private readonly ILogger<EstudianteController> _logger;
     private readonly MyDbContext _db;
+    private readonly IConfiguration _configuration;
 
-    public EstudianteController(ILogger<EstudianteController> logger, MyDbContext db)
+    public EstudianteController(ILogger<EstudianteController> logger, MyDbContext db, IConfiguration configuration)
     {
         _logger = logger;
         _db = db;
+        _configuration = configuration;
     }
     
     
@@ -83,6 +90,7 @@ public class EstudianteController : ControllerBase
     
     
     //Obtener un estudiante
+    [Authorize]
     [HttpGet("{id:int}", Name = "GetEstudiante")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -146,8 +154,32 @@ public class EstudianteController : ControllerBase
             _logger.LogError("Credenciales inválidas");
             return Unauthorized("Credenciales inválidas");
         }
+        
+        //JWT CONFIGURATION
+        var claims = new[]
+        {
+            new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim("Id", estudianteMatch.Id.ToString()),
+            new Claim("CorreoEstudiante", estudianteMatch.CorreoEstudiante)
+        };
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+        var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+        var token = new JwtSecurityToken(_configuration["Jwt:Issuer"], 
+            _configuration["Jwt:Audience"], 
+            claims,
+            expires: DateTime.UtcNow.AddMinutes(60),
+            signingCredentials:signIn
+            );
+
+        string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 
         _logger.LogInformation("Login exitoso");
-        return Ok("Login exitoso");
+
+        return Ok(new { Token = tokenValue, User = estudianteMatch });
+
+        
     }
 }
