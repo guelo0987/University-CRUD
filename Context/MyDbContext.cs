@@ -25,6 +25,8 @@ public partial class MyDbContext : DbContext
     public virtual DbSet<CarreraMateria> CarreraMaterias{ get; set; }
 
     public virtual DbSet<Estudiante> Estudiantes { get; set; }
+    
+    public virtual DbSet<EstudianteMateria> EstudianteMaterias { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -48,7 +50,21 @@ public partial class MyDbContext : DbContext
             .HasOne(cm => cm.Materias)
             .WithMany(m => m.CarreraMaterias)
             .HasForeignKey(cm => cm.CodigoMateria);
+        
+        
+        // Configuración de EstudianteMateria
+        modelBuilder.Entity<EstudianteMateria>()
+            .HasKey(em => new { em.CodigoMateria, em.CodigoEstudiante });
 
+        modelBuilder.Entity<EstudianteMateria>()
+            .HasOne(em => em.Materias)
+            .WithMany(m => m.EstudianteMaterias)
+            .HasForeignKey(em => em.CodigoMateria);
+
+        modelBuilder.Entity<EstudianteMateria>()
+            .HasOne(em => em.Estudiantes)
+            .WithMany(e => e.EstudianteMaterias)
+            .HasForeignKey(em => em.CodigoEstudiante);
 
 
        

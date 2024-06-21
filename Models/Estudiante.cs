@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using CRUD.Models;
+using Newtonsoft.Json;
 
 public  class Estudiante
 {
@@ -54,4 +55,7 @@ public  class Estudiante
     
     [ForeignKey("CarreraId")]
     public virtual Carrera? Carreras { get; set; }
+    
+    [JsonIgnore]
+    public virtual ICollection<EstudianteMateria>? EstudianteMaterias { get; set; }
 }
