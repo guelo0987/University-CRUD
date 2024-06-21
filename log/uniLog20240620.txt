@@ -2054,3 +2054,936 @@ FROM [Carreras] AS [c]
 2024-06-20 21:32:38.583 -04:00 [DBG] Connection id "0HN4HI7P0U1VR" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-06-20 21:32:38.583 -04:00 [DBG] Connection id "0HN4HI7P0U1VQ" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-06-20 21:32:38.586 -04:00 [DBG] Hosting stopped
+2024-06-20 23:40:02.529 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-20 23:40:02.579 -04:00 [DBG] Hosting starting
+2024-06-20 23:40:02.582 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-20 23:40:02.587 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-20 23:40:02.589 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-20 23:40:02.591 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-20 23:40:02.592 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-20 23:40:02.594 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-20 23:40:02.595 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-20 23:40:02.597 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-20 23:40:02.597 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-20 23:40:02.599 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-20 23:40:02.599 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-20 23:40:02.630 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-20 23:40:02.630 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-20 23:40:02.630 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-20 23:40:02.630 -04:00 [INF] Hosting environment: Development
+2024-06-20 23:40:02.630 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-20 23:40:02.630 -04:00 [DBG] Hosting started
+2024-06-20 23:40:02.928 -04:00 [DBG] Connection id "0HN4HKFAPPE57" received FIN.
+2024-06-20 23:40:02.932 -04:00 [DBG] Connection id "0HN4HKFAPPE57" accepted.
+2024-06-20 23:40:02.932 -04:00 [DBG] Connection id "0HN4HKFAPPE57" started.
+2024-06-20 23:40:02.936 -04:00 [DBG] Connection id "0HN4HKFAPPE57" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-20 23:40:02.940 -04:00 [DBG] Connection id "0HN4HKFAPPE57" disconnecting.
+2024-06-20 23:40:02.943 -04:00 [DBG] Connection id "0HN4HKFAPPE57" stopped.
+2024-06-20 23:40:03.083 -04:00 [DBG] Connection id "0HN4HKFAPPE58" accepted.
+2024-06-20 23:40:03.084 -04:00 [DBG] Connection id "0HN4HKFAPPE59" accepted.
+2024-06-20 23:40:03.084 -04:00 [DBG] Connection id "0HN4HKFAPPE58" started.
+2024-06-20 23:40:03.084 -04:00 [DBG] Connection id "0HN4HKFAPPE59" started.
+2024-06-20 23:40:03.099 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-20 23:40:03.100 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-20 23:40:03.131 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:40:03.206 -04:00 [DBG] Connection id "0HN4HKFAPPE58" completed keep alive response.
+2024-06-20 23:40:03.207 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 110.2445ms
+2024-06-20 23:40:03.226 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-20 23:40:03.226 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - null null
+2024-06-20 23:40:03.227 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:40:03.227 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:40:03.245 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-20 23:40:03.249 -04:00 [DBG] Connection id "0HN4HKFAPPE59" completed keep alive response.
+2024-06-20 23:40:03.249 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 22.7524ms
+2024-06-20 23:40:03.250 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-20 23:40:03.257 -04:00 [DBG] Connection id "0HN4HKFAPPE58" completed keep alive response.
+2024-06-20 23:40:03.257 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 31.125ms
+2024-06-20 23:40:03.366 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-20 23:40:03.378 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:40:03.521 -04:00 [DBG] Connection id "0HN4HKFAPPE58" completed keep alive response.
+2024-06-20 23:40:03.521 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.4363ms
+2024-06-20 23:40:14.047 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-20 23:40:14.048 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:40:14.049 -04:00 [DBG] The request path  does not match the path filter
+2024-06-20 23:40:14.051 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-20 23:40:14.076 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-20 23:40:14.079 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-20 23:40:14.079 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-20 23:40:14.081 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-20 23:40:14.096 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-20 23:40:14.097 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-20 23:40:14.097 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-20 23:40:14.097 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-20 23:40:14.097 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-20 23:40:14.097 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-20 23:40:14.098 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:40:14.176 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-20 23:40:14.186 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:40:14.189 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-20 23:40:14.189 -04:00 [INF] Obteniendo Carreras
+2024-06-20 23:40:14.483 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-20 23:40:14.628 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:40:14.654 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()'
+2024-06-20 23:40:14.810 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-20 23:40:14.829 -04:00 [DBG] Creating DbConnection.
+2024-06-20 23:40:14.845 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-20 23:40:14.846 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:40:14.985 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:40:14.987 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-20 23:40:14.991 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-20 23:40:14.992 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-06-20 23:40:14.995 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-20 23:40:15.021 -04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-20 23:40:15.046 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-20 23:40:15.058 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-20 23:40:15.062 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 38ms reading results.
+2024-06-20 23:40:15.064 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:40:15.068 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (3ms).
+2024-06-20 23:40:15.070 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetCarreras (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 878.5798ms.
+2024-06-20 23:40:15.071 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-20 23:40:15.072 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-20 23:40:15.072 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-20 23:40:15.072 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.Carrera, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 23:40:15.126 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 1027.1481ms
+2024-06-20 23:40:15.126 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-20 23:40:15.126 -04:00 [DBG] Connection id "0HN4HKFAPPE58" completed keep alive response.
+2024-06-20 23:40:15.127 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:40:15.129 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-20 23:40:15.130 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-06-20 23:40:15.130 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 200 158 application/json; charset=utf-8 1084.0209ms
+2024-06-20 23:41:05.869 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - application/json-patch+json 493
+2024-06-20 23:41:05.870 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:41:05.871 -04:00 [DBG] PUT requests are not supported
+2024-06-20 23:41:05.872 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-20 23:41:05.873 -04:00 [INF] CORS policy execution successful.
+2024-06-20 23:41:05.875 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi/id:int'
+2024-06-20 23:41:05.875 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)' with route pattern 'api/CarreraApi/id:int' is valid for the request path '/api/CarreraApi/id:int'
+2024-06-20 23:41:05.875 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-20 23:41:05.875 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-20 23:41:05.887 -04:00 [INF] Route matched with {action = "EditCarrera", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] EditCarrera(Int32, CRUD.Models.Carrera) on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-20 23:41:05.887 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-20 23:41:05.887 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-20 23:41:05.887 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-20 23:41:05.887 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-20 23:41:05.887 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-20 23:41:05.887 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:41:05.888 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:41:05.894 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-06-20 23:41:05.895 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-06-20 23:41:05.896 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-20 23:41:05.896 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-20 23:41:05.896 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-06-20 23:41:05.897 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-06-20 23:41:05.898 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-20 23:41:05.898 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' using the name '' in request data ...
+2024-06-20 23:41:05.898 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-20 23:41:05.898 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-20 23:41:05.902 -04:00 [DBG] Connection id "0HN4HKFAPPE58", Request id "0HN4HKFAPPE58:00000005": started reading request body.
+2024-06-20 23:41:05.902 -04:00 [DBG] Connection id "0HN4HKFAPPE58", Request id "0HN4HKFAPPE58:00000005": done reading request body.
+2024-06-20 23:41:05.937 -04:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonSerializationException: Error converting value "string" to type 'CRUD.Models.Carrera'. Path 'carreraMaterias[0].carreras', line 10, position 26.
+ ---> System.ArgumentException: Could not cast or convert from System.String to CRUD.Models.Carrera.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2024-06-20 23:41:05.947 -04:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonSerializationException: Error converting value "string" to type 'CRUD.Models.CarreraMateria'. Path 'carreraMaterias[0].materias.carreraMaterias[0]', line 19, position 18.
+ ---> System.ArgumentException: Could not cast or convert from System.String to CRUD.Models.CarreraMateria.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+2024-06-20 23:41:05.950 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-20 23:41:05.950 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-20 23:41:05.950 -04:00 [DBG] Attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-20 23:41:05.952 -04:00 [DBG] Done attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-20 23:41:05.952 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-06-20 23:41:05.952 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-06-20 23:41:05.952 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-20 23:41:05.953 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-20 23:41:05.953 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-06-20 23:41:05.953 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-20 23:41:05.953 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-20 23:41:05.964 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.EditCarrera (CRUD) in 76.9854ms
+2024-06-20 23:41:05.964 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-20 23:41:05.964 -04:00 [DBG] Connection id "0HN4HKFAPPE58" completed keep alive response.
+2024-06-20 23:41:05.964 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - 400 607 application/problem+json; charset=utf-8 95.9662ms
+2024-06-20 23:41:18.614 -04:00 [INF] Application is shutting down...
+2024-06-20 23:41:18.615 -04:00 [DBG] Hosting stopping
+2024-06-20 23:41:18.621 -04:00 [DBG] Connection id "0HN4HKFAPPE58" disconnecting.
+2024-06-20 23:41:18.621 -04:00 [DBG] Connection id "0HN4HKFAPPE59" disconnecting.
+2024-06-20 23:41:18.621 -04:00 [DBG] Connection id "0HN4HKFAPPE58" stopped.
+2024-06-20 23:41:18.621 -04:00 [DBG] Connection id "0HN4HKFAPPE59" stopped.
+2024-06-20 23:41:18.622 -04:00 [DBG] Connection id "0HN4HKFAPPE58" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-20 23:41:18.622 -04:00 [DBG] Connection id "0HN4HKFAPPE59" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-20 23:41:18.624 -04:00 [DBG] Hosting stopped
+2024-06-20 23:42:50.076 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-20 23:42:50.260 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-20 23:42:50.339 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:42:50.596 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:42:57.025 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-20 23:42:57.204 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-20 23:42:57.283 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:42:57.289 -04:00 [DBG] Creating DbConnection.
+2024-06-20 23:42:57.308 -04:00 [DBG] Created DbConnection. (17ms).
+2024-06-20 23:42:57.310 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-20 23:42:57.311 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.407 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.409 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:42:57.411 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-20 23:42:57.412 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-20 23:42:57.414 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:42:57.433 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:42:57.433 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.436 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-20 23:42:57.437 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-20 23:42:57.437 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:42:57.437 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:42:57.437 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.438 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.438 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:42:57.446 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:42:57.446 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.446 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:42:57.447 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.447 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.447 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:42:57.447 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.447 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.447 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:42:57.449 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:42:57.449 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.449 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:42:57.449 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-20 23:42:57.449 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:42:57.449 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:42:57.449 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.449 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.449 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:42:57.451 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:42:57.451 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.452 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:42:57.456 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.456 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.456 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-20 23:42:57.456 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:42:57.456 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:42:57.456 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-20 23:42:57.459 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-20 23:42:57.460 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-20 23:42:57.460 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-20 23:42:57.460 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.460 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:42:57.465 -04:00 [INF] Applying migration '20240621034250_AddTablaPuente'.
+2024-06-20 23:42:57.505 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.505 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.506 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-20 23:42:57.510 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-20 23:42:57.511 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:42:57.511 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.511 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.511 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Materia] (
+    [CodigoMateria] int NOT NULL IDENTITY,
+    [NombreMateria] nvarchar(100) NOT NULL,
+    [TipoMateria] nvarchar(50) NOT NULL,
+    [CreditosMateria] int NOT NULL,
+    [AreaAcademica] nvarchar(100) NOT NULL,
+    CONSTRAINT [PK_Materia] PRIMARY KEY ([CodigoMateria])
+);
+2024-06-20 23:42:57.529 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Materia] (
+    [CodigoMateria] int NOT NULL IDENTITY,
+    [NombreMateria] nvarchar(100) NOT NULL,
+    [TipoMateria] nvarchar(50) NOT NULL,
+    [CreditosMateria] int NOT NULL,
+    [AreaAcademica] nvarchar(100) NOT NULL,
+    CONSTRAINT [PK_Materia] PRIMARY KEY ([CodigoMateria])
+);
+2024-06-20 23:42:57.530 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:42:57.530 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.530 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.530 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CarreraMateria] (
+    [CarreraId] int NOT NULL,
+    [CodigoMateria] int NOT NULL,
+    CONSTRAINT [PK_CarreraMateria] PRIMARY KEY ([CarreraId], [CodigoMateria]),
+    CONSTRAINT [FK_CarreraMateria_Carreras_CarreraId] FOREIGN KEY ([CarreraId]) REFERENCES [Carreras] ([CarreraId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_CarreraMateria_Materia_CodigoMateria] FOREIGN KEY ([CodigoMateria]) REFERENCES [Materia] ([CodigoMateria]) ON DELETE CASCADE
+);
+2024-06-20 23:42:57.533 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CarreraMateria] (
+    [CarreraId] int NOT NULL,
+    [CodigoMateria] int NOT NULL,
+    CONSTRAINT [PK_CarreraMateria] PRIMARY KEY ([CarreraId], [CodigoMateria]),
+    CONSTRAINT [FK_CarreraMateria_Carreras_CarreraId] FOREIGN KEY ([CarreraId]) REFERENCES [Carreras] ([CarreraId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_CarreraMateria_Materia_CodigoMateria] FOREIGN KEY ([CodigoMateria]) REFERENCES [Materia] ([CodigoMateria]) ON DELETE CASCADE
+);
+2024-06-20 23:42:57.533 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:42:57.533 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.533 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.533 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CarreraMateria_CodigoMateria] ON [CarreraMateria] ([CodigoMateria]);
+2024-06-20 23:42:57.534 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CarreraMateria_CodigoMateria] ON [CarreraMateria] ([CodigoMateria]);
+2024-06-20 23:42:57.534 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:42:57.534 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.534 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:42:57.534 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240621034250_AddTablaPuente', N'9.0.0-preview.5.24306.3');
+2024-06-20 23:42:57.536 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240621034250_AddTablaPuente', N'9.0.0-preview.5.24306.3');
+2024-06-20 23:42:57.536 -04:00 [DBG] Committing transaction.
+2024-06-20 23:42:57.540 -04:00 [DBG] Committed transaction.
+2024-06-20 23:42:57.540 -04:00 [DBG] Disposing transaction.
+2024-06-20 23:42:57.540 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.540 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:42:57.541 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:42:57.542 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-20 23:42:57.542 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-20 23:45:22.520 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-20 23:45:22.567 -04:00 [DBG] Hosting starting
+2024-06-20 23:45:22.570 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-20 23:45:22.575 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-20 23:45:22.577 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-20 23:45:22.579 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-20 23:45:22.580 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-20 23:45:22.582 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-20 23:45:22.583 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-20 23:45:22.585 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-20 23:45:22.585 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-20 23:45:22.587 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-20 23:45:22.587 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-20 23:45:22.617 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-20 23:45:22.617 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-20 23:45:22.618 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-20 23:45:22.618 -04:00 [INF] Hosting environment: Development
+2024-06-20 23:45:22.618 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-20 23:45:22.618 -04:00 [DBG] Hosting started
+2024-06-20 23:45:22.943 -04:00 [DBG] Connection id "0HN4HKIA5MCEJ" received FIN.
+2024-06-20 23:45:22.950 -04:00 [DBG] Connection id "0HN4HKIA5MCEJ" accepted.
+2024-06-20 23:45:22.951 -04:00 [DBG] Connection id "0HN4HKIA5MCEJ" started.
+2024-06-20 23:45:22.959 -04:00 [DBG] Connection id "0HN4HKIA5MCEJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-20 23:45:22.964 -04:00 [DBG] Connection id "0HN4HKIA5MCEJ" disconnecting.
+2024-06-20 23:45:22.969 -04:00 [DBG] Connection id "0HN4HKIA5MCEJ" stopped.
+2024-06-20 23:45:23.103 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" accepted.
+2024-06-20 23:45:23.103 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" started.
+2024-06-20 23:45:23.103 -04:00 [DBG] Connection id "0HN4HKIA5MCEL" accepted.
+2024-06-20 23:45:23.103 -04:00 [DBG] Connection id "0HN4HKIA5MCEL" started.
+2024-06-20 23:45:23.119 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-20 23:45:23.121 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-20 23:45:23.153 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:45:23.225 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" completed keep alive response.
+2024-06-20 23:45:23.226 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 108.7703ms
+2024-06-20 23:45:23.377 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-20 23:45:23.378 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:45:23.574 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" completed keep alive response.
+2024-06-20 23:45:23.574 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.6656ms
+2024-06-20 23:46:14.908 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - application/json-patch+json 131
+2024-06-20 23:46:14.914 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:46:14.918 -04:00 [DBG] PUT requests are not supported
+2024-06-20 23:46:14.920 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-20 23:46:14.920 -04:00 [INF] CORS policy execution successful.
+2024-06-20 23:46:14.922 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-20 23:46:14.938 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi/id:int'
+2024-06-20 23:46:14.940 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)' with route pattern 'api/CarreraApi/id:int' is valid for the request path '/api/CarreraApi/id:int'
+2024-06-20 23:46:14.940 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-20 23:46:14.942 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-20 23:46:14.955 -04:00 [INF] Route matched with {action = "EditCarrera", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] EditCarrera(Int32, CRUD.Models.Carrera) on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-20 23:46:14.955 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-20 23:46:14.955 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-20 23:46:14.955 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-20 23:46:14.955 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-20 23:46:14.955 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-20 23:46:14.956 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:46:15.023 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-20 23:46:15.034 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:46:15.036 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-06-20 23:46:15.037 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-06-20 23:46:15.038 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-20 23:46:15.038 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-06-20 23:46:15.038 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-06-20 23:46:15.038 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-06-20 23:46:15.039 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-20 23:46:15.039 -04:00 [DBG] Attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera' using the name '' in request data ...
+2024-06-20 23:46:15.040 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-20 23:46:15.040 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-20 23:46:15.043 -04:00 [DBG] Connection id "0HN4HKIA5MCEK", Request id "0HN4HKIA5MCEK:00000003": started reading request body.
+2024-06-20 23:46:15.043 -04:00 [DBG] Connection id "0HN4HKIA5MCEK", Request id "0HN4HKIA5MCEK:00000003": done reading request body.
+2024-06-20 23:46:15.088 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-20 23:46:15.088 -04:00 [DBG] Done attempting to bind parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-20 23:46:15.088 -04:00 [DBG] Attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera' ...
+2024-06-20 23:46:15.094 -04:00 [DBG] Done attempting to validate the bound parameter 'carrera' of type 'CRUD.Models.Carrera'.
+2024-06-20 23:46:15.098 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.EditCarrera (CRUD) - Validation state: "Valid"
+2024-06-20 23:46:15.493 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-20 23:46:15.719 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:46:15.771 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()
+    .FirstOrDefault(u => u.CarreraId == __id_0)'
+2024-06-20 23:46:15.951 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT TOP(1) c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c
+        WHERE c.CarreraId == @__id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-20 23:46:15.972 -04:00 [DBG] Creating DbConnection.
+2024-06-20 23:46:15.988 -04:00 [DBG] Created DbConnection. (14ms).
+2024-06-20 23:46:15.989 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.129 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.131 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-20 23:46:16.134 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-20 23:46:16.139 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2024-06-20 23:46:16.144 -04:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-20 23:46:16.189 -04:00 [INF] Executed DbCommand (46ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+WHERE [c].[CarreraId] = @__id_0
+2024-06-20 23:46:16.214 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-20 23:46:16.227 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-20 23:46:16.232 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 39ms reading results.
+2024-06-20 23:46:16.233 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.237 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (3ms).
+2024-06-20 23:46:16.238 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-20 23:46:16.239 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-20 23:46:16.245 -04:00 [DBG] The unchanged property 'Carrera.Departamento' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-20 23:46:16.249 -04:00 [DBG] An entity of type 'Carrera' tracked by 'MyDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-20 23:46:16.249 -04:00 [DBG] The unchanged property 'Carrera.DuracionPeriodos' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-20 23:46:16.250 -04:00 [DBG] The unchanged property 'Carrera.NombreCarrera' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-20 23:46:16.250 -04:00 [DBG] The unchanged property 'Carrera.TotalCreditos' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-20 23:46:16.251 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-20 23:46:16.281 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.282 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.282 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-20 23:46:16.283 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:46:16.283 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:46:16.283 -04:00 [DBG] Executing DbCommand [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carreras] SET [Departamento] = @p0, [DuracionPeriodos] = @p1, [NombreCarrera] = @p2, [TotalCreditos] = @p3
+OUTPUT 1
+WHERE [CarreraId] = @p4;
+2024-06-20 23:46:16.295 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carreras] SET [Departamento] = @p0, [DuracionPeriodos] = @p1, [NombreCarrera] = @p2, [TotalCreditos] = @p3
+OUTPUT 1
+WHERE [CarreraId] = @p4;
+2024-06-20 23:46:16.296 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-20 23:46:16.296 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-06-20 23:46:16.297 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.297 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:46:16.299 -04:00 [DBG] An entity of type 'Carrera' tracked by 'MyDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-20 23:46:16.299 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-20 23:46:16.299 -04:00 [INF] Carrera con el id: 1 editada
+2024-06-20 23:46:16.301 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.EditCarrera (CRUD), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 1201.062ms.
+2024-06-20 23:46:16.302 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-20 23:46:16.304 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.EditCarrera (CRUD) in 1347.0082ms
+2024-06-20 23:46:16.304 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.EditCarrera (CRUD)'
+2024-06-20 23:46:16.304 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" completed keep alive response.
+2024-06-20 23:46:16.305 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:46:16.307 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:16.307 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-20 23:46:16.308 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5104/api/CarreraApi/id:int?id=1 - 204 null null 1399.866ms
+2024-06-20 23:46:33.961 -04:00 [DBG] Connection id "0HN4HKIA5MCEL" received FIN.
+2024-06-20 23:46:33.961 -04:00 [DBG] Connection id "0HN4HKIA5MCEL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-20 23:46:33.962 -04:00 [DBG] Connection id "0HN4HKIA5MCEL" disconnecting.
+2024-06-20 23:46:33.962 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraApi - null null
+2024-06-20 23:46:33.962 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-20 23:46:33.962 -04:00 [DBG] The request path  does not match the path filter
+2024-06-20 23:46:33.963 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraApi'
+2024-06-20 23:46:33.963 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)' with route pattern 'api/CarreraApi' is valid for the request path '/api/CarreraApi'
+2024-06-20 23:46:33.963 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-20 23:46:33.964 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-20 23:46:33.964 -04:00 [DBG] Connection id "0HN4HKIA5MCEL" stopped.
+2024-06-20 23:46:33.968 -04:00 [INF] Route matched with {action = "GetCarreras", controller = "Carrera"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Carrera] GetCarreras() on controller CRUD.Controllers.CarreraController (CRUD).
+2024-06-20 23:46:33.968 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-20 23:46:33.969 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-20 23:46:33.969 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-20 23:46:33.969 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-20 23:46:33.970 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-20 23:46:33.970 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:46:33.970 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraController (CRUD)
+2024-06-20 23:46:33.970 -04:00 [INF] Executing action method CRUD.Controllers.CarreraController.GetCarreras (CRUD) - Validation state: "Valid"
+2024-06-20 23:46:33.971 -04:00 [INF] Obteniendo Carreras
+2024-06-20 23:46:33.980 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:46:33.980 -04:00 [DBG] Compiling query expression: 
+'DbSet<Carrera>()'
+2024-06-20 23:46:33.984 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Carrera>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Carrera.Departamento (string) Required, 1], [Property: Carrera.DuracionPeriodos (string) Required, 2], [Property: Carrera.NombreCarrera (string) Required, 3], [Property: Carrera.TotalCreditos (string) Required, 4] }
+        SELECT c.CarreraId, c.Departamento, c.DuracionPeriodos, c.NombreCarrera, c.TotalCreditos
+        FROM Carreras AS c) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Carrera entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Carrera instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Carrera);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Carrera)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(1);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(3);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-20 23:46:33.985 -04:00 [DBG] Creating DbConnection.
+2024-06-20 23:46:33.985 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-20 23:46:33.985 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:33.985 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:33.985 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-20 23:46:33.985 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:46:33.985 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:46:33.985 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-20 23:46:33.993 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[Departamento], [c].[DuracionPeriodos], [c].[NombreCarrera], [c].[TotalCreditos]
+FROM [Carreras] AS [c]
+2024-06-20 23:46:33.993 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-20 23:46:33.993 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-20 23:46:33.994 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-20 23:46:33.994 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:33.994 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:46:33.994 -04:00 [INF] Executed action method CRUD.Controllers.CarreraController.GetCarreras (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.1422ms.
+2024-06-20 23:46:33.995 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-20 23:46:33.996 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-20 23:46:33.996 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-20 23:46:33.996 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.Carrera, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 23:46:34.021 -04:00 [INF] Executed action CRUD.Controllers.CarreraController.GetCarreras (CRUD) in 51.231ms
+2024-06-20 23:46:34.021 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraController.GetCarreras (CRUD)'
+2024-06-20 23:46:34.021 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" completed keep alive response.
+2024-06-20 23:46:34.021 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:46:34.021 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-20 23:46:34.021 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-20 23:46:34.021 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraApi - 200 152 application/json; charset=utf-8 60.1293ms
+2024-06-20 23:46:44.685 -04:00 [INF] Application is shutting down...
+2024-06-20 23:46:44.687 -04:00 [DBG] Hosting stopping
+2024-06-20 23:46:44.694 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" disconnecting.
+2024-06-20 23:46:44.694 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" stopped.
+2024-06-20 23:46:44.694 -04:00 [DBG] Connection id "0HN4HKIA5MCEK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-20 23:46:44.698 -04:00 [DBG] Hosting stopped
+2024-06-20 23:58:55.616 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-20 23:58:55.792 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-20 23:58:55.869 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:58:56.120 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:59:04.033 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-20 23:59:04.215 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-20 23:59:04.294 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-20 23:59:04.301 -04:00 [DBG] Creating DbConnection.
+2024-06-20 23:59:04.319 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-20 23:59:04.320 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-20 23:59:04.322 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.425 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.428 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.430 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-20 23:59:04.430 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-20 23:59:04.433 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:59:04.452 -04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:59:04.453 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.456 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-20 23:59:04.457 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-20 23:59:04.457 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:59:04.457 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:59:04.457 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.458 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.458 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:59:04.468 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:59:04.468 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.468 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:59:04.468 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.468 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.468 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.468 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.468 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.469 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:59:04.471 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-20 23:59:04.471 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.471 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:59:04.471 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-20 23:59:04.471 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:59:04.471 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-20 23:59:04.471 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.471 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.471 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:59:04.473 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-20 23:59:04.473 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.473 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:59:04.478 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.478 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.478 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-20 23:59:04.478 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:59:04.478 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-20 23:59:04.478 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-20 23:59:04.483 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-20 23:59:04.484 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-20 23:59:04.484 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-20 23:59:04.484 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.484 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:59:04.489 -04:00 [INF] Applying migration '20240621035856_makesure'.
+2024-06-20 23:59:04.527 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.527 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.528 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-20 23:59:04.532 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-20 23:59:04.533 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.533 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.533 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.533 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMateria] DROP CONSTRAINT [FK_CarreraMateria_Carreras_CarreraId];
+2024-06-20 23:59:04.553 -04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMateria] DROP CONSTRAINT [FK_CarreraMateria_Carreras_CarreraId];
+2024-06-20 23:59:04.553 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.553 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.553 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.553 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMateria] DROP CONSTRAINT [FK_CarreraMateria_Materia_CodigoMateria];
+2024-06-20 23:59:04.555 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMateria] DROP CONSTRAINT [FK_CarreraMateria_Materia_CodigoMateria];
+2024-06-20 23:59:04.555 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.555 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.555 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.555 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materia] DROP CONSTRAINT [PK_Materia];
+2024-06-20 23:59:04.559 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materia] DROP CONSTRAINT [PK_Materia];
+2024-06-20 23:59:04.559 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.559 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.559 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.559 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMateria] DROP CONSTRAINT [PK_CarreraMateria];
+2024-06-20 23:59:04.562 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMateria] DROP CONSTRAINT [PK_CarreraMateria];
+2024-06-20 23:59:04.562 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.562 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.562 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.562 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Materia]', N'Materias', 'OBJECT';
+2024-06-20 23:59:04.713 -04:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Materia]', N'Materias', 'OBJECT';
+2024-06-20 23:59:04.713 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.713 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.713 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.713 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[CarreraMateria]', N'CarreraMaterias', 'OBJECT';
+2024-06-20 23:59:04.715 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[CarreraMateria]', N'CarreraMaterias', 'OBJECT';
+2024-06-20 23:59:04.715 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.715 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.715 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.716 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[CarreraMaterias].[IX_CarreraMateria_CodigoMateria]', N'IX_CarreraMaterias_CodigoMateria', 'INDEX';
+2024-06-20 23:59:04.718 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[CarreraMaterias].[IX_CarreraMateria_CodigoMateria]', N'IX_CarreraMaterias_CodigoMateria', 'INDEX';
+2024-06-20 23:59:04.718 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.718 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.718 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.718 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materias] ADD CONSTRAINT [PK_Materias] PRIMARY KEY ([CodigoMateria]);
+2024-06-20 23:59:04.726 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materias] ADD CONSTRAINT [PK_Materias] PRIMARY KEY ([CodigoMateria]);
+2024-06-20 23:59:04.726 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.726 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.726 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.726 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMaterias] ADD CONSTRAINT [PK_CarreraMaterias] PRIMARY KEY ([CarreraId], [CodigoMateria]);
+2024-06-20 23:59:04.728 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMaterias] ADD CONSTRAINT [PK_CarreraMaterias] PRIMARY KEY ([CarreraId], [CodigoMateria]);
+2024-06-20 23:59:04.729 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.729 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.729 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.729 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMaterias] ADD CONSTRAINT [FK_CarreraMaterias_Carreras_CarreraId] FOREIGN KEY ([CarreraId]) REFERENCES [Carreras] ([CarreraId]) ON DELETE CASCADE;
+2024-06-20 23:59:04.730 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMaterias] ADD CONSTRAINT [FK_CarreraMaterias_Carreras_CarreraId] FOREIGN KEY ([CarreraId]) REFERENCES [Carreras] ([CarreraId]) ON DELETE CASCADE;
+2024-06-20 23:59:04.730 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.730 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.730 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.730 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMaterias] ADD CONSTRAINT [FK_CarreraMaterias_Materias_CodigoMateria] FOREIGN KEY ([CodigoMateria]) REFERENCES [Materias] ([CodigoMateria]) ON DELETE CASCADE;
+2024-06-20 23:59:04.731 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [CarreraMaterias] ADD CONSTRAINT [FK_CarreraMaterias_Materias_CodigoMateria] FOREIGN KEY ([CodigoMateria]) REFERENCES [Materias] ([CodigoMateria]) ON DELETE CASCADE;
+2024-06-20 23:59:04.731 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-20 23:59:04.731 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.731 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-20 23:59:04.731 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240621035856_makesure', N'9.0.0-preview.5.24306.3');
+2024-06-20 23:59:04.732 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240621035856_makesure', N'9.0.0-preview.5.24306.3');
+2024-06-20 23:59:04.733 -04:00 [DBG] Committing transaction.
+2024-06-20 23:59:04.736 -04:00 [DBG] Committed transaction.
+2024-06-20 23:59:04.737 -04:00 [DBG] Disposing transaction.
+2024-06-20 23:59:04.737 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.737 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-20 23:59:04.737 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-20 23:59:04.738 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-20 23:59:04.738 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).

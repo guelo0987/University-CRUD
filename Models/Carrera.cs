@@ -19,4 +19,7 @@ public  class Carrera
     
     [JsonIgnore]
     public  ICollection<Estudiante>? Estudiantes { get; set; } = new List<Estudiante>();
+    
+    [JsonIgnore]
+    public virtual ICollection<CarreraMateria>? CarreraMaterias { get; set; }
 }

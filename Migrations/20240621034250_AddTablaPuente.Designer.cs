@@ -4,6 +4,7 @@ using CRUD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240621034250_AddTablaPuente")]
+    partial class AddTablaPuente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -63,7 +66,7 @@ namespace CRUD.Migrations
 
                     b.HasIndex("CodigoMateria");
 
-                    b.ToTable("CarreraMaterias");
+                    b.ToTable("CarreraMateria");
                 });
 
             modelBuilder.Entity("CRUD.Models.Materia", b =>
@@ -94,7 +97,7 @@ namespace CRUD.Migrations
 
                     b.HasKey("CodigoMateria");
 
-                    b.ToTable("Materias");
+                    b.ToTable("Materia");
                 });
 
             modelBuilder.Entity("Estudiante", b =>

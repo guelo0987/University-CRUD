@@ -19,6 +19,10 @@ public partial class MyDbContext : DbContext
     }
 
     public virtual DbSet<Carrera> Carreras { get; set; }
+    
+    public virtual DbSet<Materia> Materias { get; set; }
+
+    public virtual DbSet<CarreraMateria> CarreraMaterias{ get; set; }
 
     public virtual DbSet<Estudiante> Estudiantes { get; set; }
 
@@ -31,6 +35,19 @@ public partial class MyDbContext : DbContext
                 .HasForeignKey(d => d.CarreraId)
                 .OnDelete(DeleteBehavior.ClientSetNull);
         });
+        
+        modelBuilder.Entity<CarreraMateria>()
+            .HasKey(cm => new { cm.CarreraId, cm.CodigoMateria });
+
+        modelBuilder.Entity<CarreraMateria>()
+            .HasOne(cm => cm.Carreras)
+            .WithMany(c => c.CarreraMaterias)
+            .HasForeignKey(cm => cm.CarreraId);
+
+        modelBuilder.Entity<CarreraMateria>()
+            .HasOne(cm => cm.Materias)
+            .WithMany(m => m.CarreraMaterias)
+            .HasForeignKey(cm => cm.CodigoMateria);
 
 
 
