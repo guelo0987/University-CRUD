@@ -152,7 +152,7 @@ public class CarreraController:ControllerBase
     
     
     
-    //Patch
+    //PatchCarrera
     [HttpPatch("id:int", Name = "PatchCarrera")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -190,6 +190,8 @@ public class CarreraController:ControllerBase
 
 
 
+    
+    //Delete Carrera
     [HttpDelete("id:int", Name = "DeleteCarrera")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

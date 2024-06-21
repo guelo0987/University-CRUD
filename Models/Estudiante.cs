@@ -50,8 +50,8 @@ public  class Estudiante
     [MaxLength(100)]
     public string ContraseñaEstudiante { get; set; } = null!;
 
-    public int CarreraId { get; set; }
+    public int? CarreraId { get; set; }
     
     [ForeignKey("CarreraId")]
-    public Carrera? Carreras { get; set; }
+    public virtual Carrera? Carreras { get; set; }
 }

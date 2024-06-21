@@ -4,6 +4,7 @@ using System.Text;
 using CRUD.Context;
 using CRUD.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -121,6 +122,142 @@ public class EstudianteController : ControllerBase
     
     
     
+    
+    //Editar Un estudiante
+    [HttpPut("id:int",Name = "EditEstudiantw")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Estudiante> EditEstudiante(int id, [FromBody] Estudiante estudiante)
+    {
+
+        if (estudiante == null || id != estudiante.Id || id==0)
+        {
+            _logger.LogInformation("No se puedo obtener el estudiante");
+            return BadRequest();
+        }
+
+        var objEst = _db.Estudiantes.FirstOrDefault(u => u.Id == id);
+
+        var objCarr = _db.Carreras.Find(estudiante.CarreraId);
+
+        if (objCarr == null)
+        {
+            _logger.LogInformation("La carrera: "+estudiante.CarreraId+" No fue encontrada");
+            return NotFound();
+        }
+        
+        if (objEst == null)
+        {
+            _logger.LogInformation("El estudiante: "+id+" No fue encontrada");
+            return NotFound();
+        }
+
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Atributos Invalidos");
+            ModelState.AddModelError("","Atributos invalidos");
+            return BadRequest(ModelState);
+        }
+
+        objEst.NombreEstudiante = estudiante.NombreEstudiante;
+        objEst.DireccionEstudiante = estudiante.DireccionEstudiante;
+        objEst.Nacionalidad = estudiante.Nacionalidad;
+        objEst.SexoEstudiante = estudiante.SexoEstudiante;
+        
+        objEst.CiudadEstudiante = estudiante.CiudadEstudiante;
+        objEst.TelefonoEstudiante = estudiante.TelefonoEstudiante;
+        objEst.CorreoEstudiante = estudiante.CorreoEstudiante;
+        objEst.PeriodosCursados = estudiante.PeriodosCursados;
+        
+        objEst.IndiceGeneral = estudiante.IndiceGeneral;
+        objEst.IndicePeriodo = estudiante.IndicePeriodo;
+        objEst.CondicionAcademica = estudiante.CondicionAcademica;
+        objEst.CreditosAprobados = estudiante.CreditosAprobados;
+        
+        objEst.CodigoCarrera = estudiante.CodigoCarrera;
+        objEst.ContraseñaEstudiante = PassHasher.HashPassword(estudiante.DireccionEstudiante);
+        objEst.CarreraId = estudiante.CarreraId;
+        
+        
+
+        _db.SaveChanges();
+        
+        _logger.LogInformation("Estudiante con el id: "+id+" editado");
+        return NoContent();
+    }
+    
+    
+    
+    
+    //Patch un Estudiante
+    [HttpPatch("id:int", Name = "PatchEstudiante")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Estudiante> PatchEstudiante(int id, JsonPatchDocument<Estudiante> patchDocument)
+    {
+
+        if (patchDocument == null || id == 0)
+        {
+            return BadRequest();
+        }
+
+        var obj = _db.Estudiantes.FirstOrDefault(u => u.Id == id);
+
+        if (obj == null)
+        {  
+            _logger.LogInformation("Estudiante No encontrado");
+            return NotFound();
+        }
+        
+        patchDocument.ApplyTo(obj,ModelState);
+
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Atributos Invalidos");
+            ModelState.AddModelError("","Atributos invalidos");
+            return BadRequest(ModelState);
+        }
+
+        _db.SaveChanges();
+        
+        _logger.LogInformation("Estudiante Patcheado");
+        return NoContent();
+    }
+    
+    
+    
+    
+    //Delete Un Estudiante
+    [HttpDelete("id:int", Name = "DeleteEstudiante")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Estudiante> DeleteEstudiante(int id)
+    {
+
+        if (id <= 0)
+        {
+            _logger.LogError("Error al eliminar el estudiante " +id);
+            return BadRequest();
+
+        }
+
+        var obj = _db.Estudiantes.FirstOrDefault(u => u.Id == id);
+
+        if (obj == null)
+        {
+            return NotFound();
+
+        }
+
+        _db.Estudiantes.Remove(obj);
+        _db.SaveChanges();
+
+        return NoContent();
+
+    }
     
     
     
