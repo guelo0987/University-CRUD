@@ -42,7 +42,8 @@ namespace CRUD.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
-
+            
+            
             _db.Materias.Add(materia);
             _db.SaveChanges();
             _logger.LogInformation("Materia creada exitosamente");
