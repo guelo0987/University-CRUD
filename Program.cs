@@ -4,6 +4,7 @@ using CRUD.Controllers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +21,7 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers
-    (option => option.ReturnHttpNotAcceptable = true).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters();
+    (option => option.ReturnHttpNotAcceptable = true).AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling= ReferenceLoopHandling.Ignore).AddXmlDataContractSerializerFormatters();
 
 
 builder.Services.AddAuthentication(options =>

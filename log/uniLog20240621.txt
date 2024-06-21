@@ -6869,3 +6869,1197 @@ FROM [CarreraMaterias] AS [c]
 2024-06-21 01:02:22.144 -04:00 [DBG] Connection id "0HN4HLPD7O7TK" stopped.
 2024-06-21 01:02:22.144 -04:00 [DBG] Connection id "0HN4HLPD7O7TK" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-06-21 01:02:22.148 -04:00 [DBG] Hosting stopped
+2024-06-21 01:05:45.921 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-21 01:05:45.972 -04:00 [DBG] Hosting starting
+2024-06-21 01:05:45.976 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-21 01:05:45.981 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-21 01:05:45.983 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-21 01:05:45.985 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-21 01:05:45.986 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-21 01:05:45.988 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-21 01:05:45.989 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-21 01:05:45.991 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-21 01:05:45.991 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-21 01:05:45.993 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-21 01:05:45.993 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-21 01:05:46.025 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-21 01:05:46.025 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-21 01:05:46.025 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-21 01:05:46.025 -04:00 [INF] Hosting environment: Development
+2024-06-21 01:05:46.025 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-21 01:05:46.025 -04:00 [DBG] Hosting started
+2024-06-21 01:05:46.233 -04:00 [DBG] Connection id "0HN4HLV7K5LV1" received FIN.
+2024-06-21 01:05:46.238 -04:00 [DBG] Connection id "0HN4HLV7K5LV1" accepted.
+2024-06-21 01:05:46.239 -04:00 [DBG] Connection id "0HN4HLV7K5LV1" started.
+2024-06-21 01:05:46.244 -04:00 [DBG] Connection id "0HN4HLV7K5LV1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:05:46.247 -04:00 [DBG] Connection id "0HN4HLV7K5LV1" disconnecting.
+2024-06-21 01:05:46.251 -04:00 [DBG] Connection id "0HN4HLV7K5LV1" stopped.
+2024-06-21 01:05:46.349 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" accepted.
+2024-06-21 01:05:46.349 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" started.
+2024-06-21 01:05:46.349 -04:00 [DBG] Connection id "0HN4HLV7K5LV3" accepted.
+2024-06-21 01:05:46.349 -04:00 [DBG] Connection id "0HN4HLV7K5LV3" started.
+2024-06-21 01:05:46.364 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:05:46.366 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-21 01:05:46.385 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:05:46.455 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" completed keep alive response.
+2024-06-21 01:05:46.456 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 94.1341ms
+2024-06-21 01:05:46.525 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:05:46.526 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:05:46.656 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" completed keep alive response.
+2024-06-21 01:05:46.656 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.266ms
+2024-06-21 01:05:52.775 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraMateriaApi - null null
+2024-06-21 01:05:52.780 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:05:52.783 -04:00 [DBG] The request path  does not match the path filter
+2024-06-21 01:05:52.784 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-21 01:05:52.807 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraMateriaApi'
+2024-06-21 01:05:52.810 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)' with route pattern 'api/CarreraMateriaApi' is valid for the request path '/api/CarreraMateriaApi'
+2024-06-21 01:05:52.810 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:05:52.812 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:05:52.827 -04:00 [INF] Route matched with {action = "GetAllCarrerasAndMaterias", controller = "CarreraMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CRUD.Models.CarreraMateria]] GetAllCarrerasAndMaterias() on controller CRUD.Controllers.CarreraMateriaController (CRUD).
+2024-06-21 01:05:52.828 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-21 01:05:52.828 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-21 01:05:52.828 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-21 01:05:52.828 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-21 01:05:52.828 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-21 01:05:52.829 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraMateriaController (CRUD)
+2024-06-21 01:05:52.901 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-21 01:05:52.911 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraMateriaController (CRUD)
+2024-06-21 01:05:52.915 -04:00 [INF] Executing action method CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD) - Validation state: "Valid"
+2024-06-21 01:05:53.210 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-21 01:05:53.359 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-21 01:05:53.392 -04:00 [DBG] Compiling query expression: 
+'DbSet<CarreraMateria>()
+    .Include(cm => cm.Carreras)
+    .Include(cm => cm.Materias)'
+2024-06-21 01:05:53.447 -04:00 [DBG] Including navigation: 'CarreraMateria.Carreras'.
+2024-06-21 01:05:53.448 -04:00 [DBG] Including navigation: 'CarreraMateria.Materias'.
+2024-06-21 01:05:53.609 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<CarreraMateria>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: CarreraMateria.CarreraId (int?) Required PK FK AfterSave:Throw, 0], [Property: CarreraMateria.CodigoMateria (int?) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Carrera.Departamento (string) Required, 3], [Property: Carrera.DuracionPeriodos (string) Required, 4], [Property: Carrera.NombreCarrera (string) Required, 5], [Property: Carrera.TotalCreditos (string) Required, 6] }
+            2 -> Dictionary<IProperty, int> { [Property: Materia.CodigoMateria (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: Materia.AreaAcademica (string) Required MaxLength(100), 8], [Property: Materia.CreditosMateria (int) Required, 9], [Property: Materia.NombreMateria (string) Required MaxLength(100), 10], [Property: Materia.TipoMateria (string) Required MaxLength(50), 11] }
+        SELECT c.CarreraId, c.CodigoMateria, c0.CarreraId, c0.Departamento, c0.DuracionPeriodos, c0.NombreCarrera, c0.TotalCreditos, m.CodigoMateria, m.AreaAcademica, m.CreditosMateria, m.NombreMateria, m.TipoMateria
+        FROM CarreraMaterias AS c
+        INNER JOIN Carreras AS c0 ON c.CarreraId == c0.CarreraId
+        INNER JOIN Materias AS m ON c.CodigoMateria == m.CodigoMateria) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        CarreraMateria entity;
+        Carrera entity;
+        Materia entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            CarreraMateria instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(CarreraMateria);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: CarreraMateria.CarreraId, CarreraMateria.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetInt32(0), 
+                    (object)dataReader.GetInt32(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (CarreraMateria)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")]: 
+                        {
+                            return 
+                            {
+                                CarreraMateria instance;
+                                instance = new CarreraMateria();
+                                instance.<CarreraId>k__BackingField = (int?)dataReader.GetInt32(0);
+                                instance.<CodigoMateria>k__BackingField = (int?)dataReader.GetInt32(1);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(CarreraMateria)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext2;
+            IEntityType entityType2;
+            Carrera instance2;
+            InternalEntityEntry entry2;
+            bool hasNullKey2;
+            materializationContext2 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance2 = default(Carrera);
+            entry2 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(2) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey2);
+            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+            {
+                entityType2 = entry2.EntityType;
+                return instance2 = (Carrera)entry2.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot2;
+                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType2 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance2 = switch (entityType2)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(2);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(3);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(4);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(5);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(6);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType2, 
+                    entity: instance2, 
+                    snapshot: shadowSnapshot2);
+                return instance2;
+            } : default(void);
+            return instance2;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext3;
+            IEntityType entityType3;
+            Materia instance3;
+            InternalEntityEntry entry3;
+            bool hasNullKey3;
+            materializationContext3 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance3 = default(Materia);
+            entry3 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Materia.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(7) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey3);
+            !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+            {
+                entityType3 = entry3.EntityType;
+                return instance3 = (Materia)entry3.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot3;
+                shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType3 = [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")];
+                instance3 = switch (entityType3)
+                {
+                    case [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]: 
+                        {
+                            return 
+                            {
+                                Materia instance;
+                                instance = new Materia();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetInt32(7);
+                                instance.<AreaAcademica>k__BackingField = dataReader.GetString(8);
+                                instance.<CreditosMateria>k__BackingField = dataReader.GetInt32(9);
+                                instance.<NombreMateria>k__BackingField = dataReader.GetString(10);
+                                instance.<TipoMateria>k__BackingField = dataReader.GetString(11);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext3.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Materia)
+                }
+                ;
+                entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType3, 
+                    entity: instance3, 
+                    snapshot: shadowSnapshot3);
+                return instance3;
+            } : default(void);
+            return instance3;
+        };
+        ShaperProcessingExpressionVisitor.IncludeReference<CarreraMateria, CarreraMateria, Carrera>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: CarreraMateria.Carreras (Carrera) ToPrincipal Carrera Inverse: CarreraMaterias | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindNavigation("Carreras")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Carrera.CarreraMaterias (ICollection<CarreraMateria>) Collection ToDependent CarreraMateria Inverse: Carreras | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindNavigation("CarreraMaterias")], 
+            fixup: (namelessParameter{11}, namelessParameter{12}) => 
+            {
+                namelessParameter{11}.<Carreras>k__BackingField = namelessParameter{12};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Carrera, ICollection<CarreraMateria>, CarreraMateria> | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindNavigation("CarreraMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{12}, 
+                    value: namelessParameter{11}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        ShaperProcessingExpressionVisitor.IncludeReference<CarreraMateria, CarreraMateria, Materia>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: CarreraMateria.Materias (Materia) ToPrincipal Materia Inverse: CarreraMaterias | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindNavigation("Materias")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Materia.CarreraMaterias (ICollection<CarreraMateria>) Collection ToDependent CarreraMateria Inverse: Materias | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("CarreraMaterias")], 
+            fixup: (namelessParameter{16}, namelessParameter{17}) => 
+            {
+                namelessParameter{16}.<Materias>k__BackingField = namelessParameter{17};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Materia, ICollection<CarreraMateria>, CarreraMateria> | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("CarreraMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{17}, 
+                    value: namelessParameter{16}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-21 01:05:53.628 -04:00 [DBG] Creating DbConnection.
+2024-06-21 01:05:53.644 -04:00 [DBG] Created DbConnection. (14ms).
+2024-06-21 01:05:53.645 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-21 01:05:53.786 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-21 01:05:53.788 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-21 01:05:53.791 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-21 01:05:53.792 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-06-21 01:05:53.796 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[CodigoMateria], [c0].[CarreraId], [c0].[Departamento], [c0].[DuracionPeriodos], [c0].[NombreCarrera], [c0].[TotalCreditos], [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [CarreraMaterias] AS [c]
+INNER JOIN [Carreras] AS [c0] ON [c].[CarreraId] = [c0].[CarreraId]
+INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
+2024-06-21 01:05:53.842 -04:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[CodigoMateria], [c0].[CarreraId], [c0].[Departamento], [c0].[DuracionPeriodos], [c0].[NombreCarrera], [c0].[TotalCreditos], [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [CarreraMaterias] AS [c]
+INNER JOIN [Carreras] AS [c0] ON [c].[CarreraId] = [c0].[CarreraId]
+INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
+2024-06-21 01:05:53.864 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.889 -04:00 [DBG] The navigation 'CarreraMateria.Carreras' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.892 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.898 -04:00 [DBG] The navigation 'CarreraMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.899 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.903 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.903 -04:00 [DBG] The navigation 'CarreraMateria.Carreras' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.903 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.903 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.904 -04:00 [DBG] The navigation 'CarreraMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.904 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:05:53.905 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-21 01:05:53.910 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 64ms reading results.
+2024-06-21 01:05:53.911 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-21 01:05:53.915 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-21 01:05:53.917 -04:00 [INF] Executed action method CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1000.931ms.
+2024-06-21 01:05:53.919 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-21 01:05:53.920 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-21 01:05:53.920 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-21 01:05:53.920 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.CarreraMateria, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-21 01:05:53.982 -04:00 [INF] Executed action CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD) in 1151.7202ms
+2024-06-21 01:05:53.982 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:05:53.982 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'CRUD.Models.CarreraMateria'. Path '[0].carreras.carreraMaterias'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-21 01:05:53.991 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" completed keep alive response.
+2024-06-21 01:05:53.992 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-21 01:05:53.994 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-21 01:05:53.995 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-21 01:05:53.995 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraMateriaApi - 500 null text/plain; charset=utf-8 1219.9703ms
+2024-06-21 01:07:41.831 -04:00 [DBG] Connection id "0HN4HLV7K5LV3" received FIN.
+2024-06-21 01:07:41.833 -04:00 [DBG] Connection id "0HN4HLV7K5LV3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:07:41.833 -04:00 [DBG] Connection id "0HN4HLV7K5LV3" disconnecting.
+2024-06-21 01:07:41.834 -04:00 [DBG] Connection id "0HN4HLV7K5LV3" stopped.
+2024-06-21 01:08:04.161 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" disconnecting.
+2024-06-21 01:08:04.163 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" stopped.
+2024-06-21 01:08:04.164 -04:00 [DBG] Connection id "0HN4HLV7K5LV2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:10:10.290 -04:00 [INF] Application is shutting down...
+2024-06-21 01:10:10.292 -04:00 [DBG] Hosting stopping
+2024-06-21 01:10:10.300 -04:00 [DBG] Hosting stopped
+2024-06-21 01:10:12.231 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-21 01:10:12.278 -04:00 [DBG] Hosting starting
+2024-06-21 01:10:12.281 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-21 01:10:12.287 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-21 01:10:12.289 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-21 01:10:12.291 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-21 01:10:12.292 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-21 01:10:12.294 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-21 01:10:12.295 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-21 01:10:12.298 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-21 01:10:12.298 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-21 01:10:12.300 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-21 01:10:12.300 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-21 01:10:12.328 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-21 01:10:12.328 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-21 01:10:12.328 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-21 01:10:12.328 -04:00 [INF] Hosting environment: Development
+2024-06-21 01:10:12.328 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-21 01:10:12.328 -04:00 [DBG] Hosting started
+2024-06-21 01:10:12.702 -04:00 [DBG] Connection id "0HN4HM1N1DAR3" received FIN.
+2024-06-21 01:10:12.708 -04:00 [DBG] Connection id "0HN4HM1N1DAR3" accepted.
+2024-06-21 01:10:12.709 -04:00 [DBG] Connection id "0HN4HM1N1DAR3" started.
+2024-06-21 01:10:12.741 -04:00 [DBG] Connection id "0HN4HM1N1DAR3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:10:12.746 -04:00 [DBG] Connection id "0HN4HM1N1DAR3" disconnecting.
+2024-06-21 01:10:12.749 -04:00 [DBG] Connection id "0HN4HM1N1DAR3" stopped.
+2024-06-21 01:10:12.792 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" accepted.
+2024-06-21 01:10:12.793 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" started.
+2024-06-21 01:10:12.793 -04:00 [DBG] Connection id "0HN4HM1N1DAR5" accepted.
+2024-06-21 01:10:12.793 -04:00 [DBG] Connection id "0HN4HM1N1DAR5" started.
+2024-06-21 01:10:12.807 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:12.809 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-21 01:10:12.822 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:12.891 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:12.892 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 86.5901ms
+2024-06-21 01:10:12.959 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:12.960 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:13.067 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:13.068 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.3615ms
+2024-06-21 01:10:16.477 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:16.481 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.483 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.483 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 5.9478ms
+2024-06-21 01:10:16.553 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:16.554 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.601 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.601 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.0415ms
+2024-06-21 01:10:16.666 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:16.666 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.666 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.666 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.735ms
+2024-06-21 01:10:16.708 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:16.709 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.744 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.745 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.7595ms
+2024-06-21 01:10:16.824 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:16.824 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.825 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.825 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.573ms
+2024-06-21 01:10:16.867 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:16.868 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.910 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.910 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.4834ms
+2024-06-21 01:10:16.989 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:16.989 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:16.990 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:16.990 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1827ms
+2024-06-21 01:10:17.033 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:17.033 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.071 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.071 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.9465ms
+2024-06-21 01:10:17.148 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:17.148 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.148 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.148 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.6282ms
+2024-06-21 01:10:17.182 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:17.182 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.202 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.202 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.6371ms
+2024-06-21 01:10:17.305 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:17.305 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.305 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.305 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.8431ms
+2024-06-21 01:10:17.340 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:17.340 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.354 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.354 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.5481ms
+2024-06-21 01:10:17.474 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:17.475 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.475 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.475 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1084ms
+2024-06-21 01:10:17.509 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:17.510 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.523 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.523 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.1519ms
+2024-06-21 01:10:17.645 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:17.645 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.645 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.645 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5613ms
+2024-06-21 01:10:17.682 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:17.682 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.696 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.696 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.8832ms
+2024-06-21 01:10:17.774 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:10:17.774 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.774 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.774 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4517ms
+2024-06-21 01:10:17.808 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:10:17.808 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:17.821 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:17.821 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.488ms
+2024-06-21 01:10:22.642 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraMateriaApi - null null
+2024-06-21 01:10:22.642 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:10:22.643 -04:00 [DBG] The request path  does not match the path filter
+2024-06-21 01:10:22.643 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-21 01:10:22.656 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraMateriaApi'
+2024-06-21 01:10:22.658 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)' with route pattern 'api/CarreraMateriaApi' is valid for the request path '/api/CarreraMateriaApi'
+2024-06-21 01:10:22.658 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:10:22.660 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:10:22.670 -04:00 [INF] Route matched with {action = "GetAllCarrerasAndMaterias", controller = "CarreraMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CRUD.Models.CarreraMateria]] GetAllCarrerasAndMaterias() on controller CRUD.Controllers.CarreraMateriaController (CRUD).
+2024-06-21 01:10:22.671 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-21 01:10:22.671 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-21 01:10:22.671 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-21 01:10:22.671 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-21 01:10:22.671 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-21 01:10:22.672 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraMateriaController (CRUD)
+2024-06-21 01:10:22.727 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-21 01:10:22.737 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraMateriaController (CRUD)
+2024-06-21 01:10:22.740 -04:00 [INF] Executing action method CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD) - Validation state: "Valid"
+2024-06-21 01:10:23.029 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-21 01:10:23.178 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-21 01:10:23.205 -04:00 [DBG] Compiling query expression: 
+'DbSet<CarreraMateria>()
+    .Include(cm => cm.Carreras)
+    .Include(cm => cm.Materias)'
+2024-06-21 01:10:23.260 -04:00 [DBG] Including navigation: 'CarreraMateria.Carreras'.
+2024-06-21 01:10:23.260 -04:00 [DBG] Including navigation: 'CarreraMateria.Materias'.
+2024-06-21 01:10:23.431 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<CarreraMateria>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: CarreraMateria.CarreraId (int?) Required PK FK AfterSave:Throw, 0], [Property: CarreraMateria.CodigoMateria (int?) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Carrera.Departamento (string) Required, 3], [Property: Carrera.DuracionPeriodos (string) Required, 4], [Property: Carrera.NombreCarrera (string) Required, 5], [Property: Carrera.TotalCreditos (string) Required, 6] }
+            2 -> Dictionary<IProperty, int> { [Property: Materia.CodigoMateria (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: Materia.AreaAcademica (string) Required MaxLength(100), 8], [Property: Materia.CreditosMateria (int) Required, 9], [Property: Materia.NombreMateria (string) Required MaxLength(100), 10], [Property: Materia.TipoMateria (string) Required MaxLength(50), 11] }
+        SELECT c.CarreraId, c.CodigoMateria, c0.CarreraId, c0.Departamento, c0.DuracionPeriodos, c0.NombreCarrera, c0.TotalCreditos, m.CodigoMateria, m.AreaAcademica, m.CreditosMateria, m.NombreMateria, m.TipoMateria
+        FROM CarreraMaterias AS c
+        INNER JOIN Carreras AS c0 ON c.CarreraId == c0.CarreraId
+        INNER JOIN Materias AS m ON c.CodigoMateria == m.CodigoMateria) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        CarreraMateria entity;
+        Carrera entity;
+        Materia entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            CarreraMateria instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(CarreraMateria);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: CarreraMateria.CarreraId, CarreraMateria.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetInt32(0), 
+                    (object)dataReader.GetInt32(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (CarreraMateria)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")]: 
+                        {
+                            return 
+                            {
+                                CarreraMateria instance;
+                                instance = new CarreraMateria();
+                                instance.<CarreraId>k__BackingField = (int?)dataReader.GetInt32(0);
+                                instance.<CodigoMateria>k__BackingField = (int?)dataReader.GetInt32(1);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(CarreraMateria)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext2;
+            IEntityType entityType2;
+            Carrera instance2;
+            InternalEntityEntry entry2;
+            bool hasNullKey2;
+            materializationContext2 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance2 = default(Carrera);
+            entry2 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(2) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey2);
+            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+            {
+                entityType2 = entry2.EntityType;
+                return instance2 = (Carrera)entry2.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot2;
+                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType2 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance2 = switch (entityType2)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(2);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(3);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(4);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(5);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(6);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType2, 
+                    entity: instance2, 
+                    snapshot: shadowSnapshot2);
+                return instance2;
+            } : default(void);
+            return instance2;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext3;
+            IEntityType entityType3;
+            Materia instance3;
+            InternalEntityEntry entry3;
+            bool hasNullKey3;
+            materializationContext3 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance3 = default(Materia);
+            entry3 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Materia.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(7) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey3);
+            !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+            {
+                entityType3 = entry3.EntityType;
+                return instance3 = (Materia)entry3.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot3;
+                shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType3 = [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")];
+                instance3 = switch (entityType3)
+                {
+                    case [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]: 
+                        {
+                            return 
+                            {
+                                Materia instance;
+                                instance = new Materia();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetInt32(7);
+                                instance.<AreaAcademica>k__BackingField = dataReader.GetString(8);
+                                instance.<CreditosMateria>k__BackingField = dataReader.GetInt32(9);
+                                instance.<NombreMateria>k__BackingField = dataReader.GetString(10);
+                                instance.<TipoMateria>k__BackingField = dataReader.GetString(11);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext3.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Materia)
+                }
+                ;
+                entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType3, 
+                    entity: instance3, 
+                    snapshot: shadowSnapshot3);
+                return instance3;
+            } : default(void);
+            return instance3;
+        };
+        ShaperProcessingExpressionVisitor.IncludeReference<CarreraMateria, CarreraMateria, Carrera>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: CarreraMateria.Carreras (Carrera) ToPrincipal Carrera Inverse: CarreraMaterias | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindNavigation("Carreras")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Carrera.CarreraMaterias (ICollection<CarreraMateria>) Collection ToDependent CarreraMateria Inverse: Carreras | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindNavigation("CarreraMaterias")], 
+            fixup: (namelessParameter{11}, namelessParameter{12}) => 
+            {
+                namelessParameter{11}.<Carreras>k__BackingField = namelessParameter{12};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Carrera, ICollection<CarreraMateria>, CarreraMateria> | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindNavigation("CarreraMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{12}, 
+                    value: namelessParameter{11}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        ShaperProcessingExpressionVisitor.IncludeReference<CarreraMateria, CarreraMateria, Materia>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: CarreraMateria.Materias (Materia) ToPrincipal Materia Inverse: CarreraMaterias | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindNavigation("Materias")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Materia.CarreraMaterias (ICollection<CarreraMateria>) Collection ToDependent CarreraMateria Inverse: Materias | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("CarreraMaterias")], 
+            fixup: (namelessParameter{16}, namelessParameter{17}) => 
+            {
+                namelessParameter{16}.<Materias>k__BackingField = namelessParameter{17};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Materia, ICollection<CarreraMateria>, CarreraMateria> | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("CarreraMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{17}, 
+                    value: namelessParameter{16}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-21 01:10:23.450 -04:00 [DBG] Creating DbConnection.
+2024-06-21 01:10:23.463 -04:00 [DBG] Created DbConnection. (11ms).
+2024-06-21 01:10:23.465 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-21 01:10:23.605 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-21 01:10:23.607 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-21 01:10:23.610 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-21 01:10:23.611 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-06-21 01:10:23.615 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[CodigoMateria], [c0].[CarreraId], [c0].[Departamento], [c0].[DuracionPeriodos], [c0].[NombreCarrera], [c0].[TotalCreditos], [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [CarreraMaterias] AS [c]
+INNER JOIN [Carreras] AS [c0] ON [c].[CarreraId] = [c0].[CarreraId]
+INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
+2024-06-21 01:10:23.642 -04:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[CodigoMateria], [c0].[CarreraId], [c0].[Departamento], [c0].[DuracionPeriodos], [c0].[NombreCarrera], [c0].[TotalCreditos], [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [CarreraMaterias] AS [c]
+INNER JOIN [Carreras] AS [c0] ON [c].[CarreraId] = [c0].[CarreraId]
+INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
+2024-06-21 01:10:23.666 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.692 -04:00 [DBG] The navigation 'CarreraMateria.Carreras' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.695 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.701 -04:00 [DBG] The navigation 'CarreraMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.701 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.705 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.705 -04:00 [DBG] The navigation 'CarreraMateria.Carreras' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.705 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.705 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.705 -04:00 [DBG] The navigation 'CarreraMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.705 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:10:23.707 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-21 01:10:23.711 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 66ms reading results.
+2024-06-21 01:10:23.713 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-21 01:10:23.716 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (3ms).
+2024-06-21 01:10:23.718 -04:00 [INF] Executed action method CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 976.5463ms.
+2024-06-21 01:10:23.720 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-21 01:10:23.721 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-21 01:10:23.721 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-21 01:10:23.721 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.CarreraMateria, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-21 01:10:23.775 -04:00 [INF] Executed action CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD) in 1102.7574ms
+2024-06-21 01:10:23.776 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:10:23.776 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'CRUD.Models.CarreraMateria'. Path '[0].carreras.carreraMaterias'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-21 01:10:23.783 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" completed keep alive response.
+2024-06-21 01:10:23.784 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-21 01:10:23.786 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-21 01:10:23.786 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-21 01:10:23.787 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraMateriaApi - 500 null text/plain; charset=utf-8 1145.1507ms
+2024-06-21 01:11:42.037 -04:00 [DBG] Connection id "0HN4HM1N1DAR5" received FIN.
+2024-06-21 01:11:42.038 -04:00 [DBG] Connection id "0HN4HM1N1DAR5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:11:42.038 -04:00 [DBG] Connection id "0HN4HM1N1DAR5" disconnecting.
+2024-06-21 01:11:42.040 -04:00 [DBG] Connection id "0HN4HM1N1DAR5" stopped.
+2024-06-21 01:11:45.590 -04:00 [INF] Application is shutting down...
+2024-06-21 01:11:45.591 -04:00 [DBG] Hosting stopping
+2024-06-21 01:11:45.595 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" disconnecting.
+2024-06-21 01:11:45.596 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" stopped.
+2024-06-21 01:11:45.596 -04:00 [DBG] Connection id "0HN4HM1N1DAR4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:11:45.598 -04:00 [DBG] Hosting stopped
+2024-06-21 01:15:19.206 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-21 01:15:19.255 -04:00 [DBG] Hosting starting
+2024-06-21 01:15:19.258 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-21 01:15:19.264 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-21 01:15:19.266 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-21 01:15:19.267 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-21 01:15:19.268 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-21 01:15:19.270 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-21 01:15:19.271 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-21 01:15:19.273 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-21 01:15:19.273 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-21 01:15:19.275 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-21 01:15:19.275 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-21 01:15:19.305 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-21 01:15:19.305 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-21 01:15:19.305 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-21 01:15:19.305 -04:00 [INF] Hosting environment: Development
+2024-06-21 01:15:19.305 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-21 01:15:19.305 -04:00 [DBG] Hosting started
+2024-06-21 01:15:19.621 -04:00 [DBG] Connection id "0HN4HM4IGDKOR" received FIN.
+2024-06-21 01:15:19.624 -04:00 [DBG] Connection id "0HN4HM4IGDKOR" accepted.
+2024-06-21 01:15:19.624 -04:00 [DBG] Connection id "0HN4HM4IGDKOR" started.
+2024-06-21 01:15:19.628 -04:00 [DBG] Connection id "0HN4HM4IGDKOR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:15:19.631 -04:00 [DBG] Connection id "0HN4HM4IGDKOR" disconnecting.
+2024-06-21 01:15:19.634 -04:00 [DBG] Connection id "0HN4HM4IGDKOR" stopped.
+2024-06-21 01:15:19.743 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" accepted.
+2024-06-21 01:15:19.743 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" started.
+2024-06-21 01:15:19.743 -04:00 [DBG] Connection id "0HN4HM4IGDKOT" accepted.
+2024-06-21 01:15:19.744 -04:00 [DBG] Connection id "0HN4HM4IGDKOT" started.
+2024-06-21 01:15:19.761 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-21 01:15:19.762 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-21 01:15:19.784 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:15:19.856 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" completed keep alive response.
+2024-06-21 01:15:19.857 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 98.6477ms
+2024-06-21 01:15:19.927 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-21 01:15:19.928 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:15:20.057 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" completed keep alive response.
+2024-06-21 01:15:20.057 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.4207ms
+2024-06-21 01:15:30.512 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/CarreraMateriaApi - null null
+2024-06-21 01:15:30.526 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-21 01:15:30.532 -04:00 [DBG] The request path  does not match the path filter
+2024-06-21 01:15:30.533 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-21 01:15:30.547 -04:00 [DBG] 1 candidate(s) found for the request path '/api/CarreraMateriaApi'
+2024-06-21 01:15:30.550 -04:00 [DBG] Endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)' with route pattern 'api/CarreraMateriaApi' is valid for the request path '/api/CarreraMateriaApi'
+2024-06-21 01:15:30.550 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:15:30.552 -04:00 [INF] Executing endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:15:30.564 -04:00 [INF] Route matched with {action = "GetAllCarrerasAndMaterias", controller = "CarreraMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CRUD.Models.CarreraMateria]] GetAllCarrerasAndMaterias() on controller CRUD.Controllers.CarreraMateriaController (CRUD).
+2024-06-21 01:15:30.565 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-21 01:15:30.565 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-21 01:15:30.565 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-21 01:15:30.565 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-21 01:15:30.565 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-21 01:15:30.566 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.CarreraMateriaController (CRUD)
+2024-06-21 01:15:30.639 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-21 01:15:30.649 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.CarreraMateriaController (CRUD)
+2024-06-21 01:15:30.652 -04:00 [INF] Executing action method CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD) - Validation state: "Valid"
+2024-06-21 01:15:30.948 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-21 01:15:31.094 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-21 01:15:31.126 -04:00 [DBG] Compiling query expression: 
+'DbSet<CarreraMateria>()
+    .Include(cm => cm.Carreras)
+    .Include(cm => cm.Materias)'
+2024-06-21 01:15:31.178 -04:00 [DBG] Including navigation: 'CarreraMateria.Carreras'.
+2024-06-21 01:15:31.180 -04:00 [DBG] Including navigation: 'CarreraMateria.Materias'.
+2024-06-21 01:15:31.336 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<CarreraMateria>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: CarreraMateria.CarreraId (int?) Required PK FK AfterSave:Throw, 0], [Property: CarreraMateria.CodigoMateria (int?) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Carrera.CarreraId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Carrera.Departamento (string) Required, 3], [Property: Carrera.DuracionPeriodos (string) Required, 4], [Property: Carrera.NombreCarrera (string) Required, 5], [Property: Carrera.TotalCreditos (string) Required, 6] }
+            2 -> Dictionary<IProperty, int> { [Property: Materia.CodigoMateria (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: Materia.AreaAcademica (string) Required MaxLength(100), 8], [Property: Materia.CreditosMateria (int) Required, 9], [Property: Materia.NombreMateria (string) Required MaxLength(100), 10], [Property: Materia.TipoMateria (string) Required MaxLength(50), 11] }
+        SELECT c.CarreraId, c.CodigoMateria, c0.CarreraId, c0.Departamento, c0.DuracionPeriodos, c0.NombreCarrera, c0.TotalCreditos, m.CodigoMateria, m.AreaAcademica, m.CreditosMateria, m.NombreMateria, m.TipoMateria
+        FROM CarreraMaterias AS c
+        INNER JOIN Carreras AS c0 ON c.CarreraId == c0.CarreraId
+        INNER JOIN Materias AS m ON c.CodigoMateria == m.CodigoMateria) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        CarreraMateria entity;
+        Carrera entity;
+        Materia entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            CarreraMateria instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(CarreraMateria);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: CarreraMateria.CarreraId, CarreraMateria.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetInt32(0), 
+                    (object)dataReader.GetInt32(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (CarreraMateria)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")]: 
+                        {
+                            return 
+                            {
+                                CarreraMateria instance;
+                                instance = new CarreraMateria();
+                                instance.<CarreraId>k__BackingField = (int?)dataReader.GetInt32(0);
+                                instance.<CodigoMateria>k__BackingField = (int?)dataReader.GetInt32(1);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: CarreraMateria | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(CarreraMateria)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext2;
+            IEntityType entityType2;
+            Carrera instance2;
+            InternalEntityEntry entry2;
+            bool hasNullKey2;
+            materializationContext2 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance2 = default(Carrera);
+            entry2 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Carrera.CarreraId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(2) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey2);
+            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+            {
+                entityType2 = entry2.EntityType;
+                return instance2 = (Carrera)entry2.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot2;
+                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType2 = [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")];
+                instance2 = switch (entityType2)
+                {
+                    case [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]: 
+                        {
+                            return 
+                            {
+                                Carrera instance;
+                                instance = new Carrera();
+                                instance.<CarreraId>k__BackingField = dataReader.GetInt32(2);
+                                instance.<Departamento>k__BackingField = dataReader.GetString(3);
+                                instance.<DuracionPeriodos>k__BackingField = dataReader.GetString(4);
+                                instance.<NombreCarrera>k__BackingField = dataReader.GetString(5);
+                                instance.<TotalCreditos>k__BackingField = dataReader.GetString(6);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Carrera | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Carrera)
+                }
+                ;
+                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType2, 
+                    entity: instance2, 
+                    snapshot: shadowSnapshot2);
+                return instance2;
+            } : default(void);
+            return instance2;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext3;
+            IEntityType entityType3;
+            Materia instance3;
+            InternalEntityEntry entry3;
+            bool hasNullKey3;
+            materializationContext3 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance3 = default(Materia);
+            entry3 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Materia.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(7) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey3);
+            !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+            {
+                entityType3 = entry3.EntityType;
+                return instance3 = (Materia)entry3.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot3;
+                shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType3 = [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")];
+                instance3 = switch (entityType3)
+                {
+                    case [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]: 
+                        {
+                            return 
+                            {
+                                Materia instance;
+                                instance = new Materia();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetInt32(7);
+                                instance.<AreaAcademica>k__BackingField = dataReader.GetString(8);
+                                instance.<CreditosMateria>k__BackingField = dataReader.GetInt32(9);
+                                instance.<NombreMateria>k__BackingField = dataReader.GetString(10);
+                                instance.<TipoMateria>k__BackingField = dataReader.GetString(11);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext3.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Materia)
+                }
+                ;
+                entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType3, 
+                    entity: instance3, 
+                    snapshot: shadowSnapshot3);
+                return instance3;
+            } : default(void);
+            return instance3;
+        };
+        ShaperProcessingExpressionVisitor.IncludeReference<CarreraMateria, CarreraMateria, Carrera>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: CarreraMateria.Carreras (Carrera) ToPrincipal Carrera Inverse: CarreraMaterias | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindNavigation("Carreras")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Carrera.CarreraMaterias (ICollection<CarreraMateria>) Collection ToDependent CarreraMateria Inverse: Carreras | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindNavigation("CarreraMaterias")], 
+            fixup: (namelessParameter{11}, namelessParameter{12}) => 
+            {
+                namelessParameter{11}.<Carreras>k__BackingField = namelessParameter{12};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Carrera, ICollection<CarreraMateria>, CarreraMateria> | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("CRUD.Models.Carrera").FindNavigation("CarreraMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{12}, 
+                    value: namelessParameter{11}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        ShaperProcessingExpressionVisitor.IncludeReference<CarreraMateria, CarreraMateria, Materia>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: CarreraMateria.Materias (Materia) ToPrincipal Materia Inverse: CarreraMaterias | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType("CRUD.Models.CarreraMateria").FindNavigation("Materias")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Materia.CarreraMaterias (ICollection<CarreraMateria>) Collection ToDependent CarreraMateria Inverse: Materias | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("CarreraMaterias")], 
+            fixup: (namelessParameter{16}, namelessParameter{17}) => 
+            {
+                namelessParameter{16}.<Materias>k__BackingField = namelessParameter{17};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Materia, ICollection<CarreraMateria>, CarreraMateria> | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("CarreraMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{17}, 
+                    value: namelessParameter{16}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-21 01:15:31.357 -04:00 [DBG] Creating DbConnection.
+2024-06-21 01:15:31.371 -04:00 [DBG] Created DbConnection. (14ms).
+2024-06-21 01:15:31.372 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-21 01:15:31.526 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-21 01:15:31.528 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-21 01:15:31.532 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-21 01:15:31.533 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-06-21 01:15:31.536 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[CodigoMateria], [c0].[CarreraId], [c0].[Departamento], [c0].[DuracionPeriodos], [c0].[NombreCarrera], [c0].[TotalCreditos], [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [CarreraMaterias] AS [c]
+INNER JOIN [Carreras] AS [c0] ON [c].[CarreraId] = [c0].[CarreraId]
+INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
+2024-06-21 01:15:31.563 -04:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CarreraId], [c].[CodigoMateria], [c0].[CarreraId], [c0].[Departamento], [c0].[DuracionPeriodos], [c0].[NombreCarrera], [c0].[TotalCreditos], [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [CarreraMaterias] AS [c]
+INNER JOIN [Carreras] AS [c0] ON [c].[CarreraId] = [c0].[CarreraId]
+INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
+2024-06-21 01:15:31.585 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.609 -04:00 [DBG] The navigation 'CarreraMateria.Carreras' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.612 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.619 -04:00 [DBG] The navigation 'CarreraMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.619 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.623 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.623 -04:00 [DBG] The navigation 'CarreraMateria.Carreras' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.623 -04:00 [DBG] Context 'MyDbContext' started tracking 'Carrera' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.623 -04:00 [DBG] Context 'MyDbContext' started tracking 'CarreraMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.623 -04:00 [DBG] The navigation 'CarreraMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.623 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-21 01:15:31.625 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-21 01:15:31.629 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 62ms reading results.
+2024-06-21 01:15:31.631 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-21 01:15:31.635 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-21 01:15:31.637 -04:00 [INF] Executed action method CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 983.1684ms.
+2024-06-21 01:15:31.638 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-21 01:15:31.639 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-21 01:15:31.640 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-21 01:15:31.640 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.CarreraMateria, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-21 01:15:31.696 -04:00 [INF] Executed action CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD) in 1129.6357ms
+2024-06-21 01:15:31.696 -04:00 [INF] Executed endpoint 'CRUD.Controllers.CarreraMateriaController.GetAllCarrerasAndMaterias (CRUD)'
+2024-06-21 01:15:31.696 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" completed keep alive response.
+2024-06-21 01:15:31.697 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-21 01:15:31.699 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-21 01:15:31.700 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-06-21 01:15:31.700 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/CarreraMateriaApi - 200 1294 application/json; charset=utf-8 1188.7025ms
+2024-06-21 01:15:49.611 -04:00 [INF] Application is shutting down...
+2024-06-21 01:15:49.613 -04:00 [DBG] Hosting stopping
+2024-06-21 01:15:49.622 -04:00 [DBG] Connection id "0HN4HM4IGDKOT" disconnecting.
+2024-06-21 01:15:49.622 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" disconnecting.
+2024-06-21 01:15:49.623 -04:00 [DBG] Connection id "0HN4HM4IGDKOT" stopped.
+2024-06-21 01:15:49.623 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" stopped.
+2024-06-21 01:15:49.623 -04:00 [DBG] Connection id "0HN4HM4IGDKOS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:15:49.623 -04:00 [DBG] Connection id "0HN4HM4IGDKOT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-21 01:15:49.628 -04:00 [DBG] Hosting stopped

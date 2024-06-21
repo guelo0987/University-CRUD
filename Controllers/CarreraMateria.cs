@@ -68,10 +68,14 @@ namespace CRUD.Controllers
         
         //Obtener todas las carreras y materias relacionadas
         [HttpGet]
-        public ActionResult<CarreraMateria> GetAllCarrerasAndMaterias()
+        public ActionResult<IEnumerable<CarreraMateria>> GetAllCarrerasAndMaterias()
         {
-            return Ok(_db.CarreraMaterias.ToList());
+            var carreraMaterias = _db.CarreraMaterias
+                .Include(cm => cm.Carreras)
+                .Include(cm => cm.Materias)
+                .ToList();
 
+            return Ok(carreraMaterias);
         }
     }
 }
