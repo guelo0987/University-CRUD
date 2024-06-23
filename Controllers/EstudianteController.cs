@@ -91,7 +91,7 @@ public class EstudianteController : ControllerBase
     
     
     //Obtener un estudiante
-    [Authorize]
+   
     [HttpGet("{id:int}", Name = "GetEstudiante")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

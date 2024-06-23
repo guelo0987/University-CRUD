@@ -71,6 +71,9 @@ namespace CRUD.Controllers
                 newCarreraMateria);
         }
 
+        
+        
+        
         // Obtener todas las carreras y materias relacionadas
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -113,7 +116,7 @@ namespace CRUD.Controllers
 
 
         
-        // Editar Un estudiante
+        // Editar Una CarreraEstudiante
         [HttpPut("CarreraId/{CarreraId:int}/MateriaId/{MateriaId:int}", Name = "EditCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -157,6 +160,80 @@ namespace CRUD.Controllers
             _logger.LogInformation("CarreraMateria editada");
             return NoContent();
         }
+        
+        
+        // Actualizar parcialmente una CarreraMateria
+        [HttpPatch("CarreraId/{CarreraId:int}/MateriaId/{MateriaId:int}", Name = "PatchCarreraMateria")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult PatchCarreraMateria(int CarreraId, int MateriaId, [FromBody] JsonPatchDocument<CarreraMateria> patchDoc)
+        {
+            if (patchDoc == null)
+            {
+                _logger.LogError("Documento de parche nulo");
+                return BadRequest();
+            }
+
+            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId);
+
+            if (carreraMateria == null)
+            {
+                _logger.LogInformation($"La relación entre la carrera con ID {CarreraId} y la materia con código {MateriaId} no fue encontrada.");
+                return NotFound();
+            }
+
+            // Clonar la entidad existente para aplicar los cambios
+            var nuevaCarreraMateria = new CarreraMateria
+            {
+                CarreraId = carreraMateria.CarreraId,
+                CodigoMateria = carreraMateria.CodigoMateria
+            };
+
+            patchDoc.ApplyTo(nuevaCarreraMateria, ModelState);
+
+            if (!TryValidateModel(nuevaCarreraMateria))
+            {
+                _logger.LogError("Error de validación al aplicar el documento de parche");
+                return BadRequest(ModelState);
+            }
+
+            // Eliminar la entidad existente
+            _db.CarreraMaterias.Remove(carreraMateria);
+            _db.SaveChanges();
+
+            // Agregar la nueva entidad con los valores actualizados
+            _db.CarreraMaterias.Add(nuevaCarreraMateria);
+            _db.SaveChanges();
+
+            _logger.LogInformation("CarreraMateria actualizada parcialmente");
+            return NoContent();
+        }
+
+        
+        
+        // Eliminar una CarreraMateria
+        [HttpDelete("CarreraId/{CarreraId:int}/MateriaId/{MateriaId:int}", Name = "DeleteCarreraMateria")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult DeleteCarreraMateria(int CarreraId, int MateriaId)
+        {
+            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId);
+
+            if (carreraMateria == null)
+            {
+                _logger.LogInformation($"La relación entre la carrera con ID {CarreraId} y la materia con código {MateriaId} no fue encontrada.");
+                return NotFound();
+            }
+
+            _db.CarreraMaterias.Remove(carreraMateria);
+            _db.SaveChanges();
+
+            _logger.LogInformation("CarreraMateria eliminada");
+            return NoContent();
+        }
+
+
 
 
 
