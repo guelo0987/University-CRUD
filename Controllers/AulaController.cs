@@ -32,7 +32,7 @@ namespace CRUD.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (aula.CodigoAula > 0)
+            if (!int.TryParse(aula.CodigoAula, out int codigoAula) || codigoAula > 0)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
@@ -65,7 +65,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id);
+            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id.ToString());
 
             if (obj == null)
             {
@@ -84,13 +84,14 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult EditAula(int id, [FromBody] Aula aula)
         {
-            if (aula == null || id != aula.CodigoAula)
+            if (aula == null || id != int.Parse(aula.CodigoAula) || id == 0)
+            
             {
                 _logger.LogInformation("No se pudo obtener el aula");
                 return BadRequest();
             }
 
-            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id);
+            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id.ToString());
 
             if (obj == null)
             {
@@ -125,7 +126,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id);
+            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id.ToString());
 
             if (obj == null)
             {
@@ -160,7 +161,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id);
+            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula == id.ToString());
 
             if (obj == null)
             {

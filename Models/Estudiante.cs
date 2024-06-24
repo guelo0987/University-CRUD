@@ -7,6 +7,7 @@ public  class Estudiante
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Range(1111111, 1999999)] // Establecer el rango para el Id
     public int Id { get; set; }
 
     [MaxLength(100)]
@@ -45,9 +46,7 @@ public  class Estudiante
 
     public int? CreditosAprobados { get; set; }
 
-    [MaxLength(10)]
-    public string? CodigoCarrera { get; set; }
-
+    
     [MaxLength(100)]
     public string ContraseñaEstudiante { get; set; } = null!;
 

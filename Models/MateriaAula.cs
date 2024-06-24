@@ -10,13 +10,13 @@ public class MateriaAula
     
     
     
-    public int? AulaId { get; set; }
+    public string? AulaId { get; set; }
     [ForeignKey("AulaId")]
     public virtual  Aula? Aulas { get; set; }
     
     
     
-    public int? CodigoMateria { get; set; }
+    public string? CodigoMateria { get; set; }
     [ForeignKey("CodigoMateria")]
     public virtual  Materia? Materias { get; set; }
     

@@ -33,7 +33,7 @@ namespace CRUD.Controllers
             }
 
             
-            if (seccion.CodigoSeccion > 0)
+            if (int.TryParse(seccion.CodigoSeccion, out int codigoSeccion) && codigoSeccion > 0)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
@@ -69,7 +69,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
+            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
 
             if (obj == null)
             {
@@ -86,13 +86,13 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult EditSeccion(int id, [FromBody] Seccion seccion)
         {
-            if (seccion == null || id != seccion.CodigoSeccion || id == 0)
+            if (seccion == null || id != int.Parse(seccion.CodigoSeccion) || id == 0)
             {
                 _logger.LogInformation("No se pudo obtener la sección");
                 return BadRequest();
             }
 
-            var objSec = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
+            var objSec = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
             
 
             if (objSec == null)
@@ -130,7 +130,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
+            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
 
             if (obj == null)
             {
@@ -166,7 +166,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
+            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
 
             if (obj == null)
             {

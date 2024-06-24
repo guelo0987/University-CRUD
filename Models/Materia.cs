@@ -13,8 +13,8 @@ public class Materia
     
     
     [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int CodigoMateria { get; set; }
+    [RegularExpression(@"^[A-Z]{3}\d{3}$", ErrorMessage = "El código de la materia debe tener 3 letras y 3 números, por ejemplo, MAT123.")]
+    public string CodigoMateria { get; set; }
     
     
     [MaxLength(100)]

@@ -99,7 +99,7 @@ namespace CRUD.Controllers
             var carreraMateria = _db.CarreraMaterias
                 .Include(cm => cm.Carreras)
                 .Include(cm => cm.Materias)
-                .FirstOrDefault(cm => cm.CarreraId == carreraId && cm.CodigoMateria == codigoMateria);
+                .FirstOrDefault(cm => cm.CarreraId == carreraId && cm.CodigoMateria == codigoMateria.ToString());
 
             if (carreraMateria == null)
             {
@@ -129,7 +129,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var objCrrM = _db.CarreraMaterias.FirstOrDefault(u => u.CarreraId == CarreraId && u.CodigoMateria == MateriaId);
+            var objCrrM = _db.CarreraMaterias.FirstOrDefault(u => u.CarreraId == CarreraId && u.CodigoMateria == MateriaId.ToString());
 
             if (objCrrM == null)
             {
@@ -175,7 +175,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId);
+            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId.ToString());
 
             if (carreraMateria == null)
             {
@@ -218,7 +218,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult DeleteCarreraMateria(int CarreraId, int MateriaId)
         {
-            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId);
+            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId.ToString());
 
             if (carreraMateria == null)
             {

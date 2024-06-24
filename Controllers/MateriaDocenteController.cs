@@ -92,7 +92,7 @@ namespace CRUD.Controllers
             var materiaDocente = _db.MateriaDocentes
                 .Include(dm => dm.Docentes)
                 .Include(dm => dm.Materias)
-                .FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria);
+                .FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria.ToString());
 
             if (materiaDocente == null)
             {
@@ -119,7 +119,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var objDocM = _db.MateriaDocentes.FirstOrDefault(u => u.DocenteId == docenteId && u.CodigoMateria == codigoMateria);
+            var objDocM = _db.MateriaDocentes.FirstOrDefault(u => u.DocenteId == docenteId && u.CodigoMateria == codigoMateria.ToString());
 
             if (objDocM == null)
             {
@@ -164,7 +164,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var materiaDocente = _db.MateriaDocentes.FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria);
+            var materiaDocente = _db.MateriaDocentes.FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria.ToString());
 
             if (materiaDocente == null)
             {
@@ -205,7 +205,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult DeleteMateriaDocente(int docenteId, int codigoMateria)
         {
-            var materiaDocente = _db.MateriaDocentes.FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria);
+            var materiaDocente = _db.MateriaDocentes.FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria.ToString());
 
             if (materiaDocente == null)
             {

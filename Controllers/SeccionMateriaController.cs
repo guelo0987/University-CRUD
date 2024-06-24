@@ -92,7 +92,7 @@ namespace CRUD.Controllers
             var seccionMateria = _db.SeccionMaterias
                 .Include(sm => sm.Seccion)
                 .Include(sm => sm.Materia)
-                .FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion && sm.CodigoMateria == codigoMateria);
+                .FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion.ToString() && sm.CodigoMateria == codigoMateria.ToString());
 
             if (seccionMateria == null)
             {
@@ -119,7 +119,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var objSecMat = _db.SeccionMaterias.FirstOrDefault(u => u.CodigoSeccion == codigoSeccion && u.CodigoMateria == codigoMateria);
+            var objSecMat = _db.SeccionMaterias.FirstOrDefault(u => u.CodigoSeccion == codigoSeccion.ToString() && u.CodigoMateria == codigoMateria.ToString());
 
             if (objSecMat == null)
             {
@@ -164,7 +164,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion && sm.CodigoMateria == codigoMateria);
+            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion.ToString() && sm.CodigoMateria == codigoMateria.ToString());
 
             if (seccionMateria == null)
             {
@@ -205,7 +205,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult DeleteSeccionMateria(int codigoSeccion, int codigoMateria)
         {
-            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion && sm.CodigoMateria == codigoMateria);
+            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion.ToString() && sm.CodigoMateria == codigoMateria.ToString());
 
             if (seccionMateria == null)
             {

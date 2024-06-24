@@ -38,7 +38,7 @@ namespace CRUD.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (materia.CodigoMateria > 0)
+            if (int.TryParse(materia.CodigoMateria, out int codigo) && codigo > 0)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
@@ -72,7 +72,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
 
             if (obj == null)
             {
@@ -91,13 +91,13 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<Materia> EditMateria(int id, [FromBody] Materia materia)
         {
-            if (materia == null || id != materia.CodigoMateria || id == 0)
+            if (materia == null || id.ToString() != materia.CodigoMateria || id == 0)
             {
                 _logger.LogInformation("No se pudo obtener la materia");
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
 
             if (obj == null)
             {
@@ -135,7 +135,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
 
             if (obj == null)
             {
@@ -171,7 +171,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
 
             if (obj == null)
             {

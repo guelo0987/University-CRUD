@@ -8,6 +8,7 @@ namespace CRUD.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Range(1111111, 1999999)]
         public int CodigoDocente { get; set; }
 
         [MaxLength(100)]

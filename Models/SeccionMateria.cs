@@ -5,11 +5,11 @@ namespace CRUD.Models
 {
     public class MateriaSeccion
     {
-        public int? CodigoMateria { get; set; }
+        public string? CodigoMateria { get; set; }
         [ForeignKey("CodigoMateria")]
         public virtual Materia? Materia { get; set; }
 
-        public int? CodigoSeccion { get; set; }
+        public string? CodigoSeccion { get; set; }
         [ForeignKey("CodigoSeccion")]
         public virtual Seccion? Seccion { get; set; }
     }

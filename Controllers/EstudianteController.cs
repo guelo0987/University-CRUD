@@ -175,7 +175,6 @@ public class EstudianteController : ControllerBase
         objEst.CondicionAcademica = estudiante.CondicionAcademica;
         objEst.CreditosAprobados = estudiante.CreditosAprobados;
         
-        objEst.CodigoCarrera = estudiante.CodigoCarrera;
         objEst.ContraseñaEstudiante = PassHasher.HashPassword(estudiante.DireccionEstudiante);
         objEst.CarreraId = estudiante.CarreraId;
         
