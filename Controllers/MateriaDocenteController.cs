@@ -172,13 +172,27 @@ namespace CRUD.Controllers
                 return NotFound();
             }
 
-            patchDoc.ApplyTo(materiaDocente, ModelState);
+            var nuevaMateriaDocente = new MateriaDocente
+            {
+                CodigoMateria = materiaDocente.CodigoMateria,
+                DocenteId = materiaDocente.DocenteId
+            };
 
-            if (!ModelState.IsValid)
+            patchDoc.ApplyTo(nuevaMateriaDocente, ModelState);
+
+            if (!TryValidateModel(nuevaMateriaDocente))
             {
                 _logger.LogError("Error de validación al aplicar el documento de parche");
                 return BadRequest(ModelState);
             }
+            
+            // Eliminar la entidad existente
+            _db.MateriaDocentes.Remove(materiaDocente);
+            _db.SaveChanges();
+
+            // Agregar la nueva entidad con los valores actualizados
+            _db.MateriaDocentes.Add(nuevaMateriaDocente);
+            _db.SaveChanges();
 
             _db.SaveChanges();
             _logger.LogInformation("MateriaDocente actualizada parcialmente");

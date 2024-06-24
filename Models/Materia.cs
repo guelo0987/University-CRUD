@@ -28,9 +28,10 @@ public class Materia
     public int CreditosMateria { get; set; }
     
     
-    
     [MaxLength(100)]
     public string AreaAcademica { get; set; }
+    
+    
     
     [JsonIgnore]
     public virtual ICollection<CarreraMateria>? CarreraMaterias { get; set; }
@@ -40,6 +41,13 @@ public class Materia
     
     [JsonIgnore]
     public virtual ICollection<MateriaDocente>? MateriaDocentes { get; set; }
+    
+    [JsonIgnore]
+    public virtual ICollection<MateriaAula>? MateriaAulas { get; set; }
+    
+    [JsonIgnore]
+    public virtual ICollection<MateriaSeccion>? MateriaSecciones { get; set; }
+    
     
     
 }

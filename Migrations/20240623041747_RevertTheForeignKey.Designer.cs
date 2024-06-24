@@ -4,6 +4,7 @@ using CRUD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240623041747_RevertTheForeignKey")]
+    partial class RevertTheForeignKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -204,21 +207,6 @@ namespace CRUD.Migrations
                     b.ToTable("MateriaDocentes");
                 });
 
-            modelBuilder.Entity("CRUD.Models.MateriaSeccion", b =>
-                {
-                    b.Property<int>("CodigoMateria")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CodigoSeccion")
-                        .HasColumnType("int");
-
-                    b.HasKey("CodigoMateria", "CodigoSeccion");
-
-                    b.HasIndex("CodigoSeccion");
-
-                    b.ToTable("SeccionMaterias");
-                });
-
             modelBuilder.Entity("CRUD.Models.Seccion", b =>
                 {
                     b.Property<int>("CodigoSeccion")
@@ -226,6 +214,9 @@ namespace CRUD.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodigoSeccion"));
+
+                    b.Property<int?>("CodigoMateria")
+                        .HasColumnType("int");
 
                     b.Property<int>("Cupo")
                         .HasColumnType("int");
@@ -236,6 +227,8 @@ namespace CRUD.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("CodigoSeccion");
+
+                    b.HasIndex("CodigoMateria");
 
                     b.ToTable("Secciones");
                 });
@@ -398,23 +391,13 @@ namespace CRUD.Migrations
                     b.Navigation("Materias");
                 });
 
-            modelBuilder.Entity("CRUD.Models.MateriaSeccion", b =>
+            modelBuilder.Entity("CRUD.Models.Seccion", b =>
                 {
                     b.HasOne("CRUD.Models.Materia", "Materia")
-                        .WithMany("MateriaSecciones")
-                        .HasForeignKey("CodigoMateria")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CRUD.Models.Seccion", "Seccion")
-                        .WithMany("MateriaSecciones")
-                        .HasForeignKey("CodigoSeccion")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Secciones")
+                        .HasForeignKey("CodigoMateria");
 
                     b.Navigation("Materia");
-
-                    b.Navigation("Seccion");
                 });
 
             modelBuilder.Entity("Estudiante", b =>
@@ -453,12 +436,7 @@ namespace CRUD.Migrations
 
                     b.Navigation("MateriaDocentes");
 
-                    b.Navigation("MateriaSecciones");
-                });
-
-            modelBuilder.Entity("CRUD.Models.Seccion", b =>
-                {
-                    b.Navigation("MateriaSecciones");
+                    b.Navigation("Secciones");
                 });
 
             modelBuilder.Entity("Estudiante", b =>

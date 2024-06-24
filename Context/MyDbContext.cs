@@ -33,6 +33,19 @@ public partial class MyDbContext : DbContext
     
     
     public virtual DbSet<MateriaDocente> MateriaDocentes { get; set; }
+    
+    public virtual DbSet<Aula> Aulas { get; set; }
+    
+    
+    public virtual DbSet<MateriaAula> MateriaAulas { get; set; }
+
+    
+    public virtual DbSet<Seccion> Secciones { get; set; }
+    
+    public virtual DbSet<MateriaSeccion> SeccionMaterias { get; set; }
+    
+    
+    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -85,6 +98,36 @@ public partial class MyDbContext : DbContext
             .HasOne(md => md.Materias)
             .WithMany(m => m.MateriaDocentes)
             .HasForeignKey(md => md.CodigoMateria);
+        
+        
+        modelBuilder.Entity<MateriaAula>()
+            .HasKey(ma => new { ma.AulaId, ma.CodigoMateria });
+
+        modelBuilder.Entity<MateriaAula>()
+            .HasOne(ma => ma.Aulas)
+            .WithMany(a => a.MateriaAulas)
+            .HasForeignKey(ma => ma.AulaId);
+
+        modelBuilder.Entity<MateriaAula>()
+            .HasOne(ma => ma.Materias)
+            .WithMany(m => m.MateriaAulas)
+            .HasForeignKey(ma => ma.CodigoMateria);
+        
+        
+        modelBuilder.Entity<MateriaSeccion>()
+            .HasKey(ms => new { ms.CodigoMateria, ms.CodigoSeccion });
+
+        modelBuilder.Entity<MateriaSeccion>()
+            .HasOne(ms => ms.Materia)
+            .WithMany(m => m.MateriaSecciones)
+            .HasForeignKey(ms => ms.CodigoMateria);
+
+        modelBuilder.Entity<MateriaSeccion>()
+            .HasOne(ms => ms.Seccion)
+            .WithMany(s => s.MateriaSecciones)
+            .HasForeignKey(ms => ms.CodigoSeccion);
+        
+        
 
 
        
