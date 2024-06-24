@@ -7,7 +7,7 @@ namespace CRUD.Models
     public class Docente
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Range(1111111, 1999999)]
         public int CodigoDocente { get; set; }
 

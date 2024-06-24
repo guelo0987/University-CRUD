@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240623042957_QuitarIdentityAlaSeccion")]
-    partial class QuitarIdentityAlaSeccion
+    [Migration("20240624232212_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,19 +27,16 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.Aula", b =>
                 {
-                    b.Property<int>("CodigoAula")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodigoAula"));
+                    b.Property<string>("CodigoAula")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Capacidad")
                         .HasColumnType("int");
 
                     b.Property<string>("TipoAula")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(6)
+                        .HasColumnType("nvarchar(6)");
 
                     b.HasKey("CodigoAula");
 
@@ -80,8 +77,8 @@ namespace CRUD.Migrations
                     b.Property<int>("CarreraId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CodigoMateria")
-                        .HasColumnType("int");
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CarreraId", "CodigoMateria");
 
@@ -93,10 +90,7 @@ namespace CRUD.Migrations
             modelBuilder.Entity("CRUD.Models.Docente", b =>
                 {
                     b.Property<int>("CodigoDocente")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodigoDocente"));
 
                     b.Property<string>("CorreoDocente")
                         .IsRequired()
@@ -125,8 +119,8 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.EstudianteMateria", b =>
                 {
-                    b.Property<int>("CodigoMateria")
-                        .HasColumnType("int");
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("CodigoEstudiante")
                         .HasColumnType("int");
@@ -148,11 +142,8 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.Materia", b =>
                 {
-                    b.Property<int>("CodigoMateria")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodigoMateria"));
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("AreaAcademica")
                         .IsRequired()
@@ -179,11 +170,11 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.MateriaAula", b =>
                 {
-                    b.Property<int>("AulaId")
-                        .HasColumnType("int");
+                    b.Property<string>("AulaId")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CodigoMateria")
-                        .HasColumnType("int");
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("AulaId", "CodigoMateria");
 
@@ -197,8 +188,8 @@ namespace CRUD.Migrations
                     b.Property<int>("DocenteId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CodigoMateria")
-                        .HasColumnType("int");
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("DocenteId", "CodigoMateria");
 
@@ -207,16 +198,25 @@ namespace CRUD.Migrations
                     b.ToTable("MateriaDocentes");
                 });
 
+            modelBuilder.Entity("CRUD.Models.MateriaSeccion", b =>
+                {
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CodigoSeccion")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CodigoMateria", "CodigoSeccion");
+
+                    b.HasIndex("CodigoSeccion");
+
+                    b.ToTable("SeccionMaterias");
+                });
+
             modelBuilder.Entity("CRUD.Models.Seccion", b =>
                 {
-                    b.Property<int>("CodigoSeccion")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodigoSeccion"));
-
-                    b.Property<int?>("CodigoMateria")
-                        .HasColumnType("int");
+                    b.Property<string>("CodigoSeccion")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Cupo")
                         .HasColumnType("int");
@@ -228,18 +228,13 @@ namespace CRUD.Migrations
 
                     b.HasKey("CodigoSeccion");
 
-                    b.HasIndex("CodigoMateria");
-
                     b.ToTable("Secciones");
                 });
 
             modelBuilder.Entity("Estudiante", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int?>("CarreraId")
                         .HasColumnType("int");
@@ -248,10 +243,6 @@ namespace CRUD.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("CodigoCarrera")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("CondicionAcademica")
                         .IsRequired()
@@ -391,13 +382,23 @@ namespace CRUD.Migrations
                     b.Navigation("Materias");
                 });
 
-            modelBuilder.Entity("CRUD.Models.Seccion", b =>
+            modelBuilder.Entity("CRUD.Models.MateriaSeccion", b =>
                 {
                     b.HasOne("CRUD.Models.Materia", "Materia")
-                        .WithMany("Secciones")
-                        .HasForeignKey("CodigoMateria");
+                        .WithMany("MateriaSecciones")
+                        .HasForeignKey("CodigoMateria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CRUD.Models.Seccion", "Seccion")
+                        .WithMany("MateriaSecciones")
+                        .HasForeignKey("CodigoSeccion")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Materia");
+
+                    b.Navigation("Seccion");
                 });
 
             modelBuilder.Entity("Estudiante", b =>
@@ -436,7 +437,12 @@ namespace CRUD.Migrations
 
                     b.Navigation("MateriaDocentes");
 
-                    b.Navigation("Secciones");
+                    b.Navigation("MateriaSecciones");
+                });
+
+            modelBuilder.Entity("CRUD.Models.Seccion", b =>
+                {
+                    b.Navigation("MateriaSecciones");
                 });
 
             modelBuilder.Entity("Estudiante", b =>

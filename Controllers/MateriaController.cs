@@ -38,7 +38,7 @@ namespace CRUD.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (int.TryParse(materia.CodigoMateria, out int codigo) && codigo > 0)
+            if (int.TryParse(materia.CodigoMateria, out int codigo) && codigo == 0)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
@@ -92,7 +92,7 @@ namespace CRUD.Controllers
         public ActionResult<Materia> EditMateria(int id, [FromBody] Materia materia)
         {
             if (materia == null || id.ToString() != materia.CodigoMateria || id == 0)
-            {
+            {   
                 _logger.LogInformation("No se pudo obtener la materia");
                 return BadRequest();
             }

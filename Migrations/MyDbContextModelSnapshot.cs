@@ -87,10 +87,7 @@ namespace CRUD.Migrations
             modelBuilder.Entity("CRUD.Models.Docente", b =>
                 {
                     b.Property<int>("CodigoDocente")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodigoDocente"));
 
                     b.Property<string>("CorreoDocente")
                         .IsRequired()
@@ -234,10 +231,7 @@ namespace CRUD.Migrations
             modelBuilder.Entity("Estudiante", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int?>("CarreraId")
                         .HasColumnType("int");
