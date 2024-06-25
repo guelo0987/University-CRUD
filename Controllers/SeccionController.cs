@@ -33,9 +33,12 @@ namespace CRUD.Controllers
             }
 
             
-            if (int.TryParse(seccion.CodigoSeccion, out int codigoSeccion) && codigoSeccion > 0)
+            var obj = _db.Secciones.FirstOrDefault(u => u.CodigoSeccion.ToString() == seccion.CodigoSeccion);
+
+            if (obj != null)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                _logger.LogError("Error al crear la seccion: la seccion con el código {CodigoAula} ya existe", seccion.CodigoSeccion);
+                return BadRequest("la seccion con el código proporcionado ya existe.");
             }
 
             
@@ -58,18 +61,18 @@ namespace CRUD.Controllers
         }
 
         // Obtener una Sección
-        [HttpGet("{id:int}", Name = "GetSeccion")]
+        [HttpGet("{id}", Name = "GetSeccion")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Seccion> GetSeccion(int id)
+        public ActionResult<Seccion> GetSeccion(string id)
         {
-            if (id <= 0)
+            if (string.IsNullOrEmpty(id))
             {
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
+            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
 
             if (obj == null)
             {
@@ -80,19 +83,19 @@ namespace CRUD.Controllers
         }
 
         // Editar una Sección
-        [HttpPut("{id:int}", Name = "EditSeccion")]
+        [HttpPut("{id}", Name = "EditSeccion")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditSeccion(int id, [FromBody] Seccion seccion)
+        public ActionResult EditSeccion(string id, [FromBody] Seccion seccion)
         {
-            if (seccion == null || id != int.Parse(seccion.CodigoSeccion) || id == 0)
+            if (seccion == null || id != seccion.CodigoSeccion || string.IsNullOrEmpty(id))
             {
                 _logger.LogInformation("No se pudo obtener la sección");
                 return BadRequest();
             }
 
-            var objSec = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
+            var objSec = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
             
 
             if (objSec == null)
@@ -119,18 +122,18 @@ namespace CRUD.Controllers
         }
 
         // Actualizar parcialmente una Sección
-        [HttpPatch("{id:int}", Name = "PatchSeccion")]
+        [HttpPatch("{id}", Name = "PatchSeccion")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult PatchSeccion(int id, JsonPatchDocument<Seccion> patchDocument)
+        public ActionResult PatchSeccion(string id, JsonPatchDocument<Seccion> patchDocument)
         {
-            if (patchDocument == null || id == 0)
+            if (patchDocument == null || string.IsNullOrEmpty(id))
             {
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
+            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
 
             if (obj == null)
             {
@@ -154,19 +157,19 @@ namespace CRUD.Controllers
         }
 
         // Eliminar una Sección
-        [HttpDelete("{id:int}", Name = "DeleteSeccion")]
+        [HttpDelete("{id}", Name = "DeleteSeccion")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult DeleteSeccion(int id)
+        public ActionResult DeleteSeccion(string id)
         {
-            if (id <= 0)
+            if (string.IsNullOrEmpty(id))
             {
                 _logger.LogError("Error al eliminar la sección " + id);
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id.ToString());
+            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
 
             if (obj == null)
             {

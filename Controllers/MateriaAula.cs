@@ -84,15 +84,15 @@ namespace CRUD.Controllers
         }
 
         // Obtener una MateriaAula específica
-        [HttpGet("{aulaId:int}/{codigoMateria:int}", Name = "GetMateriaAula")]
+        [HttpGet("{aulaId}/{codigoMateria}", Name = "GetMateriaAula")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<MateriaAula> GetMateriaAula(int aulaId, int codigoMateria)
+        public ActionResult<MateriaAula> GetMateriaAula(string aulaId, string codigoMateria)
         {
             var materiaAula = _db.MateriaAulas
                 .Include(ma => ma.Aulas)
                 .Include(ma => ma.Materias)
-                .FirstOrDefault(ma => ma.AulaId == aulaId.ToString() && ma.CodigoMateria == codigoMateria.ToString());
+                .FirstOrDefault(ma => ma.AulaId == aulaId && ma.CodigoMateria == codigoMateria);
 
             if (materiaAula == null)
             {
@@ -107,19 +107,19 @@ namespace CRUD.Controllers
         }
 
         // Editar una MateriaAula
-        [HttpPut("{aulaId:int}/{codigoMateria:int}", Name = "EditMateriaAula")]
+        [HttpPut("{aulaId}/{codigoMateria}", Name = "EditMateriaAula")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditMateriaAula(int aulaId, int codigoMateria, [FromBody] MateriaAula materiaAula)
+        public ActionResult EditMateriaAula(string aulaId, string codigoMateria, [FromBody] MateriaAula materiaAula)
         {
-            if (materiaAula == null || aulaId == 0 || codigoMateria == 0)
+            if (materiaAula == null || string.IsNullOrEmpty(codigoMateria)  || string.IsNullOrEmpty(aulaId))
             {
                 _logger.LogInformation("Datos inválidos o materiaAula no encontrado.");
                 return BadRequest();
             }
 
-            var objAulaM = _db.MateriaAulas.FirstOrDefault(u => u.AulaId == aulaId.ToString() && u.CodigoMateria == codigoMateria.ToString());
+            var objAulaM = _db.MateriaAulas.FirstOrDefault(u => u.AulaId == aulaId && u.CodigoMateria == codigoMateria);
 
             if (objAulaM == null)
             {
@@ -152,11 +152,11 @@ namespace CRUD.Controllers
         }
 
         // Actualizar parcialmente una MateriaAula
-        [HttpPatch("{aulaId:int}/{codigoMateria:int}", Name = "PatchMateriaAula")]
+        [HttpPatch("{aulaId}/{codigoMateria}", Name = "PatchMateriaAula")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult PatchMateriaAula(int aulaId, int codigoMateria, [FromBody] JsonPatchDocument<MateriaAula> patchDoc)
+        public ActionResult PatchMateriaAula(string aulaId, string codigoMateria, [FromBody] JsonPatchDocument<MateriaAula> patchDoc)
         {
             if (patchDoc == null)
             {
@@ -164,7 +164,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var materiaAula = _db.MateriaAulas.FirstOrDefault(ma => ma.AulaId == aulaId.ToString() && ma.CodigoMateria == codigoMateria.ToString());
+            var materiaAula = _db.MateriaAulas.FirstOrDefault(ma => ma.AulaId == aulaId && ma.CodigoMateria == codigoMateria);
 
             if (materiaAula == null)
             {
@@ -201,12 +201,12 @@ namespace CRUD.Controllers
         }
 
         // Eliminar una MateriaAula
-        [HttpDelete("{aulaId:int}/{codigoMateria:int}", Name = "DeleteMateriaAula")]
+        [HttpDelete("{aulaId}/{codigoMateria}", Name = "DeleteMateriaAula")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult DeleteMateriaAula(int aulaId, int codigoMateria)
+        public ActionResult DeleteMateriaAula(string aulaId, string codigoMateria)
         {
-            var materiaAula = _db.MateriaAulas.FirstOrDefault(ma => ma.AulaId == aulaId.ToString() && ma.CodigoMateria == codigoMateria.ToString());
+            var materiaAula = _db.MateriaAulas.FirstOrDefault(ma => ma.AulaId == aulaId && ma.CodigoMateria == codigoMateria);
 
             if (materiaAula == null)
             {

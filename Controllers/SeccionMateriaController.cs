@@ -84,15 +84,15 @@ namespace CRUD.Controllers
         }
 
         // Obtener una SeccionMateria específica
-        [HttpGet("{codigoSeccion:int}/{codigoMateria:int}", Name = "GetSeccionMateria")]
+        [HttpGet("{codigoSeccion}/{codigoMateria}", Name = "GetSeccionMateria")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<MateriaSeccion> GetSeccionMateria(int codigoSeccion, int codigoMateria)
+        public ActionResult<MateriaSeccion> GetSeccionMateria(string codigoSeccion, string codigoMateria)
         {
             var seccionMateria = _db.SeccionMaterias
                 .Include(sm => sm.Seccion)
                 .Include(sm => sm.Materia)
-                .FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion.ToString() && sm.CodigoMateria == codigoMateria.ToString());
+                .FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion && sm.CodigoMateria == codigoMateria);
 
             if (seccionMateria == null)
             {
@@ -107,19 +107,19 @@ namespace CRUD.Controllers
         }
 
         // Editar una SeccionMateria
-        [HttpPut("{codigoSeccion:int}/{codigoMateria:int}", Name = "EditSeccionMateria")]
+        [HttpPut("{codigoSeccion}/{codigoMateria}", Name = "EditSeccionMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditSeccionMateria(int codigoSeccion, int codigoMateria, [FromBody] MateriaSeccion seccionMateria)
+        public ActionResult EditSeccionMateria(string codigoSeccion, string codigoMateria, [FromBody] MateriaSeccion seccionMateria)
         {
-            if (seccionMateria == null || codigoSeccion == 0 || codigoMateria == 0)
+            if (seccionMateria == null || string.IsNullOrEmpty(codigoSeccion)|| string.IsNullOrEmpty(codigoMateria))
             {
                 _logger.LogInformation("Datos inválidos o seccionMateria no encontrada.");
                 return BadRequest();
             }
 
-            var objSecMat = _db.SeccionMaterias.FirstOrDefault(u => u.CodigoSeccion == codigoSeccion.ToString() && u.CodigoMateria == codigoMateria.ToString());
+            var objSecMat = _db.SeccionMaterias.FirstOrDefault(u => u.CodigoSeccion == codigoSeccion && u.CodigoMateria == codigoMateria);
 
             if (objSecMat == null)
             {
@@ -152,11 +152,11 @@ namespace CRUD.Controllers
         }
 
         // Actualizar parcialmente una SeccionMateria
-        [HttpPatch("{codigoSeccion:int}/{codigoMateria:int}", Name = "PatchSeccionMateria")]
+        [HttpPatch("{codigoSeccion}/{codigoMateria}", Name = "PatchSeccionMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult PatchSeccionMateria(int codigoSeccion, int codigoMateria, [FromBody] JsonPatchDocument<MateriaSeccion> patchDoc)
+        public ActionResult PatchSeccionMateria(string codigoSeccion, string codigoMateria, [FromBody] JsonPatchDocument<MateriaSeccion> patchDoc)
         {
             if (patchDoc == null)
             {
@@ -164,7 +164,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion.ToString() && sm.CodigoMateria == codigoMateria.ToString());
+            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion && sm.CodigoMateria == codigoMateria);
 
             if (seccionMateria == null)
             {
@@ -200,12 +200,12 @@ namespace CRUD.Controllers
         }
 
         // Eliminar una SeccionMateria
-        [HttpDelete("{codigoSeccion:int}/{codigoMateria:int}", Name = "DeleteSeccionMateria")]
+        [HttpDelete("{codigoSeccion}/{codigoMateria}", Name = "DeleteSeccionMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult DeleteSeccionMateria(int codigoSeccion, int codigoMateria)
+        public ActionResult DeleteSeccionMateria(string codigoSeccion, string codigoMateria)
         {
-            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion.ToString() && sm.CodigoMateria == codigoMateria.ToString());
+            var seccionMateria = _db.SeccionMaterias.FirstOrDefault(sm => sm.CodigoSeccion == codigoSeccion && sm.CodigoMateria == codigoMateria);
 
             if (seccionMateria == null)
             {

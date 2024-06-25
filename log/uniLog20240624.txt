@@ -8166,3 +8166,1592 @@ INNER JOIN [Materias] AS [m] ON [c].[CodigoMateria] = [m].[CodigoMateria]
 2024-06-24 19:35:59.165 -04:00 [DBG] Connection id "0HN4KKIJJTDQK" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-06-24 19:35:59.165 -04:00 [DBG] Connection id "0HN4KKIJJTDQK" disconnecting.
 2024-06-24 19:35:59.165 -04:00 [DBG] Connection id "0HN4KKIJJTDQK" stopped.
+2024-06-24 19:38:50.927 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" accepted.
+2024-06-24 19:38:50.927 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" started.
+2024-06-24 19:38:50.928 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/EstudianteMateriaApi/CreateEstudianteMateria - application/json-patch+json 107
+2024-06-24 19:38:50.929 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:38:50.929 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:38:50.929 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:38:50.929 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:38:50.929 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/CreateEstudianteMateria'
+2024-06-24 19:38:50.930 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)' with route pattern 'api/EstudianteMateriaApi/CreateEstudianteMateria' is valid for the request path '/api/EstudianteMateriaApi/CreateEstudianteMateria'
+2024-06-24 19:38:50.930 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)'
+2024-06-24 19:38:50.930 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)'
+2024-06-24 19:38:50.933 -04:00 [INF] Route matched with {action = "CreateEstudianteMateria", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.EstudianteMateria] CreateEstudianteMateria(CRUD.Models.EstudianteMateria) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-24 19:38:50.933 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:38:50.933 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:38:50.933 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:38:50.933 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:38:50.933 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:38:50.933 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-24 19:38:50.934 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-24 19:38:50.934 -04:00 [DBG] Attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' ...
+2024-06-24 19:38:50.934 -04:00 [DBG] Attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' using the name '' in request data ...
+2024-06-24 19:38:50.934 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:38:50.934 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:38:50.935 -04:00 [DBG] Connection id "0HN4KKIJJTDQL", Request id "0HN4KKIJJTDQL:00000001": started reading request body.
+2024-06-24 19:38:50.935 -04:00 [DBG] Connection id "0HN4KKIJJTDQL", Request id "0HN4KKIJJTDQL:00000001": done reading request body.
+2024-06-24 19:38:50.937 -04:00 [DBG] Done attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:38:50.937 -04:00 [DBG] Done attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:38:50.937 -04:00 [DBG] Attempting to validate the bound parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' ...
+2024-06-24 19:38:50.938 -04:00 [DBG] Done attempting to validate the bound parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:38:50.938 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD) - Validation state: "Valid"
+2024-06-24 19:38:50.941 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:38:50.942 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:38:50.942 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:38:50.942 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.942 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.942 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:38:50.942 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.942 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.942 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:38:50.948 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:38:50.948 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:38:50.948 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:38:50.948 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:38:50.949 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.949 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:38:50.950 -04:00 [DBG] Compiling query expression: 
+'DbSet<Estudiante>()
+    .FirstOrDefault(e => EF.Property<int>(e, "Id") == __p_0)'
+2024-06-24 19:38:50.953 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Estudiante>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Estudiante.Id (int) Required PK AfterSave:Throw, 0], [Property: Estudiante.CarreraId (int?) FK Index, 1], [Property: Estudiante.CiudadEstudiante (string) Required MaxLength(100), 2], [Property: Estudiante.CondicionAcademica (string) Required MaxLength(50), 3], [Property: Estudiante.ContraseñaEstudiante (string) Required MaxLength(100), 4], [Property: Estudiante.CorreoEstudiante (string) Required MaxLength(100), 5], [Property: Estudiante.CreditosAprobados (int?), 6], [Property: Estudiante.DireccionEstudiante (string) Required MaxLength(200), 7], [Property: Estudiante.FechaIngreso (DateTime) Required, 8], [Property: Estudiante.IndiceGeneral (decimal?), 9], [Property: Estudiante.IndicePeriodo (decimal?), 10], [Property: Estudiante.Nacionalidad (string) Required MaxLength(50), 11], [Property: Estudiante.NombreEstudiante (string) Required MaxLength(100), 12], [Property: Estudiante.PeriodosCursados (int?), 13], [Property: Estudiante.SexoEstudiante (string) Required MaxLength(1), 14], [Property: Estudiante.TelefonoEstudiante (string) Required MaxLength(15), 15] }
+        SELECT TOP(1) e.Id, e.CarreraId, e.CiudadEstudiante, e.CondicionAcademica, e.ContraseñaEstudiante, e.CorreoEstudiante, e.CreditosAprobados, e.DireccionEstudiante, e.FechaIngreso, e.IndiceGeneral, e.IndicePeriodo, e.Nacionalidad, e.NombreEstudiante, e.PeriodosCursados, e.SexoEstudiante, e.TelefonoEstudiante
+        FROM Estudiantes AS e
+        WHERE e.Id == @__p_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Estudiante entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Estudiante instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Estudiante);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Estudiante.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Estudiante").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Estudiante)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Estudiante")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Estudiante")]: 
+                        {
+                            return 
+                            {
+                                Estudiante instance;
+                                instance = new Estudiante();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CarreraId>k__BackingField = dataReader.IsDBNull(1) ? default(int?) : (int?)dataReader.GetInt32(1);
+                                instance.<CiudadEstudiante>k__BackingField = dataReader.GetString(2);
+                                instance.<CondicionAcademica>k__BackingField = dataReader.GetString(3);
+                                instance.<ContraseñaEstudiante>k__BackingField = dataReader.GetString(4);
+                                instance.<CorreoEstudiante>k__BackingField = dataReader.GetString(5);
+                                instance.<CreditosAprobados>k__BackingField = dataReader.IsDBNull(6) ? default(int?) : (int?)dataReader.GetInt32(6);
+                                instance.<DireccionEstudiante>k__BackingField = dataReader.GetString(7);
+                                instance.<FechaIngreso>k__BackingField = dataReader.GetDateTime(8);
+                                instance.<IndiceGeneral>k__BackingField = dataReader.IsDBNull(9) ? default(decimal?) : (decimal?)dataReader.GetDecimal(9);
+                                instance.<IndicePeriodo>k__BackingField = dataReader.IsDBNull(10) ? default(decimal?) : (decimal?)dataReader.GetDecimal(10);
+                                instance.<Nacionalidad>k__BackingField = dataReader.GetString(11);
+                                instance.<NombreEstudiante>k__BackingField = dataReader.GetString(12);
+                                instance.<PeriodosCursados>k__BackingField = dataReader.IsDBNull(13) ? default(int?) : (int?)dataReader.GetInt32(13);
+                                instance.<SexoEstudiante>k__BackingField = dataReader.GetString(14);
+                                instance.<TelefonoEstudiante>k__BackingField = dataReader.GetString(15);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Estudiante")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Estudiante)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-24 19:38:50.954 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.954 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.954 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:38:50.954 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.954 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.954 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE [e].[Id] = @__p_0
+2024-06-24 19:38:50.969 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE [e].[Id] = @__p_0
+2024-06-24 19:38:50.971 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:38:50.971 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:38:50.971 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 2ms reading results.
+2024-06-24 19:38:50.971 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.971 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:38:50.972 -04:00 [DBG] Compiling query expression: 
+'DbSet<EstudianteMateria>()
+    .FirstOrDefault(em => em.CodigoMateria == __estudianteMateria_CodigoMateria_0 && em.CodigoEstudiante == __estudianteMateria_CodigoEstudiante_1)'
+2024-06-24 19:38:50.974 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<EstudianteMateria>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: EstudianteMateria.CodigoMateria (string) Required PK FK AfterSave:Throw, 0], [Property: EstudianteMateria.CodigoEstudiante (int?) Required PK FK Index AfterSave:Throw, 1], [Property: EstudianteMateria.Calificacion (string) Required MaxLength(2), 2], [Property: EstudianteMateria.PeriodoActual (int) Required, 3] }
+        SELECT TOP(1) e.CodigoMateria, e.CodigoEstudiante, e.Calificacion, e.PeriodoActual
+        FROM EstudianteMaterias AS e
+        WHERE (e.CodigoMateria == @__estudianteMateria_CodigoMateria_0) && (e.CodigoEstudiante == @__estudianteMateria_CodigoEstudiante_1)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        EstudianteMateria entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            EstudianteMateria instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(EstudianteMateria);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: EstudianteMateria.CodigoMateria, EstudianteMateria.CodigoEstudiante PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetString(0), 
+                    (object)dataReader.GetInt32(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (EstudianteMateria)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")]: 
+                        {
+                            return 
+                            {
+                                EstudianteMateria instance;
+                                instance = new EstudianteMateria();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetString(0);
+                                instance.<CodigoEstudiante>k__BackingField = (int?)dataReader.GetInt32(1);
+                                instance.<Calificacion>k__BackingField = dataReader.GetString(2);
+                                instance.<PeriodoActual>k__BackingField = dataReader.GetInt32(3);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(EstudianteMateria)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-24 19:38:50.975 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.975 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.975 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:38:50.975 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.975 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.975 -04:00 [DBG] Executing DbCommand [Parameters=[@__estudianteMateria_CodigoMateria_0='?' (Size = 450), @__estudianteMateria_CodigoEstudiante_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoActual]
+FROM [EstudianteMaterias] AS [e]
+WHERE [e].[CodigoMateria] = @__estudianteMateria_CodigoMateria_0 AND [e].[CodigoEstudiante] = @__estudianteMateria_CodigoEstudiante_1
+2024-06-24 19:38:50.978 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__estudianteMateria_CodigoMateria_0='?' (Size = 450), @__estudianteMateria_CodigoEstudiante_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoActual]
+FROM [EstudianteMaterias] AS [e]
+WHERE [e].[CodigoMateria] = @__estudianteMateria_CodigoMateria_0 AND [e].[CodigoEstudiante] = @__estudianteMateria_CodigoEstudiante_1
+2024-06-24 19:38:50.979 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:38:50.979 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:38:50.979 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.979 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:38:50.984 -04:00 [DBG] The navigation 'EstudianteMateria.Estudiantes' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:38:50.985 -04:00 [DBG] The navigation 'EstudianteMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:38:50.986 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:38:50.986 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-24 19:38:50.986 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-24 19:38:50.987 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-24 19:38:50.988 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.988 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:50.988 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:38:50.988 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.988 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:38:50.988 -04:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 450), @p2='?' (Size = 2), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [EstudianteMaterias] ([CodigoEstudiante], [CodigoMateria], [Calificacion], [PeriodoActual])
+VALUES (@p0, @p1, @p2, @p3);
+2024-06-24 19:38:51.005 -04:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 450), @p2='?' (Size = 2), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [EstudianteMaterias] ([CodigoEstudiante], [CodigoMateria], [Calificacion], [PeriodoActual])
+VALUES (@p0, @p1, @p2, @p3);
+2024-06-24 19:38:51.005 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:38:51.005 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:38:51.005 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:51.005 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:38:51.006 -04:00 [DBG] An entity of type 'EstudianteMateria' tracked by 'MyDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:38:51.006 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-24 19:38:51.006 -04:00 [INF] EstudianteMateria creada exitosamente
+2024-06-24 19:38:51.006 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 67.8359ms.
+2024-06-24 19:38:51.006 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:38:51.006 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-24 19:38:51.006 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-24 19:38:51.006 -04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:38:51.007 -04:00 [DBG] Found the endpoints ["CRUD.Controllers.EstudianteMateriaController.GetEstudianteMateria (CRUD)"] for address GetEstudianteMateria(codigoEstudiante=[1117091],codigoMateria=[IDS322])
+2024-06-24 19:38:51.007 -04:00 [DBG] Failed to process the template api/EstudianteMateriaApi/{codigoEstudiante:int}/{codigoMateria:int} for CRUD.Controllers.EstudianteMateriaController.GetEstudianteMateria (CRUD). The constraint Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint for parameter codigoMateria failed with values { "action": "CreateEstudianteMateria", "codigoEstudiante": "1117091", "codigoMateria": "IDS322", "controller": "EstudianteMateria" }
+2024-06-24 19:38:51.007 -04:00 [DBG] Link generation failed for endpoints ["CRUD.Controllers.EstudianteMateriaController.GetEstudianteMateria (CRUD)"]
+2024-06-24 19:38:51.007 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD) in 74.0671ms
+2024-06-24 19:38:51.007 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)'
+2024-06-24 19:38:51.007 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-24 19:38:51.008 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" completed keep alive response.
+2024-06-24 19:38:51.008 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:38:51.008 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:38:51.008 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:38:51.008 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/EstudianteMateriaApi/CreateEstudianteMateria - 500 null text/plain; charset=utf-8 80.3544ms
+2024-06-24 19:38:54.199 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" received FIN.
+2024-06-24 19:38:54.199 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:38:54.199 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" disconnecting.
+2024-06-24 19:38:54.200 -04:00 [DBG] Connection id "0HN4KKIJJTDQL" stopped.
+2024-06-24 19:39:12.784 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" accepted.
+2024-06-24 19:39:12.787 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" started.
+2024-06-24 19:39:12.795 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/EstudianteMateriaApi/CreateEstudianteMateria - application/json-patch+json 107
+2024-06-24 19:39:12.795 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:39:12.795 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:39:12.795 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:39:12.795 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:39:12.797 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/CreateEstudianteMateria'
+2024-06-24 19:39:12.797 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)' with route pattern 'api/EstudianteMateriaApi/CreateEstudianteMateria' is valid for the request path '/api/EstudianteMateriaApi/CreateEstudianteMateria'
+2024-06-24 19:39:12.797 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)'
+2024-06-24 19:39:12.797 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)'
+2024-06-24 19:39:12.797 -04:00 [INF] Route matched with {action = "CreateEstudianteMateria", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.EstudianteMateria] CreateEstudianteMateria(CRUD.Models.EstudianteMateria) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-24 19:39:12.797 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:39:12.797 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:39:12.797 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:39:12.797 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:39:12.797 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:39:12.797 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-24 19:39:12.798 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-24 19:39:12.798 -04:00 [DBG] Attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' ...
+2024-06-24 19:39:12.798 -04:00 [DBG] Attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' using the name '' in request data ...
+2024-06-24 19:39:12.798 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:39:12.798 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:39:12.798 -04:00 [DBG] Connection id "0HN4KKIJJTDQM", Request id "0HN4KKIJJTDQM:00000001": started reading request body.
+2024-06-24 19:39:12.798 -04:00 [DBG] Connection id "0HN4KKIJJTDQM", Request id "0HN4KKIJJTDQM:00000001": done reading request body.
+2024-06-24 19:39:12.798 -04:00 [DBG] Done attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:39:12.798 -04:00 [DBG] Done attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:39:12.798 -04:00 [DBG] Attempting to validate the bound parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' ...
+2024-06-24 19:39:12.798 -04:00 [DBG] Done attempting to validate the bound parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-24 19:39:12.798 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD) - Validation state: "Valid"
+2024-06-24 19:39:12.800 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:39:12.800 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:39:12.800 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:39:12.800 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.801 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.801 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:39:12.801 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:39:12.801 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:39:12.802 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:39:12.807 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:39:12.807 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:39:12.807 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:39:12.807 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:39:12.807 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.808 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:39:12.808 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.808 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.808 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:39:12.808 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:39:12.808 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:39:12.808 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE [e].[Id] = @__p_0
+2024-06-24 19:39:12.811 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE [e].[Id] = @__p_0
+2024-06-24 19:39:12.812 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:39:12.812 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:39:12.812 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:39:12.812 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.812 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:39:12.812 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.812 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.812 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:39:12.812 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:39:12.812 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:39:12.812 -04:00 [DBG] Executing DbCommand [Parameters=[@__estudianteMateria_CodigoMateria_0='?' (Size = 450), @__estudianteMateria_CodigoEstudiante_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoActual]
+FROM [EstudianteMaterias] AS [e]
+WHERE [e].[CodigoMateria] = @__estudianteMateria_CodigoMateria_0 AND [e].[CodigoEstudiante] = @__estudianteMateria_CodigoEstudiante_1
+2024-06-24 19:39:12.814 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__estudianteMateria_CodigoMateria_0='?' (Size = 450), @__estudianteMateria_CodigoEstudiante_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoActual]
+FROM [EstudianteMaterias] AS [e]
+WHERE [e].[CodigoMateria] = @__estudianteMateria_CodigoMateria_0 AND [e].[CodigoEstudiante] = @__estudianteMateria_CodigoEstudiante_1
+2024-06-24 19:39:12.815 -04:00 [DBG] The navigation 'EstudianteMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:39:12.815 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:39:12.815 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:39:12.815 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:39:12.815 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.815 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:39:12.815 -04:00 [ERR] Error al crear la EstudianteMateria: La relación ya existe
+2024-06-24 19:39:12.815 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 16.5204ms.
+2024-06-24 19:39:12.815 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:39:12.815 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-24 19:39:12.815 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-24 19:39:12.815 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2024-06-24 19:39:12.815 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD) in 18.0834ms
+2024-06-24 19:39:12.815 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.CreateEstudianteMateria (CRUD)'
+2024-06-24 19:39:12.815 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" completed keep alive response.
+2024-06-24 19:39:12.815 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:39:12.815 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:39:12.815 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:39:12.815 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/EstudianteMateriaApi/CreateEstudianteMateria - 400 50 application/json; charset=utf-8 20.7265ms
+2024-06-24 19:39:14.208 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" received FIN.
+2024-06-24 19:39:14.208 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" disconnecting.
+2024-06-24 19:39:14.208 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" stopped.
+2024-06-24 19:39:14.209 -04:00 [DBG] Connection id "0HN4KKIJJTDQM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:41:57.895 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" accepted.
+2024-06-24 19:41:57.895 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" started.
+2024-06-24 19:41:57.895 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/DocenteApi/CreateDocente - application/json-patch+json 162
+2024-06-24 19:41:57.896 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:41:57.896 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:41:57.896 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:41:57.896 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:41:57.896 -04:00 [DBG] 1 candidate(s) found for the request path '/api/DocenteApi/CreateDocente'
+2024-06-24 19:41:57.896 -04:00 [DBG] Endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)' with route pattern 'api/DocenteApi/CreateDocente' is valid for the request path '/api/DocenteApi/CreateDocente'
+2024-06-24 19:41:57.896 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)'
+2024-06-24 19:41:57.896 -04:00 [INF] Executing endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)'
+2024-06-24 19:41:57.897 -04:00 [INF] Route matched with {action = "CreateDocente", controller = "Docente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Docente] CreateDocente(CRUD.Models.Docente) on controller CRUD.Controllers.DocenteController (CRUD).
+2024-06-24 19:41:57.898 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:41:57.898 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:41:57.898 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:41:57.898 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:41:57.898 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:41:57.898 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.DocenteController (CRUD)
+2024-06-24 19:41:57.898 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.DocenteController (CRUD)
+2024-06-24 19:41:57.898 -04:00 [DBG] Attempting to bind parameter 'docente' of type 'CRUD.Models.Docente' ...
+2024-06-24 19:41:57.898 -04:00 [DBG] Attempting to bind parameter 'docente' of type 'CRUD.Models.Docente' using the name '' in request data ...
+2024-06-24 19:41:57.898 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:41:57.898 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:41:57.898 -04:00 [DBG] Connection id "0HN4KKIJJTDQN", Request id "0HN4KKIJJTDQN:00000001": started reading request body.
+2024-06-24 19:41:57.898 -04:00 [DBG] Connection id "0HN4KKIJJTDQN", Request id "0HN4KKIJJTDQN:00000001": done reading request body.
+2024-06-24 19:41:57.900 -04:00 [DBG] Done attempting to bind parameter 'docente' of type 'CRUD.Models.Docente'.
+2024-06-24 19:41:57.900 -04:00 [DBG] Done attempting to bind parameter 'docente' of type 'CRUD.Models.Docente'.
+2024-06-24 19:41:57.900 -04:00 [DBG] Attempting to validate the bound parameter 'docente' of type 'CRUD.Models.Docente' ...
+2024-06-24 19:41:57.902 -04:00 [DBG] Done attempting to validate the bound parameter 'docente' of type 'CRUD.Models.Docente'.
+2024-06-24 19:41:57.902 -04:00 [INF] Executing action method CRUD.Controllers.DocenteController.CreateDocente (CRUD) - Validation state: "Valid"
+2024-06-24 19:41:57.903 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:41:57.904 -04:00 [DBG] Compiling query expression: 
+'DbSet<Docente>()
+    .Any(u => u.CorreoDocente.ToLower() == __ToLower_0)'
+2024-06-24 19:41:57.906 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Docentes AS d
+            WHERE LOWER(d.CorreoDocente) == @__ToLower_0)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2024-06-24 19:41:57.906 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:41:57.906 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:41:57.906 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:41:57.906 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:41:57.907 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:41:57.907 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:41:57.907 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:41:57.907 -04:00 [DBG] Executing DbCommand [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Docentes] AS [d]
+        WHERE LOWER([d].[CorreoDocente]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-24 19:41:57.922 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Docentes] AS [d]
+        WHERE LOWER([d].[CorreoDocente]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-24 19:41:57.922 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:41:57.922 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:41:57.922 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:41:57.922 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:41:57.922 -04:00 [INF] Executed action method CRUD.Controllers.DocenteController.CreateDocente (CRUD), returned result Microsoft.AspNetCore.Mvc.StatusCodeResult in 20.2972ms.
+2024-06-24 19:41:57.922 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:41:57.922 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-06-24 19:41:57.922 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-24 19:41:57.922 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-06-24 19:41:57.925 -04:00 [INF] Executed action CRUD.Controllers.DocenteController.CreateDocente (CRUD) in 27.1375ms
+2024-06-24 19:41:57.925 -04:00 [INF] Executed endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)'
+2024-06-24 19:41:57.925 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" completed keep alive response.
+2024-06-24 19:41:57.925 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:41:57.925 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:41:57.925 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:41:57.925 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/DocenteApi/CreateDocente - 500 201 application/problem+json; charset=utf-8 29.5178ms
+2024-06-24 19:41:59.242 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" received FIN.
+2024-06-24 19:41:59.242 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" disconnecting.
+2024-06-24 19:41:59.242 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:41:59.243 -04:00 [DBG] Connection id "0HN4KKIJJTDQN" stopped.
+2024-06-24 19:43:35.552 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" accepted.
+2024-06-24 19:43:35.552 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" started.
+2024-06-24 19:43:35.553 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/DocenteApi/CreateDocente - application/json-patch+json 162
+2024-06-24 19:43:35.554 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:43:35.554 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:43:35.554 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:43:35.554 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:43:35.554 -04:00 [DBG] 1 candidate(s) found for the request path '/api/DocenteApi/CreateDocente'
+2024-06-24 19:43:35.554 -04:00 [DBG] Endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)' with route pattern 'api/DocenteApi/CreateDocente' is valid for the request path '/api/DocenteApi/CreateDocente'
+2024-06-24 19:43:35.554 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)'
+2024-06-24 19:43:35.554 -04:00 [INF] Executing endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)'
+2024-06-24 19:43:35.562 -04:00 [INF] Route matched with {action = "CreateDocente", controller = "Docente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Docente] CreateDocente(CRUD.Models.Docente) on controller CRUD.Controllers.DocenteController (CRUD).
+2024-06-24 19:43:35.562 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:43:35.562 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:43:35.562 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:43:35.562 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:43:35.562 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:43:35.562 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.DocenteController (CRUD)
+2024-06-24 19:43:35.563 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.DocenteController (CRUD)
+2024-06-24 19:43:35.563 -04:00 [DBG] Attempting to bind parameter 'docente' of type 'CRUD.Models.Docente' ...
+2024-06-24 19:43:35.563 -04:00 [DBG] Attempting to bind parameter 'docente' of type 'CRUD.Models.Docente' using the name '' in request data ...
+2024-06-24 19:43:35.563 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:43:35.563 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:43:35.563 -04:00 [DBG] Connection id "0HN4KKIJJTDQO", Request id "0HN4KKIJJTDQO:00000001": started reading request body.
+2024-06-24 19:43:35.563 -04:00 [DBG] Connection id "0HN4KKIJJTDQO", Request id "0HN4KKIJJTDQO:00000001": done reading request body.
+2024-06-24 19:43:35.563 -04:00 [DBG] Done attempting to bind parameter 'docente' of type 'CRUD.Models.Docente'.
+2024-06-24 19:43:35.563 -04:00 [DBG] Done attempting to bind parameter 'docente' of type 'CRUD.Models.Docente'.
+2024-06-24 19:43:35.563 -04:00 [DBG] Attempting to validate the bound parameter 'docente' of type 'CRUD.Models.Docente' ...
+2024-06-24 19:43:35.565 -04:00 [DBG] Done attempting to validate the bound parameter 'docente' of type 'CRUD.Models.Docente'.
+2024-06-24 19:43:35.565 -04:00 [INF] Executing action method CRUD.Controllers.DocenteController.CreateDocente (CRUD) - Validation state: "Valid"
+2024-06-24 19:43:35.567 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:43:35.567 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:43:35.567 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:43:35.567 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.567 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.567 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:43:35.567 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:43:35.567 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:43:35.568 -04:00 [DBG] Executing DbCommand [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Docentes] AS [d]
+        WHERE LOWER([d].[CorreoDocente]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-24 19:43:35.572 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Docentes] AS [d]
+        WHERE LOWER([d].[CorreoDocente]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-24 19:43:35.572 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:43:35.572 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:43:35.572 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.572 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:43:35.579 -04:00 [DBG] Context 'MyDbContext' started tracking 'Docente' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:43:35.579 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-24 19:43:35.579 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-24 19:43:35.581 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-24 19:43:35.581 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.581 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.581 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:43:35.581 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:43:35.581 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:43:35.581 -04:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 1), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Docentes] ([CodigoDocente], [CorreoDocente], [NombreDocente], [SexoDocente], [TelefonoDocente])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-24 19:43:35.592 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 1), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Docentes] ([CodigoDocente], [CorreoDocente], [NombreDocente], [SexoDocente], [TelefonoDocente])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-24 19:43:35.592 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:43:35.592 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:43:35.592 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.592 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:43:35.592 -04:00 [DBG] An entity of type 'Docente' tracked by 'MyDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:43:35.592 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-24 19:43:35.592 -04:00 [INF] Docente creado exitosamente
+2024-06-24 19:43:35.592 -04:00 [INF] Executed action method CRUD.Controllers.DocenteController.CreateDocente (CRUD), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 26.8794ms.
+2024-06-24 19:43:35.592 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:43:35.592 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-24 19:43:35.592 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-24 19:43:35.592 -04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CRUD.Models.Docente'.
+2024-06-24 19:43:35.592 -04:00 [DBG] Found the endpoints ["CRUD.Controllers.DocenteController.GetDocente (CRUD)"] for address GetDocente(id=[1117092])
+2024-06-24 19:43:35.593 -04:00 [DBG] Successfully processed template api/DocenteApi/{id:int} for CRUD.Controllers.DocenteController.GetDocente (CRUD) resulting in /api/DocenteApi/1117092 and 
+2024-06-24 19:43:35.593 -04:00 [DBG] Link generation succeeded for endpoints ["CRUD.Controllers.DocenteController.GetDocente (CRUD)"] with result /api/DocenteApi/1117092
+2024-06-24 19:43:35.593 -04:00 [INF] Executed action CRUD.Controllers.DocenteController.CreateDocente (CRUD) in 31.237ms
+2024-06-24 19:43:35.593 -04:00 [INF] Executed endpoint 'CRUD.Controllers.DocenteController.CreateDocente (CRUD)'
+2024-06-24 19:43:35.593 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" completed keep alive response.
+2024-06-24 19:43:35.593 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:43:35.593 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:43:35.593 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:43:35.593 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/DocenteApi/CreateDocente - 201 142 application/json; charset=utf-8 40.5837ms
+2024-06-24 19:43:39.258 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" received FIN.
+2024-06-24 19:43:39.259 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" disconnecting.
+2024-06-24 19:43:39.259 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" stopped.
+2024-06-24 19:43:39.259 -04:00 [DBG] Connection id "0HN4KKIJJTDQO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:44:29.392 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" accepted.
+2024-06-24 19:44:29.393 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" started.
+2024-06-24 19:44:29.394 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/MateriaDocenteApi/CreateMateriaDocente - application/json-patch+json 59
+2024-06-24 19:44:29.394 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:44:29.394 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:44:29.394 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:44:29.394 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:44:29.398 -04:00 [DBG] 1 candidate(s) found for the request path '/api/MateriaDocenteApi/CreateMateriaDocente'
+2024-06-24 19:44:29.398 -04:00 [DBG] Endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)' with route pattern 'api/MateriaDocenteApi/CreateMateriaDocente' is valid for the request path '/api/MateriaDocenteApi/CreateMateriaDocente'
+2024-06-24 19:44:29.398 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)'
+2024-06-24 19:44:29.398 -04:00 [INF] Executing endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)'
+2024-06-24 19:44:29.400 -04:00 [INF] Route matched with {action = "CreateMateriaDocente", controller = "MateriaDocente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.MateriaDocente] CreateMateriaDocente(CRUD.Models.MateriaDocente) on controller CRUD.Controllers.MateriaDocenteController (CRUD).
+2024-06-24 19:44:29.400 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:44:29.400 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:44:29.400 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:44:29.400 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:44:29.400 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:44:29.400 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-24 19:44:29.401 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-24 19:44:29.401 -04:00 [DBG] Attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente' ...
+2024-06-24 19:44:29.401 -04:00 [DBG] Attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente' using the name '' in request data ...
+2024-06-24 19:44:29.401 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:44:29.401 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:44:29.401 -04:00 [DBG] Connection id "0HN4KKIJJTDQP", Request id "0HN4KKIJJTDQP:00000001": started reading request body.
+2024-06-24 19:44:29.401 -04:00 [DBG] Connection id "0HN4KKIJJTDQP", Request id "0HN4KKIJJTDQP:00000001": done reading request body.
+2024-06-24 19:44:29.405 -04:00 [DBG] Done attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:29.405 -04:00 [DBG] Done attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:29.405 -04:00 [DBG] Attempting to validate the bound parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente' ...
+2024-06-24 19:44:29.407 -04:00 [DBG] Done attempting to validate the bound parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:29.408 -04:00 [INF] Executing action method CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD) - Validation state: "Valid"
+2024-06-24 19:44:29.411 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:44:29.412 -04:00 [DBG] Compiling query expression: 
+'DbSet<Docente>()
+    .FirstOrDefault(e => EF.Property<int>(e, "CodigoDocente") == __p_0)'
+2024-06-24 19:44:29.414 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Docente>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Docente.CodigoDocente (int) Required PK AfterSave:Throw, 0], [Property: Docente.CorreoDocente (string) Required MaxLength(100), 1], [Property: Docente.NombreDocente (string) Required MaxLength(100), 2], [Property: Docente.SexoDocente (string) Required MaxLength(1), 3], [Property: Docente.TelefonoDocente (string) Required MaxLength(20), 4] }
+        SELECT TOP(1) d.CodigoDocente, d.CorreoDocente, d.NombreDocente, d.SexoDocente, d.TelefonoDocente
+        FROM Docentes AS d
+        WHERE d.CodigoDocente == @__p_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Docente entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Docente instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Docente);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Docente.CodigoDocente PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Docente").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Docente)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Docente | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Docente")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Docente | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Docente")]: 
+                        {
+                            return 
+                            {
+                                Docente instance;
+                                instance = new Docente();
+                                instance.<CodigoDocente>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CorreoDocente>k__BackingField = dataReader.GetString(1);
+                                instance.<NombreDocente>k__BackingField = dataReader.GetString(2);
+                                instance.<SexoDocente>k__BackingField = dataReader.GetString(3);
+                                instance.<TelefonoDocente>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Docente | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Docente")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Docente)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-24 19:44:29.416 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:44:29.416 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:44:29.416 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.416 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.416 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:29.416 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.416 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.416 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[CodigoDocente], [d].[CorreoDocente], [d].[NombreDocente], [d].[SexoDocente], [d].[TelefonoDocente]
+FROM [Docentes] AS [d]
+WHERE [d].[CodigoDocente] = @__p_0
+2024-06-24 19:44:29.432 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[CodigoDocente], [d].[CorreoDocente], [d].[NombreDocente], [d].[SexoDocente], [d].[TelefonoDocente]
+FROM [Docentes] AS [d]
+WHERE [d].[CodigoDocente] = @__p_0
+2024-06-24 19:44:29.432 -04:00 [DBG] Context 'MyDbContext' started tracking 'Docente' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:29.432 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:29.432 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:44:29.432 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.432 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:29.433 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.433 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.433 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:29.433 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.433 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.433 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:44:29.435 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:44:29.435 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:29.435 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:29.435 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:44:29.435 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.435 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:29.436 -04:00 [DBG] Compiling query expression: 
+'DbSet<MateriaDocente>()
+    .FirstOrDefault(dm => dm.DocenteId == __materiaDocente_DocenteId_0 && dm.CodigoMateria == __materiaDocente_CodigoMateria_1)'
+2024-06-24 19:44:29.438 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<MateriaDocente>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: MateriaDocente.DocenteId (int?) Required PK FK AfterSave:Throw, 0], [Property: MateriaDocente.CodigoMateria (string) Required PK FK Index AfterSave:Throw, 1] }
+        SELECT TOP(1) m.DocenteId, m.CodigoMateria
+        FROM MateriaDocentes AS m
+        WHERE (m.DocenteId == @__materiaDocente_DocenteId_0) && (m.CodigoMateria == @__materiaDocente_CodigoMateria_1)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        MateriaDocente entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            MateriaDocente instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(MateriaDocente);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: MateriaDocente.DocenteId, MateriaDocente.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.MateriaDocente").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetInt32(0), 
+                    (object)dataReader.GetString(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (MateriaDocente)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: MateriaDocente | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.MateriaDocente")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: MateriaDocente | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.MateriaDocente")]: 
+                        {
+                            return 
+                            {
+                                MateriaDocente instance;
+                                instance = new MateriaDocente();
+                                instance.<DocenteId>k__BackingField = (int?)dataReader.GetInt32(0);
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetString(1);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: MateriaDocente | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.MateriaDocente")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(MateriaDocente)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-24 19:44:29.438 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.439 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.439 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:29.439 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.439 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.439 -04:00 [DBG] Executing DbCommand [Parameters=[@__materiaDocente_DocenteId_0='?' (DbType = Int32), @__materiaDocente_CodigoMateria_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[DocenteId], [m].[CodigoMateria]
+FROM [MateriaDocentes] AS [m]
+WHERE [m].[DocenteId] = @__materiaDocente_DocenteId_0 AND [m].[CodigoMateria] = @__materiaDocente_CodigoMateria_1
+2024-06-24 19:44:29.442 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__materiaDocente_DocenteId_0='?' (DbType = Int32), @__materiaDocente_CodigoMateria_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[DocenteId], [m].[CodigoMateria]
+FROM [MateriaDocentes] AS [m]
+WHERE [m].[DocenteId] = @__materiaDocente_DocenteId_0 AND [m].[CodigoMateria] = @__materiaDocente_CodigoMateria_1
+2024-06-24 19:44:29.442 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:29.442 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:44:29.442 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.442 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:29.447 -04:00 [DBG] The navigation 'MateriaDocente.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:29.448 -04:00 [DBG] The navigation 'MateriaDocente.Docentes' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:29.448 -04:00 [DBG] Context 'MyDbContext' started tracking 'MateriaDocente' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:29.449 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-24 19:44:29.449 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-24 19:44:29.449 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-24 19:44:29.449 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.450 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.450 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:29.450 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.450 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:29.450 -04:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MateriaDocentes] ([CodigoMateria], [DocenteId])
+VALUES (@p0, @p1);
+2024-06-24 19:44:29.455 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MateriaDocentes] ([CodigoMateria], [DocenteId])
+VALUES (@p0, @p1);
+2024-06-24 19:44:29.455 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:29.455 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:44:29.455 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.455 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:29.455 -04:00 [DBG] An entity of type 'MateriaDocente' tracked by 'MyDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:29.455 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-24 19:44:29.455 -04:00 [INF] MateriaDocente creada exitosamente
+2024-06-24 19:44:29.456 -04:00 [INF] Executed action method CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 48.003ms.
+2024-06-24 19:44:29.456 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:44:29.456 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-24 19:44:29.456 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-24 19:44:29.456 -04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:29.456 -04:00 [DBG] Found the endpoints ["CRUD.Controllers.MateriaDocenteController.GetMateriaDocente (CRUD)"] for address GetMateriaDocente(docenteId=[1117092],codigoMateria=[IDS322])
+2024-06-24 19:44:29.456 -04:00 [DBG] Failed to process the template api/MateriaDocenteApi/{docenteId:int}/{codigoMateria:int} for CRUD.Controllers.MateriaDocenteController.GetMateriaDocente (CRUD). The constraint Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint for parameter codigoMateria failed with values { "action": "CreateMateriaDocente", "codigoMateria": "IDS322", "controller": "MateriaDocente", "docenteId": "1117092" }
+2024-06-24 19:44:29.456 -04:00 [DBG] Link generation failed for endpoints ["CRUD.Controllers.MateriaDocenteController.GetMateriaDocente (CRUD)"]
+2024-06-24 19:44:29.456 -04:00 [INF] Executed action CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD) in 56.0314ms
+2024-06-24 19:44:29.457 -04:00 [INF] Executed endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)'
+2024-06-24 19:44:29.457 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-24 19:44:29.459 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" completed keep alive response.
+2024-06-24 19:44:29.459 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:44:29.459 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:29.459 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:44:29.459 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/MateriaDocenteApi/CreateMateriaDocente - 500 null text/plain; charset=utf-8 65.5957ms
+2024-06-24 19:44:34.265 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" received FIN.
+2024-06-24 19:44:34.265 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" disconnecting.
+2024-06-24 19:44:34.265 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" stopped.
+2024-06-24 19:44:34.265 -04:00 [DBG] Connection id "0HN4KKIJJTDQP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:44:34.505 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" accepted.
+2024-06-24 19:44:34.505 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" started.
+2024-06-24 19:44:34.507 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/MateriaDocenteApi/CreateMateriaDocente - application/json-patch+json 59
+2024-06-24 19:44:34.507 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:44:34.507 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:44:34.509 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:44:34.509 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:44:34.510 -04:00 [DBG] 1 candidate(s) found for the request path '/api/MateriaDocenteApi/CreateMateriaDocente'
+2024-06-24 19:44:34.511 -04:00 [DBG] Endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)' with route pattern 'api/MateriaDocenteApi/CreateMateriaDocente' is valid for the request path '/api/MateriaDocenteApi/CreateMateriaDocente'
+2024-06-24 19:44:34.511 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)'
+2024-06-24 19:44:34.511 -04:00 [INF] Executing endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)'
+2024-06-24 19:44:34.511 -04:00 [INF] Route matched with {action = "CreateMateriaDocente", controller = "MateriaDocente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.MateriaDocente] CreateMateriaDocente(CRUD.Models.MateriaDocente) on controller CRUD.Controllers.MateriaDocenteController (CRUD).
+2024-06-24 19:44:34.511 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:44:34.511 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:44:34.511 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:44:34.511 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:44:34.511 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:44:34.511 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-24 19:44:34.512 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-24 19:44:34.512 -04:00 [DBG] Attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente' ...
+2024-06-24 19:44:34.512 -04:00 [DBG] Attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente' using the name '' in request data ...
+2024-06-24 19:44:34.512 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:44:34.512 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:44:34.512 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ", Request id "0HN4KKIJJTDQQ:00000001": started reading request body.
+2024-06-24 19:44:34.512 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ", Request id "0HN4KKIJJTDQQ:00000001": done reading request body.
+2024-06-24 19:44:34.512 -04:00 [DBG] Done attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:34.513 -04:00 [DBG] Done attempting to bind parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:34.513 -04:00 [DBG] Attempting to validate the bound parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente' ...
+2024-06-24 19:44:34.513 -04:00 [DBG] Done attempting to validate the bound parameter 'materiaDocente' of type 'CRUD.Models.MateriaDocente'.
+2024-06-24 19:44:34.513 -04:00 [INF] Executing action method CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD) - Validation state: "Valid"
+2024-06-24 19:44:34.514 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:44:34.514 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:44:34.514 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:44:34.514 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.515 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.515 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:34.515 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:34.515 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:34.515 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[CodigoDocente], [d].[CorreoDocente], [d].[NombreDocente], [d].[SexoDocente], [d].[TelefonoDocente]
+FROM [Docentes] AS [d]
+WHERE [d].[CodigoDocente] = @__p_0
+2024-06-24 19:44:34.519 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[CodigoDocente], [d].[CorreoDocente], [d].[NombreDocente], [d].[SexoDocente], [d].[TelefonoDocente]
+FROM [Docentes] AS [d]
+WHERE [d].[CodigoDocente] = @__p_0
+2024-06-24 19:44:34.520 -04:00 [DBG] Context 'MyDbContext' started tracking 'Docente' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:34.520 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:34.520 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:44:34.520 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.520 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:34.521 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.521 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.521 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:34.521 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:34.521 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:34.521 -04:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:44:34.524 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[CodigoMateria], [m].[AreaAcademica], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria]
+FROM [Materias] AS [m]
+WHERE [m].[CodigoMateria] = @__p_0
+2024-06-24 19:44:34.525 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:34.525 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:34.525 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-24 19:44:34.525 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.525 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:34.526 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.526 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.526 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:44:34.526 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:34.526 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:44:34.526 -04:00 [DBG] Executing DbCommand [Parameters=[@__materiaDocente_DocenteId_0='?' (DbType = Int32), @__materiaDocente_CodigoMateria_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[DocenteId], [m].[CodigoMateria]
+FROM [MateriaDocentes] AS [m]
+WHERE [m].[DocenteId] = @__materiaDocente_DocenteId_0 AND [m].[CodigoMateria] = @__materiaDocente_CodigoMateria_1
+2024-06-24 19:44:34.529 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__materiaDocente_DocenteId_0='?' (DbType = Int32), @__materiaDocente_CodigoMateria_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[DocenteId], [m].[CodigoMateria]
+FROM [MateriaDocentes] AS [m]
+WHERE [m].[DocenteId] = @__materiaDocente_DocenteId_0 AND [m].[CodigoMateria] = @__materiaDocente_CodigoMateria_1
+2024-06-24 19:44:34.531 -04:00 [DBG] The navigation 'MateriaDocente.Docentes' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:34.531 -04:00 [DBG] Context 'MyDbContext' started tracking 'MateriaDocente' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:44:34.531 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:44:34.531 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-06-24 19:44:34.532 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.532 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:44:34.532 -04:00 [ERR] Error al crear la MateriaDocente: La relación ya existe
+2024-06-24 19:44:34.532 -04:00 [INF] Executed action method CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 19.0271ms.
+2024-06-24 19:44:34.532 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:44:34.532 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-24 19:44:34.532 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-24 19:44:34.532 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2024-06-24 19:44:34.533 -04:00 [INF] Executed action CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD) in 21.1744ms
+2024-06-24 19:44:34.533 -04:00 [INF] Executed endpoint 'CRUD.Controllers.MateriaDocenteController.CreateMateriaDocente (CRUD)'
+2024-06-24 19:44:34.533 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" completed keep alive response.
+2024-06-24 19:44:34.533 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:44:34.533 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:44:34.533 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:44:34.533 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/MateriaDocenteApi/CreateMateriaDocente - 400 47 application/json; charset=utf-8 26.8225ms
+2024-06-24 19:44:39.266 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" received FIN.
+2024-06-24 19:44:39.267 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:44:39.267 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" disconnecting.
+2024-06-24 19:44:39.267 -04:00 [DBG] Connection id "0HN4KKIJJTDQQ" stopped.
+2024-06-24 19:46:23.552 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" accepted.
+2024-06-24 19:46:23.553 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" started.
+2024-06-24 19:46:23.553 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - application/json-patch+json 67
+2024-06-24 19:46:23.554 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:46:23.554 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:46:23.554 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:46:23.554 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:46:23.554 -04:00 [DBG] 1 candidate(s) found for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:46:23.554 -04:00 [DBG] Endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)' with route pattern 'api/AulaApi/CreateAula' is valid for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:46:23.554 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:46:23.554 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:46:23.558 -04:00 [INF] Route matched with {action = "CreateAula", controller = "Aula"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Aula] CreateAula(CRUD.Models.Aula) on controller CRUD.Controllers.AulaController (CRUD).
+2024-06-24 19:46:23.558 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:46:23.558 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:46:23.558 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:46:23.558 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:46:23.558 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:46:23.559 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:46:23.560 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:46:23.560 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:46:23.560 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' using the name '' in request data ...
+2024-06-24 19:46:23.560 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:46:23.560 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:46:23.560 -04:00 [DBG] Connection id "0HN4KKIJJTDQR", Request id "0HN4KKIJJTDQR:00000001": started reading request body.
+2024-06-24 19:46:23.560 -04:00 [DBG] Connection id "0HN4KKIJJTDQR", Request id "0HN4KKIJJTDQR:00000001": done reading request body.
+2024-06-24 19:46:23.564 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:46:23.564 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:46:23.564 -04:00 [DBG] Attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:46:23.566 -04:00 [DBG] Done attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:46:23.566 -04:00 [INF] Executing action method CRUD.Controllers.AulaController.CreateAula (CRUD) - Validation state: "Valid"
+2024-06-24 19:46:23.567 -04:00 [INF] Executed action method CRUD.Controllers.AulaController.CreateAula (CRUD), returned result Microsoft.AspNetCore.Mvc.StatusCodeResult in 0.835ms.
+2024-06-24 19:46:23.567 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:46:23.567 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-06-24 19:46:23.567 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-24 19:46:23.567 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-06-24 19:46:23.567 -04:00 [INF] Executed action CRUD.Controllers.AulaController.CreateAula (CRUD) in 8.7382ms
+2024-06-24 19:46:23.567 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:46:23.567 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" completed keep alive response.
+2024-06-24 19:46:23.567 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - 500 201 application/problem+json; charset=utf-8 13.9873ms
+2024-06-24 19:46:24.288 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" received FIN.
+2024-06-24 19:46:24.288 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" disconnecting.
+2024-06-24 19:46:24.288 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:46:24.289 -04:00 [DBG] Connection id "0HN4KKIJJTDQR" stopped.
+2024-06-24 19:46:58.586 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" accepted.
+2024-06-24 19:46:58.586 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" started.
+2024-06-24 19:46:58.586 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - application/json-patch+json 67
+2024-06-24 19:46:58.587 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:46:58.587 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:46:58.587 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:46:58.587 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:46:58.587 -04:00 [DBG] 1 candidate(s) found for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:46:58.587 -04:00 [DBG] Endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)' with route pattern 'api/AulaApi/CreateAula' is valid for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:46:58.587 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:46:58.587 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:46:58.589 -04:00 [INF] Route matched with {action = "CreateAula", controller = "Aula"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Aula] CreateAula(CRUD.Models.Aula) on controller CRUD.Controllers.AulaController (CRUD).
+2024-06-24 19:46:58.589 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:46:58.589 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:46:58.589 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:46:58.589 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:46:58.589 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:46:58.589 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:46:58.590 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:46:58.590 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:46:58.590 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' using the name '' in request data ...
+2024-06-24 19:46:58.590 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:46:58.590 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:46:58.590 -04:00 [DBG] Connection id "0HN4KKIJJTDQS", Request id "0HN4KKIJJTDQS:00000001": started reading request body.
+2024-06-24 19:46:58.590 -04:00 [DBG] Connection id "0HN4KKIJJTDQS", Request id "0HN4KKIJJTDQS:00000001": done reading request body.
+2024-06-24 19:46:58.590 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:46:58.590 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:46:58.590 -04:00 [DBG] Attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:46:58.591 -04:00 [DBG] Done attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:46:58.592 -04:00 [INF] Executing action method CRUD.Controllers.AulaController.CreateAula (CRUD) - Validation state: "Valid"
+2024-06-24 19:46:58.593 -04:00 [INF] Executed action method CRUD.Controllers.AulaController.CreateAula (CRUD), returned result Microsoft.AspNetCore.Mvc.StatusCodeResult in 1.4383ms.
+2024-06-24 19:46:58.593 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:46:58.594 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-06-24 19:46:58.594 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-24 19:46:58.594 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-06-24 19:46:58.595 -04:00 [INF] Executed action CRUD.Controllers.AulaController.CreateAula (CRUD) in 5.2414ms
+2024-06-24 19:46:58.595 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:46:58.595 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" completed keep alive response.
+2024-06-24 19:46:58.595 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - 500 201 application/problem+json; charset=utf-8 8.3877ms
+2024-06-24 19:46:59.293 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" received FIN.
+2024-06-24 19:46:59.293 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" disconnecting.
+2024-06-24 19:46:59.293 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:46:59.295 -04:00 [DBG] Connection id "0HN4KKIJJTDQS" stopped.
+2024-06-24 19:47:20.335 -04:00 [INF] Application is shutting down...
+2024-06-24 19:47:20.337 -04:00 [DBG] Hosting stopping
+2024-06-24 19:47:20.341 -04:00 [DBG] Hosting stopped
+2024-06-24 19:47:24.415 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-24 19:47:24.467 -04:00 [DBG] Hosting starting
+2024-06-24 19:47:24.472 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-24 19:47:24.479 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-24 19:47:24.480 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-24 19:47:24.482 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-24 19:47:24.483 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-24 19:47:24.485 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-24 19:47:24.486 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-24 19:47:24.488 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-24 19:47:24.488 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-24 19:47:24.490 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-24 19:47:24.490 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-24 19:47:24.518 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-24 19:47:24.518 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-24 19:47:24.518 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-24 19:47:24.518 -04:00 [INF] Hosting environment: Development
+2024-06-24 19:47:24.518 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-24 19:47:24.518 -04:00 [DBG] Hosting started
+2024-06-24 19:47:24.761 -04:00 [DBG] Connection id "0HN4KKVVOP2VF" received FIN.
+2024-06-24 19:47:24.765 -04:00 [DBG] Connection id "0HN4KKVVOP2VF" accepted.
+2024-06-24 19:47:24.765 -04:00 [DBG] Connection id "0HN4KKVVOP2VF" started.
+2024-06-24 19:47:24.769 -04:00 [DBG] Connection id "0HN4KKVVOP2VF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:47:24.772 -04:00 [DBG] Connection id "0HN4KKVVOP2VF" disconnecting.
+2024-06-24 19:47:24.775 -04:00 [DBG] Connection id "0HN4KKVVOP2VF" stopped.
+2024-06-24 19:47:24.908 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" accepted.
+2024-06-24 19:47:24.908 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" started.
+2024-06-24 19:47:24.908 -04:00 [DBG] Connection id "0HN4KKVVOP2VH" accepted.
+2024-06-24 19:47:24.909 -04:00 [DBG] Connection id "0HN4KKVVOP2VH" started.
+2024-06-24 19:47:24.923 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-24 19:47:24.925 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-24 19:47:24.939 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:47:25.012 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" completed keep alive response.
+2024-06-24 19:47:25.013 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 93.3367ms
+2024-06-24 19:47:25.082 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-24 19:47:25.083 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:47:25.270 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" completed keep alive response.
+2024-06-24 19:47:25.270 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 188.7539ms
+2024-06-24 19:47:29.304 -04:00 [DBG] Connection id "0HN4KKVVOP2VH" received FIN.
+2024-06-24 19:47:29.305 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" received FIN.
+2024-06-24 19:47:29.306 -04:00 [DBG] Connection id "0HN4KKVVOP2VH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:47:29.307 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:47:29.308 -04:00 [DBG] Connection id "0HN4KKVVOP2VH" disconnecting.
+2024-06-24 19:47:29.308 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" disconnecting.
+2024-06-24 19:47:29.309 -04:00 [DBG] Connection id "0HN4KKVVOP2VH" stopped.
+2024-06-24 19:47:29.309 -04:00 [DBG] Connection id "0HN4KKVVOP2VG" stopped.
+2024-06-24 19:47:51.267 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" accepted.
+2024-06-24 19:47:51.267 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" started.
+2024-06-24 19:47:51.269 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - application/json-patch+json 68
+2024-06-24 19:47:51.273 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:47:51.277 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:47:51.278 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:47:51.278 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:47:51.278 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-24 19:47:51.296 -04:00 [DBG] 1 candidate(s) found for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:47:51.299 -04:00 [DBG] Endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)' with route pattern 'api/AulaApi/CreateAula' is valid for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:47:51.299 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:47:51.301 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:47:51.317 -04:00 [INF] Route matched with {action = "CreateAula", controller = "Aula"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Aula] CreateAula(CRUD.Models.Aula) on controller CRUD.Controllers.AulaController (CRUD).
+2024-06-24 19:47:51.317 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:47:51.317 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:47:51.317 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:47:51.317 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:47:51.317 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:47:51.318 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:47:51.392 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-24 19:47:51.405 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:47:51.407 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:47:51.407 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' using the name '' in request data ...
+2024-06-24 19:47:51.408 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:47:51.408 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:47:51.410 -04:00 [DBG] Connection id "0HN4KKVVOP2VI", Request id "0HN4KKVVOP2VI:00000001": started reading request body.
+2024-06-24 19:47:51.410 -04:00 [DBG] Connection id "0HN4KKVVOP2VI", Request id "0HN4KKVVOP2VI:00000001": done reading request body.
+2024-06-24 19:47:51.456 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:47:51.456 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:47:51.456 -04:00 [DBG] Attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:47:51.460 -04:00 [DBG] Done attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:47:51.464 -04:00 [INF] Executing action method CRUD.Controllers.AulaController.CreateAula (CRUD) - Validation state: "Valid"
+2024-06-24 19:47:51.466 -04:00 [INF] Executed action method CRUD.Controllers.AulaController.CreateAula (CRUD), returned result Microsoft.AspNetCore.Mvc.StatusCodeResult in 0.4062ms.
+2024-06-24 19:47:51.468 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:47:51.469 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-06-24 19:47:51.469 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-24 19:47:51.469 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-06-24 19:47:51.497 -04:00 [INF] Executed action CRUD.Controllers.AulaController.CreateAula (CRUD) in 177.4042ms
+2024-06-24 19:47:51.497 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:47:51.497 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" completed keep alive response.
+2024-06-24 19:47:51.498 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - 500 201 application/problem+json; charset=utf-8 228.5175ms
+2024-06-24 19:47:54.303 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" received FIN.
+2024-06-24 19:47:54.304 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:47:54.304 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" disconnecting.
+2024-06-24 19:47:54.304 -04:00 [DBG] Connection id "0HN4KKVVOP2VI" stopped.
+2024-06-24 19:49:10.659 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" accepted.
+2024-06-24 19:49:10.659 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" started.
+2024-06-24 19:49:10.660 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - application/json-patch+json 67
+2024-06-24 19:49:10.660 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:49:10.661 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:49:10.661 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:49:10.661 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:49:10.662 -04:00 [DBG] 1 candidate(s) found for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:49:10.662 -04:00 [DBG] Endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)' with route pattern 'api/AulaApi/CreateAula' is valid for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:49:10.662 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:10.662 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:10.667 -04:00 [INF] Route matched with {action = "CreateAula", controller = "Aula"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Aula] CreateAula(CRUD.Models.Aula) on controller CRUD.Controllers.AulaController (CRUD).
+2024-06-24 19:49:10.667 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:49:10.667 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:49:10.667 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:49:10.667 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:49:10.667 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:49:10.667 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:49:10.675 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:49:10.676 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:49:10.676 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' using the name '' in request data ...
+2024-06-24 19:49:10.676 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:49:10.676 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:49:10.676 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ", Request id "0HN4KKVVOP2VJ:00000001": started reading request body.
+2024-06-24 19:49:10.676 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ", Request id "0HN4KKVVOP2VJ:00000001": done reading request body.
+2024-06-24 19:49:10.676 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:10.676 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:10.676 -04:00 [DBG] Attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:49:10.677 -04:00 [DBG] Done attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:10.677 -04:00 [INF] Executing action method CRUD.Controllers.AulaController.CreateAula (CRUD) - Validation state: "Valid"
+2024-06-24 19:49:10.678 -04:00 [INF] Executed action method CRUD.Controllers.AulaController.CreateAula (CRUD), returned result Microsoft.AspNetCore.Mvc.StatusCodeResult in 0.3332ms.
+2024-06-24 19:49:10.678 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:49:10.678 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-06-24 19:49:10.678 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-24 19:49:10.678 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-06-24 19:49:10.678 -04:00 [INF] Executed action CRUD.Controllers.AulaController.CreateAula (CRUD) in 10.8859ms
+2024-06-24 19:49:10.678 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:10.678 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" completed keep alive response.
+2024-06-24 19:49:10.678 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - 500 201 application/problem+json; charset=utf-8 18.5509ms
+2024-06-24 19:49:14.332 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" received FIN.
+2024-06-24 19:49:14.332 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:49:14.332 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" disconnecting.
+2024-06-24 19:49:14.332 -04:00 [DBG] Connection id "0HN4KKVVOP2VJ" stopped.
+2024-06-24 19:49:21.824 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" accepted.
+2024-06-24 19:49:21.824 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" started.
+2024-06-24 19:49:21.825 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - application/json-patch+json 67
+2024-06-24 19:49:21.825 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:49:21.825 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:49:21.825 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:49:21.825 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:49:21.825 -04:00 [DBG] 1 candidate(s) found for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:49:21.825 -04:00 [DBG] Endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)' with route pattern 'api/AulaApi/CreateAula' is valid for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:49:21.825 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:21.825 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:21.826 -04:00 [INF] Route matched with {action = "CreateAula", controller = "Aula"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Aula] CreateAula(CRUD.Models.Aula) on controller CRUD.Controllers.AulaController (CRUD).
+2024-06-24 19:49:21.826 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:49:21.826 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:49:21.826 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:49:21.826 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:49:21.826 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:49:21.826 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:49:21.828 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:49:21.828 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:49:21.828 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' using the name '' in request data ...
+2024-06-24 19:49:21.828 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:49:21.828 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:49:21.828 -04:00 [DBG] Connection id "0HN4KKVVOP2VK", Request id "0HN4KKVVOP2VK:00000001": started reading request body.
+2024-06-24 19:49:21.828 -04:00 [DBG] Connection id "0HN4KKVVOP2VK", Request id "0HN4KKVVOP2VK:00000001": done reading request body.
+2024-06-24 19:49:21.828 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:21.828 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:21.828 -04:00 [DBG] Attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:49:21.829 -04:00 [DBG] Done attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:21.829 -04:00 [INF] Executing action method CRUD.Controllers.AulaController.CreateAula (CRUD) - Validation state: "Valid"
+2024-06-24 19:49:22.138 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-24 19:49:22.138 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-24 19:49:22.138 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-24 19:49:22.138 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-24 19:49:22.138 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'MateriaSeccion' as the properties are already covered by the index {'CodigoMateria', 'CodigoSeccion'}.
+2024-06-24 19:49:22.286 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:49:22.334 -04:00 [DBG] Context 'MyDbContext' started tracking 'Aula' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:49:22.336 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-24 19:49:22.337 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-24 19:49:22.343 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-24 19:49:22.426 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:49:22.449 -04:00 [DBG] Created DbConnection. (21ms).
+2024-06-24 19:49:22.451 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:22.629 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:22.633 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:49:22.637 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-24 19:49:22.643 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-06-24 19:49:22.648 -04:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Aulas] ([CodigoAula], [Capacidad], [TipoAula])
+VALUES (@p0, @p1, @p2);
+2024-06-24 19:49:22.694 -04:00 [INF] Executed DbCommand (47ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Aulas] ([CodigoAula], [Capacidad], [TipoAula])
+VALUES (@p0, @p1, @p2);
+2024-06-24 19:49:22.697 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-24 19:49:22.703 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 4ms reading results.
+2024-06-24 19:49:22.705 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:22.709 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-24 19:49:22.714 -04:00 [DBG] An entity of type 'Aula' tracked by 'MyDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:49:22.715 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-24 19:49:22.715 -04:00 [INF] Aula creada exitosamente
+2024-06-24 19:49:22.715 -04:00 [INF] Executed action method CRUD.Controllers.AulaController.CreateAula (CRUD), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 886.1512ms.
+2024-06-24 19:49:22.715 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-24 19:49:22.715 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-24 19:49:22.715 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-24 19:49:22.715 -04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:22.723 -04:00 [DBG] Found the endpoints ["CRUD.Controllers.AulaController.GetAula (CRUD)"] for address GetAula(id=[PS896])
+2024-06-24 19:49:22.724 -04:00 [DBG] Failed to process the template api/AulaApi/{id:int} for CRUD.Controllers.AulaController.GetAula (CRUD). The constraint Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint for parameter id failed with values { "action": "CreateAula", "controller": "Aula", "id": "PS896" }
+2024-06-24 19:49:22.724 -04:00 [DBG] Link generation failed for endpoints ["CRUD.Controllers.AulaController.GetAula (CRUD)"]
+2024-06-24 19:49:22.725 -04:00 [INF] Executed action CRUD.Controllers.AulaController.CreateAula (CRUD) in 898.8372ms
+2024-06-24 19:49:22.725 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:22.725 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-24 19:49:22.733 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" completed keep alive response.
+2024-06-24 19:49:22.733 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:49:22.735 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:22.736 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-06-24 19:49:22.736 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - 500 null text/plain; charset=utf-8 911.5195ms
+2024-06-24 19:49:24.375 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" received FIN.
+2024-06-24 19:49:24.376 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" disconnecting.
+2024-06-24 19:49:24.376 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" stopped.
+2024-06-24 19:49:24.376 -04:00 [DBG] Connection id "0HN4KKVVOP2VK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 19:49:26.192 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" accepted.
+2024-06-24 19:49:26.192 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" started.
+2024-06-24 19:49:26.192 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - application/json-patch+json 67
+2024-06-24 19:49:26.192 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-24 19:49:26.193 -04:00 [DBG] POST requests are not supported
+2024-06-24 19:49:26.193 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-24 19:49:26.193 -04:00 [INF] CORS policy execution successful.
+2024-06-24 19:49:26.194 -04:00 [DBG] 1 candidate(s) found for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:49:26.194 -04:00 [DBG] Endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)' with route pattern 'api/AulaApi/CreateAula' is valid for the request path '/api/AulaApi/CreateAula'
+2024-06-24 19:49:26.194 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:26.194 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:26.194 -04:00 [INF] Route matched with {action = "CreateAula", controller = "Aula"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Aula] CreateAula(CRUD.Models.Aula) on controller CRUD.Controllers.AulaController (CRUD).
+2024-06-24 19:49:26.194 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-24 19:49:26.194 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-24 19:49:26.194 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-24 19:49:26.194 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-24 19:49:26.194 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-24 19:49:26.194 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:49:26.194 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AulaController (CRUD)
+2024-06-24 19:49:26.194 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:49:26.194 -04:00 [DBG] Attempting to bind parameter 'aula' of type 'CRUD.Models.Aula' using the name '' in request data ...
+2024-06-24 19:49:26.194 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:49:26.194 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-24 19:49:26.194 -04:00 [DBG] Connection id "0HN4KKVVOP2VL", Request id "0HN4KKVVOP2VL:00000001": started reading request body.
+2024-06-24 19:49:26.194 -04:00 [DBG] Connection id "0HN4KKVVOP2VL", Request id "0HN4KKVVOP2VL:00000001": done reading request body.
+2024-06-24 19:49:26.195 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:26.195 -04:00 [DBG] Done attempting to bind parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:26.195 -04:00 [DBG] Attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula' ...
+2024-06-24 19:49:26.195 -04:00 [DBG] Done attempting to validate the bound parameter 'aula' of type 'CRUD.Models.Aula'.
+2024-06-24 19:49:26.195 -04:00 [INF] Executing action method CRUD.Controllers.AulaController.CreateAula (CRUD) - Validation state: "Valid"
+2024-06-24 19:49:26.222 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-24 19:49:26.222 -04:00 [DBG] Context 'MyDbContext' started tracking 'Aula' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-24 19:49:26.223 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-24 19:49:26.223 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-24 19:49:26.223 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-24 19:49:26.224 -04:00 [DBG] Creating DbConnection.
+2024-06-24 19:49:26.224 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-24 19:49:26.224 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:26.225 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:26.225 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-24 19:49:26.225 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:49:26.225 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-24 19:49:26.225 -04:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Aulas] ([CodigoAula], [Capacidad], [TipoAula])
+VALUES (@p0, @p1, @p2);
+2024-06-24 19:49:26.240 -04:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Aulas] ([CodigoAula], [Capacidad], [TipoAula])
+VALUES (@p0, @p1, @p2);
+2024-06-24 19:49:26.241 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:26.242 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-24 19:49:26.245 -04:00 [ERR] An exception occurred in the database while saving changes for context type 'CRUD.Context.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Aulas'. Cannot insert duplicate key in object 'dbo.Aulas'. The duplicate key value is (PS896).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f9bea3eb-2be8-4a09-8c5b-c86958f9f8e0
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Aulas'. Cannot insert duplicate key in object 'dbo.Aulas'. The duplicate key value is (PS896).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f9bea3eb-2be8-4a09-8c5b-c86958f9f8e0
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-06-24 19:49:26.246 -04:00 [INF] Executed action CRUD.Controllers.AulaController.CreateAula (CRUD) in 51.4063ms
+2024-06-24 19:49:26.246 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AulaController.CreateAula (CRUD)'
+2024-06-24 19:49:26.246 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Aulas'. Cannot insert duplicate key in object 'dbo.Aulas'. The duplicate key value is (PS896).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f9bea3eb-2be8-4a09-8c5b-c86958f9f8e0
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at CRUD.Controllers.AulaController.CreateAula(Aula aula)
+   at lambda_method26(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-24 19:49:26.247 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" completed keep alive response.
+2024-06-24 19:49:26.247 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-24 19:49:26.247 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-24 19:49:26.247 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-24 19:49:26.247 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/AulaApi/CreateAula - 500 null text/plain; charset=utf-8 55.2954ms
+2024-06-24 19:49:29.377 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" received FIN.
+2024-06-24 19:49:29.378 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" disconnecting.
+2024-06-24 19:49:29.378 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" stopped.
+2024-06-24 19:49:29.378 -04:00 [DBG] Connection id "0HN4KKVVOP2VL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-24 20:57:19.907 -04:00 [INF] Application is shutting down...
+2024-06-24 20:57:19.908 -04:00 [DBG] Hosting stopping
+2024-06-24 20:57:19.914 -04:00 [DBG] Hosting stopped

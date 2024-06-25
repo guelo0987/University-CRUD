@@ -61,18 +61,18 @@ namespace CRUD.Controllers
         }
 
         // Obtener una Materia
-        [HttpGet("id:int", Name = "GetMateria")]
+        [HttpGet("id", Name = "GetMateria")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Materia> GetMateria(int id)
+        public ActionResult<Materia> GetMateria(string id)
         {
-            if (id <= 0)
+            if (string.IsNullOrEmpty(id))
             {
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
 
             if (obj == null)
             {
@@ -85,19 +85,19 @@ namespace CRUD.Controllers
         }
 
         // Editar una Materia
-        [HttpPut("id:int", Name = "EditMateria")]
+        [HttpPut("id", Name = "EditMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Materia> EditMateria(int id, [FromBody] Materia materia)
+        public ActionResult<Materia> EditMateria(string id, [FromBody] Materia materia)
         {
-            if (materia == null || id.ToString() != materia.CodigoMateria || id == 0)
+            if (materia == null || id != materia.CodigoMateria || string.IsNullOrEmpty(id))
             {   
                 _logger.LogInformation("No se pudo obtener la materia");
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
 
             if (obj == null)
             {
@@ -124,18 +124,18 @@ namespace CRUD.Controllers
         }
 
         // Patch Materia
-        [HttpPatch("id:int", Name = "PatchMateria")]
+        [HttpPatch("id", Name = "PatchMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Materia> PatchMateria(int id, JsonPatchDocument<Materia> patchDocument)
+        public ActionResult<Materia> PatchMateria(string id, JsonPatchDocument<Materia> patchDocument)
         {
-            if (patchDocument == null || id == 0)
+            if (patchDocument == null || string.IsNullOrEmpty(id))
             {
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
 
             if (obj == null)
             {
@@ -159,19 +159,19 @@ namespace CRUD.Controllers
         }
 
         // Delete Materia
-        [HttpDelete("id:int", Name = "DeleteMateria")]
+        [HttpDelete("id", Name = "DeleteMateria")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Materia> DeleteMateria(int id)
+        public ActionResult<Materia> DeleteMateria(string id)
         {
-            if (id <= 0)
+            if (string.IsNullOrEmpty(id))
             {
                 _logger.LogError("Error al eliminar la materia " + id);
                 return BadRequest();
             }
 
-            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id.ToString());
+            var obj = _db.Materias.FirstOrDefault(u => u.CodigoMateria == id);
 
             if (obj == null)
             {

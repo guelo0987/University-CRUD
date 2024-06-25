@@ -86,15 +86,15 @@ namespace CRUD.Controllers
         }
 
         // Obtener una EstudianteMateria específica
-        [HttpGet("{codigoEstudiante:int}/{codigoMateria:int}", Name = "GetEstudianteMateria")]
+        [HttpGet("{codigoEstudiante:int}/{codigoMateria}", Name = "GetEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<EstudianteMateria> GetEstudianteMateria(int codigoEstudiante, int codigoMateria)
+        public ActionResult<EstudianteMateria> GetEstudianteMateria(int codigoEstudiante, string codigoMateria)
         {
             var estudianteMateria = _db.EstudianteMaterias
                 .Include(em => em.Estudiantes)
                 .Include(em => em.Materias)
-                .FirstOrDefault(em => em.CodigoEstudiante == codigoEstudiante && em.CodigoMateria == codigoMateria.ToString());
+                .FirstOrDefault(em => em.CodigoEstudiante == codigoEstudiante && em.CodigoMateria == codigoMateria);
 
             if (estudianteMateria == null)
             {
@@ -109,19 +109,19 @@ namespace CRUD.Controllers
         }
 
         // Editar una EstudianteMateria
-        [HttpPut("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId:int}", Name = "EditEstudianteMateria")]
+        [HttpPut("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId}", Name = "EditEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditEstudianteMateria(int EstudianteId, int MateriaId, [FromBody] EstudianteMateria estudianteMateria)
+        public ActionResult EditEstudianteMateria(int EstudianteId, string MateriaId, [FromBody] EstudianteMateria estudianteMateria)
         {
-            if (estudianteMateria == null || EstudianteId == 0 || MateriaId == 0)
+            if (estudianteMateria == null || EstudianteId == 0 ||  string.IsNullOrEmpty(MateriaId))
             {
                 _logger.LogInformation("Datos inválidos o estudiante no encontrado.");
                 return BadRequest();
             }
 
-            var objEstM = _db.EstudianteMaterias.FirstOrDefault(u => u.CodigoEstudiante == EstudianteId && u.CodigoMateria == MateriaId.ToString());
+            var objEstM = _db.EstudianteMaterias.FirstOrDefault(u => u.CodigoEstudiante == EstudianteId && u.CodigoMateria == MateriaId);
 
             if (objEstM == null)
             {
@@ -156,11 +156,11 @@ namespace CRUD.Controllers
         }
         
         // Actualizar parcialmente una EstudianteMateria
-        [HttpPatch("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId:int}", Name = "PatchEstudianteMateria")]
+        [HttpPatch("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId}", Name = "PatchEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult PatchEstudianteMateria(int EstudianteId, int MateriaId, [FromBody] JsonPatchDocument<EstudianteMateria> patchDoc)
+        public ActionResult PatchEstudianteMateria(int EstudianteId, string MateriaId, [FromBody] JsonPatchDocument<EstudianteMateria> patchDoc)
         {
             if (patchDoc == null)
             {
@@ -168,7 +168,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var estudianteMateria = _db.EstudianteMaterias.FirstOrDefault(em => em.CodigoEstudiante == EstudianteId && em.CodigoMateria == MateriaId.ToString());
+            var estudianteMateria = _db.EstudianteMaterias.FirstOrDefault(em => em.CodigoEstudiante == EstudianteId && em.CodigoMateria == MateriaId);
 
             if (estudianteMateria == null)
             {
@@ -206,12 +206,12 @@ namespace CRUD.Controllers
         
         
         // Eliminar una EstudianteMateria
-        [HttpDelete("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId:int}", Name = "DeleteEstudianteMateria")]
+        [HttpDelete("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId}", Name = "DeleteEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult DeleteEstudianteMateria(int EstudianteId, int MateriaId)
+        public ActionResult DeleteEstudianteMateria(int EstudianteId, string MateriaId)
         {
-            var estudianteMateria = _db.EstudianteMaterias.FirstOrDefault(em => em.CodigoEstudiante == EstudianteId && em.CodigoMateria == MateriaId.ToString());
+            var estudianteMateria = _db.EstudianteMaterias.FirstOrDefault(em => em.CodigoEstudiante == EstudianteId && em.CodigoMateria == MateriaId);
 
             if (estudianteMateria == null)
             {

@@ -60,7 +60,7 @@ public class EstudianteController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        if (estudiante.Id == 0)
+        if (estudiante.Id <= 0)
         {
             return StatusCode(StatusCodes.Status500InternalServerError);
         }
@@ -177,7 +177,6 @@ public class EstudianteController : ControllerBase
         
         objEst.ContraseñaEstudiante = PassHasher.HashPassword(estudiante.DireccionEstudiante);
         objEst.CarreraId = estudiante.CarreraId;
-        
         
 
         _db.SaveChanges();

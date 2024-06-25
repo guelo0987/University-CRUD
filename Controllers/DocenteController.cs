@@ -38,11 +38,7 @@ namespace CRUD.Controllers
                 ModelState.AddModelError("", "El docente ya existe");
                 return BadRequest(ModelState);
             }
-
-            if (docente.CodigoDocente > 0)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError);
-            }
+            
 
             _db.Docentes.Add(docente);
             _db.SaveChanges();

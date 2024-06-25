@@ -32,10 +32,14 @@ namespace CRUD.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (!int.TryParse(aula.CodigoAula, out int codigoAula) || codigoAula > 0)
+            var obj = _db.Aulas.FirstOrDefault(u => u.CodigoAula.ToString() == aula.CodigoAula);
+
+            if (obj != null)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                _logger.LogError("Error al crear el aula: El aula con el código {CodigoAula} ya existe", aula.CodigoAula);
+                return BadRequest("El aula con el código proporcionado ya existe.");
             }
+            
 
             _db.Aulas.Add(aula);
             _db.SaveChanges();
@@ -54,13 +58,13 @@ namespace CRUD.Controllers
         }
 
         // Obtener una Aula
-        [HttpGet("{id:int}", Name = "GetAula")]
+        [HttpGet("{id}", Name = "GetAula")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Aula> GetAula(int id)
+        public ActionResult<Aula> GetAula(string id)
         {
-            if (id <= 0)
+            if (string.IsNullOrEmpty(id))
             {
                 return BadRequest();
             }
@@ -78,13 +82,13 @@ namespace CRUD.Controllers
         }
 
         // Editar una Aula
-        [HttpPut("{id:int}", Name = "EditAula")]
+        [HttpPut("{id}", Name = "EditAula")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditAula(int id, [FromBody] Aula aula)
+        public ActionResult EditAula(string id, [FromBody] Aula aula)
         {
-            if (aula == null || id != int.Parse(aula.CodigoAula) || id == 0)
+            if (aula == null || string.IsNullOrEmpty(id) )
             
             {
                 _logger.LogInformation("No se pudo obtener el aula");
@@ -105,7 +109,8 @@ namespace CRUD.Controllers
                 ModelState.AddModelError("", "Atributos inválidos");
                 return BadRequest(ModelState);
             }
-
+            
+            
             obj.Capacidad = aula.Capacidad;
             obj.TipoAula = aula.TipoAula;
 
@@ -115,13 +120,13 @@ namespace CRUD.Controllers
         }
 
         // Patch una Aula
-        [HttpPatch("{id:int}", Name = "PatchAula")]
+        [HttpPatch("{id}", Name = "PatchAula")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult PatchAula(int id, JsonPatchDocument<Aula> patchDocument)
+        public ActionResult PatchAula(string id, JsonPatchDocument<Aula> patchDocument)
         {
-            if (patchDocument == null || id == 0)
+            if (patchDocument == null || string.IsNullOrEmpty(id))
             {
                 return BadRequest();
             }
@@ -149,13 +154,13 @@ namespace CRUD.Controllers
         }
 
         // Delete Aula
-        [HttpDelete("{id:int}", Name = "DeleteAula")]
+        [HttpDelete("{id}", Name = "DeleteAula")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult DeleteAula(int id)
+        public ActionResult DeleteAula(string id)
         {
-            if (id <= 0)
+            if (string.IsNullOrEmpty(id))
             {
                 _logger.LogError("Error al eliminar el aula con id: " + id);
                 return BadRequest();

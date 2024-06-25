@@ -91,15 +91,15 @@ namespace CRUD.Controllers
         
 
         // Obtener una CarreraMateria específica
-        [HttpGet("{carreraId:int}/{codigoMateria:int}", Name = "GetCarreraMateria")]
+        [HttpGet("{carreraId:int}/{codigoMateria}", Name = "GetCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<CarreraMateria> GetCarreraMateria(int carreraId, int codigoMateria)
+        public ActionResult<CarreraMateria> GetCarreraMateria(int carreraId, string codigoMateria)
         {
             var carreraMateria = _db.CarreraMaterias
                 .Include(cm => cm.Carreras)
                 .Include(cm => cm.Materias)
-                .FirstOrDefault(cm => cm.CarreraId == carreraId && cm.CodigoMateria == codigoMateria.ToString());
+                .FirstOrDefault(cm => cm.CarreraId == carreraId && cm.CodigoMateria == codigoMateria);
 
             if (carreraMateria == null)
             {
@@ -117,19 +117,19 @@ namespace CRUD.Controllers
 
         
         // Editar Una CarreraEstudiante
-        [HttpPut("CarreraId/{CarreraId:int}/MateriaId/{MateriaId:int}", Name = "EditCarreraMateria")]
+        [HttpPut("CarreraId/{CarreraId:int}/MateriaId/{MateriaId}", Name = "EditCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditCarreraMateria(int CarreraId, int MateriaId, [FromBody] CarreraMateria carreraMateria)
+        public ActionResult EditCarreraMateria(int CarreraId, string MateriaId, [FromBody] CarreraMateria carreraMateria)
         {
-            if (carreraMateria == null || CarreraId == 0 || MateriaId == 0)
+            if (carreraMateria == null || CarreraId == 0 || string.IsNullOrEmpty(MateriaId))
             {
                 _logger.LogInformation("Datos inválidos o estudiante no encontrado.");
                 return BadRequest();
             }
 
-            var objCrrM = _db.CarreraMaterias.FirstOrDefault(u => u.CarreraId == CarreraId && u.CodigoMateria == MateriaId.ToString());
+            var objCrrM = _db.CarreraMaterias.FirstOrDefault(u => u.CarreraId == CarreraId && u.CodigoMateria == MateriaId);
 
             if (objCrrM == null)
             {
@@ -163,11 +163,11 @@ namespace CRUD.Controllers
         
         
         // Actualizar parcialmente una CarreraMateria
-        [HttpPatch("CarreraId/{CarreraId:int}/MateriaId/{MateriaId:int}", Name = "PatchCarreraMateria")]
+        [HttpPatch("CarreraId/{CarreraId:int}/MateriaId/{MateriaId}", Name = "PatchCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult PatchCarreraMateria(int CarreraId, int MateriaId, [FromBody] JsonPatchDocument<CarreraMateria> patchDoc)
+        public ActionResult PatchCarreraMateria(int CarreraId, string MateriaId, [FromBody] JsonPatchDocument<CarreraMateria> patchDoc)
         {
             if (patchDoc == null)
             {
@@ -213,10 +213,10 @@ namespace CRUD.Controllers
         
         
         // Eliminar una CarreraMateria
-        [HttpDelete("CarreraId/{CarreraId:int}/MateriaId/{MateriaId:int}", Name = "DeleteCarreraMateria")]
+        [HttpDelete("CarreraId/{CarreraId:int}/MateriaId/{MateriaId}", Name = "DeleteCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult DeleteCarreraMateria(int CarreraId, int MateriaId)
+        public ActionResult DeleteCarreraMateria(int CarreraId, string MateriaId)
         {
             var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId.ToString());
 
