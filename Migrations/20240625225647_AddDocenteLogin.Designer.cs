@@ -4,6 +4,7 @@ using CRUD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240625225647_AddDocenteLogin")]
+    partial class AddDocenteLogin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,36 +87,6 @@ namespace CRUD.Migrations
                     b.ToTable("CarreraMaterias");
                 });
 
-            modelBuilder.Entity("CRUD.Models.CuentasPorPagar", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("CodigoEstudiante")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CodigoMateria")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Estado")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("FechaPago")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal?>("Monto")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CodigoMateria", "CodigoEstudiante");
-
-                    b.ToTable("CuentasPorPagars");
-                });
-
             modelBuilder.Entity("CRUD.Models.Docente", b =>
                 {
                     b.Property<int>("CodigoDocente")
@@ -162,11 +135,8 @@ namespace CRUD.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.Property<int>("Creditos")
+                    b.Property<int>("PeriodoActual")
                         .HasColumnType("int");
-
-                    b.Property<string>("Periodo")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CodigoMateria", "CodigoEstudiante");
 
@@ -321,9 +291,6 @@ namespace CRUD.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("PeriodoActual")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int?>("PeriodosCursados")
                         .HasColumnType("int");
 
@@ -361,15 +328,6 @@ namespace CRUD.Migrations
                     b.Navigation("Carreras");
 
                     b.Navigation("Materias");
-                });
-
-            modelBuilder.Entity("CRUD.Models.CuentasPorPagar", b =>
-                {
-                    b.HasOne("CRUD.Models.EstudianteMateria", "EstudianteMateria")
-                        .WithMany("CuentasPorPagars")
-                        .HasForeignKey("CodigoMateria", "CodigoEstudiante");
-
-                    b.Navigation("EstudianteMateria");
                 });
 
             modelBuilder.Entity("CRUD.Models.EstudianteMateria", b =>
@@ -472,11 +430,6 @@ namespace CRUD.Migrations
             modelBuilder.Entity("CRUD.Models.Docente", b =>
                 {
                     b.Navigation("MateriaDocentes");
-                });
-
-            modelBuilder.Entity("CRUD.Models.EstudianteMateria", b =>
-                {
-                    b.Navigation("CuentasPorPagars");
                 });
 
             modelBuilder.Entity("CRUD.Models.Materia", b =>

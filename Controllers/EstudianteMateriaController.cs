@@ -60,7 +60,7 @@ namespace CRUD.Controllers
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-                PeriodoActual = estudianteMateria.PeriodoActual
+                Periodo = estudianteMateria.Periodo
             };
 
             _db.EstudianteMaterias.Add(newEstudianteMateria);
@@ -145,7 +145,9 @@ namespace CRUD.Controllers
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-                PeriodoActual = estudianteMateria.PeriodoActual
+                Periodo = estudianteMateria.Periodo,
+                Creditos = estudianteMateria.Creditos
+                
             };
 
             _db.EstudianteMaterias.Add(nuevaEstudianteMateria);
@@ -180,7 +182,8 @@ namespace CRUD.Controllers
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
                 Calificacion = estudianteMateria.Calificacion,
-                PeriodoActual = estudianteMateria.PeriodoActual
+                Periodo = estudianteMateria.Periodo,
+                Creditos = estudianteMateria.Creditos
             };
             
             patchDoc.ApplyTo(nuevoEstudianteMateria, ModelState);

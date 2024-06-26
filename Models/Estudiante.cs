@@ -40,6 +40,9 @@ public  class Estudiante
 
     [Column(TypeName = "decimal(18, 2)")]
     public decimal? IndicePeriodo { get; set; }
+    
+    
+    public string? PeriodoActual { get; set; }
 
     [MaxLength(50)]
     public string CondicionAcademica { get; set; } = null!;

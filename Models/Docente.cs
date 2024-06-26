@@ -8,7 +8,7 @@ namespace CRUD.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Range(1111111, 1999999)]
+        [Range(2000000, 2999999)]
         public int CodigoDocente { get; set; }
 
         [MaxLength(100)]
@@ -16,6 +16,11 @@ namespace CRUD.Models
 
         [MaxLength(100)]
         public string CorreoDocente { get; set; }
+        
+        [MaxLength(100)]
+        public string ContraseñaDocente { get; set; } = null!;
+        
+        
 
         [MaxLength(20)]
         public string TelefonoDocente { get; set; }

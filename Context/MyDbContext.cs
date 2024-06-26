@@ -45,6 +45,9 @@ public partial class MyDbContext : DbContext
     public virtual DbSet<MateriaSeccion> SeccionMaterias { get; set; }
     
     
+    public virtual DbSet<CuentasPorPagar> CuentasPorPagars { get; set; }
+    
+    
     
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -127,6 +130,12 @@ public partial class MyDbContext : DbContext
             .WithMany(s => s.MateriaSecciones)
             .HasForeignKey(ms => ms.CodigoSeccion);
         
+        
+        modelBuilder.Entity<CuentasPorPagar>()
+            .HasOne(c => c.EstudianteMateria)
+            .WithMany(em => em.CuentasPorPagars)
+            .HasForeignKey(c => new { c.CodigoMateria, c.CodigoEstudiante });
+            
         
 
 
