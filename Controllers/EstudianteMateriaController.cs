@@ -26,7 +26,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateEstudianteMateria", Name = "CreateEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<EstudianteMateria> CreateEstudianteMateria([FromBody] EstudianteMateria estudianteMateria)
+        public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMateria estudianteMateria)
         {
             if (!ModelState.IsValid)
             {
@@ -58,9 +58,11 @@ namespace CRUD.Controllers
             var newEstudianteMateria = new EstudianteMateria
             {
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
+                SeccionId = estudianteMateria.SeccionId,
+                Seccions = estudianteMateria.Seccions,
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-                Periodo = estudianteMateria.Periodo
+               
             };
 
             _db.EstudianteMaterias.Add(newEstudianteMateria);
@@ -80,7 +82,9 @@ namespace CRUD.Controllers
             var estudianteMaterias = _db.EstudianteMaterias
                 .Include(em => em.Estudiantes)
                 .Include(em => em.Materias)
+                .Include(em => em.Seccions) // Incluir la información de la sección
                 .ToList();
+
 
             return Ok(estudianteMaterias);
         }
@@ -94,6 +98,7 @@ namespace CRUD.Controllers
             var estudianteMateria = _db.EstudianteMaterias
                 .Include(em => em.Estudiantes)
                 .Include(em => em.Materias)
+                .Include(s=>s.Seccions)
                 .FirstOrDefault(em => em.CodigoEstudiante == codigoEstudiante && em.CodigoMateria == codigoMateria);
 
             if (estudianteMateria == null)
@@ -143,10 +148,12 @@ namespace CRUD.Controllers
             var nuevaEstudianteMateria = new EstudianteMateria
             {
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
+                SeccionId = estudianteMateria.SeccionId,
+                Seccions = estudianteMateria.Seccions,
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-                Periodo = estudianteMateria.Periodo,
-                Creditos = estudianteMateria.Creditos
+               
+               
                 
             };
 
@@ -179,11 +186,12 @@ namespace CRUD.Controllers
             }
             var nuevoEstudianteMateria = new EstudianteMateria
             {
-                CodigoMateria = estudianteMateria.CodigoMateria,
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
+                SeccionId = estudianteMateria.SeccionId,
+                Seccions = estudianteMateria.Seccions,
+                CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-                Periodo = estudianteMateria.Periodo,
-                Creditos = estudianteMateria.Creditos
+               
             };
             
             patchDoc.ApplyTo(nuevoEstudianteMateria, ModelState);

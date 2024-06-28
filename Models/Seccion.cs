@@ -7,15 +7,26 @@ namespace CRUD.Models
     public class Seccion
     {
         [Key] 
-        [Range(1,10)]
         public string CodigoSeccion { get; set; }
+        
+        
+        public string? CodigoMateria { get; set; }
+        [ForeignKey("CodigoMateria")]
+        public virtual  Materia? Materias { get; set; }
 
         [MaxLength(50)]
         public string Horario { get; set; }
 
         public int Cupo { get; set; }
         
+        
         [JsonIgnore]
-        public virtual ICollection<MateriaSeccion>? MateriaSecciones { get; set; }
+        public virtual ICollection<EstudianteMateria>? EstudianteMaterias { get; set; }
+        
+        [JsonIgnore]
+        public virtual ICollection<MateriaDocente>? MateriaDocentes { get; set; }
+
+        
+        
     }
 }

@@ -41,6 +41,17 @@ namespace CRUD.Controllers
                 return BadRequest("la seccion con el código proporcionado ya existe.");
             }
 
+            var materia = _db.Materias.Find(seccion.CodigoMateria);
+
+            if (materia == null)
+            {
+                _logger.LogError("Error al crear la seccion: materia no encontrada");
+                ModelState.AddModelError("", "Materia no encontrada");
+                return BadRequest(ModelState);
+            }
+
+
+            seccion.Materias = seccion.Materias;
             
 
             _db.Secciones.Add(seccion);
@@ -57,7 +68,7 @@ namespace CRUD.Controllers
         {
             _logger.LogInformation("Obteniendo Secciones");
 
-            return Ok(_db.Secciones.ToList());
+            return Ok(_db.Secciones.Include(M=>M.Materias).ToList());
         }
 
         // Obtener una Sección
@@ -72,7 +83,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var obj = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
+            var obj = _db.Secciones.Include(m=>m.Materias).FirstOrDefault(s => s.CodigoSeccion == id);
 
             if (obj == null)
             {
@@ -96,7 +107,7 @@ namespace CRUD.Controllers
             }
 
             var objSec = _db.Secciones.FirstOrDefault(s => s.CodigoSeccion == id);
-            
+            var materia = _db.Materias.Find(seccion.CodigoMateria);
 
             if (objSec == null)
             {
@@ -114,6 +125,7 @@ namespace CRUD.Controllers
            
             objSec.Horario = seccion.Horario;
             objSec.Cupo = seccion.Cupo;
+            objSec.CodigoMateria = seccion.CodigoMateria;   
 
             _db.SaveChanges();
 

@@ -59,7 +59,8 @@ namespace CRUD.Controllers
             var newCarreraMateria = new CarreraMateria
             {
                 CarreraId = carreraMateria.CarreraId,
-                CodigoMateria = carreraMateria.CodigoMateria
+                CodigoMateria = carreraMateria.CodigoMateria,
+                
             };
 
             _db.CarreraMaterias.Add(newCarreraMateria);
@@ -151,7 +152,8 @@ namespace CRUD.Controllers
             var nuevaCarreraMateria = new CarreraMateria
             {
                 CarreraId = carreraMateria.CarreraId,
-                CodigoMateria = carreraMateria.CodigoMateria
+                CodigoMateria = carreraMateria.CodigoMateria,
+                
             };
 
             _db.CarreraMaterias.Add(nuevaCarreraMateria);
@@ -187,7 +189,8 @@ namespace CRUD.Controllers
             var nuevaCarreraMateria = new CarreraMateria
             {
                 CarreraId = carreraMateria.CarreraId,
-                CodigoMateria = carreraMateria.CodigoMateria
+                CodigoMateria = carreraMateria.CodigoMateria,
+                
             };
 
             patchDoc.ApplyTo(nuevaCarreraMateria, ModelState);

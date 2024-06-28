@@ -11,10 +11,10 @@ namespace CRUD.Models
         [RegularExpression(@"^[A-Z]{2}\d{3}$", ErrorMessage = "El código del aula debe tener 2 letras y 3 números, por ejemplo, GC301.")]
         public string CodigoAula { get; set; }
 
-        public int Capacidad { get; set; }
+        public int? Capacidad { get; set; }
 
         [MaxLength(6)]
-        public string TipoAula { get; set; }
+        public string? TipoAula { get; set; }
         
         
         [JsonIgnore]

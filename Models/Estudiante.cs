@@ -58,6 +58,10 @@ public  class Estudiante
     [ForeignKey("CarreraId")]
     public virtual Carrera? Carreras { get; set; }
     
+    
+    [JsonIgnore]
+    public virtual ICollection<CarreraMateria>? CarreraMaterias { get; set; }
+    
     [JsonIgnore]
     public virtual ICollection<EstudianteMateria>? EstudianteMaterias { get; set; }
 }

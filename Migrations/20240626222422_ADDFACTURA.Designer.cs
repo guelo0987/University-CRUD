@@ -4,6 +4,7 @@ using CRUD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240626222422_ADDFACTURA")]
+    partial class ADDFACTURA
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,10 +30,11 @@ namespace CRUD.Migrations
                     b.Property<string>("CodigoAula")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("Capacidad")
+                    b.Property<int>("Capacidad")
                         .HasColumnType("int");
 
                     b.Property<string>("TipoAula")
+                        .IsRequired()
                         .HasMaxLength(6)
                         .HasColumnType("nvarchar(6)");
 
@@ -76,41 +80,35 @@ namespace CRUD.Migrations
                     b.Property<string>("CodigoMateria")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("EstudianteId")
-                        .HasColumnType("int");
-
                     b.HasKey("CarreraId", "CodigoMateria");
 
                     b.HasIndex("CodigoMateria");
 
-                    b.HasIndex("EstudianteId");
-
                     b.ToTable("CarreraMaterias");
                 });
 
-            modelBuilder.Entity("CRUD.Models.CuentaPorPagar", b =>
+            modelBuilder.Entity("CRUD.Models.CuentasPorPagar", b =>
                 {
-                    b.Property<int>("IdCuentaPorPagar")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCuentaPorPagar"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CodigoEstudiante")
+                    b.Property<int?>("CodigoEstudiante")
                         .HasColumnType("int");
 
                     b.Property<string>("CodigoMateria")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<decimal?>("MontoTotalaPagar")
+                    b.Property<decimal?>("MontoPorMateria")
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("IdCuentaPorPagar");
+                    b.HasKey("Id");
 
                     b.HasIndex("CodigoMateria", "CodigoEstudiante");
 
-                    b.ToTable("CuentaPorPagars");
+                    b.ToTable("CuentasPorPagars");
                 });
 
             modelBuilder.Entity("CRUD.Models.Docente", b =>
@@ -161,17 +159,15 @@ namespace CRUD.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.Property<string>("PeriodoCursado")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Creditos")
+                        .HasColumnType("int");
 
-                    b.Property<string>("SeccionId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("Periodo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CodigoMateria", "CodigoEstudiante");
 
                     b.HasIndex("CodigoEstudiante");
-
-                    b.HasIndex("SeccionId");
 
                     b.ToTable("EstudianteMaterias");
                 });
@@ -252,24 +248,31 @@ namespace CRUD.Migrations
                     b.Property<string>("CodigoMateria")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("SeccionId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("DocenteId", "CodigoMateria");
 
                     b.HasIndex("CodigoMateria");
 
-                    b.HasIndex("SeccionId");
-
                     b.ToTable("MateriaDocentes");
+                });
+
+            modelBuilder.Entity("CRUD.Models.MateriaSeccion", b =>
+                {
+                    b.Property<string>("CodigoMateria")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CodigoSeccion")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CodigoMateria", "CodigoSeccion");
+
+                    b.HasIndex("CodigoSeccion");
+
+                    b.ToTable("SeccionMaterias");
                 });
 
             modelBuilder.Entity("CRUD.Models.Seccion", b =>
                 {
                     b.Property<string>("CodigoSeccion")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("CodigoMateria")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Cupo")
@@ -281,8 +284,6 @@ namespace CRUD.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("CodigoSeccion");
-
-                    b.HasIndex("CodigoMateria");
 
                     b.ToTable("Secciones");
                 });
@@ -379,22 +380,16 @@ namespace CRUD.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Estudiante", null)
-                        .WithMany("CarreraMaterias")
-                        .HasForeignKey("EstudianteId");
-
                     b.Navigation("Carreras");
 
                     b.Navigation("Materias");
                 });
 
-            modelBuilder.Entity("CRUD.Models.CuentaPorPagar", b =>
+            modelBuilder.Entity("CRUD.Models.CuentasPorPagar", b =>
                 {
                     b.HasOne("CRUD.Models.EstudianteMateria", "EstudianteMateria")
-                        .WithMany("CuentaPorPagars")
-                        .HasForeignKey("CodigoMateria", "CodigoEstudiante")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("CuentasPorPagars")
+                        .HasForeignKey("CodigoMateria", "CodigoEstudiante");
 
                     b.Navigation("EstudianteMateria");
                 });
@@ -413,24 +408,18 @@ namespace CRUD.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CRUD.Models.Seccion", "Seccions")
-                        .WithMany("EstudianteMaterias")
-                        .HasForeignKey("SeccionId");
-
                     b.Navigation("Estudiantes");
 
                     b.Navigation("Materias");
-
-                    b.Navigation("Seccions");
                 });
 
             modelBuilder.Entity("CRUD.Models.Factura", b =>
                 {
-                    b.HasOne("CRUD.Models.CuentaPorPagar", "CuentaPorPagars")
+                    b.HasOne("CRUD.Models.CuentasPorPagar", "CuentasPorPagars")
                         .WithMany("Facturas")
                         .HasForeignKey("IdCuentaPorPagar");
 
-                    b.Navigation("CuentaPorPagars");
+                    b.Navigation("CuentasPorPagars");
                 });
 
             modelBuilder.Entity("CRUD.Models.MateriaAula", b =>
@@ -466,24 +455,28 @@ namespace CRUD.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CRUD.Models.Seccion", "Seccions")
-                        .WithMany("MateriaDocentes")
-                        .HasForeignKey("SeccionId");
-
                     b.Navigation("Docentes");
 
                     b.Navigation("Materias");
-
-                    b.Navigation("Seccions");
                 });
 
-            modelBuilder.Entity("CRUD.Models.Seccion", b =>
+            modelBuilder.Entity("CRUD.Models.MateriaSeccion", b =>
                 {
-                    b.HasOne("CRUD.Models.Materia", "Materias")
-                        .WithMany("Seccions")
-                        .HasForeignKey("CodigoMateria");
+                    b.HasOne("CRUD.Models.Materia", "Materia")
+                        .WithMany("MateriaSecciones")
+                        .HasForeignKey("CodigoMateria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Materias");
+                    b.HasOne("CRUD.Models.Seccion", "Seccion")
+                        .WithMany("MateriaSecciones")
+                        .HasForeignKey("CodigoSeccion")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Materia");
+
+                    b.Navigation("Seccion");
                 });
 
             modelBuilder.Entity("Estudiante", b =>
@@ -507,7 +500,7 @@ namespace CRUD.Migrations
                     b.Navigation("Estudiantes");
                 });
 
-            modelBuilder.Entity("CRUD.Models.CuentaPorPagar", b =>
+            modelBuilder.Entity("CRUD.Models.CuentasPorPagar", b =>
                 {
                     b.Navigation("Facturas");
                 });
@@ -519,7 +512,7 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.EstudianteMateria", b =>
                 {
-                    b.Navigation("CuentaPorPagars");
+                    b.Navigation("CuentasPorPagars");
                 });
 
             modelBuilder.Entity("CRUD.Models.Materia", b =>
@@ -532,20 +525,16 @@ namespace CRUD.Migrations
 
                     b.Navigation("MateriaDocentes");
 
-                    b.Navigation("Seccions");
+                    b.Navigation("MateriaSecciones");
                 });
 
             modelBuilder.Entity("CRUD.Models.Seccion", b =>
                 {
-                    b.Navigation("EstudianteMaterias");
-
-                    b.Navigation("MateriaDocentes");
+                    b.Navigation("MateriaSecciones");
                 });
 
             modelBuilder.Entity("Estudiante", b =>
                 {
-                    b.Navigation("CarreraMaterias");
-
                     b.Navigation("EstudianteMaterias");
                 });
 #pragma warning restore 612, 618

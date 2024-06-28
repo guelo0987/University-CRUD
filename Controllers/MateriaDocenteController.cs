@@ -38,10 +38,12 @@ namespace CRUD.Controllers
             var docente = _db.Docentes.Find(materiaDocente.DocenteId);
             var materia = _db.Materias.Find(materiaDocente.CodigoMateria);
 
-            if (docente == null || materia == null)
+            var seccion = _db.Secciones.Find(materiaDocente.SeccionId);
+
+            if (docente == null || materia == null || seccion ==null)
             {
-                _logger.LogError("Error al crear la MateriaDocente: Docente o Materia no existen");
-                return BadRequest("Docente o Materia no existen");
+                _logger.LogError("Error al crear la MateriaDocente: Docente , Materia o seccion no existen");
+                return BadRequest("Docente , Seccion o  Materia no existen");
             }
 
             // Verificar si la relación ya existe
@@ -58,7 +60,9 @@ namespace CRUD.Controllers
             var newMateriaDocente = new MateriaDocente
             {
                 DocenteId = materiaDocente.DocenteId,
-                CodigoMateria = materiaDocente.CodigoMateria
+                CodigoMateria = materiaDocente.CodigoMateria,
+                SeccionId = materiaDocente.SeccionId,
+                Seccions = materiaDocente.Seccions
             };
 
             _db.MateriaDocentes.Add(newMateriaDocente);
@@ -78,6 +82,7 @@ namespace CRUD.Controllers
             var materiaDocentes = _db.MateriaDocentes
                 .Include(dm => dm.Docentes)
                 .Include(dm => dm.Materias)
+                .Include(s=>s.Seccions)
                 .ToList();
 
             return Ok(materiaDocentes);
@@ -92,6 +97,7 @@ namespace CRUD.Controllers
             var materiaDocente = _db.MateriaDocentes
                 .Include(dm => dm.Docentes)
                 .Include(dm => dm.Materias)
+                .Include(s=>s.Seccions)
                 .FirstOrDefault(dm => dm.DocenteId == docenteId && dm.CodigoMateria == codigoMateria);
 
             if (materiaDocente == null)
@@ -141,7 +147,9 @@ namespace CRUD.Controllers
             var nuevaMateriaDocente = new MateriaDocente
             {
                 DocenteId = materiaDocente.DocenteId,
-                CodigoMateria = materiaDocente.CodigoMateria
+                CodigoMateria = materiaDocente.CodigoMateria,
+                SeccionId = materiaDocente.SeccionId,
+                Seccions = materiaDocente.Seccions
             };
 
             _db.MateriaDocentes.Add(nuevaMateriaDocente);
@@ -174,8 +182,10 @@ namespace CRUD.Controllers
 
             var nuevaMateriaDocente = new MateriaDocente
             {
+                DocenteId = materiaDocente.DocenteId,
                 CodigoMateria = materiaDocente.CodigoMateria,
-                DocenteId = materiaDocente.DocenteId
+                SeccionId = materiaDocente.SeccionId,
+                Seccions = materiaDocente.Seccions
             };
 
             patchDoc.ApplyTo(nuevaMateriaDocente, ModelState);

@@ -45,9 +45,9 @@ public class Materia
     [JsonIgnore]
     public virtual ICollection<MateriaAula>? MateriaAulas { get; set; }
     
-    [JsonIgnore]
-    public virtual ICollection<MateriaSeccion>? MateriaSecciones { get; set; }
     
+    [JsonIgnore]
+    public virtual ICollection<Seccion>? Seccions { get; set; }
     
     
 }

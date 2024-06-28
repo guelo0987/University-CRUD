@@ -14,7 +14,9 @@ public class MateriaDocente
     [ForeignKey("DocenteId")]
     public virtual  Docente? Docentes { get; set; }
     
-    
+    public string? SeccionId { get; set; }
+    [ForeignKey("SeccionId")]
+    public virtual Seccion?  Seccions { get; set; }
     
     public string? CodigoMateria { get; set; }
     [ForeignKey("CodigoMateria")]
