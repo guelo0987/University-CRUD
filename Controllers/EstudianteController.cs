@@ -308,6 +308,9 @@ public class EstudianteController : ControllerBase
             expires: DateTime.UtcNow.AddMinutes(60),
             signingCredentials:signIn
             );
+        
+        
+        
 
         string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 

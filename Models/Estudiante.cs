@@ -64,4 +64,7 @@ public  class Estudiante
     
     [JsonIgnore]
     public virtual ICollection<EstudianteMateria>? EstudianteMaterias { get; set; }
+    
+    [JsonIgnore]
+    public virtual ICollection<Factura> Facturas { get; set; }
 }

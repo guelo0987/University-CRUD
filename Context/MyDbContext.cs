@@ -150,11 +150,11 @@ public partial class MyDbContext : DbContext
             .WithMany(em => em.CuentaPorPagars)
             .HasForeignKey(c => new { c.CodigoMateria, c.CodigoEstudiante });
         
+        
         modelBuilder.Entity<Factura>()
-            .HasOne(f => f.CuentaPorPagars)
-            .WithMany(c => c.Facturas)
-            .HasForeignKey(f => f.IdCuentaPorPagar);
-
+            .HasOne(f => f.Estudiante)
+            .WithMany(e => e.Facturas)
+            .HasForeignKey(f => f.CodigoEstudiante);
         
         
        

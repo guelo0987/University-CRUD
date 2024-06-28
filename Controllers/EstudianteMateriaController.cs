@@ -165,9 +165,6 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
                 Seccions = estudianteMateria.Seccions,
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-               
-               
-                
             };
 
             _db.EstudianteMaterias.Add(nuevaEstudianteMateria);

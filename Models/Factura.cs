@@ -1,21 +1,26 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CRUD.Models;
-
-public class Factura
+namespace CRUD.Models
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int FacturaId { get; set; }
+    public class Factura
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdFactura { get; set; }
+
+        public int CodigoEstudiante { get; set; }
+        [ForeignKey("CodigoEstudiante")]
+        public virtual Estudiante Estudiante { get; set; }
+
+        public string Periodo { get; set; }
+
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal MontoTotal { get; set; }
+
+        public DateTime FechaCreacion { get; set; } = DateTime.UtcNow;
         
-    public int? IdCuentaPorPagar { get; set; }
-
-    [ForeignKey("IdCuentaPorPagar")]
-    public virtual CuentaPorPagar? CuentaPorPagars { get; set; }
-
-    [Column(TypeName = "decimal(18,2)")]
-    public decimal? MontoTotalaPagar { get; set; }
-
-    public string Estado { get; set; }
+        public string? Estado { get; set; } 
+    }
 }

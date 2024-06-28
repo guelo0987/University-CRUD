@@ -4,6 +4,7 @@ using CRUD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240628215006_FixFacturaa")]
+    partial class FixFacturaa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -180,34 +183,26 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.Factura", b =>
                 {
-                    b.Property<int>("IdFactura")
+                    b.Property<int>("FacturaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFactura"));
-
-                    b.Property<int>("CodigoEstudiante")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FacturaId"));
 
                     b.Property<int?>("CuentaPorPagarIdCuentaPorPagar")
                         .HasColumnType("int");
 
                     b.Property<string>("Estado")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("FechaCreacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("MontoTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Periodo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdFactura");
+                    b.Property<DateTime>("FechaPago")
+                        .HasColumnType("datetime2");
 
-                    b.HasIndex("CodigoEstudiante");
+                    b.Property<decimal?>("MontoTotalaPagar")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("FacturaId");
 
                     b.HasIndex("CuentaPorPagarIdCuentaPorPagar");
 
@@ -439,17 +434,9 @@ namespace CRUD.Migrations
 
             modelBuilder.Entity("CRUD.Models.Factura", b =>
                 {
-                    b.HasOne("Estudiante", "Estudiante")
-                        .WithMany("Facturas")
-                        .HasForeignKey("CodigoEstudiante")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CRUD.Models.CuentaPorPagar", null)
                         .WithMany("Facturas")
                         .HasForeignKey("CuentaPorPagarIdCuentaPorPagar");
-
-                    b.Navigation("Estudiante");
                 });
 
             modelBuilder.Entity("CRUD.Models.MateriaAula", b =>
@@ -566,8 +553,6 @@ namespace CRUD.Migrations
                     b.Navigation("CarreraMaterias");
 
                     b.Navigation("EstudianteMaterias");
-
-                    b.Navigation("Facturas");
                 });
 #pragma warning restore 612, 618
         }

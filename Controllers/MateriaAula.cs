@@ -5,12 +5,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 namespace CRUD.Controllers
 {
     [Route("api/MateriaAulaApi")]
     [ApiController]
+    
+    
     public class MateriaAulaController : ControllerBase
     {
         private readonly MyDbContext _db;
