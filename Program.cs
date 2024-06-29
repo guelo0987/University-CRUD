@@ -1,6 +1,5 @@
 using System.Text;
 using CRUD.Context;
-using CRUD.Controllers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -13,19 +12,15 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
     .WriteTo.File("log/uniLog.txt", rollingInterval: RollingInterval.Day).CreateLogger();
 
-
 builder.Host.UseSerilog();
 
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
-
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers
-    (option => option.ReturnHttpNotAcceptable = true).AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling= ReferenceLoopHandling.Ignore).AddXmlDataContractSerializerFormatters();
-
+builder.Services.AddControllers(option => option.ReturnHttpNotAcceptable = true)
+    .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore)
+    .AddXmlDataContractSerializerFormatters();
 
 builder.Services.AddAuthentication(options =>
     {
@@ -47,6 +42,12 @@ builder.Services.AddAuthentication(options =>
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Administrador"));
+    
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -84,4 +85,3 @@ app.UseEndpoints(endpoints =>
 });
 
 app.Run();
-

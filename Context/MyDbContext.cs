@@ -42,10 +42,7 @@ public partial class MyDbContext : DbContext
     
     public virtual DbSet<Seccion> Secciones { get; set; }
     
-   
     
-    
- 
     public virtual DbSet<CuentaPorPagar> CuentaPorPagars { get; set; }
     
     
@@ -53,6 +50,8 @@ public partial class MyDbContext : DbContext
     public DbSet<Factura> Facturas { get; set; }
     
 
+    public DbSet<Admin> Admins { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Estudiante>(entity =>
@@ -166,6 +165,9 @@ public partial class MyDbContext : DbContext
             .HasOne(f => f.Estudiante)
             .WithMany(e => e.Facturas)
             .HasForeignKey(f => f.CodigoEstudiante);
+        
+        
+        
         
             
         

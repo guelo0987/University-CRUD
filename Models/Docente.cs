@@ -28,6 +28,7 @@ namespace CRUD.Models
         [MaxLength(1)]
         public string SexoDocente { get; set; }
         
+        public string Rol { get; set; } = "Docente";
         
         [JsonIgnore]
         public virtual ICollection<MateriaDocente>? MateriaDocentes { get; set; }
