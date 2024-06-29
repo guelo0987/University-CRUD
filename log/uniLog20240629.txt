@@ -14968,3 +14968,594 @@ WHERE [CodigoEstudiante] = @p1 AND [CodigoMateria] = @p2;
 2024-06-29 13:26:35.370 -04:00 [DBG] Connection id "0HN4OC151823I" stopped.
 2024-06-29 13:26:35.370 -04:00 [DBG] Connection id "0HN4OC151823I" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-06-29 13:26:35.375 -04:00 [DBG] Hosting stopped
+2024-06-29 13:30:07.287 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 13:30:07.483 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 13:30:07.483 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 13:30:07.483 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 13:30:07.484 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 13:30:07.528 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:30:07.528 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:30:07.528 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:30:07.565 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 13:30:07.833 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 13:30:18.656 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 13:30:18.862 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 13:30:18.863 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 13:30:18.863 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 13:30:18.863 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 13:30:18.910 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:30:18.910 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:30:18.910 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:30:18.949 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 13:30:18.956 -04:00 [DBG] Creating DbConnection.
+2024-06-29 13:30:18.974 -04:00 [DBG] Created DbConnection. (16ms).
+2024-06-29 13:30:18.975 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-29 13:30:18.976 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.076 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.079 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 13:30:19.081 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-29 13:30:19.081 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-29 13:30:19.083 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 13:30:19.101 -04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 13:30:19.102 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.105 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-29 13:30:19.106 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-29 13:30:19.106 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 13:30:19.106 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 13:30:19.106 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.106 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.106 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 13:30:19.116 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 13:30:19.116 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.116 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:30:19.116 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.116 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.116 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 13:30:19.116 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 13:30:19.116 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 13:30:19.116 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 13:30:19.119 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 13:30:19.119 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.119 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:30:19.119 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-29 13:30:19.119 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 13:30:19.119 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 13:30:19.119 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.119 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.119 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 13:30:19.121 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 13:30:19.121 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.121 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:30:19.126 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.126 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.126 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:30:19.126 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:30:19.126 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:30:19.126 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-29 13:30:19.129 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-29 13:30:19.130 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:30:19.130 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 13:30:19.130 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.130 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:30:19.136 -04:00 [INF] Applying migration '20240629173007_Admin'.
+2024-06-29 13:30:19.178 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.178 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.179 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-29 13:30:19.184 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-29 13:30:19.185 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 13:30:19.185 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 13:30:19.185 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 13:30:19.185 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admins] (
+    [AdminId] int NOT NULL,
+    [NombreAdmin] nvarchar(100) NOT NULL,
+    [CorreoAdmin] nvarchar(100) NOT NULL,
+    [ContraseñaAdmin] nvarchar(100) NOT NULL,
+    [Rol] nvarchar(50) NOT NULL,
+    CONSTRAINT [PK_Admins] PRIMARY KEY ([AdminId])
+);
+2024-06-29 13:30:19.208 -04:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admins] (
+    [AdminId] int NOT NULL,
+    [NombreAdmin] nvarchar(100) NOT NULL,
+    [CorreoAdmin] nvarchar(100) NOT NULL,
+    [ContraseñaAdmin] nvarchar(100) NOT NULL,
+    [Rol] nvarchar(50) NOT NULL,
+    CONSTRAINT [PK_Admins] PRIMARY KEY ([AdminId])
+);
+2024-06-29 13:30:19.208 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 13:30:19.209 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 13:30:19.209 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 13:30:19.209 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240629173007_Admin', N'9.0.0-preview.5.24306.3');
+2024-06-29 13:30:19.210 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240629173007_Admin', N'9.0.0-preview.5.24306.3');
+2024-06-29 13:30:19.211 -04:00 [DBG] Committing transaction.
+2024-06-29 13:30:19.214 -04:00 [DBG] Committed transaction.
+2024-06-29 13:30:19.215 -04:00 [DBG] Disposing transaction.
+2024-06-29 13:30:19.215 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.215 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:30:19.216 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 13:30:19.217 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 13:30:19.217 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 13:36:18.811 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-29 13:36:18.866 -04:00 [DBG] Hosting starting
+2024-06-29 13:36:18.869 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-29 13:36:18.875 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-29 13:36:18.877 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-29 13:36:18.879 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-29 13:36:18.880 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-29 13:36:18.883 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-29 13:36:18.884 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-29 13:36:18.886 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-29 13:36:18.886 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-29 13:36:18.888 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-29 13:36:18.888 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-29 13:36:18.919 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-29 13:36:18.919 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-29 13:36:18.920 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-29 13:36:18.920 -04:00 [INF] Hosting environment: Development
+2024-06-29 13:36:18.920 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-29 13:36:18.920 -04:00 [DBG] Hosting started
+2024-06-29 13:36:19.135 -04:00 [DBG] Connection id "0HN4OC7U48MQJ" received FIN.
+2024-06-29 13:36:19.139 -04:00 [DBG] Connection id "0HN4OC7U48MQJ" accepted.
+2024-06-29 13:36:19.139 -04:00 [DBG] Connection id "0HN4OC7U48MQJ" started.
+2024-06-29 13:36:19.143 -04:00 [DBG] Connection id "0HN4OC7U48MQJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:36:19.147 -04:00 [DBG] Connection id "0HN4OC7U48MQJ" disconnecting.
+2024-06-29 13:36:19.150 -04:00 [DBG] Connection id "0HN4OC7U48MQJ" stopped.
+2024-06-29 13:36:19.262 -04:00 [DBG] Connection id "0HN4OC7U48MQK" accepted.
+2024-06-29 13:36:19.262 -04:00 [DBG] Connection id "0HN4OC7U48MQL" accepted.
+2024-06-29 13:36:19.262 -04:00 [DBG] Connection id "0HN4OC7U48MQK" started.
+2024-06-29 13:36:19.262 -04:00 [DBG] Connection id "0HN4OC7U48MQL" started.
+2024-06-29 13:36:19.278 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:36:19.280 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-29 13:36:19.311 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:36:19.382 -04:00 [DBG] Connection id "0HN4OC7U48MQK" completed keep alive response.
+2024-06-29 13:36:19.382 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 106.7789ms
+2024-06-29 13:36:19.441 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:36:19.442 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:36:19.531 -04:00 [DBG] Connection id "0HN4OC7U48MQL" received FIN.
+2024-06-29 13:36:19.531 -04:00 [DBG] Connection id "0HN4OC7U48MQL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:36:19.531 -04:00 [DBG] Connection id "0HN4OC7U48MQL" disconnecting.
+2024-06-29 13:36:19.532 -04:00 [DBG] Connection id "0HN4OC7U48MQL" stopped.
+2024-06-29 13:36:19.613 -04:00 [DBG] Connection id "0HN4OC7U48MQK" completed keep alive response.
+2024-06-29 13:36:19.613 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.3364ms
+2024-06-29 13:36:24.534 -04:00 [DBG] Connection id "0HN4OC7U48MQK" received FIN.
+2024-06-29 13:36:24.535 -04:00 [DBG] Connection id "0HN4OC7U48MQK" disconnecting.
+2024-06-29 13:36:24.536 -04:00 [DBG] Connection id "0HN4OC7U48MQK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:36:24.538 -04:00 [DBG] Connection id "0HN4OC7U48MQK" stopped.
+2024-06-29 13:36:52.721 -04:00 [DBG] Connection id "0HN4OC7U48MQM" accepted.
+2024-06-29 13:36:52.721 -04:00 [DBG] Connection id "0HN4OC7U48MQM" started.
+2024-06-29 13:36:52.727 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/Admin/CreateAdmin - application/json-patch+json 125
+2024-06-29 13:36:52.730 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:36:52.731 -04:00 [DBG] POST requests are not supported
+2024-06-29 13:36:52.731 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-29 13:36:52.731 -04:00 [INF] CORS policy execution successful.
+2024-06-29 13:36:52.732 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-29 13:36:52.756 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Admin/CreateAdmin'
+2024-06-29 13:36:52.758 -04:00 [DBG] Endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)' with route pattern 'api/Admin/CreateAdmin' is valid for the request path '/api/Admin/CreateAdmin'
+2024-06-29 13:36:52.758 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)'
+2024-06-29 13:36:52.759 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)'
+2024-06-29 13:36:52.773 -04:00 [INF] Route matched with {action = "CreateAdmin", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Admin] CreateAdmin(CRUD.Models.Admin) on controller CRUD.Controllers.AdminController (CRUD).
+2024-06-29 13:36:52.773 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 13:36:52.773 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 13:36:52.773 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 13:36:52.773 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 13:36:52.773 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 13:36:52.774 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AdminController (CRUD)
+2024-06-29 13:36:52.843 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 13:36:52.856 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AdminController (CRUD)
+2024-06-29 13:36:52.858 -04:00 [DBG] Attempting to bind parameter 'admin' of type 'CRUD.Models.Admin' ...
+2024-06-29 13:36:52.858 -04:00 [DBG] Attempting to bind parameter 'admin' of type 'CRUD.Models.Admin' using the name '' in request data ...
+2024-06-29 13:36:52.859 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:36:52.859 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:36:52.862 -04:00 [DBG] Connection id "0HN4OC7U48MQM", Request id "0HN4OC7U48MQM:00000001": started reading request body.
+2024-06-29 13:36:52.862 -04:00 [DBG] Connection id "0HN4OC7U48MQM", Request id "0HN4OC7U48MQM:00000001": done reading request body.
+2024-06-29 13:36:52.912 -04:00 [DBG] Done attempting to bind parameter 'admin' of type 'CRUD.Models.Admin'.
+2024-06-29 13:36:52.912 -04:00 [DBG] Done attempting to bind parameter 'admin' of type 'CRUD.Models.Admin'.
+2024-06-29 13:36:52.912 -04:00 [DBG] Attempting to validate the bound parameter 'admin' of type 'CRUD.Models.Admin' ...
+2024-06-29 13:36:52.915 -04:00 [DBG] Done attempting to validate the bound parameter 'admin' of type 'CRUD.Models.Admin'.
+2024-06-29 13:36:52.916 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-06-29 13:36:52.917 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-06-29 13:36:52.917 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 13:36:52.918 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-06-29 13:36:52.919 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-29 13:36:52.919 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-29 13:36:52.954 -04:00 [INF] Executed action CRUD.Controllers.AdminController.CreateAdmin (CRUD) in 179.3801ms
+2024-06-29 13:36:52.954 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)'
+2024-06-29 13:36:52.955 -04:00 [DBG] Connection id "0HN4OC7U48MQM" completed keep alive response.
+2024-06-29 13:36:52.955 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/Admin/CreateAdmin - 400 270 application/problem+json; charset=utf-8 228.9798ms
+2024-06-29 13:36:54.546 -04:00 [DBG] Connection id "0HN4OC7U48MQM" received FIN.
+2024-06-29 13:36:54.547 -04:00 [DBG] Connection id "0HN4OC7U48MQM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:36:54.547 -04:00 [DBG] Connection id "0HN4OC7U48MQM" disconnecting.
+2024-06-29 13:36:54.548 -04:00 [DBG] Connection id "0HN4OC7U48MQM" stopped.
+2024-06-29 13:37:00.251 -04:00 [DBG] Connection id "0HN4OC7U48MQN" accepted.
+2024-06-29 13:37:00.251 -04:00 [DBG] Connection id "0HN4OC7U48MQN" started.
+2024-06-29 13:37:00.252 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/Admin/CreateAdmin - application/json-patch+json 125
+2024-06-29 13:37:00.253 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:37:00.253 -04:00 [DBG] POST requests are not supported
+2024-06-29 13:37:00.254 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-29 13:37:00.254 -04:00 [INF] CORS policy execution successful.
+2024-06-29 13:37:00.261 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Admin/CreateAdmin'
+2024-06-29 13:37:00.261 -04:00 [DBG] Endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)' with route pattern 'api/Admin/CreateAdmin' is valid for the request path '/api/Admin/CreateAdmin'
+2024-06-29 13:37:00.261 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)'
+2024-06-29 13:37:00.262 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)'
+2024-06-29 13:37:00.262 -04:00 [INF] Route matched with {action = "CreateAdmin", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CRUD.Models.Admin] CreateAdmin(CRUD.Models.Admin) on controller CRUD.Controllers.AdminController (CRUD).
+2024-06-29 13:37:00.262 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 13:37:00.262 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 13:37:00.262 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 13:37:00.262 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 13:37:00.262 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 13:37:00.262 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AdminController (CRUD)
+2024-06-29 13:37:00.272 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AdminController (CRUD)
+2024-06-29 13:37:00.272 -04:00 [DBG] Attempting to bind parameter 'admin' of type 'CRUD.Models.Admin' ...
+2024-06-29 13:37:00.273 -04:00 [DBG] Attempting to bind parameter 'admin' of type 'CRUD.Models.Admin' using the name '' in request data ...
+2024-06-29 13:37:00.273 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:37:00.273 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:37:00.273 -04:00 [DBG] Connection id "0HN4OC7U48MQN", Request id "0HN4OC7U48MQN:00000001": started reading request body.
+2024-06-29 13:37:00.273 -04:00 [DBG] Connection id "0HN4OC7U48MQN", Request id "0HN4OC7U48MQN:00000001": done reading request body.
+2024-06-29 13:37:00.273 -04:00 [DBG] Done attempting to bind parameter 'admin' of type 'CRUD.Models.Admin'.
+2024-06-29 13:37:00.273 -04:00 [DBG] Done attempting to bind parameter 'admin' of type 'CRUD.Models.Admin'.
+2024-06-29 13:37:00.273 -04:00 [DBG] Attempting to validate the bound parameter 'admin' of type 'CRUD.Models.Admin' ...
+2024-06-29 13:37:00.273 -04:00 [DBG] Done attempting to validate the bound parameter 'admin' of type 'CRUD.Models.Admin'.
+2024-06-29 13:37:00.277 -04:00 [INF] Executing action method CRUD.Controllers.AdminController.CreateAdmin (CRUD) - Validation state: "Valid"
+2024-06-29 13:37:00.626 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 13:37:00.626 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 13:37:00.626 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 13:37:00.626 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 13:37:00.712 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:37:00.712 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:37:00.712 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:37:00.800 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 13:37:00.837 -04:00 [DBG] Compiling query expression: 
+'DbSet<Admin>()
+    .Any(a => a.CorreoAdmin.ToLower() == __ToLower_0)'
+2024-06-29 13:37:01.005 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Admins AS a
+            WHERE LOWER(a.CorreoAdmin) == @__ToLower_0)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2024-06-29 13:37:01.034 -04:00 [DBG] Creating DbConnection.
+2024-06-29 13:37:01.048 -04:00 [DBG] Created DbConnection. (14ms).
+2024-06-29 13:37:01.050 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.212 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.214 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:37:01.218 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-06-29 13:37:01.224 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-06-29 13:37:01.229 -04:00 [DBG] Executing DbCommand [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Admins] AS [a]
+        WHERE LOWER([a].[CorreoAdmin]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-29 13:37:01.277 -04:00 [INF] Executed DbCommand (50ms) [Parameters=[@__ToLower_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Admins] AS [a]
+        WHERE LOWER([a].[CorreoAdmin]) = @__ToLower_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-29 13:37:01.284 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:37:01.289 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 8ms reading results.
+2024-06-29 13:37:01.291 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.295 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-29 13:37:01.295 -04:00 [DBG] Compiling query expression: 
+'DbSet<Admin>()
+    .Any(a => a.AdminId == __admin_AdminId_0)'
+2024-06-29 13:37:01.297 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Admins AS a
+            WHERE a.AdminId == @__admin_AdminId_0)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2024-06-29 13:37:01.298 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.298 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.298 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:37:01.298 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:37:01.298 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:37:01.299 -04:00 [DBG] Executing DbCommand [Parameters=[@__admin_AdminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Admins] AS [a]
+        WHERE [a].[AdminId] = @__admin_AdminId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-29 13:37:01.303 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__admin_AdminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Admins] AS [a]
+        WHERE [a].[AdminId] = @__admin_AdminId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-29 13:37:01.303 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:37:01.303 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 13:37:01.303 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.303 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:37:01.587 -04:00 [DBG] Context 'MyDbContext' started tracking 'Admin' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 13:37:01.588 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-29 13:37:01.589 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-29 13:37:01.595 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-29 13:37:01.627 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.627 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.628 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:37:01.628 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:37:01.628 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:37:01.628 -04:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Admins] ([AdminId], [ContraseñaAdmin], [CorreoAdmin], [NombreAdmin], [Rol])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-29 13:37:01.641 -04:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 100), @p4='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Admins] ([AdminId], [ContraseñaAdmin], [CorreoAdmin], [NombreAdmin], [Rol])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-29 13:37:01.642 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:37:01.642 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 13:37:01.642 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.642 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:37:01.647 -04:00 [DBG] An entity of type 'Admin' tracked by 'MyDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 13:37:01.647 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-29 13:37:01.647 -04:00 [INF] Administrador creado exitosamente
+2024-06-29 13:37:01.649 -04:00 [INF] Executed action method CRUD.Controllers.AdminController.CreateAdmin (CRUD), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 1370.3472ms.
+2024-06-29 13:37:01.650 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 13:37:01.650 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-29 13:37:01.650 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 13:37:01.650 -04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CRUD.Models.Admin'.
+2024-06-29 13:37:01.659 -04:00 [DBG] Found the endpoints ["CRUD.Controllers.AdminController.GetAdmin (CRUD)"] for address GetAdmin(id=[555556])
+2024-06-29 13:37:01.660 -04:00 [DBG] Successfully processed template api/Admin/{id} for CRUD.Controllers.AdminController.GetAdmin (CRUD) resulting in /api/Admin/555556 and 
+2024-06-29 13:37:01.660 -04:00 [DBG] Link generation succeeded for endpoints ["CRUD.Controllers.AdminController.GetAdmin (CRUD)"] with result /api/Admin/555556
+2024-06-29 13:37:01.661 -04:00 [INF] Executed action CRUD.Controllers.AdminController.CreateAdmin (CRUD) in 1398.4669ms
+2024-06-29 13:37:01.661 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AdminController.CreateAdmin (CRUD)'
+2024-06-29 13:37:01.661 -04:00 [DBG] Connection id "0HN4OC7U48MQN" completed keep alive response.
+2024-06-29 13:37:01.661 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 13:37:01.663 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:01.664 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 13:37:01.664 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/Admin/CreateAdmin - 201 179 application/json; charset=utf-8 1412.2887ms
+2024-06-29 13:37:04.547 -04:00 [DBG] Connection id "0HN4OC7U48MQN" received FIN.
+2024-06-29 13:37:04.549 -04:00 [DBG] Connection id "0HN4OC7U48MQN" disconnecting.
+2024-06-29 13:37:04.550 -04:00 [DBG] Connection id "0HN4OC7U48MQN" stopped.
+2024-06-29 13:37:04.551 -04:00 [DBG] Connection id "0HN4OC7U48MQN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:37:23.404 -04:00 [DBG] Connection id "0HN4OC7U48MQO" accepted.
+2024-06-29 13:37:23.404 -04:00 [DBG] Connection id "0HN4OC7U48MQO" started.
+2024-06-29 13:37:23.405 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5104/api/Admin/Login - application/json-patch+json 44
+2024-06-29 13:37:23.405 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:37:23.405 -04:00 [DBG] POST requests are not supported
+2024-06-29 13:37:23.406 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-29 13:37:23.406 -04:00 [INF] CORS policy execution successful.
+2024-06-29 13:37:23.406 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Admin/Login'
+2024-06-29 13:37:23.407 -04:00 [DBG] Endpoint 'CRUD.Controllers.AdminController.Login (CRUD)' with route pattern 'api/Admin/Login' is valid for the request path '/api/Admin/Login'
+2024-06-29 13:37:23.407 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AdminController.Login (CRUD)'
+2024-06-29 13:37:23.407 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AdminController.Login (CRUD)'
+2024-06-29 13:37:23.411 -04:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CRUD.Models.LoginModel) on controller CRUD.Controllers.AdminController (CRUD).
+2024-06-29 13:37:23.411 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 13:37:23.411 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 13:37:23.411 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 13:37:23.411 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 13:37:23.411 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 13:37:23.411 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AdminController (CRUD)
+2024-06-29 13:37:23.415 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AdminController (CRUD)
+2024-06-29 13:37:23.416 -04:00 [DBG] Attempting to bind parameter 'loginModel' of type 'CRUD.Models.LoginModel' ...
+2024-06-29 13:37:23.416 -04:00 [DBG] Attempting to bind parameter 'loginModel' of type 'CRUD.Models.LoginModel' using the name '' in request data ...
+2024-06-29 13:37:23.416 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:37:23.416 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:37:23.416 -04:00 [DBG] Connection id "0HN4OC7U48MQO", Request id "0HN4OC7U48MQO:00000001": started reading request body.
+2024-06-29 13:37:23.416 -04:00 [DBG] Connection id "0HN4OC7U48MQO", Request id "0HN4OC7U48MQO:00000001": done reading request body.
+2024-06-29 13:37:23.419 -04:00 [DBG] Done attempting to bind parameter 'loginModel' of type 'CRUD.Models.LoginModel'.
+2024-06-29 13:37:23.419 -04:00 [DBG] Done attempting to bind parameter 'loginModel' of type 'CRUD.Models.LoginModel'.
+2024-06-29 13:37:23.419 -04:00 [DBG] Attempting to validate the bound parameter 'loginModel' of type 'CRUD.Models.LoginModel' ...
+2024-06-29 13:37:23.421 -04:00 [DBG] Done attempting to validate the bound parameter 'loginModel' of type 'CRUD.Models.LoginModel'.
+2024-06-29 13:37:23.421 -04:00 [INF] Executing action method CRUD.Controllers.AdminController.Login (CRUD) - Validation state: "Valid"
+2024-06-29 13:37:23.434 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 13:37:23.438 -04:00 [DBG] Compiling query expression: 
+'DbSet<Admin>()
+    .SingleOrDefault(u => u.AdminId == __loginModel_Id_0)'
+2024-06-29 13:37:23.474 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Admin>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Admin.AdminId (int) Required PK AfterSave:Throw, 0], [Property: Admin.ContraseñaAdmin (string) Required MaxLength(100), 1], [Property: Admin.CorreoAdmin (string) Required MaxLength(100), 2], [Property: Admin.NombreAdmin (string) Required MaxLength(100), 3], [Property: Admin.Rol (string) Required MaxLength(50), 4] }
+        SELECT TOP(2) a.AdminId, a.ContraseñaAdmin, a.CorreoAdmin, a.NombreAdmin, a.Rol
+        FROM Admins AS a
+        WHERE a.AdminId == @__loginModel_Id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Admin entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Admin instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Admin);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Admin.AdminId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Admin").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Admin)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Admin | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.Admin")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Admin | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.Admin")]: 
+                        {
+                            return 
+                            {
+                                Admin instance;
+                                instance = new Admin();
+                                instance.<AdminId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<ContraseñaAdmin>k__BackingField = dataReader.GetString(1);
+                                instance.<CorreoAdmin>k__BackingField = dataReader.GetString(2);
+                                instance.<NombreAdmin>k__BackingField = dataReader.GetString(3);
+                                instance.<Rol>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Admin | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.Admin")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Admin)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-29 13:37:23.477 -04:00 [DBG] Creating DbConnection.
+2024-06-29 13:37:23.477 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 13:37:23.477 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:23.477 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:23.477 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:37:23.478 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:37:23.478 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:37:23.478 -04:00 [DBG] Executing DbCommand [Parameters=[@__loginModel_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[AdminId], [a].[ContraseñaAdmin], [a].[CorreoAdmin], [a].[NombreAdmin], [a].[Rol]
+FROM [Admins] AS [a]
+WHERE [a].[AdminId] = @__loginModel_Id_0
+2024-06-29 13:37:23.497 -04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__loginModel_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[AdminId], [a].[ContraseñaAdmin], [a].[CorreoAdmin], [a].[NombreAdmin], [a].[Rol]
+FROM [Admins] AS [a]
+WHERE [a].[AdminId] = @__loginModel_Id_0
+2024-06-29 13:37:23.500 -04:00 [DBG] Context 'MyDbContext' started tracking 'Admin' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 13:37:23.501 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:37:23.501 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 3ms reading results.
+2024-06-29 13:37:23.501 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:23.501 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:37:23.752 -04:00 [INF] Login exitoso
+2024-06-29 13:37:23.752 -04:00 [INF] Executed action method CRUD.Controllers.AdminController.Login (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 330.9366ms.
+2024-06-29 13:37:23.752 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 13:37:23.752 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 13:37:23.752 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 13:37:23.752 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 13:37:23.752 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 13:37:23.752 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CRUD.Models.Admin, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-29 13:37:23.755 -04:00 [INF] Executed action CRUD.Controllers.AdminController.Login (CRUD) in 343.8094ms
+2024-06-29 13:37:23.755 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AdminController.Login (CRUD)'
+2024-06-29 13:37:23.755 -04:00 [DBG] Connection id "0HN4OC7U48MQO" completed keep alive response.
+2024-06-29 13:37:23.755 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 13:37:23.755 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 13:37:23.755 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 13:37:23.755 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5104/api/Admin/Login - 200 610 application/json; charset=utf-8 350.2176ms
+2024-06-29 13:37:24.551 -04:00 [DBG] Connection id "0HN4OC7U48MQO" received FIN.
+2024-06-29 13:37:24.551 -04:00 [DBG] Connection id "0HN4OC7U48MQO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:37:24.552 -04:00 [DBG] Connection id "0HN4OC7U48MQO" disconnecting.
+2024-06-29 13:37:24.552 -04:00 [DBG] Connection id "0HN4OC7U48MQO" stopped.
+2024-06-29 14:40:30.254 -04:00 [DBG] Connection id "0HN4OC7U48MQP" accepted.
+2024-06-29 14:40:30.255 -04:00 [DBG] Connection id "0HN4OC7U48MQQ" accepted.
+2024-06-29 14:40:30.255 -04:00 [DBG] Connection id "0HN4OC7U48MQP" started.
+2024-06-29 14:40:30.258 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 14:40:30.259 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 14:40:30.262 -04:00 [DBG] Connection id "0HN4OC7U48MQP" completed keep alive response.
+2024-06-29 14:40:30.262 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 5.4587ms
+2024-06-29 14:40:30.270 -04:00 [DBG] Connection id "0HN4OC7U48MQQ" started.
+2024-06-29 14:40:30.337 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 14:40:30.337 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 14:40:30.401 -04:00 [DBG] Connection id "0HN4OC7U48MQP" completed keep alive response.
+2024-06-29 14:40:30.401 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.6652ms
+2024-06-29 14:40:33.003 -04:00 [DBG] Connection id "0HN4OC7U48MQP" received FIN.
+2024-06-29 14:40:33.004 -04:00 [DBG] Connection id "0HN4OC7U48MQP" disconnecting.
+2024-06-29 14:40:33.004 -04:00 [DBG] Connection id "0HN4OC7U48MQP" stopped.
+2024-06-29 14:40:33.003 -04:00 [DBG] Connection id "0HN4OC7U48MQQ" received FIN.
+2024-06-29 14:40:33.006 -04:00 [DBG] Connection id "0HN4OC7U48MQQ" disconnecting.
+2024-06-29 14:40:33.006 -04:00 [DBG] Connection id "0HN4OC7U48MQQ" stopped.
+2024-06-29 14:40:33.006 -04:00 [DBG] Connection id "0HN4OC7U48MQP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 14:40:33.007 -04:00 [DBG] Connection id "0HN4OC7U48MQQ" sending FIN because: "The Socket transport's send loop completed gracefully."
