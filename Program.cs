@@ -46,7 +46,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Administrador"));
-    
+    options.AddPolicy("RequireDocenteRole", policy => policy.RequireRole("Docente"));
 });
 
 builder.Services.AddEndpointsApiExplorer();

@@ -229,7 +229,8 @@ namespace CRUD.Controllers
                 new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim("Id", docenteMatch.CodigoDocente.ToString()),
-                new Claim("CorreoDocente", docenteMatch.CorreoDocente)
+                new Claim("CorreoDocente", docenteMatch.CorreoDocente),
+                new Claim(ClaimTypes.Role, "Docente")
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
