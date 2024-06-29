@@ -13,6 +13,10 @@ namespace CRUD.Models
         public string? CodigoMateria { get; set; }
         [ForeignKey("CodigoMateria")]
         public virtual  Materia? Materias { get; set; }
+        
+        public string? CodigoAula { get; set; }
+        [ForeignKey("CodigoAula")]
+        public virtual  Aula? Aulas { get; set; }
 
         [MaxLength(50)]
         public string Horario { get; set; }
@@ -25,6 +29,10 @@ namespace CRUD.Models
         
         [JsonIgnore]
         public virtual ICollection<MateriaDocente>? MateriaDocentes { get; set; }
+        
+        
+        [JsonIgnore]
+        public virtual ICollection<MateriaAula>? MateriaAulas { get; set; }
 
         
         

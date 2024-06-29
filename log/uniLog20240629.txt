@@ -1,0 +1,247 @@
+2024-06-29 00:15:09.276 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-29 00:15:09.334 -04:00 [DBG] Hosting starting
+2024-06-29 00:15:09.339 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-29 00:15:09.344 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-29 00:15:09.346 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-29 00:15:09.348 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-29 00:15:09.349 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-29 00:15:09.352 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-29 00:15:09.353 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-29 00:15:09.355 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-29 00:15:09.355 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-29 00:15:09.357 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-29 00:15:09.357 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-29 00:15:09.393 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-29 00:15:09.393 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-29 00:15:09.393 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-29 00:15:09.393 -04:00 [INF] Hosting environment: Development
+2024-06-29 00:15:09.393 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-29 00:15:09.393 -04:00 [DBG] Hosting started
+2024-06-29 00:15:09.593 -04:00 [DBG] Connection id "0HN4NU889CJBB" received FIN.
+2024-06-29 00:15:09.597 -04:00 [DBG] Connection id "0HN4NU889CJBB" accepted.
+2024-06-29 00:15:09.598 -04:00 [DBG] Connection id "0HN4NU889CJBB" started.
+2024-06-29 00:15:09.603 -04:00 [DBG] Connection id "0HN4NU889CJBB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 00:15:09.604 -04:00 [DBG] Connection id "0HN4NU889CJBB" disconnecting.
+2024-06-29 00:15:09.607 -04:00 [DBG] Connection id "0HN4NU889CJBB" stopped.
+2024-06-29 00:15:09.878 -04:00 [DBG] Connection id "0HN4NU889CJBC" accepted.
+2024-06-29 00:15:09.878 -04:00 [DBG] Connection id "0HN4NU889CJBC" started.
+2024-06-29 00:15:09.878 -04:00 [DBG] Connection id "0HN4NU889CJBD" accepted.
+2024-06-29 00:15:09.878 -04:00 [DBG] Connection id "0HN4NU889CJBD" started.
+2024-06-29 00:15:09.898 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger - null null
+2024-06-29 00:15:09.899 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-29 00:15:09.924 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:09.937 -04:00 [DBG] Connection id "0HN4NU889CJBC" completed keep alive response.
+2024-06-29 00:15:09.938 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger - 301 0 null 42.2256ms
+2024-06-29 00:15:09.942 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 00:15:09.942 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:10.004 -04:00 [DBG] Connection id "0HN4NU889CJBC" completed keep alive response.
+2024-06-29 00:15:10.004 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 62.3501ms
+2024-06-29 00:15:10.026 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui.css - null null
+2024-06-29 00:15:10.026 -04:00 [DBG] Connection id "0HN4NU889CJBE" accepted.
+2024-06-29 00:15:10.026 -04:00 [DBG] Connection id "0HN4NU889CJBE" started.
+2024-06-29 00:15:10.026 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - null null
+2024-06-29 00:15:10.026 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-29 00:15:10.027 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:10.027 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:10.027 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:10.040 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-29 00:15:10.040 -04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-29 00:15:10.043 -04:00 [DBG] Connection id "0HN4NU889CJBC" completed keep alive response.
+2024-06-29 00:15:10.043 -04:00 [DBG] Connection id "0HN4NU889CJBE" completed keep alive response.
+2024-06-29 00:15:10.043 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui.css - 200 152034 text/css 17.2372ms
+2024-06-29 00:15:10.043 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 16.7945ms
+2024-06-29 00:15:10.046 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-29 00:15:10.046 -04:00 [DBG] Connection id "0HN4NU889CJBD" completed keep alive response.
+2024-06-29 00:15:10.046 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 19.9389ms
+2024-06-29 00:15:10.155 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 00:15:10.155 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:10.313 -04:00 [DBG] Connection id "0HN4NU889CJBD" completed keep alive response.
+2024-06-29 00:15:10.313 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.5842ms
+2024-06-29 00:15:19.489 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 00:15:19.489 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:19.490 -04:00 [DBG] Connection id "0HN4NU889CJBD" completed keep alive response.
+2024-06-29 00:15:19.490 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.7009ms
+2024-06-29 00:15:19.648 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 00:15:19.649 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 00:15:19.724 -04:00 [DBG] Connection id "0HN4NU889CJBD" completed keep alive response.
+2024-06-29 00:15:19.724 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.2827ms
+2024-06-29 00:17:21.533 -04:00 [DBG] Connection id "0HN4NU889CJBE" disconnecting.
+2024-06-29 00:17:21.533 -04:00 [DBG] Connection id "0HN4NU889CJBC" disconnecting.
+2024-06-29 00:17:21.535 -04:00 [DBG] Connection id "0HN4NU889CJBE" stopped.
+2024-06-29 00:17:21.535 -04:00 [DBG] Connection id "0HN4NU889CJBC" stopped.
+2024-06-29 00:17:21.536 -04:00 [DBG] Connection id "0HN4NU889CJBE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 00:17:21.536 -04:00 [DBG] Connection id "0HN4NU889CJBC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 00:17:28.118 -04:00 [INF] Application is shutting down...
+2024-06-29 00:17:28.119 -04:00 [DBG] Hosting stopping
+2024-06-29 00:17:28.122 -04:00 [DBG] Connection id "0HN4NU889CJBD" disconnecting.
+2024-06-29 00:17:28.122 -04:00 [DBG] Connection id "0HN4NU889CJBD" stopped.
+2024-06-29 00:17:28.122 -04:00 [DBG] Connection id "0HN4NU889CJBD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 00:17:28.125 -04:00 [DBG] Hosting stopped
+2024-06-29 00:31:23.605 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 00:31:23.807 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 00:31:23.808 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 00:31:23.808 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 00:31:23.808 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 00:31:23.853 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 00:31:23.853 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 00:31:23.853 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 00:31:23.891 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 00:31:24.168 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 00:31:31.210 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 00:31:31.401 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 00:31:31.402 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 00:31:31.402 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 00:31:31.402 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 00:31:31.448 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 00:31:31.448 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 00:31:31.448 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 00:31:31.484 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 00:31:31.491 -04:00 [DBG] Creating DbConnection.
+2024-06-29 00:31:31.510 -04:00 [DBG] Created DbConnection. (17ms).
+2024-06-29 00:31:31.511 -04:00 [DBG] Migrating using database 'University' on server 'localhost'.
+2024-06-29 00:31:31.512 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.605 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.608 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.610 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-06-29 00:31:31.610 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-06-29 00:31:31.612 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 00:31:31.631 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 00:31:31.632 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.635 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (1ms).
+2024-06-29 00:31:31.636 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-29 00:31:31.636 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 00:31:31.636 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 00:31:31.636 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.636 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.636 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 00:31:31.649 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 00:31:31.649 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.649 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 00:31:31.649 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.649 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.649 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.649 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.649 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.649 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 00:31:31.651 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-29 00:31:31.651 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.651 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 00:31:31.651 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-06-29 00:31:31.651 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 00:31:31.651 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2024-06-29 00:31:31.651 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.651 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.651 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 00:31:31.652 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-29 00:31:31.652 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.652 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 00:31:31.656 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.656 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.656 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 00:31:31.656 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 00:31:31.656 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 00:31:31.657 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-29 00:31:31.665 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-29 00:31:31.666 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 00:31:31.666 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 00:31:31.666 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.666 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 00:31:31.671 -04:00 [INF] Applying migration '20240629043124_Fix'.
+2024-06-29 00:31:31.711 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.711 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.712 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-06-29 00:31:31.717 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-06-29 00:31:31.717 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.717 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.718 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.718 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Secciones] ADD [CodigoAula] nvarchar(450) NULL;
+2024-06-29 00:31:31.742 -04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Secciones] ADD [CodigoAula] nvarchar(450) NULL;
+2024-06-29 00:31:31.743 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.743 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.743 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.743 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materias] ADD [AulaCodigoAula] nvarchar(450) NULL;
+2024-06-29 00:31:31.745 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materias] ADD [AulaCodigoAula] nvarchar(450) NULL;
+2024-06-29 00:31:31.745 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.745 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.745 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.745 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [MateriaAulas] ADD [SeccionId] nvarchar(450) NULL;
+2024-06-29 00:31:31.747 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [MateriaAulas] ADD [SeccionId] nvarchar(450) NULL;
+2024-06-29 00:31:31.747 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.747 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.747 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.747 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Secciones_CodigoAula] ON [Secciones] ([CodigoAula]);
+2024-06-29 00:31:31.757 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Secciones_CodigoAula] ON [Secciones] ([CodigoAula]);
+2024-06-29 00:31:31.757 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.757 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.757 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.757 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Materias_AulaCodigoAula] ON [Materias] ([AulaCodigoAula]);
+2024-06-29 00:31:31.760 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Materias_AulaCodigoAula] ON [Materias] ([AulaCodigoAula]);
+2024-06-29 00:31:31.760 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.760 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.760 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.760 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_MateriaAulas_SeccionId] ON [MateriaAulas] ([SeccionId]);
+2024-06-29 00:31:31.762 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_MateriaAulas_SeccionId] ON [MateriaAulas] ([SeccionId]);
+2024-06-29 00:31:31.762 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.763 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.763 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.763 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [MateriaAulas] ADD CONSTRAINT [FK_MateriaAulas_Secciones_SeccionId] FOREIGN KEY ([SeccionId]) REFERENCES [Secciones] ([CodigoSeccion]);
+2024-06-29 00:31:31.768 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [MateriaAulas] ADD CONSTRAINT [FK_MateriaAulas_Secciones_SeccionId] FOREIGN KEY ([SeccionId]) REFERENCES [Secciones] ([CodigoSeccion]);
+2024-06-29 00:31:31.768 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.768 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.768 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.768 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materias] ADD CONSTRAINT [FK_Materias_Aulas_AulaCodigoAula] FOREIGN KEY ([AulaCodigoAula]) REFERENCES [Aulas] ([CodigoAula]);
+2024-06-29 00:31:31.771 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Materias] ADD CONSTRAINT [FK_Materias_Aulas_AulaCodigoAula] FOREIGN KEY ([AulaCodigoAula]) REFERENCES [Aulas] ([CodigoAula]);
+2024-06-29 00:31:31.771 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.771 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.771 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.771 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Secciones] ADD CONSTRAINT [FK_Secciones_Aulas_CodigoAula] FOREIGN KEY ([CodigoAula]) REFERENCES [Aulas] ([CodigoAula]);
+2024-06-29 00:31:31.773 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Secciones] ADD CONSTRAINT [FK_Secciones_Aulas_CodigoAula] FOREIGN KEY ([CodigoAula]) REFERENCES [Aulas] ([CodigoAula]);
+2024-06-29 00:31:31.773 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-29 00:31:31.773 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.773 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-29 00:31:31.773 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240629043124_Fix', N'9.0.0-preview.5.24306.3');
+2024-06-29 00:31:31.776 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240629043124_Fix', N'9.0.0-preview.5.24306.3');
+2024-06-29 00:31:31.776 -04:00 [DBG] Committing transaction.
+2024-06-29 00:31:31.780 -04:00 [DBG] Committed transaction.
+2024-06-29 00:31:31.781 -04:00 [DBG] Disposing transaction.
+2024-06-29 00:31:31.781 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.781 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 00:31:31.781 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 00:31:31.782 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 00:31:31.782 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).

@@ -19,5 +19,11 @@ namespace CRUD.Models
         
         [JsonIgnore]
         public virtual ICollection<MateriaAula>? MateriaAulas { get; set; }
+        
+        [JsonIgnore]
+        public virtual ICollection<Materia>? Materias { get; set; }
+        
+        [JsonIgnore]
+        public virtual ICollection<Seccion>? Secciones { get; set; }
     }
 }

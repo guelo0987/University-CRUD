@@ -74,6 +74,12 @@ public partial class MyDbContext : DbContext
 
         });
         
+        
+        modelBuilder.Entity<Seccion>()
+            .HasOne(s => s.Aulas)
+            .WithMany(a => a.Secciones)
+            .HasForeignKey(s => s.CodigoAula);
+        
         modelBuilder.Entity<CarreraMateria>()
             .HasKey(cm => new { cm.CarreraId, cm.CodigoMateria });
 
@@ -143,6 +149,11 @@ public partial class MyDbContext : DbContext
             .WithMany(m => m.MateriaAulas)
             .HasForeignKey(ma => ma.CodigoMateria);
         
+        modelBuilder.Entity<MateriaAula>()
+            .HasOne(ma => ma.Seccions)
+            .WithMany(m => m.MateriaAulas)
+            .HasForeignKey(ma => ma.SeccionId);
+        
         
         
         modelBuilder.Entity<CuentaPorPagar>()
@@ -155,6 +166,11 @@ public partial class MyDbContext : DbContext
             .HasOne(f => f.Estudiante)
             .WithMany(e => e.Facturas)
             .HasForeignKey(f => f.CodigoEstudiante);
+        
+            
+        
+        
+        
         
         
        
