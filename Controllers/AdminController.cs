@@ -93,6 +93,30 @@ namespace CRUD.Controllers
         }
         
         
+        [HttpGet("GetCurrentAdmin")]
+        [Authorize(Policy = "RequireAdministratorRole")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<Admin> GetCurrentAdmin()
+        {
+            var userId = User.FindFirst("Id")?.Value;
+            if (userId == null)
+            {
+                _logger.LogError("Usuario no autenticado");
+                return Unauthorized();
+            }
+
+            var admin = _db.Admins.SingleOrDefault(u => u.AdminId.ToString() == userId);
+            if (admin == null)
+            {
+                _logger.LogError($"Administrador con ID {userId} no encontrado");
+                return NotFound();
+            }
+
+            return Ok(admin);
+        }
+        
+        
         
         
 

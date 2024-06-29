@@ -72,6 +72,30 @@ namespace CRUD.Controllers
             _logger.LogInformation("Obteniendo Docentes");
             return Ok(_db.Docentes.ToList());
         }
+        
+        
+        [HttpGet("GetCurrentDocente")]
+        [Authorize(Policy = "RequireDocenteRole")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<Docente> GetCurrentDocente()
+        {
+            var userId = User.FindFirst("Id")?.Value;
+            if (userId == null)
+            {
+                _logger.LogError("Usuario no autenticado");
+                return Unauthorized();
+            }
+
+            var docente = _db.Docentes.SingleOrDefault(u => u.CodigoDocente.ToString() == userId);
+            if (docente == null)
+            {
+                _logger.LogError($"Docente con ID {userId} no encontrado");
+                return NotFound();
+            }
+
+            return Ok(docente);
+        }
 
         // Obtener un Docente
         [HttpGet("{id:int}", Name = "GetDocente")]

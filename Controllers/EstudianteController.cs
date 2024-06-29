@@ -118,6 +118,29 @@ public class EstudianteController : ControllerBase
 
     }
     
+    [HttpGet("GetCurrentEstudiante")]
+    [Authorize]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public ActionResult<Estudiante> GetCurrentEstudiante()
+    {
+        var userId = User.FindFirst("Id")?.Value;
+        if (userId == null)
+        {
+            _logger.LogError("Usuario no autenticado");
+            return Unauthorized();
+        }
+
+        var estudiante = _db.Estudiantes.SingleOrDefault(u => u.Id.ToString() == userId);
+        if (estudiante == null)
+        {
+            _logger.LogError($"Estudiante con ID {userId} no encontrado");
+            return NotFound();
+        }
+
+        return Ok(estudiante);
+    }
+    
     
     
     
