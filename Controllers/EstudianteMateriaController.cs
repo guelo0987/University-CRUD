@@ -248,11 +248,10 @@ namespace CRUD.Controllers
         
         
 
-        // Obtener las materias de un estudiante específico
-        [HttpGet("GetMateriasEstudiante/{codigoEstudiante}")]
+        [HttpGet("GetMateriasEstudiante/{codigoEstudiante}/{periodo}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetMateriasEstudiante(int codigoEstudiante)
+        public IActionResult GetMateriasEstudiante(int codigoEstudiante, string periodo)
         {
             var materias = _db.EstudianteMaterias
                 .Include(em => em.Materias)
@@ -261,7 +260,7 @@ namespace CRUD.Controllers
                 .Include(em => em.Seccions)
                 .ThenInclude(s => s.MateriaDocentes)
                 .ThenInclude(md => md.Docentes)
-                .Where(em => em.CodigoEstudiante == codigoEstudiante)
+                .Where(em => em.CodigoEstudiante == codigoEstudiante && em.PeriodoCursado == periodo)
                 .Select(em => new
                 {
                     NombreMateria = em.Materias.NombreMateria,
@@ -274,7 +273,7 @@ namespace CRUD.Controllers
 
             if (!materias.Any())
             {
-                return NotFound("No se encontraron materias para el estudiante especificado.");
+                return NotFound("No se encontraron materias para el estudiante especificado en el período especificado.");
             }
 
             return Ok(materias);

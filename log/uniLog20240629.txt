@@ -12658,3 +12658,1703 @@ WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0
 2024-06-29 02:08:18.251 -04:00 [DBG] Connection id "0HN4NVIURF5SG" disconnecting.
 2024-06-29 02:08:18.253 -04:00 [DBG] Connection id "0HN4NVIURF5SG" stopped.
 2024-06-29 02:08:18.254 -04:00 [DBG] Connection id "0HN4NVIURF5SG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 10:54:27.721 -04:00 [DBG] Connection id "0HN4NVIURF5SH" accepted.
+2024-06-29 10:54:27.722 -04:00 [DBG] Connection id "0HN4NVIURF5SI" accepted.
+2024-06-29 10:54:27.722 -04:00 [DBG] Connection id "0HN4NVIURF5SH" started.
+2024-06-29 10:54:27.724 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 10:54:27.734 -04:00 [DBG] Connection id "0HN4NVIURF5SI" started.
+2024-06-29 10:54:27.735 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:27.738 -04:00 [DBG] Connection id "0HN4NVIURF5SH" completed keep alive response.
+2024-06-29 10:54:27.738 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 14.7189ms
+2024-06-29 10:54:27.797 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 10:54:27.798 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:27.875 -04:00 [DBG] Connection id "0HN4NVIURF5SH" completed keep alive response.
+2024-06-29 10:54:27.875 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.2474ms
+2024-06-29 10:54:27.949 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 10:54:27.949 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:27.949 -04:00 [DBG] Connection id "0HN4NVIURF5SH" completed keep alive response.
+2024-06-29 10:54:27.949 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5444ms
+2024-06-29 10:54:28.021 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 10:54:28.022 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.080 -04:00 [DBG] Connection id "0HN4NVIURF5SH" completed keep alive response.
+2024-06-29 10:54:28.080 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.5987ms
+2024-06-29 10:54:28.096 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 10:54:28.096 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.097 -04:00 [DBG] Connection id "0HN4NVIURF5SI" completed keep alive response.
+2024-06-29 10:54:28.097 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5009ms
+2024-06-29 10:54:28.183 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 10:54:28.183 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.219 -04:00 [DBG] Connection id "0HN4NVIURF5SI" completed keep alive response.
+2024-06-29 10:54:28.220 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.1482ms
+2024-06-29 10:54:28.292 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 10:54:28.293 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.297 -04:00 [DBG] Connection id "0HN4NVIURF5SI" completed keep alive response.
+2024-06-29 10:54:28.298 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 8.5817ms
+2024-06-29 10:54:28.354 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 10:54:28.354 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.409 -04:00 [DBG] Connection id "0HN4NVIURF5SI" completed keep alive response.
+2024-06-29 10:54:28.409 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.4946ms
+2024-06-29 10:54:28.481 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 10:54:28.481 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.481 -04:00 [DBG] Connection id "0HN4NVIURF5SI" completed keep alive response.
+2024-06-29 10:54:28.482 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.7394ms
+2024-06-29 10:54:28.540 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 10:54:28.540 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 10:54:28.571 -04:00 [DBG] Connection id "0HN4NVIURF5SI" completed keep alive response.
+2024-06-29 10:54:28.571 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.8985ms
+2024-06-29 10:56:39.535 -04:00 [DBG] Connection id "0HN4NVIURF5SH" disconnecting.
+2024-06-29 10:56:39.536 -04:00 [DBG] Connection id "0HN4NVIURF5SH" stopped.
+2024-06-29 10:56:39.536 -04:00 [DBG] Connection id "0HN4NVIURF5SI" disconnecting.
+2024-06-29 10:56:39.537 -04:00 [DBG] Connection id "0HN4NVIURF5SI" stopped.
+2024-06-29 10:56:39.537 -04:00 [DBG] Connection id "0HN4NVIURF5SI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 10:56:39.538 -04:00 [DBG] Connection id "0HN4NVIURF5SH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 11:06:20.987 -04:00 [DBG] Connection id "0HN4NVIURF5SJ" accepted.
+2024-06-29 11:06:20.988 -04:00 [DBG] Connection id "0HN4NVIURF5SJ" started.
+2024-06-29 11:06:24.508 -04:00 [DBG] Connection id "0HN4NVIURF5SJ" received FIN.
+2024-06-29 11:06:24.508 -04:00 [DBG] Connection id "0HN4NVIURF5SJ" disconnecting.
+2024-06-29 11:06:24.509 -04:00 [DBG] Connection id "0HN4NVIURF5SJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 11:06:24.510 -04:00 [DBG] Connection id "0HN4NVIURF5SJ" stopped.
+2024-06-29 11:35:58.697 -04:00 [DBG] Connection id "0HN4NVIURF5SK" accepted.
+2024-06-29 11:35:58.697 -04:00 [DBG] Connection id "0HN4NVIURF5SK" started.
+2024-06-29 11:35:58.697 -04:00 [DBG] Connection id "0HN4NVIURF5SL" accepted.
+2024-06-29 11:35:58.697 -04:00 [DBG] Connection id "0HN4NVIURF5SL" started.
+2024-06-29 11:35:58.709 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 11:35:58.709 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 11:35:58.711 -04:00 [DBG] Connection id "0HN4NVIURF5SK" completed keep alive response.
+2024-06-29 11:35:58.711 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 2.2079ms
+2024-06-29 11:35:58.777 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 11:35:58.777 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 11:35:58.832 -04:00 [DBG] Connection id "0HN4NVIURF5SK" completed keep alive response.
+2024-06-29 11:35:58.832 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.0307ms
+2024-06-29 11:36:01.272 -04:00 [DBG] Connection id "0HN4NVIURF5SK" received FIN.
+2024-06-29 11:36:01.272 -04:00 [DBG] Connection id "0HN4NVIURF5SL" received FIN.
+2024-06-29 11:36:01.273 -04:00 [DBG] Connection id "0HN4NVIURF5SK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 11:36:01.273 -04:00 [DBG] Connection id "0HN4NVIURF5SL" disconnecting.
+2024-06-29 11:36:01.273 -04:00 [DBG] Connection id "0HN4NVIURF5SL" stopped.
+2024-06-29 11:36:01.273 -04:00 [DBG] Connection id "0HN4NVIURF5SK" disconnecting.
+2024-06-29 11:36:01.273 -04:00 [DBG] Connection id "0HN4NVIURF5SK" stopped.
+2024-06-29 11:36:01.273 -04:00 [DBG] Connection id "0HN4NVIURF5SL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:25:59.533 -04:00 [DBG] Connection id "0HN4NVIURF5SM" accepted.
+2024-06-29 12:25:59.533 -04:00 [DBG] Connection id "0HN4NVIURF5SM" started.
+2024-06-29 12:25:59.534 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:25:59.534 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:25:59.535 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:25:59.535 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.3617ms
+2024-06-29 12:25:59.537 -04:00 [DBG] Connection id "0HN4NVIURF5SN" accepted.
+2024-06-29 12:25:59.537 -04:00 [DBG] Connection id "0HN4NVIURF5SN" started.
+2024-06-29 12:25:59.594 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:25:59.595 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:25:59.649 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:25:59.649 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.4081ms
+2024-06-29 12:25:59.733 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:25:59.733 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:25:59.733 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:25:59.733 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.6699ms
+2024-06-29 12:25:59.795 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:25:59.795 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:25:59.835 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:25:59.835 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.6439ms
+2024-06-29 12:25:59.909 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:25:59.909 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:25:59.911 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:25:59.912 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 3.8322ms
+2024-06-29 12:25:59.974 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:25:59.974 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:00.002 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:00.002 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.513ms
+2024-06-29 12:26:00.072 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:26:00.072 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:00.072 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:00.072 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.6279ms
+2024-06-29 12:26:00.136 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:26:00.137 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:00.165 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:00.165 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.0039ms
+2024-06-29 12:26:00.246 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:26:00.246 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:00.246 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:00.246 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4377ms
+2024-06-29 12:26:00.294 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:26:00.295 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:00.332 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:00.332 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.1309ms
+2024-06-29 12:26:17.175 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:26:17.176 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:17.176 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:17.176 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.7893ms
+2024-06-29 12:26:17.229 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:26:17.229 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:17.257 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:17.257 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.8616ms
+2024-06-29 12:26:17.689 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:26:17.690 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:17.690 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:17.690 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.2679ms
+2024-06-29 12:26:17.731 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:26:17.731 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:17.767 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:17.767 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.8764ms
+2024-06-29 12:26:17.880 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:26:17.881 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:17.881 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:17.881 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.9913ms
+2024-06-29 12:26:17.919 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:26:17.919 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:17.967 -04:00 [DBG] Connection id "0HN4NVIURF5SM" completed keep alive response.
+2024-06-29 12:26:17.967 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.6812ms
+2024-06-29 12:26:19.652 -04:00 [INF] Application is shutting down...
+2024-06-29 12:26:19.655 -04:00 [DBG] Hosting stopping
+2024-06-29 12:26:19.663 -04:00 [DBG] Connection id "0HN4NVIURF5SN" disconnecting.
+2024-06-29 12:26:19.663 -04:00 [DBG] Connection id "0HN4NVIURF5SM" disconnecting.
+2024-06-29 12:26:19.663 -04:00 [DBG] Connection id "0HN4NVIURF5SN" stopped.
+2024-06-29 12:26:19.663 -04:00 [DBG] Connection id "0HN4NVIURF5SM" stopped.
+2024-06-29 12:26:19.663 -04:00 [DBG] Connection id "0HN4NVIURF5SN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:26:19.663 -04:00 [DBG] Connection id "0HN4NVIURF5SM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:26:19.666 -04:00 [DBG] Hosting stopped
+2024-06-29 12:26:24.059 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-29 12:26:24.117 -04:00 [DBG] Hosting starting
+2024-06-29 12:26:24.121 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-29 12:26:24.128 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-29 12:26:24.129 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-29 12:26:24.131 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-29 12:26:24.132 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-29 12:26:24.135 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-29 12:26:24.136 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-29 12:26:24.138 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-29 12:26:24.138 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-29 12:26:24.140 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-29 12:26:24.140 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-29 12:26:24.172 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-29 12:26:24.172 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-29 12:26:24.173 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-29 12:26:24.173 -04:00 [INF] Hosting environment: Development
+2024-06-29 12:26:24.173 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-29 12:26:24.173 -04:00 [DBG] Hosting started
+2024-06-29 12:26:24.450 -04:00 [DBG] Connection id "0HN4OB0S0K7KT" received FIN.
+2024-06-29 12:26:24.453 -04:00 [DBG] Connection id "0HN4OB0S0K7KT" accepted.
+2024-06-29 12:26:24.454 -04:00 [DBG] Connection id "0HN4OB0S0K7KT" started.
+2024-06-29 12:26:24.458 -04:00 [DBG] Connection id "0HN4OB0S0K7KT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:26:24.461 -04:00 [DBG] Connection id "0HN4OB0S0K7KT" disconnecting.
+2024-06-29 12:26:24.464 -04:00 [DBG] Connection id "0HN4OB0S0K7KT" stopped.
+2024-06-29 12:26:24.576 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" accepted.
+2024-06-29 12:26:24.577 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" started.
+2024-06-29 12:26:24.577 -04:00 [DBG] Connection id "0HN4OB0S0K7KV" accepted.
+2024-06-29 12:26:24.577 -04:00 [DBG] Connection id "0HN4OB0S0K7KV" started.
+2024-06-29 12:26:24.590 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:26:24.591 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-29 12:26:24.608 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:24.677 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" completed keep alive response.
+2024-06-29 12:26:24.678 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 89.7465ms
+2024-06-29 12:26:24.737 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:26:24.738 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:26:24.854 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-29 12:26:24.862 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" completed keep alive response.
+2024-06-29 12:26:24.862 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 125.3537ms
+2024-06-29 12:28:36.302 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" disconnecting.
+2024-06-29 12:28:36.302 -04:00 [DBG] Connection id "0HN4OB0S0K7KV" disconnecting.
+2024-06-29 12:28:36.305 -04:00 [DBG] Connection id "0HN4OB0S0K7KV" stopped.
+2024-06-29 12:28:36.305 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" stopped.
+2024-06-29 12:28:36.306 -04:00 [DBG] Connection id "0HN4OB0S0K7KU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:28:36.306 -04:00 [DBG] Connection id "0HN4OB0S0K7KV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:29:13.918 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" accepted.
+2024-06-29 12:29:13.919 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" started.
+2024-06-29 12:29:13.919 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" accepted.
+2024-06-29 12:29:13.920 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" started.
+2024-06-29 12:29:13.920 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:29:13.924 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:13.927 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:13.929 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 7.7021ms
+2024-06-29 12:29:13.990 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:29:13.990 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.107 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:14.107 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.5766ms
+2024-06-29 12:29:14.115 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:29:14.116 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.117 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" completed keep alive response.
+2024-06-29 12:29:14.117 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.5464ms
+2024-06-29 12:29:14.232 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:29:14.233 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.259 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:29:14.259 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.259 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:14.259 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.0105ms
+2024-06-29 12:29:14.267 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" received FIN.
+2024-06-29 12:29:14.267 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:29:14.267 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" disconnecting.
+2024-06-29 12:29:14.301 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:29:14.301 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.309 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.8792ms
+2024-06-29 12:29:14.309 -04:00 [DBG] Connection id "0HN4OB0S0K7L1" stopped.
+2024-06-29 12:29:14.354 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:14.354 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.0567ms
+2024-06-29 12:29:14.418 -04:00 [DBG] Connection id "0HN4OB0S0K7L2" accepted.
+2024-06-29 12:29:14.418 -04:00 [DBG] Connection id "0HN4OB0S0K7L2" started.
+2024-06-29 12:29:14.419 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 12:29:14.419 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.419 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:14.420 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.1946ms
+2024-06-29 12:29:14.491 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 12:29:14.491 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:14.533 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:14.533 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.1977ms
+2024-06-29 12:29:27.738 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/111112/1 - null null
+2024-06-29 12:29:27.739 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:27.744 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:27.746 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-29 12:29:27.775 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/111112/1'
+2024-06-29 12:29:27.779 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/111112/1'
+2024-06-29 12:29:27.780 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:27.782 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:27.797 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:27.797 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:27.797 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:27.797 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:27.797 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:27.797 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:27.798 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:27.861 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 12:29:27.875 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:27.876 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:27.877 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:27.877 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:27.877 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:27.877 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:27.877 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:27.878 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:27.878 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:27.878 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:27.878 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:27.878 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:27.882 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:27.885 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:28.197 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 12:29:28.198 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 12:29:28.198 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 12:29:28.198 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 12:29:28.276 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 12:29:28.276 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 12:29:28.276 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 12:29:28.354 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:28.391 -04:00 [DBG] Compiling query expression: 
+'DbSet<EstudianteMateria>()
+    .Include(em => em.Materias)
+    .Include(em => em.Seccions)
+    .ThenInclude(s => s.Aulas)
+    .Include(em => em.Seccions)
+    .ThenInclude(s => s.MateriaDocentes)
+    .ThenInclude(md => md.Docentes)
+    .Where(em => em.CodigoEstudiante == __codigoEstudiante_0 && em.PeriodoCursado == __periodo_1)
+    .Select(em => new { 
+        NombreMateria = em.Materias.NombreMateria, 
+        CodigoSeccion = em.Seccions.CodigoSeccion, 
+        Horario = em.Seccions.Horario, 
+        Aula = em.Seccions.Aulas.CodigoAula, 
+        Profesor = em.Seccions.MateriaDocentes
+            .Select(md => md.Docentes.NombreDocente)
+            .FirstOrDefault()
+     })'
+2024-06-29 12:29:28.583 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<<>f__AnonymousType10<string, string, string, string, string>>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            NombreMateria -> 0
+            CodigoSeccion -> 1
+            Horario -> 2
+            Aula -> 3
+            Profesor -> 4
+        SELECT m.NombreMateria, s.CodigoSeccion, s.Horario, a.CodigoAula AS Aula, (
+            SELECT TOP(1) d.NombreDocente
+            FROM MateriaDocentes AS m0
+            INNER JOIN Docentes AS d ON m0.DocenteId == d.CodigoDocente
+            WHERE (s.CodigoSeccion != NULL) && (s.CodigoSeccion == m0.SeccionId)) AS Profesor
+        FROM EstudianteMaterias AS e
+        INNER JOIN Materias AS m ON e.CodigoMateria == m.CodigoMateria
+        LEFT JOIN Secciones AS s ON e.SeccionId == s.CodigoSeccion
+        LEFT JOIN Aulas AS a ON s.CodigoAula == a.CodigoAula
+        WHERE (e.CodigoEstudiante == @__codigoEstudiante_0) && (e.PeriodoCursado == @__periodo_1)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        string value1;
+        string value2;
+        string value3;
+        string value4;
+        string value5;
+        value1 = dataReader.GetString(0);
+        value2 = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+        value3 = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+        value4 = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+        value5 = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+        return new { 
+            NombreMateria = value1, 
+            CodigoSeccion = value2, 
+            Horario = value3, 
+            Aula = value4, 
+            Profesor = value5
+         };
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-29 12:29:28.607 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:28.621 -04:00 [DBG] Created DbConnection. (12ms).
+2024-06-29 12:29:28.622 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:28.758 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:28.761 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:28.765 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-06-29 12:29:28.770 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-06-29 12:29:28.776 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:28.828 -04:00 [INF] Executed DbCommand (54ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:28.832 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:28.837 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 5ms reading results.
+2024-06-29 12:29:28.838 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:28.842 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (4ms).
+2024-06-29 12:29:28.844 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 957.4729ms.
+2024-06-29 12:29:28.846 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:28.847 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:28.847 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:28.847 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:28.847 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:28.847 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:28.848 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 1049.6125ms
+2024-06-29 12:29:28.848 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:28.848 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:28.849 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:28.851 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:28.852 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:28.852 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/111112/1 - 404 null text/plain; charset=utf-8 1113.7964ms
+2024-06-29 12:29:31.849 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/1 - null null
+2024-06-29 12:29:31.849 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:31.849 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:31.860 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/1'
+2024-06-29 12:29:31.861 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/1'
+2024-06-29 12:29:31.861 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:31.861 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:31.861 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:31.862 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:31.862 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:31.862 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:31.862 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:31.862 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:31.862 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:31.864 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:31.864 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:31.864 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:31.864 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:31.864 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:31.864 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:31.865 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:31.865 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:31.865 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:31.865 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:31.865 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:31.865 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:31.865 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:31.865 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:31.875 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:31.879 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:31.880 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:31.880 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:31.881 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:31.881 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:31.881 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:31.881 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:31.881 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:31.887 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:31.887 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:31.887 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:31.887 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:31.887 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:31.887 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 22.0192ms.
+2024-06-29 12:29:31.887 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:31.887 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:31.887 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:31.887 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:31.887 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:31.887 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:31.888 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 25.8234ms
+2024-06-29 12:29:31.888 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:31.888 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:31.888 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:31.888 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:31.888 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:31.888 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/1 - 404 null text/plain; charset=utf-8 39.5463ms
+2024-06-29 12:29:35.724 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1 - null null
+2024-06-29 12:29:35.725 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:35.725 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:35.725 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1'
+2024-06-29 12:29:35.725 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1'
+2024-06-29 12:29:35.725 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:35.725 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:35.725 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:35.725 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:35.725 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:35.725 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:35.725 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:35.725 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:35.725 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:35.727 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:35.727 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:35.727 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:35.727 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:35.727 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:35.727 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:35.727 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:35.727 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:35.727 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:35.727 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:35.727 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:35.727 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:35.727 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:35.727 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:35.755 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:35.755 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:35.755 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:35.755 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:35.756 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:35.756 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:35.756 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:35.756 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:35.756 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:35.760 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:35.760 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:35.760 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:35.760 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:35.760 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:35.760 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 32.6014ms.
+2024-06-29 12:29:35.760 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:35.760 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:35.760 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:35.760 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:35.760 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:35.760 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:35.760 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 34.75ms
+2024-06-29 12:29:35.760 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:35.760 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:35.760 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:35.760 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:35.760 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:35.760 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1 - 404 null text/plain; charset=utf-8 36.2039ms
+2024-06-29 12:29:36.843 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1 - null null
+2024-06-29 12:29:36.843 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:36.843 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:36.843 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1'
+2024-06-29 12:29:36.843 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1'
+2024-06-29 12:29:36.843 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:36.843 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:36.843 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:36.843 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:36.843 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:36.843 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:36.843 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:36.843 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:36.843 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:36.843 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:36.844 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:36.844 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:36.844 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:36.844 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:36.844 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:36.844 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:36.844 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:36.844 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:36.844 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:36.844 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:36.844 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:36.844 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:36.844 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:36.844 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:36.845 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:36.845 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:36.845 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:36.845 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:36.845 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:36.845 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:36.845 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:36.845 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:36.849 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:36.849 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:36.849 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:36.849 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:36.849 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:36.849 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 5.1662ms.
+2024-06-29 12:29:36.849 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:36.849 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:36.849 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:36.849 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:36.849 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:36.849 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:36.849 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 5.8357ms
+2024-06-29 12:29:36.849 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:36.849 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:36.849 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:36.849 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:36.849 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:36.849 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/11112/1 - 404 null text/plain; charset=utf-8 6.7718ms
+2024-06-29 12:29:57.707 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - null null
+2024-06-29 12:29:57.708 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:57.708 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:57.708 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:57.708 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:57.708 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:57.715 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:57.715 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:57.716 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:57.716 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:57.716 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:57.716 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:57.716 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:57.716 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:57.716 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:57.716 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:57.717 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:57.717 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:57.717 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:57.717 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:57.717 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:57.717 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:57.717 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:57.717 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:57.717 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:57.717 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:57.717 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:57.718 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:57.721 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:57.722 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:57.722 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:57.723 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:57.723 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:57.723 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:57.723 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:57.723 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:57.723 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:57.730 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:57.730 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:57.730 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:57.731 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:57.731 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:57.731 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 12.6546ms.
+2024-06-29 12:29:57.731 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:57.731 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:57.731 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:57.731 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:57.731 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:57.731 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:57.731 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 15.6715ms
+2024-06-29 12:29:57.731 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:57.732 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:57.732 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:57.732 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:57.732 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:57.732 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - 404 null text/plain; charset=utf-8 24.8845ms
+2024-06-29 12:29:58.899 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - null null
+2024-06-29 12:29:58.900 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:58.900 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:58.900 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:58.900 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:58.900 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:58.900 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:58.900 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:58.900 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:58.901 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:58.901 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:58.901 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:58.901 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:58.901 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:58.901 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:58.901 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:58.901 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:58.902 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:58.902 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:58.902 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:58.902 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:58.902 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:58.902 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:58.902 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:58.902 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:58.902 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:58.902 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:58.902 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:58.904 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:58.905 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:58.906 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:58.906 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:58.906 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:58.906 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:58.906 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:58.907 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:58.907 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:58.910 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:58.910 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:58.910 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:58.910 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:58.910 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:58.911 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 8.0349ms.
+2024-06-29 12:29:58.911 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:58.911 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:58.911 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:58.911 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:58.911 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:58.911 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:58.911 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 9.998ms
+2024-06-29 12:29:58.911 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:58.911 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:58.911 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:58.911 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:58.911 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:58.911 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - 404 null text/plain; charset=utf-8 11.9615ms
+2024-06-29 12:29:59.513 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - null null
+2024-06-29 12:29:59.513 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:59.513 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:59.513 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:59.513 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:59.513 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:59.513 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:59.513 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:59.513 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:59.513 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:59.513 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:59.513 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:59.513 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:59.513 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:59.514 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:59.514 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:59.514 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:59.514 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:59.514 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:59.514 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:59.514 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:59.514 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:59.514 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:59.514 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:59.514 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:59.514 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:59.514 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:59.514 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:59.514 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:59.515 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:59.515 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:59.515 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.515 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.515 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:59.515 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:59.515 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:59.515 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:59.519 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:59.519 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:59.519 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:59.519 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.519 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:59.519 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 5.0062ms.
+2024-06-29 12:29:59.519 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:59.519 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:59.519 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:59.519 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:59.519 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:59.519 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:59.519 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 5.8161ms
+2024-06-29 12:29:59.519 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:59.519 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:59.519 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:59.519 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.519 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:59.519 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - 404 null text/plain; charset=utf-8 6.6688ms
+2024-06-29 12:29:59.830 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - null null
+2024-06-29 12:29:59.830 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:29:59.832 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:29:59.832 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:59.832 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:29:59.832 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:59.832 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:59.832 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:29:59.832 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:29:59.832 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:29:59.832 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:29:59.832 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:29:59.833 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:29:59.833 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:59.834 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:29:59.834 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:59.834 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:29:59.834 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:59.834 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:59.834 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:29:59.834 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:29:59.835 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:59.835 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:29:59.835 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:59.835 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:59.835 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:29:59.835 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:29:59.835 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:29:59.836 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:29:59.837 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:29:59.837 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:29:59.837 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.841 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.841 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:29:59.841 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:59.841 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:29:59.841 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:59.846 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:29:59.846 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:29:59.846 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:29:59.846 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.847 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:29:59.847 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 11.6288ms.
+2024-06-29 12:29:59.847 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:29:59.847 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:29:59.847 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:29:59.847 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:29:59.847 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:29:59.847 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:29:59.847 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 14.4785ms
+2024-06-29 12:29:59.847 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:29:59.847 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:29:59.847 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:29:59.847 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:29:59.847 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:29:59.848 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - 404 null text/plain; charset=utf-8 18.0157ms
+2024-06-29 12:30:00.089 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - null null
+2024-06-29 12:30:00.089 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:30:00.089 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:30:00.090 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:30:00.090 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1'
+2024-06-29 12:30:00.090 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:30:00.090 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:30:00.090 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:30:00.090 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:30:00.090 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:30:00.090 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:30:00.091 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:30:00.091 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:30:00.091 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:30:00.091 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:30:00.091 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:30:00.092 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:30:00.092 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:30:00.092 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:30:00.092 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:30:00.092 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:30:00.092 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:30:00.092 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:30:00.092 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:30:00.092 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:30:00.092 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:30:00.093 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:30:00.093 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:30:00.094 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:30:00.095 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:30:00.095 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:30:00.096 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:00.096 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:00.096 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:30:00.096 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:30:00.096 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:30:00.096 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:30:00.105 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:30:00.105 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:30:00.105 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:30:00.105 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:00.105 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:30:00.105 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 12.0218ms.
+2024-06-29 12:30:00.105 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:30:00.105 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:30:00.105 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:30:00.105 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:30:00.105 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-29 12:30:00.105 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-06-29 12:30:00.105 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 14.7457ms
+2024-06-29 12:30:00.105 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:30:00.106 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:30:00.106 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:30:00.106 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:00.106 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:30:00.106 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/1 - 404 null text/plain; charset=utf-8 16.9815ms
+2024-06-29 12:30:07.265 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetAllEstudiantesAndMaterias - null null
+2024-06-29 12:30:07.266 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:30:07.267 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:30:07.267 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetAllEstudiantesAndMaterias'
+2024-06-29 12:30:07.267 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetAllEstudiantesAndMaterias' is valid for the request path '/api/EstudianteMateriaApi/GetAllEstudiantesAndMaterias'
+2024-06-29 12:30:07.267 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD)'
+2024-06-29 12:30:07.267 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD)'
+2024-06-29 12:30:07.275 -04:00 [INF] Route matched with {action = "GetAllEstudiantesAndMaterias", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CRUD.Models.EstudianteMateria]] GetAllEstudiantesAndMaterias() on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:30:07.275 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:30:07.275 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:30:07.275 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:30:07.275 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:30:07.275 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:30:07.275 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:30:07.276 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:30:07.276 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD) - Validation state: "Valid"
+2024-06-29 12:30:07.280 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:30:07.281 -04:00 [DBG] Compiling query expression: 
+'DbSet<EstudianteMateria>()
+    .Include(em => em.Estudiantes)
+    .Include(em => em.Materias)
+    .Include(em => em.Seccions)'
+2024-06-29 12:30:07.290 -04:00 [DBG] Including navigation: 'EstudianteMateria.Estudiantes'.
+2024-06-29 12:30:07.291 -04:00 [DBG] Including navigation: 'EstudianteMateria.Materias'.
+2024-06-29 12:30:07.292 -04:00 [DBG] Including navigation: 'EstudianteMateria.Seccions'.
+2024-06-29 12:30:07.348 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<EstudianteMateria>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: EstudianteMateria.CodigoMateria (string) Required PK FK AfterSave:Throw, 0], [Property: EstudianteMateria.CodigoEstudiante (int) Required PK FK Index AfterSave:Throw, 1], [Property: EstudianteMateria.Calificacion (string) Required MaxLength(2), 2], [Property: EstudianteMateria.PeriodoCursado (string) Required MaxLength(50), 3], [Property: EstudianteMateria.SeccionId (string) FK Index, 4] }
+            1 -> Dictionary<IProperty, int> { [Property: Estudiante.Id (int) Required PK AfterSave:Throw, 5], [Property: Estudiante.Alertas (string) MaxLength(50), 6], [Property: Estudiante.CarreraId (int?) FK Index, 7], [Property: Estudiante.CiudadEstudiante (string) Required MaxLength(100), 8], [Property: Estudiante.CondicionAcademica (string) Required MaxLength(50), 9], [Property: Estudiante.ContraseñaEstudiante (string) Required MaxLength(100), 10], [Property: Estudiante.CorreoEstudiante (string) Required MaxLength(150), 11], [Property: Estudiante.CreditosAprobados (int?), 12], [Property: Estudiante.DireccionEstudiante (string) Required MaxLength(200), 13], [Property: Estudiante.FechaIngreso (DateTime) Required, 14], [Property: Estudiante.IndiceGeneral (decimal?), 15], [Property: Estudiante.IndicePeriodo (decimal?), 16], [Property: Estudiante.Nacionalidad (string) Required MaxLength(50), 17], [Property: Estudiante.NombreEstudiante (string) Required MaxLength(100), 18], [Property: Estudiante.PeriodoActual (string), 19], [Property: Estudiante.PeriodosCursados (int?), 20], [Property: Estudiante.SexoEstudiante (string) Required MaxLength(1), 21], [Property: Estudiante.TelefonoEstudiante (string) Required MaxLength(15), 22] }
+            2 -> Dictionary<IProperty, int> { [Property: Materia.CodigoMateria (string) Required PK AfterSave:Throw, 23], [Property: Materia.AreaAcademica (string) Required MaxLength(100), 24], [Property: Materia.AulaCodigoAula (no field, string) Shadow FK Index, 25], [Property: Materia.CreditosMateria (int) Required, 26], [Property: Materia.NombreMateria (string) Required MaxLength(100), 27], [Property: Materia.TipoMateria (string) Required MaxLength(50), 28] }
+            3 -> Dictionary<IProperty, int> { [Property: Seccion.CodigoSeccion (string) Required PK AfterSave:Throw, 29], [Property: Seccion.CodigoAula (string) FK Index, 30], [Property: Seccion.CodigoMateria (string) FK Index, 31], [Property: Seccion.Cupo (int) Required, 32], [Property: Seccion.Horario (string) Required MaxLength(50), 33] }
+        SELECT e.CodigoMateria, e.CodigoEstudiante, e.Calificacion, e.PeriodoCursado, e.SeccionId, e0.Id, e0.Alertas, e0.CarreraId, e0.CiudadEstudiante, e0.CondicionAcademica, e0.ContraseñaEstudiante, e0.CorreoEstudiante, e0.CreditosAprobados, e0.DireccionEstudiante, e0.FechaIngreso, e0.IndiceGeneral, e0.IndicePeriodo, e0.Nacionalidad, e0.NombreEstudiante, e0.PeriodoActual, e0.PeriodosCursados, e0.SexoEstudiante, e0.TelefonoEstudiante, m.CodigoMateria, m.AreaAcademica, m.AulaCodigoAula, m.CreditosMateria, m.NombreMateria, m.TipoMateria, s.CodigoSeccion, s.CodigoAula, s.CodigoMateria, s.Cupo, s.Horario
+        FROM EstudianteMaterias AS e
+        INNER JOIN Estudiantes AS e0 ON e.CodigoEstudiante == e0.Id
+        INNER JOIN Materias AS m ON e.CodigoMateria == m.CodigoMateria
+        LEFT JOIN Secciones AS s ON e.SeccionId == s.CodigoSeccion) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        EstudianteMateria entity;
+        Estudiante entity;
+        Materia entity;
+        Seccion entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            EstudianteMateria instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(EstudianteMateria);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: EstudianteMateria.CodigoMateria, EstudianteMateria.CodigoEstudiante PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetString(0), 
+                    (object)dataReader.GetInt32(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (EstudianteMateria)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")]: 
+                        {
+                            return 
+                            {
+                                EstudianteMateria instance;
+                                instance = new EstudianteMateria();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetString(0);
+                                instance.<CodigoEstudiante>k__BackingField = dataReader.GetInt32(1);
+                                instance.<Calificacion>k__BackingField = dataReader.GetString(2);
+                                instance.<PeriodoCursado>k__BackingField = dataReader.GetString(3);
+                                instance.<SeccionId>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(EstudianteMateria)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext2;
+            IEntityType entityType2;
+            Estudiante instance2;
+            InternalEntityEntry entry2;
+            bool hasNullKey2;
+            materializationContext2 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance2 = default(Estudiante);
+            entry2 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Estudiante.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Estudiante").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(5) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey2);
+            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+            {
+                entityType2 = entry2.EntityType;
+                return instance2 = (Estudiante)entry2.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot2;
+                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType2 = [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Estudiante")];
+                instance2 = switch (entityType2)
+                {
+                    case [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Estudiante")]: 
+                        {
+                            return 
+                            {
+                                Estudiante instance;
+                                instance = new Estudiante();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(5);
+                                instance.<Alertas>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                instance.<CarreraId>k__BackingField = dataReader.IsDBNull(7) ? default(int?) : (int?)dataReader.GetInt32(7);
+                                instance.<CiudadEstudiante>k__BackingField = dataReader.GetString(8);
+                                instance.<CondicionAcademica>k__BackingField = dataReader.GetString(9);
+                                instance.<ContraseñaEstudiante>k__BackingField = dataReader.GetString(10);
+                                instance.<CorreoEstudiante>k__BackingField = dataReader.GetString(11);
+                                instance.<CreditosAprobados>k__BackingField = dataReader.IsDBNull(12) ? default(int?) : (int?)dataReader.GetInt32(12);
+                                instance.<DireccionEstudiante>k__BackingField = dataReader.GetString(13);
+                                instance.<FechaIngreso>k__BackingField = dataReader.GetDateTime(14);
+                                instance.<IndiceGeneral>k__BackingField = dataReader.IsDBNull(15) ? default(decimal?) : (decimal?)dataReader.GetDecimal(15);
+                                instance.<IndicePeriodo>k__BackingField = dataReader.IsDBNull(16) ? default(decimal?) : (decimal?)dataReader.GetDecimal(16);
+                                instance.<Nacionalidad>k__BackingField = dataReader.GetString(17);
+                                instance.<NombreEstudiante>k__BackingField = dataReader.GetString(18);
+                                instance.<PeriodoActual>k__BackingField = dataReader.IsDBNull(19) ? default(string) : dataReader.GetString(19);
+                                instance.<PeriodosCursados>k__BackingField = dataReader.IsDBNull(20) ? default(int?) : (int?)dataReader.GetInt32(20);
+                                instance.<SexoEstudiante>k__BackingField = dataReader.GetString(21);
+                                instance.<TelefonoEstudiante>k__BackingField = dataReader.GetString(22);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext2.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Estudiante")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Estudiante)
+                }
+                ;
+                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType2, 
+                    entity: instance2, 
+                    snapshot: shadowSnapshot2);
+                return instance2;
+            } : default(void);
+            return instance2;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext3;
+            IEntityType entityType3;
+            Materia instance3;
+            InternalEntityEntry entry3;
+            bool hasNullKey3;
+            materializationContext3 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance3 = default(Materia);
+            entry3 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Materia.CodigoMateria PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetString(23) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey3);
+            !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+            {
+                entityType3 = entry3.EntityType;
+                return instance3 = (Materia)entry3.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot3;
+                shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType3 = [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")];
+                instance3 = switch (entityType3)
+                {
+                    case [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]: 
+                        {
+                            shadowSnapshot3 = (ISnapshot)new Snapshot<string>(dataReader.IsDBNull(25) ? default(string) : dataReader.GetString(25));
+                            return 
+                            {
+                                Materia instance;
+                                instance = new Materia();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetString(23);
+                                instance.<AreaAcademica>k__BackingField = dataReader.GetString(24);
+                                instance.<CreditosMateria>k__BackingField = dataReader.GetInt32(26);
+                                instance.<NombreMateria>k__BackingField = dataReader.GetString(27);
+                                instance.<TipoMateria>k__BackingField = dataReader.GetString(28);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext3.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Materia | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("CRUD.Models.Materia")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Materia)
+                }
+                ;
+                entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType3, 
+                    entity: instance3, 
+                    snapshot: shadowSnapshot3);
+                return instance3;
+            } : default(void);
+            return instance3;
+        };
+        entity = 
+        {
+            MaterializationContext materializationContext4;
+            IEntityType entityType4;
+            Seccion instance4;
+            InternalEntityEntry entry4;
+            bool hasNullKey4;
+            materializationContext4 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance4 = default(Seccion);
+            entry4 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Seccion.CodigoSeccion PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.Seccion").FindPrimaryKey()], 
+                keyValues: new object[]{ dataReader.IsDBNull(29) ? default(object) : (object)dataReader.GetString(29) }, 
+                throwOnNullKey: False, 
+                hasNullKey: hasNullKey4);
+            !(hasNullKey4) ? entry4 != default(InternalEntityEntry) ? 
+            {
+                entityType4 = entry4.EntityType;
+                return instance4 = (Seccion)entry4.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot4;
+                shadowSnapshot4 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType4 = [LIFTABLE Constant: EntityType: Seccion | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("CRUD.Models.Seccion")];
+                instance4 = switch (entityType4)
+                {
+                    case [LIFTABLE Constant: EntityType: Seccion | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("CRUD.Models.Seccion")]: 
+                        {
+                            return 
+                            {
+                                Seccion instance;
+                                instance = new Seccion();
+                                instance.<CodigoSeccion>k__BackingField = dataReader.IsDBNull(29) ? default(string) : dataReader.GetString(29);
+                                instance.<CodigoAula>k__BackingField = dataReader.IsDBNull(30) ? default(string) : dataReader.GetString(30);
+                                instance.<CodigoMateria>k__BackingField = dataReader.IsDBNull(31) ? default(string) : dataReader.GetString(31);
+                                instance.<Cupo>k__BackingField = dataReader.IsDBNull(32) ? default(int) : dataReader.GetInt32(32);
+                                instance.<Horario>k__BackingField = dataReader.IsDBNull(33) ? default(string) : dataReader.GetString(33);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext4.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Seccion | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("CRUD.Models.Seccion")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Seccion)
+                }
+                ;
+                entry4 = entityType4 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType4, 
+                    entity: instance4, 
+                    snapshot: shadowSnapshot4);
+                return instance4;
+            } : default(void);
+            return instance4;
+        };
+        ShaperProcessingExpressionVisitor.IncludeReference<EstudianteMateria, EstudianteMateria, Estudiante>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: EstudianteMateria.Estudiantes (Estudiante) ToPrincipal Estudiante Inverse: EstudianteMaterias | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria").FindNavigation("Estudiantes")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Estudiante.EstudianteMaterias (ICollection<EstudianteMateria>) Collection ToDependent EstudianteMateria Inverse: Estudiantes | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("Estudiante").FindNavigation("EstudianteMaterias")], 
+            fixup: (namelessParameter{14}, namelessParameter{15}) => 
+            {
+                namelessParameter{14}.<Estudiantes>k__BackingField = namelessParameter{15};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Estudiante, ICollection<EstudianteMateria>, EstudianteMateria> | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("Estudiante").FindNavigation("EstudianteMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{15}, 
+                    value: namelessParameter{14}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        ShaperProcessingExpressionVisitor.IncludeReference<EstudianteMateria, EstudianteMateria, Materia>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: EstudianteMateria.Materias (Materia) ToPrincipal Materia Inverse: EstudianteMaterias | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria").FindNavigation("Materias")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Materia.EstudianteMaterias (ICollection<EstudianteMateria>) Collection ToDependent EstudianteMateria Inverse: Materias | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("EstudianteMaterias")], 
+            fixup: (namelessParameter{19}, namelessParameter{20}) => 
+            {
+                namelessParameter{19}.<Materias>k__BackingField = namelessParameter{20};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Materia, ICollection<EstudianteMateria>, EstudianteMateria> | Resolver: namelessParameter{21} => namelessParameter{21}.Dependencies.Model.FindEntityType("CRUD.Models.Materia").FindNavigation("EstudianteMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{20}, 
+                    value: namelessParameter{19}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        ShaperProcessingExpressionVisitor.IncludeReference<EstudianteMateria, EstudianteMateria, Seccion>(
+            queryContext: queryContext, 
+            entity: entity, 
+            relatedEntity: entity, 
+            navigation: [LIFTABLE Constant: Navigation: EstudianteMateria.Seccions (Seccion) ToPrincipal Seccion Inverse: EstudianteMaterias | Resolver: namelessParameter{22} => namelessParameter{22}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria").FindNavigation("Seccions")], 
+            inverseNavigation: [LIFTABLE Constant: Navigation: Seccion.EstudianteMaterias (ICollection<EstudianteMateria>) Collection ToDependent EstudianteMateria Inverse: Seccions | Resolver: namelessParameter{23} => namelessParameter{23}.Dependencies.Model.FindEntityType("CRUD.Models.Seccion").FindNavigation("EstudianteMaterias")], 
+            fixup: (namelessParameter{24}, namelessParameter{25}) => 
+            {
+                namelessParameter{24}.<Seccions>k__BackingField = namelessParameter{25};
+                return [LIFTABLE Constant: ClrICollectionAccessor<Seccion, ICollection<EstudianteMateria>, EstudianteMateria> | Resolver: namelessParameter{26} => namelessParameter{26}.Dependencies.Model.FindEntityType("CRUD.Models.Seccion").FindNavigation("EstudianteMaterias").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{25}, 
+                    value: namelessParameter{24}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-29 12:30:07.352 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:30:07.352 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:30:07.352 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:07.352 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:07.352 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:30:07.352 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:30:07.352 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:30:07.352 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoCursado], [e].[SeccionId], [e0].[Id], [e0].[Alertas], [e0].[CarreraId], [e0].[CiudadEstudiante], [e0].[CondicionAcademica], [e0].[ContraseñaEstudiante], [e0].[CorreoEstudiante], [e0].[CreditosAprobados], [e0].[DireccionEstudiante], [e0].[FechaIngreso], [e0].[IndiceGeneral], [e0].[IndicePeriodo], [e0].[Nacionalidad], [e0].[NombreEstudiante], [e0].[PeriodoActual], [e0].[PeriodosCursados], [e0].[SexoEstudiante], [e0].[TelefonoEstudiante], [m].[CodigoMateria], [m].[AreaAcademica], [m].[AulaCodigoAula], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria], [s].[CodigoSeccion], [s].[CodigoAula], [s].[CodigoMateria], [s].[Cupo], [s].[Horario]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Estudiantes] AS [e0] ON [e].[CodigoEstudiante] = [e0].[Id]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+2024-06-29 12:30:07.364 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoCursado], [e].[SeccionId], [e0].[Id], [e0].[Alertas], [e0].[CarreraId], [e0].[CiudadEstudiante], [e0].[CondicionAcademica], [e0].[ContraseñaEstudiante], [e0].[CorreoEstudiante], [e0].[CreditosAprobados], [e0].[DireccionEstudiante], [e0].[FechaIngreso], [e0].[IndiceGeneral], [e0].[IndicePeriodo], [e0].[Nacionalidad], [e0].[NombreEstudiante], [e0].[PeriodoActual], [e0].[PeriodosCursados], [e0].[SexoEstudiante], [e0].[TelefonoEstudiante], [m].[CodigoMateria], [m].[AreaAcademica], [m].[AulaCodigoAula], [m].[CreditosMateria], [m].[NombreMateria], [m].[TipoMateria], [s].[CodigoSeccion], [s].[CodigoAula], [s].[CodigoMateria], [s].[Cupo], [s].[Horario]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Estudiantes] AS [e0] ON [e].[CodigoEstudiante] = [e0].[Id]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+2024-06-29 12:30:07.392 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.422 -04:00 [DBG] The navigation 'EstudianteMateria.Estudiantes' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.427 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.452 -04:00 [DBG] The navigation 'EstudianteMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.454 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.465 -04:00 [DBG] The navigation 'EstudianteMateria.Seccions' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.465 -04:00 [DBG] Context 'MyDbContext' started tracking 'Seccion' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.468 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.468 -04:00 [DBG] The navigation 'EstudianteMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] The navigation 'EstudianteMateria.Seccions' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'Seccion' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] The navigation 'EstudianteMateria.Estudiantes' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] The navigation 'EstudianteMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'Materia' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] The navigation 'EstudianteMateria.Seccions' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'Seccion' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] The navigation 'EstudianteMateria.Materias' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] The navigation 'EstudianteMateria.Seccions' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Context 'MyDbContext' started tracking 'Seccion' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 12:30:07.469 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:30:07.469 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 104ms reading results.
+2024-06-29 12:30:07.469 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:07.469 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:30:07.469 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 193.4498ms.
+2024-06-29 12:30:07.469 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:30:07.470 -04:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2024-06-29 12:30:07.470 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 12:30:07.470 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRUD.Models.EstudianteMateria, CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-29 12:30:07.538 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD) in 262.4794ms
+2024-06-29 12:30:07.538 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetAllEstudiantesAndMaterias (CRUD)'
+2024-06-29 12:30:07.538 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:30:07.538 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:30:07.538 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:30:07.538 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:30:07.538 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetAllEstudiantesAndMaterias - 200 4762 application/json; charset=utf-8 272.9081ms
+2024-06-29 12:31:06.913 -04:00 [DBG] Connection id "0HN4OB0S0K7L2" received FIN.
+2024-06-29 12:31:06.914 -04:00 [DBG] Connection id "0HN4OB0S0K7L2" disconnecting.
+2024-06-29 12:31:06.914 -04:00 [DBG] Connection id "0HN4OB0S0K7L2" stopped.
+2024-06-29 12:31:06.914 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/2023-02 - null null
+2024-06-29 12:31:06.914 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:31:06.914 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:31:06.914 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/2023-02'
+2024-06-29 12:31:06.914 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/2023-02'
+2024-06-29 12:31:06.914 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:31:06.914 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:31:06.914 -04:00 [DBG] Connection id "0HN4OB0S0K7L2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:31:06.914 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:31:06.915 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:31:06.915 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:31:06.915 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:31:06.915 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:31:06.915 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:31:06.915 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:31:06.915 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:31:06.916 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:31:06.916 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:31:06.916 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:06.916 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:06.916 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:31:06.916 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:06.916 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:31:06.916 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:31:06.916 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:31:06.916 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:31:06.916 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:31:06.916 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:31:06.916 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:31:06.919 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:31:06.920 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:31:06.920 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:31:06.920 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:06.921 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:06.921 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:31:06.921 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:31:06.921 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:31:06.921 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:31:06.927 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:31:06.929 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:31:06.929 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:31:06.929 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:06.929 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:31:06.929 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.9042ms.
+2024-06-29 12:31:06.929 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:31:06.929 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:31:06.929 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:31:06.929 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:31:06.929 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 12:31:06.929 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType10`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-29 12:31:06.942 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 27.0948ms
+2024-06-29 12:31:06.942 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:31:06.942 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:31:06.942 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:31:06.942 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:06.942 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:31:06.942 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111111/2023-02 - 200 152 application/json; charset=utf-8 28.6965ms
+2024-06-29 12:31:13.247 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/2023-02 - null null
+2024-06-29 12:31:13.248 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:31:13.248 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:31:13.248 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/2023-02'
+2024-06-29 12:31:13.248 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasEstudiante/{codigoEstudiante}/{periodo}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/2023-02'
+2024-06-29 12:31:13.248 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:31:13.248 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:31:13.249 -04:00 [INF] Route matched with {action = "GetMateriasEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMateriasEstudiante(Int32, System.String) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:31:13.249 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:31:13.249 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:31:13.249 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:31:13.249 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:31:13.249 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:31:13.249 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:31:13.249 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:31:13.250 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:31:13.250 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:31:13.250 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:13.250 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:13.250 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:31:13.250 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:13.250 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:31:13.250 -04:00 [DBG] Attempting to bind parameter 'periodo' of type 'System.String' using the name 'periodo' in request data ...
+2024-06-29 12:31:13.250 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:31:13.250 -04:00 [DBG] Done attempting to bind parameter 'periodo' of type 'System.String'.
+2024-06-29 12:31:13.250 -04:00 [DBG] Attempting to validate the bound parameter 'periodo' of type 'System.String' ...
+2024-06-29 12:31:13.250 -04:00 [DBG] Done attempting to validate the bound parameter 'periodo' of type 'System.String'.
+2024-06-29 12:31:13.250 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:31:13.252 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:31:13.253 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:31:13.253 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:31:13.253 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:13.254 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:13.254 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:31:13.255 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:31:13.255 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:31:13.255 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:31:13.261 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32), @__periodo_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [a].[CodigoAula] AS [Aula], (
+    SELECT TOP(1) [d].[NombreDocente]
+    FROM [MateriaDocentes] AS [m0]
+    INNER JOIN [Docentes] AS [d] ON [m0].[DocenteId] = [d].[CodigoDocente]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m0].[SeccionId]) AS [Profesor]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+LEFT JOIN [Aulas] AS [a] ON [s].[CodigoAula] = [a].[CodigoAula]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = @__periodo_1
+2024-06-29 12:31:13.261 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:31:13.261 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-06-29 12:31:13.261 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:13.262 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:31:13.262 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.7559ms.
+2024-06-29 12:31:13.262 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:31:13.262 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:31:13.262 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:31:13.262 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:31:13.262 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 12:31:13.262 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType10`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-29 12:31:13.263 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD) in 13.6642ms
+2024-06-29 12:31:13.263 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasEstudiante (CRUD)'
+2024-06-29 12:31:13.263 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:31:13.263 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:31:13.263 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:13.263 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:31:13.263 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasEstudiante/1111112/2023-02 - 200 456 application/json; charset=utf-8 15.7407ms
+2024-06-29 12:31:41.321 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasYSeccionesPorEstudiante/1111112 - null null
+2024-06-29 12:31:41.321 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 12:31:41.321 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 12:31:41.321 -04:00 [DBG] 1 candidate(s) found for the request path '/api/EstudianteMateriaApi/GetMateriasYSeccionesPorEstudiante/1111112'
+2024-06-29 12:31:41.321 -04:00 [DBG] Endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD)' with route pattern 'api/EstudianteMateriaApi/GetMateriasYSeccionesPorEstudiante/{codigoEstudiante}' is valid for the request path '/api/EstudianteMateriaApi/GetMateriasYSeccionesPorEstudiante/1111112'
+2024-06-29 12:31:41.321 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD)'
+2024-06-29 12:31:41.322 -04:00 [INF] Executing endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD)'
+2024-06-29 12:31:41.328 -04:00 [INF] Route matched with {action = "GetMateriasYSeccionesPorEstudiante", controller = "EstudianteMateria"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMateriasYSeccionesPorEstudiante(Int32) on controller CRUD.Controllers.EstudianteMateriaController (CRUD).
+2024-06-29 12:31:41.328 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 12:31:41.328 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 12:31:41.328 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 12:31:41.328 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 12:31:41.329 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 12:31:41.329 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:31:41.329 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.EstudianteMateriaController (CRUD)
+2024-06-29 12:31:41.329 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:31:41.329 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 12:31:41.329 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:41.329 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:41.329 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 12:31:41.329 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 12:31:41.329 -04:00 [INF] Executing action method CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD) - Validation state: "Valid"
+2024-06-29 12:31:41.337 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 12:31:41.342 -04:00 [DBG] Compiling query expression: 
+'DbSet<EstudianteMateria>()
+    .Include(em => em.Materias)
+    .Include(em => em.Seccions)
+    .Where(em => em.CodigoEstudiante == __codigoEstudiante_0)
+    .Select(em => new { 
+        CodigoMateria = em.Materias.CodigoMateria, 
+        NombreMateria = em.Materias.NombreMateria, 
+        CodigoSeccion = em.Seccions.CodigoSeccion, 
+        Horario = em.Seccions.Horario, 
+        Calificacion = em.Calificacion
+     })'
+2024-06-29 12:31:41.345 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<<>f__AnonymousType11<string, string, string, string, string>>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            CodigoMateria -> 0
+            NombreMateria -> 1
+            CodigoSeccion -> 2
+            Horario -> 3
+            Calificacion -> 4
+        SELECT m.CodigoMateria, m.NombreMateria, s.CodigoSeccion, s.Horario, e.Calificacion
+        FROM EstudianteMaterias AS e
+        INNER JOIN Materias AS m ON e.CodigoMateria == m.CodigoMateria
+        LEFT JOIN Secciones AS s ON e.SeccionId == s.CodigoSeccion
+        WHERE e.CodigoEstudiante == @__codigoEstudiante_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        string value1;
+        string value2;
+        string value3;
+        string value4;
+        string value5;
+        value1 = dataReader.GetString(0);
+        value2 = dataReader.GetString(1);
+        value3 = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+        value4 = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+        value5 = dataReader.GetString(4);
+        return new { 
+            CodigoMateria = value1, 
+            NombreMateria = value2, 
+            CodigoSeccion = value3, 
+            Horario = value4, 
+            Calificacion = value5
+         };
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-29 12:31:41.354 -04:00 [DBG] Creating DbConnection.
+2024-06-29 12:31:41.354 -04:00 [DBG] Created DbConnection. (0ms).
+2024-06-29 12:31:41.356 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:41.358 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:41.358 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 12:31:41.358 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:31:41.358 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 12:31:41.358 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[CodigoMateria], [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [e].[Calificacion]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0
+2024-06-29 12:31:41.380 -04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__codigoEstudiante_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[CodigoMateria], [m].[NombreMateria], [s].[CodigoSeccion], [s].[Horario], [e].[Calificacion]
+FROM [EstudianteMaterias] AS [e]
+INNER JOIN [Materias] AS [m] ON [e].[CodigoMateria] = [m].[CodigoMateria]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0
+2024-06-29 12:31:41.389 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 12:31:41.389 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 8ms reading results.
+2024-06-29 12:31:41.390 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:41.390 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 12:31:41.391 -04:00 [INF] Executed action method CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 62.0145ms.
+2024-06-29 12:31:41.393 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 12:31:41.393 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 12:31:41.393 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 12:31:41.393 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 12:31:41.393 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 12:31:41.393 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType11`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-29 12:31:41.396 -04:00 [INF] Executed action CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD) in 67.6132ms
+2024-06-29 12:31:41.397 -04:00 [INF] Executed endpoint 'CRUD.Controllers.EstudianteMateriaController.GetMateriasYSeccionesPorEstudiante (CRUD)'
+2024-06-29 12:31:41.398 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" completed keep alive response.
+2024-06-29 12:31:41.398 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 12:31:41.398 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 12:31:41.398 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 12:31:41.398 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/EstudianteMateriaApi/GetMateriasYSeccionesPorEstudiante/1111112 - 200 455 application/json; charset=utf-8 77.2279ms
+2024-06-29 12:33:51.644 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" disconnecting.
+2024-06-29 12:33:51.646 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" stopped.
+2024-06-29 12:33:51.646 -04:00 [DBG] Connection id "0HN4OB0S0K7L0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 12:35:34.616 -04:00 [INF] Application is shutting down...
+2024-06-29 12:35:34.619 -04:00 [DBG] Hosting stopping
+2024-06-29 12:35:34.630 -04:00 [DBG] Hosting stopped
