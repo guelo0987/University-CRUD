@@ -32,7 +32,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateDocente", Name = "CreateDocente")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Policy = "RequireAdministratorRole")]
+        
         public ActionResult<Docente> CreateDocente([FromBody] Docente docente)
         {
             if (!ModelState.IsValid)
@@ -226,61 +226,7 @@ namespace CRUD.Controllers
         }
 
 
-        // Login Docentes and Jwt Authentication Token
-        [HttpPost("LoginDocente", Name = "LoginDocente")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Login([FromBody] LoginModel loginModel)
-        {
-            if (loginModel == null || string.IsNullOrWhiteSpace(loginModel.Id.ToString()) ||
-                string.IsNullOrWhiteSpace(loginModel.Password))
-            {
-                _logger.LogError("Datos de login inválidos");
-                return BadRequest("Datos de login inválidos");
-            }
-
-            var docenteMatch = _db.Docentes.SingleOrDefault(u => u.CodigoDocente == loginModel.Id);
-
-            if (docenteMatch == null)
-            {
-                _logger.LogError("Credenciales inválidas");
-                return Unauthorized("Credenciales inválidas");
-            }
-
-            if (!PassHasher.VerifyPassword(loginModel.Password, docenteMatch.ContraseñaDocente))
-            {
-                _logger.LogError("Credenciales inválidas");
-                return Unauthorized("Credenciales inválidas");
-            }
-
-            // JWT CONFIGURATION
-            var claims = new[]
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("Id", docenteMatch.CodigoDocente.ToString()),
-                new Claim("CorreoDocente", docenteMatch.CorreoDocente),
-                new Claim(ClaimTypes.Role, "Docente")
-            };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-            var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                _configuration["Jwt:Issuer"],
-                _configuration["Jwt:Audience"],
-                claims,
-                expires: DateTime.UtcNow.AddMinutes(60),
-                signingCredentials: signIn
-            );
-
-            string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
-
-            _logger.LogInformation("Login exitoso");
-
-            return Ok(new { Token = tokenValue, User = docenteMatch });
-        }
+       
     }
 }
 
