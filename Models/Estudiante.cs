@@ -28,7 +28,7 @@ public  class Estudiante
     [MaxLength(15)]
     public string TelefonoEstudiante { get; set; } = null!;
 
-    [MaxLength(100)]
+    [MaxLength(150)]
      public string CorreoEstudiante { get; set; } = null!;
 
     public DateTime FechaIngreso { get; set; } = DateTime.Now;
@@ -58,6 +58,9 @@ public  class Estudiante
     [ForeignKey("CarreraId")]
     public virtual Carrera? Carreras { get; set; }
     
+    [MaxLength(50)]
+    public string? Alertas { get; set; }
+    
     
     [JsonIgnore]
     public virtual ICollection<CarreraMateria>? CarreraMaterias { get; set; }
@@ -66,5 +69,5 @@ public  class Estudiante
     public virtual ICollection<EstudianteMateria>? EstudianteMaterias { get; set; }
     
     [JsonIgnore]
-    public virtual ICollection<Factura> Facturas { get; set; }
+    public virtual ICollection<Factura>? Facturas { get; set; }
 }

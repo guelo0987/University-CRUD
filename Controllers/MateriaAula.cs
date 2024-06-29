@@ -61,7 +61,10 @@ namespace CRUD.Controllers
             var newMateriaAula = new MateriaAula
             {
                 AulaId = materiaAula.AulaId,
-                CodigoMateria = materiaAula.CodigoMateria
+                CodigoMateria = materiaAula.CodigoMateria,
+                SeccionId = materiaAula.SeccionId,
+                Seccions = materiaAula.Seccions
+                
             };
 
             _db.MateriaAulas.Add(newMateriaAula);
@@ -80,6 +83,7 @@ namespace CRUD.Controllers
         {
             var materiaAulas = _db.MateriaAulas
                 .Include(ma => ma.Aulas)
+                .Include(s=>s.Seccions)
                 .Include(ma => ma.Materias)
                 .ToList();
 
@@ -94,6 +98,7 @@ namespace CRUD.Controllers
         {
             var materiaAula = _db.MateriaAulas
                 .Include(ma => ma.Aulas)
+                .Include(s=>s.Seccions)
                 .Include(ma => ma.Materias)
                 .FirstOrDefault(ma => ma.AulaId == aulaId && ma.CodigoMateria == codigoMateria);
 

@@ -1,11 +1,12 @@
 using CRUD.Context;
 using CRUD.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace CRUD.Controllers
 {
@@ -23,72 +24,71 @@ namespace CRUD.Controllers
         }
 
         // Crear una EstudianteMateria
-[HttpPost("CreateEstudianteMateria", Name = "CreateEstudianteMateria")]
-[ProducesResponseType(StatusCodes.Status201Created)]
-[ProducesResponseType(StatusCodes.Status400BadRequest)]
-public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMateria estudianteMateria)
-{
-    if (!ModelState.IsValid)
-    {
-        _logger.LogError("Error al crear la EstudianteMateria: Modelo no válido");
-        return BadRequest(ModelState);
-    }
+        [HttpPost("CreateEstudianteMateria", Name = "CreateEstudianteMateria")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMateria estudianteMateria)
+        {
+            if (!ModelState.IsValid)
+            {
+                _logger.LogError("Error al crear la EstudianteMateria: Modelo no válido");
+                return BadRequest(ModelState);
+            }
 
-    // Verificar si Materia y Estudiante existen
-    var materia = _db.Materias.Find(estudianteMateria.CodigoMateria);
-    var estudiante = _db.Estudiantes.Find(estudianteMateria.CodigoEstudiante);
+            // Verificar si Materia y Estudiante existen
+            var materia = await _db.Materias.FindAsync(estudianteMateria.CodigoMateria);
+            var estudiante = await _db.Estudiantes.FindAsync(estudianteMateria.CodigoEstudiante);
 
-    if (materia == null || estudiante == null)
-    {
-        _logger.LogError("Error al crear la EstudianteMateria: Materia o Estudiante no existen");
-        return BadRequest("Materia o Estudiante no existen");
-    }
+            if (materia == null || estudiante == null)
+            {
+                _logger.LogError("Error al crear la EstudianteMateria: Materia o Estudiante no existen");
+                return BadRequest("Materia o Estudiante no existen");
+            }
 
-    // Verificar si la relación ya existe
-    var existingEstudianteMateria = _db.EstudianteMaterias
-        .FirstOrDefault(em => em.CodigoMateria == estudianteMateria.CodigoMateria && em.CodigoEstudiante == estudianteMateria.CodigoEstudiante);
+            // Verificar si la relación ya existe
+            var existingEstudianteMateria = await _db.EstudianteMaterias
+                .FirstOrDefaultAsync(em => em.CodigoMateria == estudianteMateria.CodigoMateria && em.CodigoEstudiante == estudianteMateria.CodigoEstudiante);
 
-    if (existingEstudianteMateria != null)
-    {
-        _logger.LogError("Error al crear la EstudianteMateria: La relación ya existe");
-        ModelState.AddModelError("", "La relación Estudiante-Materia ya existe");
-        return BadRequest(ModelState);
-    }
+            if (existingEstudianteMateria != null)
+            {
+                _logger.LogError("Error al crear la EstudianteMateria: La relación ya existe");
+                ModelState.AddModelError("", "La relación Estudiante-Materia ya existe");
+                return BadRequest(ModelState);
+            }
 
-    var newEstudianteMateria = new EstudianteMateria
-    {
-        CodigoEstudiante = estudianteMateria.CodigoEstudiante,
-        SeccionId = estudianteMateria.SeccionId,
-        Seccions = estudianteMateria.Seccions,
-        PeriodoCursado = estudianteMateria.PeriodoCursado,
-        CodigoMateria = estudianteMateria.CodigoMateria,
-        Calificacion = estudianteMateria.Calificacion,
-    };
+            var newEstudianteMateria = new EstudianteMateria
+            {
+                CodigoEstudiante = estudianteMateria.CodigoEstudiante,
+                SeccionId = estudianteMateria.SeccionId,
+                Seccions = estudianteMateria.Seccions,
+                PeriodoCursado = estudianteMateria.PeriodoCursado,
+                CodigoMateria = estudianteMateria.CodigoMateria,
+                Calificacion = estudianteMateria.Calificacion,
+            };
 
-    _db.EstudianteMaterias.Add(newEstudianteMateria);
-    await _db.SaveChangesAsync();
+            _db.EstudianteMaterias.Add(newEstudianteMateria);
+            await _db.SaveChangesAsync();
 
-    // Crear la cuenta por pagar
-    var nuevaCuentaPorPagar = new CuentaPorPagar
-    {
-        CodigoMateria = newEstudianteMateria.CodigoMateria,
-        CodigoEstudiante = newEstudianteMateria.CodigoEstudiante,
-        MontoTotalaPagar = 5000* newEstudianteMateria.Materias.CreditosMateria // Ajustar según la lógica de negocio
-    };
+            // Crear la cuenta por pagar
+            var nuevaCuentaPorPagar = new CuentaPorPagar
+            {
+                CodigoMateria = newEstudianteMateria.CodigoMateria,
+                CodigoEstudiante = newEstudianteMateria.CodigoEstudiante,
+                MontoTotalaPagar = 5000 * newEstudianteMateria.Materias.CreditosMateria // Ajustar según la lógica de negocio
+            };
 
-    _db.CuentaPorPagars.Add(nuevaCuentaPorPagar);
-    await _db.SaveChangesAsync();
+            _db.CuentaPorPagars.Add(nuevaCuentaPorPagar);
+            await _db.SaveChangesAsync();
 
-    _logger.LogInformation("EstudianteMateria y CuentaPorPagar creadas exitosamente");
+            _logger.LogInformation("EstudianteMateria y CuentaPorPagar creadas exitosamente");
 
-    return CreatedAtRoute("GetEstudianteMateria",
-        new { codigoEstudiante = newEstudianteMateria.CodigoEstudiante, codigoMateria = newEstudianteMateria.CodigoMateria },
-        newEstudianteMateria);
-}
-
+            return CreatedAtRoute("GetEstudianteMateria",
+                new { codigoEstudiante = newEstudianteMateria.CodigoEstudiante, codigoMateria = newEstudianteMateria.CodigoMateria },
+                newEstudianteMateria);
+        }
 
         // Obtener todas las relaciones de estudiantes y materias
-        [HttpGet]
+        [HttpGet("GetAllEstudiantesAndMaterias")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<EstudianteMateria>> GetAllEstudiantesAndMaterias()
         {
@@ -97,7 +97,6 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
                 .Include(em => em.Materias)
                 .Include(em => em.Seccions) // Incluir la información de la sección
                 .ToList();
-
 
             return Ok(estudianteMaterias);
         }
@@ -111,7 +110,7 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
             var estudianteMateria = _db.EstudianteMaterias
                 .Include(em => em.Estudiantes)
                 .Include(em => em.Materias)
-                .Include(s=>s.Seccions)
+                .Include(em => em.Seccions)
                 .FirstOrDefault(em => em.CodigoEstudiante == codigoEstudiante && em.CodigoMateria == codigoMateria);
 
             if (estudianteMateria == null)
@@ -133,7 +132,7 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult EditEstudianteMateria(int EstudianteId, string MateriaId, [FromBody] EstudianteMateria estudianteMateria)
         {
-            if (estudianteMateria == null || EstudianteId == 0 ||  string.IsNullOrEmpty(MateriaId))
+            if (estudianteMateria == null || EstudianteId == 0 || string.IsNullOrEmpty(MateriaId))
             {
                 _logger.LogInformation("Datos inválidos o estudiante no encontrado.");
                 return BadRequest();
@@ -173,7 +172,7 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
             _logger.LogInformation("EstudianteMateria editada");
             return NoContent();
         }
-        
+
         // Actualizar parcialmente una EstudianteMateria
         [HttpPatch("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId}", Name = "PatchEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -194,6 +193,7 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
                 _logger.LogInformation($"La relación entre el estudiante con ID {EstudianteId} y la materia con código {MateriaId} no fue encontrada.");
                 return NotFound();
             }
+
             var nuevoEstudianteMateria = new EstudianteMateria
             {
                 CodigoEstudiante = estudianteMateria.CodigoEstudiante,
@@ -201,9 +201,8 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
                 Seccions = estudianteMateria.Seccions,
                 CodigoMateria = estudianteMateria.CodigoMateria,
                 Calificacion = estudianteMateria.Calificacion,
-               
             };
-            
+
             patchDoc.ApplyTo(nuevoEstudianteMateria, ModelState);
 
             if (!TryValidateModel(nuevoEstudianteMateria))
@@ -212,11 +211,8 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
                 return BadRequest(ModelState);
             }
 
-
-
             _db.EstudianteMaterias.Remove(estudianteMateria);
             _db.SaveChanges();
-
 
             _db.EstudianteMaterias.Add(nuevoEstudianteMateria);
             _db.SaveChanges();
@@ -224,8 +220,7 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
             _logger.LogInformation("EstudianteMateria actualizada parcialmente");
             return NoContent();
         }
-        
-        
+
         // Eliminar una EstudianteMateria
         [HttpDelete("EstudianteId/{EstudianteId:int}/MateriaId/{MateriaId}", Name = "DeleteEstudianteMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -246,9 +241,72 @@ public async Task<IActionResult> CreateEstudianteMateria([FromBody] EstudianteMa
             _logger.LogInformation("EstudianteMateria eliminada");
             return NoContent();
         }
-
-
         
         
+        
+        
+        
+        
+
+        // Obtener las materias de un estudiante específico
+        [HttpGet("GetMateriasEstudiante/{codigoEstudiante}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetMateriasEstudiante(int codigoEstudiante)
+        {
+            var materias = _db.EstudianteMaterias
+                .Include(em => em.Materias)
+                .Include(em => em.Seccions)
+                .ThenInclude(s => s.Aulas)
+                .Include(em => em.Seccions)
+                .ThenInclude(s => s.MateriaDocentes)
+                .ThenInclude(md => md.Docentes)
+                .Where(em => em.CodigoEstudiante == codigoEstudiante)
+                .Select(em => new
+                {
+                    NombreMateria = em.Materias.NombreMateria,
+                    CodigoSeccion = em.Seccions.CodigoSeccion,
+                    Horario = em.Seccions.Horario,
+                    Aula = em.Seccions.Aulas.CodigoAula,
+                    Profesor = em.Seccions.MateriaDocentes.Select(md => md.Docentes.NombreDocente).FirstOrDefault()
+                })
+                .ToList();
+
+            if (!materias.Any())
+            {
+                return NotFound("No se encontraron materias para el estudiante especificado.");
+            }
+
+            return Ok(materias);
+        }
+        
+        
+        [HttpGet("GetMateriasYSeccionesPorEstudiante/{codigoEstudiante}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetMateriasYSeccionesPorEstudiante(int codigoEstudiante)
+        {
+            var estudianteMaterias = await _db.EstudianteMaterias
+                .Include(em => em.Materias)
+                .Include(em => em.Seccions)
+                .Where(em => em.CodigoEstudiante == codigoEstudiante)
+                .Select(em => new
+                {
+                    em.Materias.CodigoMateria,
+                    em.Materias.NombreMateria,
+                    em.Seccions.CodigoSeccion,
+                    em.Seccions.Horario,
+                    em.Calificacion
+                })
+                .ToListAsync();
+
+            if (estudianteMaterias == null || !estudianteMaterias.Any())
+            {
+                _logger.LogInformation($"No se encontraron materias para el estudiante con ID {codigoEstudiante}.");
+                return NotFound("No se encontraron materias para el estudiante especificado.");
+            }
+
+            return Ok(estudianteMaterias);
+        }
     }
 }

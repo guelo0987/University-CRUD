@@ -174,6 +174,8 @@ public class EstudianteController : ControllerBase
         objEst.IndicePeriodo = estudiante.IndicePeriodo;
         objEst.CondicionAcademica = estudiante.CondicionAcademica;
         objEst.CreditosAprobados = estudiante.CreditosAprobados;
+
+        objEst.Alertas = estudiante.Alertas;
         
         objEst.ContraseñaEstudiante = PassHasher.HashPassword(estudiante.DireccionEstudiante);
         objEst.CarreraId = estudiante.CarreraId;

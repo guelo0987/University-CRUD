@@ -235,6 +235,35 @@ namespace CRUD.Controllers
             _logger.LogInformation("CarreraMateria eliminada");
             return NoContent();
         }
+        
+        
+        [HttpGet("GetMateriasByCarrera/{carreraId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetMateriasByCarrera(int carreraId)
+        {
+            var carrera = await _db.Carreras
+                .Include(c => c.CarreraMaterias)
+                .ThenInclude(cm => cm.Materias)
+                .FirstOrDefaultAsync(c => c.CarreraId == carreraId);
+
+            if (carrera == null)
+            {
+                _logger.LogInformation($"Carrera con ID {carreraId} no encontrada.");
+                return NotFound("Carrera no encontrada.");
+            }
+
+            var materias = carrera.CarreraMaterias.Select(cm => new
+            {
+                cm.Materias.CodigoMateria,
+                cm.Materias.NombreMateria,
+                cm.Materias.TipoMateria,
+                cm.Materias.CreditosMateria,
+                cm.Materias.AreaAcademica
+            }).ToList();
+
+            return Ok(materias);
+        }
 
 
 
