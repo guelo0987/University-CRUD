@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using CRUD.Context;
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -13,8 +14,9 @@ using PassHash;
 
 namespace CRUD.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Admin")]
     [ApiController]
+    
     public class AdminController : ControllerBase
     {
         private readonly MyDbContext _db;
@@ -32,9 +34,12 @@ namespace CRUD.Controllers
         
         
           // Crear un Administrador
+         
         [HttpPost("CreateAdmin", Name = "CreateAdmin")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
+        
         public ActionResult<Admin> CreateAdmin([FromBody] Admin admin)
         {
             if (!ModelState.IsValid)
@@ -75,6 +80,7 @@ namespace CRUD.Controllers
         [HttpGet("{id}", Name = "GetAdmin")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<Admin> GetAdmin(int id)
         {
             var admin = _db.Admins.Find(id);

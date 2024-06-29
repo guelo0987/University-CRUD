@@ -9,6 +9,7 @@ namespace CRUD.Controllers
 {
     [Route("api/MateriaApi")]
     [ApiController]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public class MateriaController : ControllerBase
     {
         private readonly MyDbContext _db;
@@ -24,6 +25,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateMateria", Name = "CreateMateria")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        
         public ActionResult<Materia> CreateMateria([FromBody] Materia materia)
         {
             if (!ModelState.IsValid)

@@ -1,5 +1,6 @@
 using CRUD.Context;
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ namespace CRUD.Controllers
 {
     [Route("api/AulaApi")]
     [ApiController]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public class AulaController : ControllerBase
     {
         private readonly MyDbContext _db;
@@ -24,6 +26,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateAula", Name = "CreateAula")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+       
         public ActionResult<Aula> CreateAula([FromBody] Aula aula)
         {
             if (!ModelState.IsValid)
@@ -51,6 +54,7 @@ namespace CRUD.Controllers
         // Obtener Aulas
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
+      
         public ActionResult<IEnumerable<Aula>> GetAulas()
         {
             _logger.LogInformation("Obteniendo Aulas");
@@ -62,6 +66,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+      
         public ActionResult<Aula> GetAula(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -86,6 +91,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+       
         public ActionResult EditAula(string id, [FromBody] Aula aula)
         {
             if (aula == null || string.IsNullOrEmpty(id) )

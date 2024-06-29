@@ -1,5 +1,6 @@
 using CRUD.Context;
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ namespace CRUD.Controllers
 {
     [Route("api/SeccionApi")]
     [ApiController]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public class SeccionController : ControllerBase
     {
         private readonly MyDbContext _db;

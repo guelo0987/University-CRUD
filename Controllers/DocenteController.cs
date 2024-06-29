@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Text;
 using CRUD.Context;
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +32,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateDocente", Name = "CreateDocente")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<Docente> CreateDocente([FromBody] Docente docente)
         {
             if (!ModelState.IsValid)
@@ -64,6 +66,7 @@ namespace CRUD.Controllers
         // Obtener Docentes
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<IEnumerable<Docente>> GetDocentes()
         {
             _logger.LogInformation("Obteniendo Docentes");
@@ -75,6 +78,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<Docente> GetDocente(int id)
         {
             if (id <= 0)
@@ -99,6 +103,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult EditDocente(int id, [FromBody] Docente docente)
         {
             if (docente == null || id != docente.CodigoDocente)
@@ -138,6 +143,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult PatchDocente(int id, JsonPatchDocument<Docente> patchDocument)
         {
             if (patchDocument == null || id == 0)
@@ -172,6 +178,7 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult DeleteDocente(int id)
         {
             if (id <= 0)

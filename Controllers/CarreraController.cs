@@ -1,6 +1,7 @@
 using CRUD.Context;
 
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -34,6 +35,7 @@ public class CarreraController:ControllerBase
     [HttpPost("CreateCarrera", Name = "CreateCarrera")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Carrera> CreateCarrera([FromBody] Carrera carrera)
     {
         if (!ModelState.IsValid)
