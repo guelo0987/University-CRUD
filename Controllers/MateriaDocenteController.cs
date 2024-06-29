@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
@@ -229,5 +230,74 @@ namespace CRUD.Controllers
             _logger.LogInformation("MateriaDocente eliminada");
             return NoContent();
         }
+        
+        // Obtener todos los estudiantes de la misma sección y materia que el docente imparte
+        [HttpGet("GetEstudiantes/{codigoDocente}/{codigoMateria}/{seccionId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetEstudiantes(int codigoDocente, string codigoMateria, string seccionId)
+        {
+            var estudiantes = _db.EstudianteMaterias
+                .Include(em => em.Estudiantes)
+                .Include(em => em.Seccions)
+                .Include(em => em.Materias)
+                .Where(em => em.CodigoMateria == codigoMateria && em.SeccionId == seccionId && em.Seccions.MateriaDocentes.Any(md => md.DocenteId == codigoDocente))
+                .Select(em => new
+                {
+                    em.Estudiantes.Id,
+                    em.Estudiantes.NombreEstudiante,
+                    em.Estudiantes.CorreoEstudiante,
+                    em.Estudiantes.TelefonoEstudiante,
+                    em.Calificacion
+                })
+                .ToList();
+
+            if (!estudiantes.Any())
+            {
+                _logger.LogInformation("No se encontraron estudiantes para la sección y materia especificada.");
+                return NotFound("No se encontraron estudiantes para la sección y materia especificada.");
+            }
+
+            return Ok(estudiantes);
+        }
+        
+        
+        
+        // Editar la calificación de un estudiante en una sección y materia
+        [HttpPut("EditCalificacion/{codigoEstudiante}/{codigoMateria}/{seccionId}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult EditCalificacion(int codigoEstudiante, string codigoMateria, string seccionId, [FromBody] EditCalificacionModel model)
+        {
+            if (model == null || string.IsNullOrWhiteSpace(model.Calificacion))
+            {
+                _logger.LogError("Datos de calificación inválidos");
+                return BadRequest("Datos de calificación inválidos");
+            }
+
+            var existingEstudianteMateria = _db.EstudianteMaterias
+                .FirstOrDefault(em => em.CodigoMateria == codigoMateria && em.SeccionId == seccionId && em.CodigoEstudiante == codigoEstudiante);
+
+            if (existingEstudianteMateria == null)
+            {
+                _logger.LogError("Estudiante no encontrado");
+                return NotFound("Estudiante no encontrado");
+            }
+
+            existingEstudianteMateria.Calificacion = model.Calificacion;
+
+            _db.SaveChanges();
+
+            _logger.LogInformation("Calificación editada exitosamente");
+            return NoContent();
+        }
+    }
+    
+    
+    public class EditCalificacionModel
+    {
+        [Required]
+        public string Calificacion { get; set; }
     }
 }

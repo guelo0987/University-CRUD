@@ -14358,3 +14358,613 @@ WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0
 2024-06-29 12:35:34.616 -04:00 [INF] Application is shutting down...
 2024-06-29 12:35:34.619 -04:00 [DBG] Hosting stopping
 2024-06-29 12:35:34.630 -04:00 [DBG] Hosting stopped
+2024-06-29 13:11:30.877 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-29 13:11:30.938 -04:00 [DBG] Hosting starting
+2024-06-29 13:11:30.941 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-29 13:11:30.947 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-29 13:11:30.949 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-29 13:11:30.950 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-29 13:11:30.951 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-29 13:11:30.954 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-29 13:11:30.955 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-29 13:11:30.956 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-29 13:11:30.956 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-29 13:11:30.958 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-29 13:11:30.959 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-29 13:11:30.992 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-29 13:11:30.992 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-29 13:11:30.992 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-29 13:11:30.992 -04:00 [INF] Hosting environment: Development
+2024-06-29 13:11:30.992 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-29 13:11:30.992 -04:00 [DBG] Hosting started
+2024-06-29 13:11:31.155 -04:00 [DBG] Connection id "0HN4OBQ2LPAND" received FIN.
+2024-06-29 13:11:31.159 -04:00 [DBG] Connection id "0HN4OBQ2LPAND" accepted.
+2024-06-29 13:11:31.160 -04:00 [DBG] Connection id "0HN4OBQ2LPAND" started.
+2024-06-29 13:11:31.164 -04:00 [DBG] Connection id "0HN4OBQ2LPAND" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:11:31.167 -04:00 [DBG] Connection id "0HN4OBQ2LPAND" disconnecting.
+2024-06-29 13:11:31.169 -04:00 [DBG] Connection id "0HN4OBQ2LPAND" stopped.
+2024-06-29 13:11:31.312 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" accepted.
+2024-06-29 13:11:31.313 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" started.
+2024-06-29 13:11:31.313 -04:00 [DBG] Connection id "0HN4OBQ2LPANF" accepted.
+2024-06-29 13:11:31.313 -04:00 [DBG] Connection id "0HN4OBQ2LPANF" started.
+2024-06-29 13:11:31.342 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:11:31.343 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-29 13:11:31.363 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:11:31.434 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" completed keep alive response.
+2024-06-29 13:11:31.435 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 95.4079ms
+2024-06-29 13:11:31.498 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:11:31.499 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:11:31.665 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" completed keep alive response.
+2024-06-29 13:11:31.665 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 167.096ms
+2024-06-29 13:11:32.091 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:11:32.093 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:11:32.094 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" completed keep alive response.
+2024-06-29 13:11:32.094 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 2.996ms
+2024-06-29 13:11:32.190 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:11:32.190 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:11:32.267 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" completed keep alive response.
+2024-06-29 13:11:32.267 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.2527ms
+2024-06-29 13:13:43.136 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" disconnecting.
+2024-06-29 13:13:43.136 -04:00 [DBG] Connection id "0HN4OBQ2LPANF" disconnecting.
+2024-06-29 13:13:43.140 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" stopped.
+2024-06-29 13:13:43.140 -04:00 [DBG] Connection id "0HN4OBQ2LPANF" stopped.
+2024-06-29 13:13:43.141 -04:00 [DBG] Connection id "0HN4OBQ2LPANE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:13:43.145 -04:00 [DBG] Connection id "0HN4OBQ2LPANF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:13:44.242 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" accepted.
+2024-06-29 13:13:44.242 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" started.
+2024-06-29 13:13:44.243 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:13:44.243 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.250 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" completed keep alive response.
+2024-06-29 13:13:44.250 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 7.8408ms
+2024-06-29 13:13:44.251 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" accepted.
+2024-06-29 13:13:44.251 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" started.
+2024-06-29 13:13:44.312 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:13:44.313 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.410 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:13:44.410 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.410 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" completed keep alive response.
+2024-06-29 13:13:44.411 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5458ms
+2024-06-29 13:13:44.418 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" received FIN.
+2024-06-29 13:13:44.418 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:13:44.418 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" disconnecting.
+2024-06-29 13:13:44.434 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 122.4537ms
+2024-06-29 13:13:44.434 -04:00 [DBG] Connection id "0HN4OBQ2LPANG" stopped.
+2024-06-29 13:13:44.467 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:13:44.467 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.572 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" accepted.
+2024-06-29 13:13:44.572 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" started.
+2024-06-29 13:13:44.572 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:13:44.573 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.573 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" completed keep alive response.
+2024-06-29 13:13:44.573 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.4449ms
+2024-06-29 13:13:44.578 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" received FIN.
+2024-06-29 13:13:44.578 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:13:44.578 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" disconnecting.
+2024-06-29 13:13:44.579 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.6627ms
+2024-06-29 13:13:44.580 -04:00 [DBG] Connection id "0HN4OBQ2LPANH" stopped.
+2024-06-29 13:13:44.608 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:13:44.609 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.661 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" completed keep alive response.
+2024-06-29 13:13:44.662 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.562ms
+2024-06-29 13:13:44.808 -04:00 [DBG] Connection id "0HN4OBQ2LPANJ" accepted.
+2024-06-29 13:13:44.808 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:13:44.808 -04:00 [DBG] Connection id "0HN4OBQ2LPANJ" started.
+2024-06-29 13:13:44.808 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.808 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" completed keep alive response.
+2024-06-29 13:13:44.808 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.567ms
+2024-06-29 13:13:44.839 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:13:44.839 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:13:44.884 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" completed keep alive response.
+2024-06-29 13:13:44.884 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.5752ms
+2024-06-29 13:14:57.933 -04:00 [DBG] Connection id "0HN4OBQ2LPANJ" received FIN.
+2024-06-29 13:14:57.934 -04:00 [DBG] Connection id "0HN4OBQ2LPANJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:14:57.934 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/MateriaDocenteApi/GetEstudiantes/2000001/MAT101/MAT101-01 - null null
+2024-06-29 13:14:57.934 -04:00 [DBG] Connection id "0HN4OBQ2LPANJ" disconnecting.
+2024-06-29 13:14:57.934 -04:00 [DBG] Connection id "0HN4OBQ2LPANJ" stopped.
+2024-06-29 13:14:57.934 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:14:57.935 -04:00 [DBG] The request path  does not match the path filter
+2024-06-29 13:14:57.936 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-29 13:14:57.951 -04:00 [DBG] 1 candidate(s) found for the request path '/api/MateriaDocenteApi/GetEstudiantes/2000001/MAT101/MAT101-01'
+2024-06-29 13:14:57.953 -04:00 [DBG] Endpoint 'CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD)' with route pattern 'api/MateriaDocenteApi/GetEstudiantes/{codigoDocente}/{codigoMateria}/{seccionId}' is valid for the request path '/api/MateriaDocenteApi/GetEstudiantes/2000001/MAT101/MAT101-01'
+2024-06-29 13:14:57.953 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD)'
+2024-06-29 13:14:57.954 -04:00 [INF] Executing endpoint 'CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD)'
+2024-06-29 13:14:57.966 -04:00 [INF] Route matched with {action = "GetEstudiantes", controller = "MateriaDocente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEstudiantes(Int32, System.String, System.String) on controller CRUD.Controllers.MateriaDocenteController (CRUD).
+2024-06-29 13:14:57.966 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 13:14:57.966 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 13:14:57.966 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 13:14:57.966 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 13:14:57.966 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 13:14:57.967 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-29 13:14:58.024 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 13:14:58.037 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-29 13:14:58.039 -04:00 [DBG] Attempting to bind parameter 'codigoDocente' of type 'System.Int32' ...
+2024-06-29 13:14:58.039 -04:00 [DBG] Attempting to bind parameter 'codigoDocente' of type 'System.Int32' using the name 'codigoDocente' in request data ...
+2024-06-29 13:14:58.039 -04:00 [DBG] Done attempting to bind parameter 'codigoDocente' of type 'System.Int32'.
+2024-06-29 13:14:58.039 -04:00 [DBG] Done attempting to bind parameter 'codigoDocente' of type 'System.Int32'.
+2024-06-29 13:14:58.039 -04:00 [DBG] Attempting to validate the bound parameter 'codigoDocente' of type 'System.Int32' ...
+2024-06-29 13:14:58.040 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoDocente' of type 'System.Int32'.
+2024-06-29 13:14:58.041 -04:00 [DBG] Attempting to bind parameter 'codigoMateria' of type 'System.String' ...
+2024-06-29 13:14:58.041 -04:00 [DBG] Attempting to bind parameter 'codigoMateria' of type 'System.String' using the name 'codigoMateria' in request data ...
+2024-06-29 13:14:58.041 -04:00 [DBG] Done attempting to bind parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:14:58.041 -04:00 [DBG] Done attempting to bind parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:14:58.041 -04:00 [DBG] Attempting to validate the bound parameter 'codigoMateria' of type 'System.String' ...
+2024-06-29 13:14:58.042 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:14:58.042 -04:00 [DBG] Attempting to bind parameter 'seccionId' of type 'System.String' ...
+2024-06-29 13:14:58.042 -04:00 [DBG] Attempting to bind parameter 'seccionId' of type 'System.String' using the name 'seccionId' in request data ...
+2024-06-29 13:14:58.042 -04:00 [DBG] Done attempting to bind parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:14:58.042 -04:00 [DBG] Done attempting to bind parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:14:58.042 -04:00 [DBG] Attempting to validate the bound parameter 'seccionId' of type 'System.String' ...
+2024-06-29 13:14:58.042 -04:00 [DBG] Done attempting to validate the bound parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:14:58.045 -04:00 [INF] Executing action method CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD) - Validation state: "Valid"
+2024-06-29 13:14:58.407 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 13:14:58.407 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 13:14:58.407 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 13:14:58.407 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 13:14:58.505 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:14:58.505 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:14:58.505 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:14:58.612 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 13:14:58.667 -04:00 [DBG] Compiling query expression: 
+'DbSet<EstudianteMateria>()
+    .Include(em => em.Estudiantes)
+    .Include(em => em.Seccions)
+    .Include(em => em.Materias)
+    .Where(em => em.CodigoMateria == __codigoMateria_0 && em.SeccionId == __seccionId_1 && em.Seccions.MateriaDocentes
+        .Any(md => md.DocenteId == __codigoDocente_2))
+    .Select(em => new { 
+        Id = em.Estudiantes.Id, 
+        NombreEstudiante = em.Estudiantes.NombreEstudiante, 
+        CorreoEstudiante = em.Estudiantes.CorreoEstudiante, 
+        TelefonoEstudiante = em.Estudiantes.TelefonoEstudiante, 
+        Calificacion = em.Calificacion
+     })'
+2024-06-29 13:14:58.940 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<<>f__AnonymousType26<int, string, string, string, string>>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            Id -> 0
+            NombreEstudiante -> 1
+            CorreoEstudiante -> 2
+            TelefonoEstudiante -> 3
+            Calificacion -> 4
+        SELECT e0.Id, e0.NombreEstudiante, e0.CorreoEstudiante, e0.TelefonoEstudiante, e.Calificacion
+        FROM EstudianteMaterias AS e
+        LEFT JOIN Secciones AS s ON e.SeccionId == s.CodigoSeccion
+        INNER JOIN Estudiantes AS e0 ON e.CodigoEstudiante == e0.Id
+        WHERE ((e.CodigoMateria == @__codigoMateria_0) && (e.SeccionId == @__seccionId_1)) && EXISTS (
+            SELECT 1
+            FROM MateriaDocentes AS m
+            WHERE ((s.CodigoSeccion != NULL) && (s.CodigoSeccion == m.SeccionId)) && (m.DocenteId == @__codigoDocente_2))) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        int? value1;
+        string value2;
+        string value3;
+        string value4;
+        string value5;
+        value1 = (int?)dataReader.GetInt32(0);
+        value2 = dataReader.GetString(1);
+        value3 = dataReader.GetString(2);
+        value4 = dataReader.GetString(3);
+        value5 = dataReader.GetString(4);
+        return new { 
+            Id = (int)value1, 
+            NombreEstudiante = value2, 
+            CorreoEstudiante = value3, 
+            TelefonoEstudiante = value4, 
+            Calificacion = value5
+         };
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2024-06-29 13:14:58.966 -04:00 [DBG] Creating DbConnection.
+2024-06-29 13:14:58.981 -04:00 [DBG] Created DbConnection. (13ms).
+2024-06-29 13:14:58.982 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:14:59.128 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:14:59.130 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:14:59.133 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-29 13:14:59.139 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-06-29 13:14:59.144 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoMateria_0='?' (Size = 450), @__seccionId_1='?' (Size = 450), @__codigoDocente_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e0].[Id], [e0].[NombreEstudiante], [e0].[CorreoEstudiante], [e0].[TelefonoEstudiante], [e].[Calificacion]
+FROM [EstudianteMaterias] AS [e]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+INNER JOIN [Estudiantes] AS [e0] ON [e].[CodigoEstudiante] = [e0].[Id]
+WHERE [e].[CodigoMateria] = @__codigoMateria_0 AND [e].[SeccionId] = @__seccionId_1 AND EXISTS (
+    SELECT 1
+    FROM [MateriaDocentes] AS [m]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m].[SeccionId] AND [m].[DocenteId] = @__codigoDocente_2)
+2024-06-29 13:14:59.201 -04:00 [INF] Executed DbCommand (59ms) [Parameters=[@__codigoMateria_0='?' (Size = 450), @__seccionId_1='?' (Size = 450), @__codigoDocente_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e0].[Id], [e0].[NombreEstudiante], [e0].[CorreoEstudiante], [e0].[TelefonoEstudiante], [e].[Calificacion]
+FROM [EstudianteMaterias] AS [e]
+LEFT JOIN [Secciones] AS [s] ON [e].[SeccionId] = [s].[CodigoSeccion]
+INNER JOIN [Estudiantes] AS [e0] ON [e].[CodigoEstudiante] = [e0].[Id]
+WHERE [e].[CodigoMateria] = @__codigoMateria_0 AND [e].[SeccionId] = @__seccionId_1 AND EXISTS (
+    SELECT 1
+    FROM [MateriaDocentes] AS [m]
+    WHERE [s].[CodigoSeccion] IS NOT NULL AND [s].[CodigoSeccion] = [m].[SeccionId] AND [m].[DocenteId] = @__codigoDocente_2)
+2024-06-29 13:14:59.207 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:14:59.212 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 7ms reading results.
+2024-06-29 13:14:59.213 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:14:59.217 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (3ms).
+2024-06-29 13:14:59.219 -04:00 [INF] Executed action method CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1171.9862ms.
+2024-06-29 13:14:59.220 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 13:14:59.221 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 13:14:59.221 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-29 13:14:59.221 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-29 13:14:59.221 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-29 13:14:59.221 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType26`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-29 13:14:59.272 -04:00 [INF] Executed action CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD) in 1304.0809ms
+2024-06-29 13:14:59.272 -04:00 [INF] Executed endpoint 'CRUD.Controllers.MateriaDocenteController.GetEstudiantes (CRUD)'
+2024-06-29 13:14:59.272 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" completed keep alive response.
+2024-06-29 13:14:59.273 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 13:14:59.275 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 13:14:59.276 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 13:14:59.276 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/MateriaDocenteApi/GetEstudiantes/2000001/MAT101/MAT101-01 - 200 148 application/json; charset=utf-8 1342.7979ms
+2024-06-29 13:17:10.412 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" disconnecting.
+2024-06-29 13:17:10.413 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" stopped.
+2024-06-29 13:17:10.414 -04:00 [DBG] Connection id "0HN4OBQ2LPANI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:20:51.633 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" accepted.
+2024-06-29 13:20:51.634 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" started.
+2024-06-29 13:20:51.634 -04:00 [DBG] Connection id "0HN4OBQ2LPANL" accepted.
+2024-06-29 13:20:51.634 -04:00 [DBG] Connection id "0HN4OBQ2LPANL" started.
+2024-06-29 13:20:51.635 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:20:51.635 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:51.636 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:51.636 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 1.6716ms
+2024-06-29 13:20:51.713 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:20:51.714 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:51.762 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:51.762 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.1412ms
+2024-06-29 13:20:52.135 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:20:52.135 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:52.135 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:52.135 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5663ms
+2024-06-29 13:20:52.179 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:20:52.179 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:52.214 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:52.214 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.874ms
+2024-06-29 13:20:52.329 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:20:52.329 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:52.329 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:52.329 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5312ms
+2024-06-29 13:20:52.362 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:20:52.362 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:52.402 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:52.402 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.485ms
+2024-06-29 13:20:52.528 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:20:52.528 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:52.528 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:52.528 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 0.5092ms
+2024-06-29 13:20:52.562 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:20:52.562 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:20:52.604 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:20:52.604 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.6149ms
+2024-06-29 13:22:00.325 -04:00 [DBG] Connection id "0HN4OBQ2LPANL" received FIN.
+2024-06-29 13:22:00.326 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5104/api/MateriaDocenteApi/EditEstudiante/1111112/MAT101/MAT101-02 - application/json-patch+json 26
+2024-06-29 13:22:00.326 -04:00 [DBG] Connection id "0HN4OBQ2LPANL" disconnecting.
+2024-06-29 13:22:00.326 -04:00 [DBG] Connection id "0HN4OBQ2LPANL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:22:00.326 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:22:00.327 -04:00 [DBG] PUT requests are not supported
+2024-06-29 13:22:00.330 -04:00 [DBG] Connection id "0HN4OBQ2LPANL" stopped.
+2024-06-29 13:22:00.332 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-29 13:22:00.332 -04:00 [INF] CORS policy execution successful.
+2024-06-29 13:22:00.333 -04:00 [DBG] 1 candidate(s) found for the request path '/api/MateriaDocenteApi/EditEstudiante/1111112/MAT101/MAT101-02'
+2024-06-29 13:22:00.333 -04:00 [DBG] Endpoint 'CRUD.Controllers.MateriaDocenteController.EditEstudiante (CRUD)' with route pattern 'api/MateriaDocenteApi/EditEstudiante/{codigoEstudiante}/{codigoMateria}/{seccionId}' is valid for the request path '/api/MateriaDocenteApi/EditEstudiante/1111112/MAT101/MAT101-02'
+2024-06-29 13:22:00.333 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.MateriaDocenteController.EditEstudiante (CRUD)'
+2024-06-29 13:22:00.333 -04:00 [INF] Executing endpoint 'CRUD.Controllers.MateriaDocenteController.EditEstudiante (CRUD)'
+2024-06-29 13:22:00.336 -04:00 [INF] Route matched with {action = "EditEstudiante", controller = "MateriaDocente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditEstudiante(Int32, System.String, System.String, CRUD.Models.EstudianteMateria) on controller CRUD.Controllers.MateriaDocenteController (CRUD).
+2024-06-29 13:22:00.336 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 13:22:00.336 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 13:22:00.336 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 13:22:00.336 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 13:22:00.336 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 13:22:00.336 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-29 13:22:00.337 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'codigoMateria' of type 'System.String' ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'codigoMateria' of type 'System.String' using the name 'codigoMateria' in request data ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to bind parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to bind parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to validate the bound parameter 'codigoMateria' of type 'System.String' ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'seccionId' of type 'System.String' ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'seccionId' of type 'System.String' using the name 'seccionId' in request data ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to bind parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to bind parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to validate the bound parameter 'seccionId' of type 'System.String' ...
+2024-06-29 13:22:00.337 -04:00 [DBG] Done attempting to validate the bound parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:22:00.337 -04:00 [DBG] Attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' ...
+2024-06-29 13:22:00.338 -04:00 [DBG] Attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' using the name '' in request data ...
+2024-06-29 13:22:00.338 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:22:00.338 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:22:00.340 -04:00 [DBG] Connection id "0HN4OBQ2LPANK", Request id "0HN4OBQ2LPANK:00000009": started reading request body.
+2024-06-29 13:22:00.340 -04:00 [DBG] Connection id "0HN4OBQ2LPANK", Request id "0HN4OBQ2LPANK:00000009": done reading request body.
+2024-06-29 13:22:00.356 -04:00 [DBG] Done attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-29 13:22:00.356 -04:00 [DBG] Done attempting to bind parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-29 13:22:00.356 -04:00 [DBG] Attempting to validate the bound parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria' ...
+2024-06-29 13:22:00.360 -04:00 [DBG] Done attempting to validate the bound parameter 'estudianteMateria' of type 'CRUD.Models.EstudianteMateria'.
+2024-06-29 13:22:00.361 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-06-29 13:22:00.361 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-06-29 13:22:00.361 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-06-29 13:22:00.361 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-06-29 13:22:00.361 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-06-29 13:22:00.361 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-06-29 13:22:00.361 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-29 13:22:00.373 -04:00 [INF] Executed action CRUD.Controllers.MateriaDocenteController.EditEstudiante (CRUD) in 37.0817ms
+2024-06-29 13:22:00.373 -04:00 [INF] Executed endpoint 'CRUD.Controllers.MateriaDocenteController.EditEstudiante (CRUD)'
+2024-06-29 13:22:00.373 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" completed keep alive response.
+2024-06-29 13:22:00.373 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5104/api/MateriaDocenteApi/EditEstudiante/1111112/MAT101/MAT101-02 - 400 319 application/problem+json; charset=utf-8 47.6046ms
+2024-06-29 13:24:05.976 -04:00 [INF] Application is shutting down...
+2024-06-29 13:24:05.980 -04:00 [DBG] Hosting stopping
+2024-06-29 13:24:05.991 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" disconnecting.
+2024-06-29 13:24:05.991 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" stopped.
+2024-06-29 13:24:05.991 -04:00 [DBG] Connection id "0HN4OBQ2LPANK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:24:05.995 -04:00 [DBG] Hosting stopped
+2024-06-29 13:24:10.332 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-29 13:24:10.387 -04:00 [DBG] Hosting starting
+2024-06-29 13:24:10.391 -04:00 [INF] User profile is available. Using '/Users/miguelcruz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-29 13:24:10.397 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-b06a4e2e-7908-41eb-9b39-8691b777fc93.xml'.
+2024-06-29 13:24:10.399 -04:00 [DBG] Reading data from file '/Users/miguelcruz/.aspnet/DataProtection-Keys/key-257ca34e-0329-4b0c-83c2-d560c11773b1.xml'.
+2024-06-29 13:24:10.401 -04:00 [DBG] Found key {b06a4e2e-7908-41eb-9b39-8691b777fc93}.
+2024-06-29 13:24:10.402 -04:00 [DBG] Found key {257ca34e-0329-4b0c-83c2-d560c11773b1}.
+2024-06-29 13:24:10.405 -04:00 [DBG] Considering key {b06a4e2e-7908-41eb-9b39-8691b777fc93} with expiration date 2024-08-26 20:47:39Z as default key.
+2024-06-29 13:24:10.406 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-29 13:24:10.408 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-06-29 13:24:10.408 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-06-29 13:24:10.410 -04:00 [DBG] Using key {b06a4e2e-7908-41eb-9b39-8691b777fc93} as the default key.
+2024-06-29 13:24:10.410 -04:00 [DBG] Key ring with default key {b06a4e2e-7908-41eb-9b39-8691b777fc93} was loaded during application startup.
+2024-06-29 13:24:10.438 -04:00 [INF] Now listening on: http://localhost:5104
+2024-06-29 13:24:10.438 -04:00 [DBG] Loaded hosting startup assembly CRUD
+2024-06-29 13:24:10.438 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-29 13:24:10.438 -04:00 [INF] Hosting environment: Development
+2024-06-29 13:24:10.438 -04:00 [INF] Content root path: /Users/miguelcruz/Desktop/University-Backend/CRUD
+2024-06-29 13:24:10.438 -04:00 [DBG] Hosting started
+2024-06-29 13:24:10.687 -04:00 [DBG] Connection id "0HN4OC151823H" received FIN.
+2024-06-29 13:24:10.691 -04:00 [DBG] Connection id "0HN4OC151823H" accepted.
+2024-06-29 13:24:10.691 -04:00 [DBG] Connection id "0HN4OC151823H" started.
+2024-06-29 13:24:10.695 -04:00 [DBG] Connection id "0HN4OC151823H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:24:10.698 -04:00 [DBG] Connection id "0HN4OC151823H" disconnecting.
+2024-06-29 13:24:10.701 -04:00 [DBG] Connection id "0HN4OC151823H" stopped.
+2024-06-29 13:24:10.762 -04:00 [DBG] Connection id "0HN4OC151823I" accepted.
+2024-06-29 13:24:10.762 -04:00 [DBG] Connection id "0HN4OC151823I" started.
+2024-06-29 13:24:10.762 -04:00 [DBG] Connection id "0HN4OC151823J" accepted.
+2024-06-29 13:24:10.762 -04:00 [DBG] Connection id "0HN4OC151823J" started.
+2024-06-29 13:24:10.777 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/index.html - null null
+2024-06-29 13:24:10.779 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-29 13:24:10.797 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:24:10.867 -04:00 [DBG] Connection id "0HN4OC151823I" completed keep alive response.
+2024-06-29 13:24:10.868 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/index.html - 200 null text/html;charset=utf-8 93.0292ms
+2024-06-29 13:24:10.932 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - null null
+2024-06-29 13:24:10.933 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:24:11.089 -04:00 [DBG] Connection id "0HN4OC151823I" completed keep alive response.
+2024-06-29 13:24:11.089 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 157.42ms
+2024-06-29 13:25:16.669 -04:00 [DBG] Connection id "0HN4OC151823J" received FIN.
+2024-06-29 13:25:16.670 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5104/api/MateriaDocenteApi/EditCalificacion/1111112/MAT101/MAT101-02 - application/json-patch+json 25
+2024-06-29 13:25:16.674 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-29 13:25:16.671 -04:00 [DBG] Connection id "0HN4OC151823J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:25:16.678 -04:00 [DBG] PUT requests are not supported
+2024-06-29 13:25:16.678 -04:00 [DBG] Connection id "0HN4OC151823J" disconnecting.
+2024-06-29 13:25:16.679 -04:00 [DBG] The request has an origin header: 'http://localhost:5104'.
+2024-06-29 13:25:16.679 -04:00 [INF] CORS policy execution successful.
+2024-06-29 13:25:16.680 -04:00 [DBG] Connection id "0HN4OC151823J" stopped.
+2024-06-29 13:25:16.681 -04:00 [WRN] Failed to determine the https port for redirect.
+2024-06-29 13:25:16.698 -04:00 [DBG] 1 candidate(s) found for the request path '/api/MateriaDocenteApi/EditCalificacion/1111112/MAT101/MAT101-02'
+2024-06-29 13:25:16.701 -04:00 [DBG] Endpoint 'CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD)' with route pattern 'api/MateriaDocenteApi/EditCalificacion/{codigoEstudiante}/{codigoMateria}/{seccionId}' is valid for the request path '/api/MateriaDocenteApi/EditCalificacion/1111112/MAT101/MAT101-02'
+2024-06-29 13:25:16.701 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD)'
+2024-06-29 13:25:16.702 -04:00 [INF] Executing endpoint 'CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD)'
+2024-06-29 13:25:16.714 -04:00 [INF] Route matched with {action = "EditCalificacion", controller = "MateriaDocente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditCalificacion(Int32, System.String, System.String, CRUD.Controllers.EditCalificacionModel) on controller CRUD.Controllers.MateriaDocenteController (CRUD).
+2024-06-29 13:25:16.715 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-29 13:25:16.715 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-29 13:25:16.715 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-29 13:25:16.715 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-29 13:25:16.715 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-29 13:25:16.716 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-29 13:25:16.782 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-29 13:25:16.796 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.MateriaDocenteController (CRUD)
+2024-06-29 13:25:16.798 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 13:25:16.799 -04:00 [DBG] Attempting to bind parameter 'codigoEstudiante' of type 'System.Int32' using the name 'codigoEstudiante' in request data ...
+2024-06-29 13:25:16.799 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 13:25:16.799 -04:00 [DBG] Done attempting to bind parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 13:25:16.799 -04:00 [DBG] Attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32' ...
+2024-06-29 13:25:16.800 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoEstudiante' of type 'System.Int32'.
+2024-06-29 13:25:16.801 -04:00 [DBG] Attempting to bind parameter 'codigoMateria' of type 'System.String' ...
+2024-06-29 13:25:16.801 -04:00 [DBG] Attempting to bind parameter 'codigoMateria' of type 'System.String' using the name 'codigoMateria' in request data ...
+2024-06-29 13:25:16.801 -04:00 [DBG] Done attempting to bind parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:25:16.801 -04:00 [DBG] Done attempting to bind parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:25:16.801 -04:00 [DBG] Attempting to validate the bound parameter 'codigoMateria' of type 'System.String' ...
+2024-06-29 13:25:16.803 -04:00 [DBG] Done attempting to validate the bound parameter 'codigoMateria' of type 'System.String'.
+2024-06-29 13:25:16.803 -04:00 [DBG] Attempting to bind parameter 'seccionId' of type 'System.String' ...
+2024-06-29 13:25:16.803 -04:00 [DBG] Attempting to bind parameter 'seccionId' of type 'System.String' using the name 'seccionId' in request data ...
+2024-06-29 13:25:16.803 -04:00 [DBG] Done attempting to bind parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:25:16.803 -04:00 [DBG] Done attempting to bind parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:25:16.803 -04:00 [DBG] Attempting to validate the bound parameter 'seccionId' of type 'System.String' ...
+2024-06-29 13:25:16.803 -04:00 [DBG] Done attempting to validate the bound parameter 'seccionId' of type 'System.String'.
+2024-06-29 13:25:16.803 -04:00 [DBG] Attempting to bind parameter 'model' of type 'CRUD.Controllers.EditCalificacionModel' ...
+2024-06-29 13:25:16.803 -04:00 [DBG] Attempting to bind parameter 'model' of type 'CRUD.Controllers.EditCalificacionModel' using the name '' in request data ...
+2024-06-29 13:25:16.804 -04:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:25:16.804 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2024-06-29 13:25:16.807 -04:00 [DBG] Connection id "0HN4OC151823I", Request id "0HN4OC151823I:00000003": started reading request body.
+2024-06-29 13:25:16.807 -04:00 [DBG] Connection id "0HN4OC151823I", Request id "0HN4OC151823I:00000003": done reading request body.
+2024-06-29 13:25:16.861 -04:00 [DBG] Done attempting to bind parameter 'model' of type 'CRUD.Controllers.EditCalificacionModel'.
+2024-06-29 13:25:16.861 -04:00 [DBG] Done attempting to bind parameter 'model' of type 'CRUD.Controllers.EditCalificacionModel'.
+2024-06-29 13:25:16.861 -04:00 [DBG] Attempting to validate the bound parameter 'model' of type 'CRUD.Controllers.EditCalificacionModel' ...
+2024-06-29 13:25:16.862 -04:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'CRUD.Controllers.EditCalificacionModel'.
+2024-06-29 13:25:16.865 -04:00 [INF] Executing action method CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD) - Validation state: "Valid"
+2024-06-29 13:25:17.261 -04:00 [DBG] The index {'CarreraId'} was not created on entity type 'CarreraMateria' as the properties are already covered by the index {'CarreraId', 'CodigoMateria'}.
+2024-06-29 13:25:17.262 -04:00 [DBG] The index {'CodigoMateria'} was not created on entity type 'EstudianteMateria' as the properties are already covered by the index {'CodigoMateria', 'CodigoEstudiante'}.
+2024-06-29 13:25:17.262 -04:00 [DBG] The index {'AulaId'} was not created on entity type 'MateriaAula' as the properties are already covered by the index {'AulaId', 'CodigoMateria'}.
+2024-06-29 13:25:17.262 -04:00 [DBG] The index {'DocenteId'} was not created on entity type 'MateriaDocente' as the properties are already covered by the index {'DocenteId', 'CodigoMateria'}.
+2024-06-29 13:25:17.380 -04:00 [DBG] The property 'CarreraMateria.EstudianteId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:25:17.380 -04:00 [DBG] The property 'Factura.CuentaPorPagarIdCuentaPorPagar' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:25:17.380 -04:00 [DBG] The property 'Materia.AulaCodigoAula' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-06-29 13:25:17.477 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-06-29 13:25:17.531 -04:00 [DBG] Compiling query expression: 
+'DbSet<EstudianteMateria>()
+    .FirstOrDefault(em => em.CodigoMateria == __codigoMateria_0 && em.SeccionId == __seccionId_1 && em.CodigoEstudiante == __codigoEstudiante_2)'
+2024-06-29 13:25:17.736 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<EstudianteMateria>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: EstudianteMateria.CodigoMateria (string) Required PK FK AfterSave:Throw, 0], [Property: EstudianteMateria.CodigoEstudiante (int) Required PK FK Index AfterSave:Throw, 1], [Property: EstudianteMateria.Calificacion (string) Required MaxLength(2), 2], [Property: EstudianteMateria.PeriodoCursado (string) Required MaxLength(50), 3], [Property: EstudianteMateria.SeccionId (string) FK Index, 4] }
+        SELECT TOP(1) e.CodigoMateria, e.CodigoEstudiante, e.Calificacion, e.PeriodoCursado, e.SeccionId
+        FROM EstudianteMaterias AS e
+        WHERE ((e.CodigoMateria == @__codigoMateria_0) && (e.SeccionId == @__seccionId_1)) && (e.CodigoEstudiante == @__codigoEstudiante_2)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        EstudianteMateria entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            EstudianteMateria instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(EstudianteMateria);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: EstudianteMateria.CodigoMateria, EstudianteMateria.CodigoEstudiante PK | Resolver: c => c.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria").FindPrimaryKey()], 
+                keyValues: new object[]
+                { 
+                    (object)dataReader.GetString(0), 
+                    (object)dataReader.GetInt32(1) 
+                }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (EstudianteMateria)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")]: 
+                        {
+                            return 
+                            {
+                                EstudianteMateria instance;
+                                instance = new EstudianteMateria();
+                                instance.<CodigoMateria>k__BackingField = dataReader.GetString(0);
+                                instance.<CodigoEstudiante>k__BackingField = dataReader.GetInt32(1);
+                                instance.<Calificacion>k__BackingField = dataReader.GetString(2);
+                                instance.<PeriodoCursado>k__BackingField = dataReader.GetString(3);
+                                instance.<SeccionId>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: EstudianteMateria | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CRUD.Models.EstudianteMateria")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(EstudianteMateria)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-06-29 13:25:17.761 -04:00 [DBG] Creating DbConnection.
+2024-06-29 13:25:17.777 -04:00 [DBG] Created DbConnection. (14ms).
+2024-06-29 13:25:17.778 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:17.941 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:17.943 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:25:17.947 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-06-29 13:25:17.952 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2024-06-29 13:25:17.957 -04:00 [DBG] Executing DbCommand [Parameters=[@__codigoMateria_0='?' (Size = 450), @__seccionId_1='?' (Size = 450), @__codigoEstudiante_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoCursado], [e].[SeccionId]
+FROM [EstudianteMaterias] AS [e]
+WHERE [e].[CodigoMateria] = @__codigoMateria_0 AND [e].[SeccionId] = @__seccionId_1 AND [e].[CodigoEstudiante] = @__codigoEstudiante_2
+2024-06-29 13:25:17.999 -04:00 [INF] Executed DbCommand (44ms) [Parameters=[@__codigoMateria_0='?' (Size = 450), @__seccionId_1='?' (Size = 450), @__codigoEstudiante_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CodigoMateria], [e].[CodigoEstudiante], [e].[Calificacion], [e].[PeriodoCursado], [e].[SeccionId]
+FROM [EstudianteMaterias] AS [e]
+WHERE [e].[CodigoMateria] = @__codigoMateria_0 AND [e].[SeccionId] = @__seccionId_1 AND [e].[CodigoEstudiante] = @__codigoEstudiante_2
+2024-06-29 13:25:18.023 -04:00 [DBG] Context 'MyDbContext' started tracking 'EstudianteMateria' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 13:25:18.040 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:25:18.045 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 42ms reading results.
+2024-06-29 13:25:18.047 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:18.051 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (3ms).
+2024-06-29 13:25:18.052 -04:00 [DBG] SaveChanges starting for 'MyDbContext'.
+2024-06-29 13:25:18.053 -04:00 [DBG] DetectChanges starting for 'MyDbContext'.
+2024-06-29 13:25:18.057 -04:00 [DBG] The unchanged property 'EstudianteMateria.Calificacion' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-06-29 13:25:18.061 -04:00 [DBG] An entity of type 'EstudianteMateria' tracked by 'MyDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 13:25:18.063 -04:00 [DBG] DetectChanges completed for 'MyDbContext'.
+2024-06-29 13:25:18.092 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:18.093 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:18.093 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-06-29 13:25:18.094 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:25:18.094 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-29 13:25:18.094 -04:00 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p2='?' (Size = 450), @p0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [EstudianteMaterias] SET [Calificacion] = @p0
+OUTPUT 1
+WHERE [CodigoEstudiante] = @p1 AND [CodigoMateria] = @p2;
+2024-06-29 13:25:18.112 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[@p1='?' (DbType = Int32), @p2='?' (Size = 450), @p0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [EstudianteMaterias] SET [Calificacion] = @p0
+OUTPUT 1
+WHERE [CodigoEstudiante] = @p1 AND [CodigoMateria] = @p2;
+2024-06-29 13:25:18.113 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-06-29 13:25:18.113 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 1ms reading results.
+2024-06-29 13:25:18.114 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:18.114 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-06-29 13:25:18.116 -04:00 [DBG] An entity of type 'EstudianteMateria' tracked by 'MyDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-29 13:25:18.117 -04:00 [DBG] SaveChanges completed for 'MyDbContext' with 1 entities written to the database.
+2024-06-29 13:25:18.117 -04:00 [INF] Calificación editada exitosamente
+2024-06-29 13:25:18.119 -04:00 [INF] Executed action method CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 1251.9252ms.
+2024-06-29 13:25:18.120 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-29 13:25:18.122 -04:00 [INF] Executed action CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD) in 1405.2265ms
+2024-06-29 13:25:18.122 -04:00 [INF] Executed endpoint 'CRUD.Controllers.MateriaDocenteController.EditCalificacion (CRUD)'
+2024-06-29 13:25:18.122 -04:00 [DBG] Connection id "0HN4OC151823I" completed keep alive response.
+2024-06-29 13:25:18.123 -04:00 [DBG] 'MyDbContext' disposed.
+2024-06-29 13:25:18.125 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-06-29 13:25:18.126 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-06-29 13:25:18.126 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5104/api/MateriaDocenteApi/EditCalificacion/1111112/MAT101/MAT101-02 - 204 null null 1456.4154ms
+2024-06-29 13:26:35.355 -04:00 [INF] Application is shutting down...
+2024-06-29 13:26:35.358 -04:00 [DBG] Hosting stopping
+2024-06-29 13:26:35.370 -04:00 [DBG] Connection id "0HN4OC151823I" disconnecting.
+2024-06-29 13:26:35.370 -04:00 [DBG] Connection id "0HN4OC151823I" stopped.
+2024-06-29 13:26:35.370 -04:00 [DBG] Connection id "0HN4OC151823I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-29 13:26:35.375 -04:00 [DBG] Hosting stopped
