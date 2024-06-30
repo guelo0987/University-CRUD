@@ -246,8 +246,7 @@ namespace CRUD.Controllers
         
         
         
-        
-
+        //Obtener todas las materias del estudiante en base al periodo actual
         [HttpGet("GetMateriasEstudiante/{codigoEstudiante}/{periodo}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -279,7 +278,7 @@ namespace CRUD.Controllers
             return Ok(materias);
         }
         
-        
+        //Obtener el record entero de del estudiantes de las materias que a cursado
         [HttpGet("GetMateriasYSeccionesPorEstudiante/{codigoEstudiante}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -307,5 +306,60 @@ namespace CRUD.Controllers
 
             return Ok(estudianteMaterias);
         }
+        
+        
+        
+        
+        //Estudiante selecciona una materia y seccion
+         [HttpPost("SelectSeccion")]
+        public async Task<IActionResult> SelectSeccion(int estudianteId, string seccionId)
+        {
+            var estudiante = await _db.Estudiantes.FindAsync(estudianteId);
+            if (estudiante == null)
+            {
+                _logger.LogError($"Estudiante con ID {estudianteId} no encontrado");
+                return NotFound("Estudiante no encontrado");
+            }
+
+            var seccion = await _db.Secciones.FindAsync(seccionId);
+            if (seccion == null)
+            {
+                _logger.LogError($"Sección con ID {seccionId} no encontrada");
+                return NotFound("Sección no encontrada");
+            }
+
+            var materia = await _db.Materias.FindAsync(seccion.CodigoMateria);
+            if (materia == null)
+            {
+                _logger.LogError($"Materia con código {seccion.CodigoMateria} no encontrada");
+                return NotFound("Materia no encontrada");
+            }
+
+            var existingEstudianteMateria = await _db.EstudianteMaterias
+                .FirstOrDefaultAsync(em => em.CodigoEstudiante == estudianteId && em.SeccionId == seccionId);
+
+            if (existingEstudianteMateria != null)
+            {
+                _logger.LogError($"El estudiante ya está inscrito en la sección {seccionId}");
+                return BadRequest("El estudiante ya está inscrito en esta sección");
+            }
+
+            var estudianteMateria = new EstudianteMateria
+            {
+                CodigoMateria = seccion.CodigoMateria,
+                SeccionId = seccionId,
+                CodigoEstudiante = estudianteId,
+                PeriodoCursado = estudiante.PeriodoActual,
+                Calificacion = "NA"
+            };
+
+            _db.EstudianteMaterias.Add(estudianteMateria);
+            await _db.SaveChangesAsync();
+
+            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha inscrito en la sección {seccionId}");
+
+            return Ok(estudianteMateria);
+        }
+        
     }
 }

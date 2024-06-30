@@ -11,8 +11,6 @@ namespace CRUD.Controllers;
 
 
 
-
-
 [Route("api/CarreraApi")]
 [ApiController]
 public class CarreraController:ControllerBase
@@ -88,8 +86,9 @@ public class CarreraController:ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
 
-    public ActionResult<Estudiante> GetEstudiante(int id)
+    public ActionResult<Carrera> GetCarrera(int id)
     {
 
         if (id <= 0)
@@ -118,6 +117,7 @@ public class CarreraController:ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Carrera> EditCarrera(int id, [FromBody] Carrera carrera)
     {
 
@@ -160,6 +160,7 @@ public class CarreraController:ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Carrera> PatchCarrera(int id, JsonPatchDocument<Carrera> patchDocument)
     {
 
@@ -199,6 +200,7 @@ public class CarreraController:ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
 
     public ActionResult<Carrera> DeleteEstudiante(int id)
     {

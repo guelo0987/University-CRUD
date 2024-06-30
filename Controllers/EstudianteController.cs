@@ -34,6 +34,7 @@ public class EstudianteController : ControllerBase
     [HttpPost("CreateEstudiante", Name = "CreateEstudiante")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Estudiante> CreateEstudiante([FromBody] Estudiante estudiante)
     {
         if (!ModelState.IsValid)
@@ -80,6 +81,7 @@ public class EstudianteController : ControllerBase
     //Obtener Estudiantes
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Estudiante> GetEstudiantes()
     {
         
@@ -96,6 +98,7 @@ public class EstudianteController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
 
     public ActionResult<Estudiante> GetEstudiante(int id)
     {
@@ -118,39 +121,13 @@ public class EstudianteController : ControllerBase
 
     }
     
-    [HttpGet("GetCurrentEstudiante")]
-    [Authorize]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public ActionResult<Estudiante> GetCurrentEstudiante()
-    {
-        var userId = User.FindFirst("Id")?.Value;
-        if (userId == null)
-        {
-            _logger.LogError("Usuario no autenticado");
-            return Unauthorized();
-        }
-
-        var estudiante = _db.Estudiantes.SingleOrDefault(u => u.Id.ToString() == userId);
-        if (estudiante == null)
-        {
-            _logger.LogError($"Estudiante con ID {userId} no encontrado");
-            return NotFound();
-        }
-
-        return Ok(estudiante);
-    }
-    
-    
-    
-    
-    
     
     //Editar Un estudiante
     [HttpPut("id:int",Name = "EditEstudiantw")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Estudiante> EditEstudiante(int id, [FromBody] Estudiante estudiante)
     {
 
@@ -218,6 +195,7 @@ public class EstudianteController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Estudiante> PatchEstudiante(int id, JsonPatchDocument<Estudiante> patchDocument)
     {
 
@@ -257,6 +235,7 @@ public class EstudianteController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [Authorize(Policy = "RequireAdministratorRole")]
     public ActionResult<Estudiante> DeleteEstudiante(int id)
     {
 

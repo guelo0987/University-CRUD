@@ -14,6 +14,9 @@ namespace CRUD.Models
         [ForeignKey("CodigoMateria")]
         public virtual  Materia? Materias { get; set; }
         
+        
+        
+        
         public string? CodigoAula { get; set; }
         [ForeignKey("CodigoAula")]
         public virtual  Aula? Aulas { get; set; }

@@ -32,7 +32,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateDocente", Name = "CreateDocente")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<Docente> CreateDocente([FromBody] Docente docente)
         {
             if (!ModelState.IsValid)
@@ -67,6 +67,7 @@ namespace CRUD.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [Authorize(Policy = "RequireAdministratorRole")]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<IEnumerable<Docente>> GetDocentes()
         {
             _logger.LogInformation("Obteniendo Docentes");
@@ -74,28 +75,7 @@ namespace CRUD.Controllers
         }
         
         
-        [HttpGet("GetCurrentDocente")]
-        [Authorize(Policy = "RequireDocenteRole")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<Docente> GetCurrentDocente()
-        {
-            var userId = User.FindFirst("Id")?.Value;
-            if (userId == null)
-            {
-                _logger.LogError("Usuario no autenticado");
-                return Unauthorized();
-            }
-
-            var docente = _db.Docentes.SingleOrDefault(u => u.CodigoDocente.ToString() == userId);
-            if (docente == null)
-            {
-                _logger.LogError($"Docente con ID {userId} no encontrado");
-                return NotFound();
-            }
-
-            return Ok(docente);
-        }
+        
 
         // Obtener un Docente
         [HttpGet("{id:int}", Name = "GetDocente")]

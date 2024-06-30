@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CRUD.Controllers
 {
@@ -26,6 +27,7 @@ namespace CRUD.Controllers
         [HttpPost("CreateCarreraMateria", Name = "CreateCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<CarreraMateria> CreateCarreraMateria([FromBody] CarreraMateria carreraMateria)
         {
             if (!ModelState.IsValid)
@@ -117,16 +119,17 @@ namespace CRUD.Controllers
 
 
         
-        // Editar Una CarreraEstudiante
+        // Editar Una CarreraMateria
         [HttpPut("CarreraId/{CarreraId:int}/MateriaId/{MateriaId}", Name = "EditCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult EditCarreraMateria(int CarreraId, string MateriaId, [FromBody] CarreraMateria carreraMateria)
+        [Authorize(Policy = "RequireAdministratorRole")]
+        public IActionResult EditCarreraMateria(int CarreraId, string MateriaId, [FromBody] CarreraMateria carreraMateria)
         {
             if (carreraMateria == null || CarreraId == 0 || string.IsNullOrEmpty(MateriaId))
             {
-                _logger.LogInformation("Datos inválidos o estudiante no encontrado.");
+                _logger.LogInformation("Datos inválidos o CARRERA no encontrado.");
                 return BadRequest();
             }
 
@@ -169,6 +172,8 @@ namespace CRUD.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Policy = "RequireAdministratorRole")]
+        
         public ActionResult PatchCarreraMateria(int CarreraId, string MateriaId, [FromBody] JsonPatchDocument<CarreraMateria> patchDoc)
         {
             if (patchDoc == null)
@@ -177,7 +182,7 @@ namespace CRUD.Controllers
                 return BadRequest();
             }
 
-            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId.ToString());
+            var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId);
 
             if (carreraMateria == null)
             {
@@ -219,6 +224,7 @@ namespace CRUD.Controllers
         [HttpDelete("CarreraId/{CarreraId:int}/MateriaId/{MateriaId}", Name = "DeleteCarreraMateria")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult DeleteCarreraMateria(int CarreraId, string MateriaId)
         {
             var carreraMateria = _db.CarreraMaterias.FirstOrDefault(cm => cm.CarreraId == CarreraId && cm.CodigoMateria == MateriaId.ToString());
