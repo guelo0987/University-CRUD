@@ -22,6 +22,9 @@ namespace CRUD.Models
         [MaxLength(100)]
         public string ContraseñaAdmin { get; set; }
 
+
+        public DateTime FechaIngreso { get; set; } = DateTime.Now;
+
         [Required]
         [MaxLength(50)]
         public string Rol { get; set; } = "Administrador";
