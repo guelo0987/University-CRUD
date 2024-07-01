@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CRUD.Controllers
@@ -246,6 +247,8 @@ namespace CRUD.Controllers
         
         
         
+        
+        
         //Obtener todas las materias del estudiante en base al periodo actual
         [HttpGet("GetMateriasEstudiante/{codigoEstudiante}/{periodo}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -310,8 +313,7 @@ namespace CRUD.Controllers
         
         
         
-        //Estudiante selecciona una materia y seccion
-         [HttpPost("SelectSeccion")]
+       [HttpPost("SelectSeccion")]
         public async Task<IActionResult> SelectSeccion(int estudianteId, string seccionId)
         {
             var estudiante = await _db.Estudiantes.FindAsync(estudianteId);
@@ -335,8 +337,28 @@ namespace CRUD.Controllers
                 return NotFound("Materia no encontrada");
             }
 
+            // Verificar si el estudiante ya ha cursado esta materia en un periodo diferente
+            var materiaCursada = await _db.EstudianteMaterias
+                .AnyAsync(em => em.CodigoEstudiante == estudianteId && em.CodigoMateria == seccion.CodigoMateria && em.PeriodoCursado != estudiante.PeriodoActual);
+
+            if (materiaCursada)
+            {
+                _logger.LogError($"El estudiante con ID {estudianteId} ya ha cursado la materia {seccion.CodigoMateria} en un periodo diferente");
+                return BadRequest("El estudiante ya ha cursado esta materia en un periodo diferente");
+            }
+
+            // Verificar si el estudiante ya está inscrito en esta sección
             var existingEstudianteMateria = await _db.EstudianteMaterias
                 .FirstOrDefaultAsync(em => em.CodigoEstudiante == estudianteId && em.SeccionId == seccionId);
+
+            var materiaActuales = await _db.EstudianteMaterias.AnyAsync(em =>
+                em.CodigoEstudiante == estudianteId && em.CodigoMateria == seccion.CodigoMateria);
+            
+            if (materiaActuales)
+            {
+                _logger.LogError($"El estudiante con ID {estudianteId} tiene en curso la materia {seccion.CodigoMateria} ");
+                return BadRequest("El estudiante tiene en  esta materia");
+            }
 
             if (existingEstudianteMateria != null)
             {
@@ -360,6 +382,37 @@ namespace CRUD.Controllers
 
             return Ok(estudianteMateria);
         }
+      
         
+        // Estudiante retira una materia y seccion
+        [HttpDelete("RemoveSeccion")]
+        public async Task<IActionResult> RemoveSeccion(int estudianteId, string seccionId)
+        {
+            var estudiante = await _db.Estudiantes.FindAsync(estudianteId);
+            if (estudiante == null)
+            {
+                _logger.LogError($"Estudiante con ID {estudianteId} no encontrado");
+                return NotFound("Estudiante no encontrado");
+            }
+
+            var estudianteMateria = await _db.EstudianteMaterias
+                .FirstOrDefaultAsync(em => em.CodigoEstudiante == estudianteId && em.SeccionId == seccionId && em.PeriodoCursado == estudiante.PeriodoActual);
+
+            if (estudianteMateria == null)
+            {
+                _logger.LogError($"El estudiante con ID {estudianteId} no está inscrito en la sección {seccionId} en su periodo actual");
+                return NotFound("No se encontró la inscripción del estudiante en esta sección en su periodo actual");
+            }
+
+            _db.EstudianteMaterias.Remove(estudianteMateria);
+            await _db.SaveChangesAsync();
+
+            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha retirado de la sección {seccionId}");
+
+            return Ok();
+        }
+        
+        
+
     }
 }
