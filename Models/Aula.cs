@@ -17,6 +17,9 @@ namespace CRUD.Models
         public string? TipoAula { get; set; }
         
         
+        [Required]
+        public string Edificio { get; set; }
+        
         [JsonIgnore]
         public virtual ICollection<MateriaAula>? MateriaAulas { get; set; }
         

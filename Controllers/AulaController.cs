@@ -119,6 +119,7 @@ namespace CRUD.Controllers
             
             obj.Capacidad = aula.Capacidad;
             obj.TipoAula = aula.TipoAula;
+            obj.Edificio = aula.Edificio;
 
             _db.SaveChanges();
             _logger.LogInformation("Aula con el id: " + id + " editada");

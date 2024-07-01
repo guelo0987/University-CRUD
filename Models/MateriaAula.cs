@@ -23,4 +23,7 @@ public class MateriaAula
     [ForeignKey("CodigoMateria")]
     public virtual  Materia? Materias { get; set; }
     
+    
+    
+    
 }

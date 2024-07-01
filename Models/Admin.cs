@@ -17,6 +17,10 @@ namespace CRUD.Models
         [Required]
         [MaxLength(100)]
         public string CorreoAdmin { get; set; }
+        
+        [Required]
+        [MaxLength(100)]
+        public string Telefono { get; set; }
 
         [Required]
         [MaxLength(100)]
