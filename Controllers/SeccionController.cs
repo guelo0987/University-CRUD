@@ -10,7 +10,7 @@ namespace CRUD.Controllers
 {
     [Route("api/SeccionApi")]
     [ApiController]
-    [Authorize(Policy = "RequireAdministratorRole")]
+   
     public class SeccionController : ControllerBase
     {
         private readonly MyDbContext _db;
@@ -22,7 +22,7 @@ namespace CRUD.Controllers
             _db = db;
         }
 
-        // Crear una Sección
+        // Crear una Seccion
         [HttpPost("CreateSeccion", Name = "CreateSeccion")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -30,38 +30,47 @@ namespace CRUD.Controllers
         {
             if (!ModelState.IsValid)
             {
-                _logger.LogError("Error al crear la sección: Modelo no válido");
+                _logger.LogError("Error al crear la Seccion: Modelo no válido");
                 return BadRequest(ModelState);
             }
 
-            
-            var obj = _db.Secciones.FirstOrDefault(u => u.CodigoSeccion.ToString() == seccion.CodigoSeccion);
-
-            if (obj != null)
-            {
-                _logger.LogError("Error al crear la seccion: la seccion con el código {CodigoAula} ya existe", seccion.CodigoSeccion);
-                return BadRequest("la seccion con el código proporcionado ya existe.");
-            }
-
+            // Verificar si Materia y Aula existen
+            var aula = _db.Aulas.Find(seccion.CodigoAula);
             var materia = _db.Materias.Find(seccion.CodigoMateria);
 
-            if (materia == null)
+            if (aula == null || materia == null)
             {
-                _logger.LogError("Error al crear la seccion: materia no encontrada");
-                ModelState.AddModelError("", "Materia no encontrada");
+                _logger.LogError("Error al crear la Seccion: Aula o Materia no existen");
+                return BadRequest("Aula o Materia no existen");
+            }
+
+            // Verificar si el aula ya está ocupada en el mismo horario
+            var overlappingSeccion = _db.Secciones
+                .FirstOrDefault(s => s.CodigoAula == seccion.CodigoAula && s.Horario == seccion.Horario);
+
+            if (overlappingSeccion != null)
+            {
+                _logger.LogError("Error al crear la Seccion: El aula ya está ocupada en ese horario");
+                ModelState.AddModelError("", "El aula ya está ocupada en ese horario");
                 return BadRequest(ModelState);
             }
 
+            var newSeccion = new Seccion
+            {
+                CodigoSeccion = seccion.CodigoSeccion,
+                CodigoAula = seccion.CodigoAula,
+                CodigoMateria = seccion.CodigoMateria,
+                Horario = seccion.Horario,
+                Cupo = seccion.Cupo
+            };
 
-            seccion.Materias = seccion.Materias;
-            
-
-            _db.Secciones.Add(seccion);
+            _db.Secciones.Add(newSeccion);
             _db.SaveChanges();
-            _logger.LogInformation("Sección creada exitosamente");
+            _logger.LogInformation("Seccion creada exitosamente");
 
-            return CreatedAtRoute("GetSeccion", new { id = seccion.CodigoSeccion }, seccion);
+            return Created();
         }
+
 
         // Obtener Secciones
         [HttpGet]

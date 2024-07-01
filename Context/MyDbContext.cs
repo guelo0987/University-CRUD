@@ -37,7 +37,7 @@ public partial class MyDbContext : DbContext
     public virtual DbSet<Aula> Aulas { get; set; }
     
     
-    public virtual DbSet<MateriaAula> MateriaAulas { get; set; }
+
 
     
     public virtual DbSet<Seccion> Secciones { get; set; }
@@ -135,23 +135,7 @@ public partial class MyDbContext : DbContext
             .HasForeignKey(md => md.SeccionId);
         
         
-        modelBuilder.Entity<MateriaAula>()
-            .HasKey(ma => new { ma.AulaId, ma.CodigoMateria });
-
-        modelBuilder.Entity<MateriaAula>()
-            .HasOne(ma => ma.Aulas)
-            .WithMany(a => a.MateriaAulas)
-            .HasForeignKey(ma => ma.AulaId);
-
-        modelBuilder.Entity<MateriaAula>()
-            .HasOne(ma => ma.Materias)
-            .WithMany(m => m.MateriaAulas)
-            .HasForeignKey(ma => ma.CodigoMateria);
-        
-        modelBuilder.Entity<MateriaAula>()
-            .HasOne(ma => ma.Seccions)
-            .WithMany(m => m.MateriaAulas)
-            .HasForeignKey(ma => ma.SeccionId);
+     
         
         
         
