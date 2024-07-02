@@ -9844,3 +9844,9 @@ WHERE [e].[CodigoEstudiante] = @__estudianteId_0 AND [e].[SeccionId] = @__seccio
 2024-07-01 18:19:57.530 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
 2024-07-01 18:19:57.530 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
 2024-07-01 18:19:57.530 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5104/api/EstudianteMateriaApi/RemoveSeccion?estudianteId=1111112&seccionId=ENG404-01 - 404 null text/plain; charset=utf-8 146.8205ms
+2024-07-01 18:22:08.854 -04:00 [DBG] Connection id "0HN4Q3COOILI4" disconnecting.
+2024-07-01 18:22:08.857 -04:00 [DBG] Connection id "0HN4Q3COOILI4" stopped.
+2024-07-01 18:22:08.857 -04:00 [DBG] Connection id "0HN4Q3COOILI4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-01 18:30:06.886 -04:00 [INF] Application is shutting down...
+2024-07-01 18:30:06.889 -04:00 [DBG] Hosting stopping
+2024-07-01 18:30:06.898 -04:00 [DBG] Hosting stopped
