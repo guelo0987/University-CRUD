@@ -82,6 +82,7 @@ public class EstudianteController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [Authorize(Policy = "RequireAdministratorRole")]
+    
     public ActionResult<Estudiante> GetEstudiantes()
     {
         

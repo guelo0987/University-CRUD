@@ -50,7 +50,7 @@ builder.Services.AddAuthentication(options =>
 // Configuración de políticas de autorización
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Administrador"));
+    options.AddPolicy("RequireAdministratorRole", policy => policy.RequireRole("Admin"));
     options.AddPolicy("RequireDocenteRole", policy => policy.RequireRole("Docente"));
 });
 
