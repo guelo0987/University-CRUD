@@ -11936,3 +11936,424 @@ WHERE [e].[CodigoEstudiante] = @__codigoEstudiante_0 AND [e].[PeriodoCursado] = 
 2024-07-02 14:12:01.767 -04:00 [DBG] Connection id "0HN4QO5LT9Q82" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-07-02 14:12:01.767 -04:00 [DBG] Connection id "0HN4QO5LT9Q82" disconnecting.
 2024-07-02 14:12:01.767 -04:00 [DBG] Connection id "0HN4QO5LT9Q82" stopped.
+2024-07-02 14:12:50.170 -04:00 [DBG] Connection id "0HN4QO5LT9Q83" accepted.
+2024-07-02 14:12:50.170 -04:00 [DBG] Connection id "0HN4QO5LT9Q83" started.
+2024-07-02 14:12:50.406 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" accepted.
+2024-07-02 14:12:50.406 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" started.
+2024-07-02 14:12:50.407 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" accepted.
+2024-07-02 14:12:50.407 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" started.
+2024-07-02 14:12:50.407 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.407 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.408 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-02 14:12:50.408 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-07-02 14:12:50.408 -04:00 [DBG] OPTIONS requests are not supported
+2024-07-02 14:12:50.408 -04:00 [DBG] OPTIONS requests are not supported
+2024-07-02 14:12:50.408 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.408 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.408 -04:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-07-02 14:12:50.408 -04:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-07-02 14:12:50.408 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.408 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.409 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.409 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.409 -04:00 [DBG] The request is a preflight request.
+2024-07-02 14:12:50.409 -04:00 [DBG] The request is a preflight request.
+2024-07-02 14:12:50.410 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" completed keep alive response.
+2024-07-02 14:12:50.410 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" completed keep alive response.
+2024-07-02 14:12:50.410 -04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5104/api/Auth/GetCurrentUser - 204 null null 3.0693ms
+2024-07-02 14:12:50.410 -04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5104/api/Auth/GetCurrentUser - 204 null null 2.9947ms
+2024-07-02 14:12:50.468 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.523 -04:00 [DBG] Successfully validated the token.
+2024-07-02 14:12:50.523 -04:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-07-02 14:12:50.524 -04:00 [DBG] The request path  does not match the path filter
+2024-07-02 14:12:50.524 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.524 -04:00 [DBG] Endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)' with route pattern 'api/Auth/GetCurrentUser' is valid for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.524 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.525 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.525 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.527 -04:00 [DBG] Authorization was successful.
+2024-07-02 14:12:50.527 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.528 -04:00 [INF] Route matched with {action = "GetCurrentUser", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrentUser() on controller CRUD.Controllers.AuthController (CRUD).
+2024-07-02 14:12:50.528 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-02 14:12:50.528 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-02 14:12:50.528 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-02 14:12:50.528 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-02 14:12:50.528 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-02 14:12:50.528 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.529 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.529 -04:00 [INF] Executing action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD) - Validation state: "Valid"
+2024-07-02 14:12:50.531 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-07-02 14:12:50.532 -04:00 [DBG] Compiling query expression: 
+'DbSet<Estudiante>()
+    .SingleOrDefault(u => u.Id.ToString() == __userId_0)'
+2024-07-02 14:12:50.539 -04:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Estudiante>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Estudiante.Id (int) Required PK AfterSave:Throw, 0], [Property: Estudiante.Alertas (string) MaxLength(50), 1], [Property: Estudiante.CarreraId (int?) FK Index, 2], [Property: Estudiante.CiudadEstudiante (string) Required MaxLength(100), 3], [Property: Estudiante.CondicionAcademica (string) Required MaxLength(50), 4], [Property: Estudiante.ContraseñaEstudiante (string) Required MaxLength(100), 5], [Property: Estudiante.CorreoEstudiante (string) Required MaxLength(150), 6], [Property: Estudiante.CreditosAprobados (int?), 7], [Property: Estudiante.DireccionEstudiante (string) Required MaxLength(200), 8], [Property: Estudiante.FechaIngreso (DateTime) Required, 9], [Property: Estudiante.IndiceGeneral (decimal?), 10], [Property: Estudiante.IndicePeriodo (decimal?), 11], [Property: Estudiante.Nacionalidad (string) Required MaxLength(50), 12], [Property: Estudiante.NombreEstudiante (string) Required MaxLength(100), 13], [Property: Estudiante.PeriodoActual (string), 14], [Property: Estudiante.PeriodosCursados (int?), 15], [Property: Estudiante.SexoEstudiante (string) Required MaxLength(1), 16], [Property: Estudiante.TelefonoEstudiante (string) Required MaxLength(15), 17] }
+        SELECT TOP(2) e.Id, e.Alertas, e.CarreraId, e.CiudadEstudiante, e.CondicionAcademica, e.ContraseñaEstudiante, e.CorreoEstudiante, e.CreditosAprobados, e.DireccionEstudiante, e.FechaIngreso, e.IndiceGeneral, e.IndicePeriodo, e.Nacionalidad, e.NombreEstudiante, e.PeriodoActual, e.PeriodosCursados, e.SexoEstudiante, e.TelefonoEstudiante
+        FROM Estudiantes AS e
+        WHERE CONVERT(varchar(11), e.Id) == @__userId_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        <>c__DisplayClass26_0.queryExpression, 
+        RelationalShapedQueryCompilingExpressionVisitor._useRelationalNulls
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Estudiante entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Estudiante instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Estudiante);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Estudiante.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Estudiante").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Estudiante)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Estudiante")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Estudiante")]: 
+                        {
+                            return 
+                            {
+                                Estudiante instance;
+                                instance = new Estudiante();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Alertas>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                instance.<CarreraId>k__BackingField = dataReader.IsDBNull(2) ? default(int?) : (int?)dataReader.GetInt32(2);
+                                instance.<CiudadEstudiante>k__BackingField = dataReader.GetString(3);
+                                instance.<CondicionAcademica>k__BackingField = dataReader.GetString(4);
+                                instance.<ContraseñaEstudiante>k__BackingField = dataReader.GetString(5);
+                                instance.<CorreoEstudiante>k__BackingField = dataReader.GetString(6);
+                                instance.<CreditosAprobados>k__BackingField = dataReader.IsDBNull(7) ? default(int?) : (int?)dataReader.GetInt32(7);
+                                instance.<DireccionEstudiante>k__BackingField = dataReader.GetString(8);
+                                instance.<FechaIngreso>k__BackingField = dataReader.GetDateTime(9);
+                                instance.<IndiceGeneral>k__BackingField = dataReader.IsDBNull(10) ? default(decimal?) : (decimal?)dataReader.GetDecimal(10);
+                                instance.<IndicePeriodo>k__BackingField = dataReader.IsDBNull(11) ? default(decimal?) : (decimal?)dataReader.GetDecimal(11);
+                                instance.<Nacionalidad>k__BackingField = dataReader.GetString(12);
+                                instance.<NombreEstudiante>k__BackingField = dataReader.GetString(13);
+                                instance.<PeriodoActual>k__BackingField = dataReader.IsDBNull(14) ? default(string) : dataReader.GetString(14);
+                                instance.<PeriodosCursados>k__BackingField = dataReader.IsDBNull(15) ? default(int?) : (int?)dataReader.GetInt32(15);
+                                instance.<SexoEstudiante>k__BackingField = dataReader.GetString(16);
+                                instance.<TelefonoEstudiante>k__BackingField = dataReader.GetString(17);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Estudiante | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Estudiante")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Estudiante)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CRUD.Context.MyDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2024-07-02 14:12:50.544 -04:00 [DBG] Creating DbConnection.
+2024-07-02 14:12:50.544 -04:00 [DBG] Created DbConnection. (0ms).
+2024-07-02 14:12:50.544 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.544 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.544 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-02 14:12:50.544 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.544 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.544 -04:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.551 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" received FIN.
+2024-07-02 14:12:50.551 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-02 14:12:50.551 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" disconnecting.
+2024-07-02 14:12:50.554 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.554 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-02 14:12:50.555 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-07-02 14:12:50.555 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-07-02 14:12:50.555 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.555 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-07-02 14:12:50.555 -04:00 [INF] Executed action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.582ms.
+2024-07-02 14:12:50.555 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-07-02 14:12:50.555 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-07-02 14:12:50.555 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-02 14:12:50.555 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-02 14:12:50.555 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-02 14:12:50.555 -04:00 [INF] Executing OkObjectResult, writing value of type 'Estudiante'.
+2024-07-02 14:12:50.555 -04:00 [INF] Executed action CRUD.Controllers.AuthController.GetCurrentUser (CRUD) in 26.8408ms
+2024-07-02 14:12:50.555 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.555 -04:00 [DBG] 'MyDbContext' disposed.
+2024-07-02 14:12:50.555 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.555 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-07-02 14:12:50.555 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - 200 553 application/json; charset=utf-8 87.7266ms
+2024-07-02 14:12:50.555 -04:00 [DBG] Connection id "0HN4QO5LT9Q84" stopped.
+2024-07-02 14:12:50.599 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.600 -04:00 [DBG] Successfully validated the token.
+2024-07-02 14:12:50.600 -04:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-07-02 14:12:50.600 -04:00 [DBG] The request path  does not match the path filter
+2024-07-02 14:12:50.600 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.600 -04:00 [DBG] Endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)' with route pattern 'api/Auth/GetCurrentUser' is valid for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.600 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.600 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.600 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.601 -04:00 [DBG] Authorization was successful.
+2024-07-02 14:12:50.601 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.601 -04:00 [INF] Route matched with {action = "GetCurrentUser", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrentUser() on controller CRUD.Controllers.AuthController (CRUD).
+2024-07-02 14:12:50.601 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-02 14:12:50.601 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-02 14:12:50.601 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-02 14:12:50.601 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-02 14:12:50.601 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-02 14:12:50.601 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.602 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.602 -04:00 [INF] Executing action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD) - Validation state: "Valid"
+2024-07-02 14:12:50.602 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-07-02 14:12:50.602 -04:00 [DBG] Creating DbConnection.
+2024-07-02 14:12:50.602 -04:00 [DBG] Created DbConnection. (0ms).
+2024-07-02 14:12:50.602 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.603 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.603 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-02 14:12:50.603 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.603 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.603 -04:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.606 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.607 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-02 14:12:50.607 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-07-02 14:12:50.607 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-07-02 14:12:50.607 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.607 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-07-02 14:12:50.607 -04:00 [INF] Executed action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.1131ms.
+2024-07-02 14:12:50.607 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-07-02 14:12:50.607 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-07-02 14:12:50.607 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-02 14:12:50.607 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-02 14:12:50.607 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-02 14:12:50.607 -04:00 [INF] Executing OkObjectResult, writing value of type 'Estudiante'.
+2024-07-02 14:12:50.607 -04:00 [INF] Executed action CRUD.Controllers.AuthController.GetCurrentUser (CRUD) in 5.8222ms
+2024-07-02 14:12:50.607 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.607 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" completed keep alive response.
+2024-07-02 14:12:50.607 -04:00 [DBG] 'MyDbContext' disposed.
+2024-07-02 14:12:50.607 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.607 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-07-02 14:12:50.607 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - 200 553 application/json; charset=utf-8 8.8414ms
+2024-07-02 14:12:50.608 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" accepted.
+2024-07-02 14:12:50.608 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" started.
+2024-07-02 14:12:50.608 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.608 -04:00 [DBG] Successfully validated the token.
+2024-07-02 14:12:50.608 -04:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-07-02 14:12:50.608 -04:00 [DBG] The request path  does not match the path filter
+2024-07-02 14:12:50.608 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.608 -04:00 [DBG] Endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)' with route pattern 'api/Auth/GetCurrentUser' is valid for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.608 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.609 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.609 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.610 -04:00 [DBG] Authorization was successful.
+2024-07-02 14:12:50.610 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.610 -04:00 [INF] Route matched with {action = "GetCurrentUser", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrentUser() on controller CRUD.Controllers.AuthController (CRUD).
+2024-07-02 14:12:50.610 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-02 14:12:50.610 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-02 14:12:50.610 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-02 14:12:50.610 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-02 14:12:50.610 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-02 14:12:50.610 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.610 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.610 -04:00 [INF] Executing action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD) - Validation state: "Valid"
+2024-07-02 14:12:50.610 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-07-02 14:12:50.610 -04:00 [DBG] Creating DbConnection.
+2024-07-02 14:12:50.610 -04:00 [DBG] Created DbConnection. (0ms).
+2024-07-02 14:12:50.611 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.611 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.611 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-02 14:12:50.611 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.611 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.611 -04:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.614 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.614 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-02 14:12:50.614 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-07-02 14:12:50.614 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-07-02 14:12:50.614 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.614 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-07-02 14:12:50.614 -04:00 [INF] Executed action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.9962ms.
+2024-07-02 14:12:50.614 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-07-02 14:12:50.614 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-07-02 14:12:50.614 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-02 14:12:50.614 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-02 14:12:50.614 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-02 14:12:50.614 -04:00 [INF] Executing OkObjectResult, writing value of type 'Estudiante'.
+2024-07-02 14:12:50.614 -04:00 [INF] Executed action CRUD.Controllers.AuthController.GetCurrentUser (CRUD) in 4.5955ms
+2024-07-02 14:12:50.614 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.614 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" completed keep alive response.
+2024-07-02 14:12:50.614 -04:00 [DBG] 'MyDbContext' disposed.
+2024-07-02 14:12:50.614 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.614 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-07-02 14:12:50.614 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - 200 553 application/json; charset=utf-8 6.2877ms
+2024-07-02 14:12:50.758 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.758 -04:00 [DBG] Successfully validated the token.
+2024-07-02 14:12:50.758 -04:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-07-02 14:12:50.758 -04:00 [DBG] The request path  does not match the path filter
+2024-07-02 14:12:50.758 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.758 -04:00 [DBG] Endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)' with route pattern 'api/Auth/GetCurrentUser' is valid for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.758 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.758 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.758 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.758 -04:00 [DBG] Authorization was successful.
+2024-07-02 14:12:50.758 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.758 -04:00 [INF] Route matched with {action = "GetCurrentUser", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrentUser() on controller CRUD.Controllers.AuthController (CRUD).
+2024-07-02 14:12:50.758 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-02 14:12:50.758 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-02 14:12:50.758 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-02 14:12:50.758 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-02 14:12:50.758 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-02 14:12:50.758 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.758 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.758 -04:00 [INF] Executing action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD) - Validation state: "Valid"
+2024-07-02 14:12:50.759 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-07-02 14:12:50.759 -04:00 [DBG] Creating DbConnection.
+2024-07-02 14:12:50.759 -04:00 [DBG] Created DbConnection. (0ms).
+2024-07-02 14:12:50.759 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.759 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.759 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-02 14:12:50.759 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.759 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.759 -04:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.764 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.764 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-02 14:12:50.764 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-07-02 14:12:50.764 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-07-02 14:12:50.764 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.764 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-07-02 14:12:50.764 -04:00 [INF] Executed action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.0718ms.
+2024-07-02 14:12:50.764 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-07-02 14:12:50.764 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-07-02 14:12:50.764 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-02 14:12:50.764 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-02 14:12:50.764 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-02 14:12:50.764 -04:00 [INF] Executing OkObjectResult, writing value of type 'Estudiante'.
+2024-07-02 14:12:50.765 -04:00 [INF] Executed action CRUD.Controllers.AuthController.GetCurrentUser (CRUD) in 6.5509ms
+2024-07-02 14:12:50.765 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.765 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" completed keep alive response.
+2024-07-02 14:12:50.765 -04:00 [DBG] 'MyDbContext' disposed.
+2024-07-02 14:12:50.765 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.765 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-07-02 14:12:50.765 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - 200 553 application/json; charset=utf-8 7.3156ms
+2024-07-02 14:12:50.765 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - null null
+2024-07-02 14:12:50.765 -04:00 [DBG] Successfully validated the token.
+2024-07-02 14:12:50.766 -04:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-07-02 14:12:50.766 -04:00 [DBG] The request path  does not match the path filter
+2024-07-02 14:12:50.766 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.766 -04:00 [DBG] Endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)' with route pattern 'api/Auth/GetCurrentUser' is valid for the request path '/api/Auth/GetCurrentUser'
+2024-07-02 14:12:50.766 -04:00 [DBG] Request matched endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.766 -04:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2024-07-02 14:12:50.766 -04:00 [INF] CORS policy execution successful.
+2024-07-02 14:12:50.766 -04:00 [DBG] Authorization was successful.
+2024-07-02 14:12:50.766 -04:00 [INF] Executing endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.766 -04:00 [INF] Route matched with {action = "GetCurrentUser", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrentUser() on controller CRUD.Controllers.AuthController (CRUD).
+2024-07-02 14:12:50.766 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-07-02 14:12:50.766 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-07-02 14:12:50.766 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-07-02 14:12:50.766 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-07-02 14:12:50.766 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-07-02 14:12:50.766 -04:00 [DBG] Executing controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.766 -04:00 [DBG] Executed controller factory for controller CRUD.Controllers.AuthController (CRUD)
+2024-07-02 14:12:50.766 -04:00 [INF] Executing action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD) - Validation state: "Valid"
+2024-07-02 14:12:50.766 -04:00 [DBG] Entity Framework Core 9.0.0-preview.5.24306.3 initialized 'MyDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0-preview.5.24306.3' with options: None
+2024-07-02 14:12:50.766 -04:00 [DBG] Creating DbConnection.
+2024-07-02 14:12:50.766 -04:00 [DBG] Created DbConnection. (0ms).
+2024-07-02 14:12:50.766 -04:00 [DBG] Opening connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.767 -04:00 [DBG] Opened connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.767 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-07-02 14:12:50.767 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.767 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-07-02 14:12:50.767 -04:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.769 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 11) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Alertas], [e].[CarreraId], [e].[CiudadEstudiante], [e].[CondicionAcademica], [e].[ContraseñaEstudiante], [e].[CorreoEstudiante], [e].[CreditosAprobados], [e].[DireccionEstudiante], [e].[FechaIngreso], [e].[IndiceGeneral], [e].[IndicePeriodo], [e].[Nacionalidad], [e].[NombreEstudiante], [e].[PeriodoActual], [e].[PeriodosCursados], [e].[SexoEstudiante], [e].[TelefonoEstudiante]
+FROM [Estudiantes] AS [e]
+WHERE CONVERT(varchar(11), [e].[Id]) = @__userId_0
+2024-07-02 14:12:50.770 -04:00 [DBG] Context 'MyDbContext' started tracking 'Estudiante' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-07-02 14:12:50.770 -04:00 [DBG] Closing data reader to 'University' on server 'localhost'.
+2024-07-02 14:12:50.770 -04:00 [DBG] A data reader for 'University' on server 'localhost' is being disposed after spending 0ms reading results.
+2024-07-02 14:12:50.770 -04:00 [DBG] Closing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.770 -04:00 [DBG] Closed connection to database 'University' on server 'localhost' (0ms).
+2024-07-02 14:12:50.770 -04:00 [INF] Executed action method CRUD.Controllers.AuthController.GetCurrentUser (CRUD), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.8254ms.
+2024-07-02 14:12:50.770 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2024-07-02 14:12:50.770 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-07-02 14:12:50.770 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-07-02 14:12:50.770 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-07-02 14:12:50.770 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-07-02 14:12:50.770 -04:00 [INF] Executing OkObjectResult, writing value of type 'Estudiante'.
+2024-07-02 14:12:50.770 -04:00 [INF] Executed action CRUD.Controllers.AuthController.GetCurrentUser (CRUD) in 4.3085ms
+2024-07-02 14:12:50.770 -04:00 [INF] Executed endpoint 'CRUD.Controllers.AuthController.GetCurrentUser (CRUD)'
+2024-07-02 14:12:50.770 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" completed keep alive response.
+2024-07-02 14:12:50.770 -04:00 [DBG] 'MyDbContext' disposed.
+2024-07-02 14:12:50.770 -04:00 [DBG] Disposing connection to database 'University' on server 'localhost'.
+2024-07-02 14:12:50.770 -04:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-07-02 14:12:50.770 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5104/api/Auth/GetCurrentUser - 200 553 application/json; charset=utf-8 5.0406ms
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" received FIN.
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" received FIN.
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" disconnecting.
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" disconnecting.
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q85" stopped.
+2024-07-02 14:12:51.773 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-02 14:12:51.774 -04:00 [DBG] Connection id "0HN4QO5LT9Q83" received FIN.
+2024-07-02 14:12:51.774 -04:00 [DBG] Connection id "0HN4QO5LT9Q83" disconnecting.
+2024-07-02 14:12:51.774 -04:00 [DBG] Connection id "0HN4QO5LT9Q83" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-07-02 14:12:51.774 -04:00 [DBG] Connection id "0HN4QO5LT9Q86" stopped.
+2024-07-02 14:12:51.775 -04:00 [DBG] Connection id "0HN4QO5LT9Q83" stopped.
+2024-07-02 18:44:01.046 -04:00 [INF] Application is shutting down...
+2024-07-02 18:44:01.048 -04:00 [DBG] Hosting stopping
+2024-07-02 18:44:01.061 -04:00 [DBG] Hosting stopped

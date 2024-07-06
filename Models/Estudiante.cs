@@ -61,7 +61,9 @@ public  class Estudiante
     [MaxLength(50)]
     public string? Alertas { get; set; }
 
-    
+    [Required]
+    [MaxLength(50)]
+    public string Rol { get; set; } = "Estudiante";
     
     
     [JsonIgnore]

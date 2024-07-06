@@ -67,7 +67,6 @@ namespace CRUD.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [Authorize(Policy = "RequireAdministratorRole")]
-        [Authorize(Policy = "RequireAdministratorRole")]
         public ActionResult<IEnumerable<Docente>> GetDocentes()
         {
             _logger.LogInformation("Obteniendo Docentes");
