@@ -186,5 +186,32 @@ namespace CRUD.Controllers
 
             return NoContent();
         }
+        
+        
+        // Obtener secciones de una materia
+        [HttpGet("{codigoMateria}/Secciones")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<IEnumerable<Seccion>> GetSeccionesByMateria(string codigoMateria)
+        {
+            if (string.IsNullOrEmpty(codigoMateria))
+            {
+                return BadRequest("El código de la materia es obligatorio.");
+            }
+
+            var secciones = _db.Secciones
+                .Where(s => s.CodigoMateria == codigoMateria)
+                .ToList();
+
+            if (secciones == null || !secciones.Any())
+            {
+                _logger.LogInformation("No se encontraron secciones para la materia con el código: " + codigoMateria);
+                return NotFound();
+            }
+
+            _logger.LogInformation("Obteniendo secciones para la materia " + codigoMateria);
+            return Ok(secciones);
+        }
     }
 }
