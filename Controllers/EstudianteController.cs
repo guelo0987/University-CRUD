@@ -88,7 +88,7 @@ public class EstudianteController : ControllerBase
         
         _logger.LogInformation("Obteniendo Estudiantes");
 
-        return Ok(_db.Estudiantes.ToList());
+        return Ok(_db.Estudiantes.Include(c=>c.Carreras).ToList());
     }
     
     
