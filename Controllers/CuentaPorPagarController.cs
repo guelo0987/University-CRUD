@@ -54,6 +54,7 @@ public class CuentaPorPagarController:ControllerBase
                     .FirstOrDefault(md => md.CodigoMateria == c.CodigoMateria).Docentes.NombreDocente,
                 Aula = c.EstudianteMateria.Seccions.CodigoAula,
                 Horario = c.EstudianteMateria.Seccions.Horario,
+                Creditos = c.EstudianteMateria.Materias.CreditosMateria,
                 Cupo = c.EstudianteMateria.Seccions.Cupo
             });
 
