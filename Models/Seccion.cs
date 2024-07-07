@@ -19,7 +19,7 @@ namespace CRUD.Models
         [ForeignKey("CodigoAula")]
         public virtual  Aula? Aulas { get; set; }
 
-        [MaxLength(50)]
+        [MaxLength(256)]
         public string Horario { get; set; }
 
         public int Cupo { get; set; }

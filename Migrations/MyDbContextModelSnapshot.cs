@@ -325,8 +325,8 @@ namespace CRUD.Migrations
 
                     b.Property<string>("Horario")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("CodigoSeccion");
 

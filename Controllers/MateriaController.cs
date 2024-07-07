@@ -20,6 +20,20 @@ namespace CRUD.Controllers
             _logger = logger;
             _db = db;
         }
+        
+        [HttpGet("CheckCodigo/{codigo}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<bool> CheckCodigoMateria(string codigo)
+        {
+            if (string.IsNullOrEmpty(codigo))
+            {
+                return BadRequest("El código de materia no puede estar vacío.");
+            }
+
+            bool exists = _db.Materias.Any(m => m.CodigoMateria == codigo);
+            return Ok(new { exists });
+        }
 
         // Crear una Materia
         [HttpPost("CreateMateria", Name = "CreateMateria")]
