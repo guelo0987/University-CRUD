@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using PassHash;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace CRUD.Controllers
 {
@@ -120,10 +121,40 @@ namespace CRUD.Controllers
                 new Claim(ClaimTypes.Role, "Estudiante")
             };
 
-            return GenerateToken(claims, estudiante, "Estudiante");
+            // Obtener el nombre de la carrera
+            var nombreCarrera = _db.Carreras
+                .Where(c => c.CarreraId == estudiante.CarreraId)
+                .Select(c => c.NombreCarrera)
+                .FirstOrDefault();
+
+            // Crear un objeto anónimo con los datos del estudiante y el nombre de la carrera
+            var estudianteData = new
+            {
+                estudiante.Id,
+                estudiante.NombreEstudiante,
+                estudiante.DireccionEstudiante,
+                estudiante.Nacionalidad,
+                estudiante.SexoEstudiante,
+                estudiante.CiudadEstudiante,
+                estudiante.TelefonoEstudiante,
+                estudiante.CorreoEstudiante,
+                estudiante.FechaIngreso,
+                estudiante.PeriodosCursados,
+                estudiante.IndiceGeneral,
+                estudiante.IndicePeriodo,
+                estudiante.PeriodoActual,
+                estudiante.CondicionAcademica,
+                estudiante.CreditosAprobados,
+                estudiante.CarreraId,
+                NombreCarrera = nombreCarrera,
+                estudiante.Alertas,
+                estudiante.Rol
+            };
+
+            return GenerateToken(claims, estudianteData, "Estudiante");
         }
 
-        private IActionResult GenerateToken(Claim[] claims, object user, string role)
+        private IActionResult GenerateToken(Claim[] claims, object userData, string role)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -139,13 +170,14 @@ namespace CRUD.Controllers
 
             _logger.LogInformation("Login exitoso");
 
-            return Ok(new { Token = tokenValue, User = user, Role = role });
+            return Ok(new { Token = tokenValue, User = userData, Role = role });
         }
 
         [HttpGet("GetCurrentUser")]
-        [Authorize]
+        
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize]
         public ActionResult GetCurrentUser()
         {
             var userId = User.FindFirst("Id")?.Value;
@@ -179,7 +211,35 @@ namespace CRUD.Controllers
             }
             else if (role == "Estudiante")
             {
-                var estudiante = _db.Estudiantes.SingleOrDefault(u => u.Id.ToString() == userId);
+                var estudiante = _db.Estudiantes
+                    .Include(e => e.Carreras)
+                    .Where(u => u.Id.ToString() == userId)
+                    .Select(e => new {
+                        e.Id,
+                        e.NombreEstudiante,
+                        e.DireccionEstudiante,
+                        e.Nacionalidad,
+                        e.SexoEstudiante,
+                        e.CiudadEstudiante,
+                        e.TelefonoEstudiante,
+                        e.CorreoEstudiante,
+                        e.FechaIngreso,
+                        e.PeriodosCursados,
+                        e.IndiceGeneral,
+                        e.IndicePeriodo,
+                        e.PeriodoActual,
+                        e.CondicionAcademica,
+                        e.CreditosAprobados,
+                        e.CarreraId,
+                        NombreCarrera = _db.Carreras
+                            .Where(c => c.CarreraId == e.CarreraId)
+                            .Select(c => c.NombreCarrera)
+                            .FirstOrDefault(),
+                        e.Alertas,
+                        e.Rol
+                    })
+                    .SingleOrDefault();
+
                 if (estudiante == null)
                 {
                     _logger.LogError($"Estudiante con ID {userId} no encontrado");

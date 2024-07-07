@@ -326,7 +326,7 @@ namespace CRUD.Controllers
         
         
         
-       [HttpPost("SelectSeccion")]
+        [HttpPost("SelectSeccion")]
         public async Task<IActionResult> SelectSeccion(int estudianteId, string seccionId)
         {
             var estudiante = await _db.Estudiantes.FindAsync(estudianteId);
@@ -350,34 +350,7 @@ namespace CRUD.Controllers
                 return NotFound("Materia no encontrada");
             }
 
-            // Verificar si el estudiante ya ha cursado esta materia en un periodo diferente
-            var materiaCursada = await _db.EstudianteMaterias
-                .AnyAsync(em => em.CodigoEstudiante == estudianteId && em.CodigoMateria == seccion.CodigoMateria && em.PeriodoCursado != estudiante.PeriodoActual);
-
-            if (materiaCursada)
-            {
-                _logger.LogError($"El estudiante con ID {estudianteId} ya ha cursado la materia {seccion.CodigoMateria} en un periodo diferente");
-                return BadRequest("El estudiante ya ha cursado esta materia en un periodo diferente");
-            }
-
-            // Verificar si el estudiante ya está inscrito en esta sección
-            var existingEstudianteMateria = await _db.EstudianteMaterias
-                .FirstOrDefaultAsync(em => em.CodigoEstudiante == estudianteId && em.SeccionId == seccionId);
-
-            var materiaActuales = await _db.EstudianteMaterias.AnyAsync(em =>
-                em.CodigoEstudiante == estudianteId && em.CodigoMateria == seccion.CodigoMateria);
-            
-            if (materiaActuales)
-            {
-                _logger.LogError($"El estudiante con ID {estudianteId} tiene en curso la materia {seccion.CodigoMateria} ");
-                return BadRequest("El estudiante tiene en  esta materia");
-            }
-
-            if (existingEstudianteMateria != null)
-            {
-                _logger.LogError($"El estudiante ya está inscrito en la sección {seccionId}");
-                return BadRequest("El estudiante ya está inscrito en esta sección");
-            }
+            // Verificaciones existentes...
 
             var estudianteMateria = new EstudianteMateria
             {
@@ -390,11 +363,22 @@ namespace CRUD.Controllers
             };
 
             _db.EstudianteMaterias.Add(estudianteMateria);
+
+            // Crear la cuenta por pagar
+            var nuevaCuentaPorPagar = new CuentaPorPagar
+            {
+                CodigoMateria = seccion.CodigoMateria,
+                CodigoEstudiante = estudianteId,
+                MontoTotalaPagar = 5000 * materia.CreditosMateria // Ajustar según la lógica de negocio
+            };
+
+            _db.CuentaPorPagars.Add(nuevaCuentaPorPagar);
+
             await _db.SaveChangesAsync();
 
-            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha inscrito en la sección {seccionId}");
+            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha inscrito en la sección {seccionId} y se ha creado una cuenta por pagar");
 
-            return Ok(estudianteMateria);
+            return Ok(new { estudianteMateria, cuentaPorPagar = nuevaCuentaPorPagar });
         }
       
         
@@ -418,10 +402,19 @@ namespace CRUD.Controllers
                 return NotFound("No se encontró la inscripción del estudiante en esta sección en su periodo actual");
             }
 
+            // Eliminar la cuenta por pagar correspondiente
+            var cuentaPorPagar = await _db.CuentaPorPagars
+                .FirstOrDefaultAsync(cpp => cpp.CodigoEstudiante == estudianteId && cpp.CodigoMateria == estudianteMateria.CodigoMateria);
+
+            if (cuentaPorPagar != null)
+            {
+                _db.CuentaPorPagars.Remove(cuentaPorPagar);
+            }
+
             _db.EstudianteMaterias.Remove(estudianteMateria);
             await _db.SaveChangesAsync();
 
-            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha retirado de la sección {seccionId}");
+            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha retirado de la sección {seccionId} y se ha eliminado la cuenta por pagar correspondiente");
 
             return Ok();
         }
