@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Serilog;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,7 @@ builder.Host.UseSerilog();
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.Configure<StripeSettings.StripeSettings>(builder.Configuration.GetSection("Stripe"));
 // Configuración de servicios
 builder.Services.AddControllers(option => option.ReturnHttpNotAcceptable = true)
     .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore)
@@ -80,8 +82,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();  // Redirecciona todas las solicitudes HTTP a HTTPS
+app.UseHttpsRedirection(); // Redirecciona todas las solicitudes HTTP a HTTPS
 app.UseRouting();
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 app.UseCors();
 app.UseAuthorization();
 

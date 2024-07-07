@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BY1M7S+mP8j5sSfo5YOfI9UwRDHcu1lgd8FT/01I/xneQLg3i+KTLnU27zpDdU8t2yLaoP/IadUBsQYEBFlf5w==",
+  "dgSpecHash": "iHMHHSPNAEaYDWhWZ1t6WqJYvu/FgVJsU6cUvUXvJCb0N5iRLluefmWTBG+VIS9gbR4chrDTTvH1/ZzAlE9BTw==",
   "success": true,
   "projectFilePath": "/Users/miguelcruz/Desktop/University-Backend/CRUD/CRUD.csproj",
   "expectedPackageFiles": [
@@ -69,6 +69,7 @@
     "/Users/miguelcruz/.nuget/packages/serilog.sinks.console/5.0.0/serilog.sinks.console.5.0.0.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/serilog.sinks.debug/2.0.0/serilog.sinks.debug.2.0.0.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/serilog.sinks.file/5.0.1-dev-00972/serilog.sinks.file.5.0.1-dev-00972.nupkg.sha512",
+    "/Users/miguelcruz/.nuget/packages/stripe.net/45.3.0-beta.1/stripe.net.45.3.0-beta.1.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "/Users/miguelcruz/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",

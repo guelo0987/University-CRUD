@@ -34,15 +34,27 @@ public class CuentaPorPagarController:ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public IActionResult GetCuentaPorPagar(string periodo, int codigoEstudiante)
     {
-        var obj = _db.CuentaPorPagars.Include(es => es.EstudianteMateria)
+        var obj = _db.CuentaPorPagars
+            .Include(c => c.EstudianteMateria)
+            .ThenInclude(em => em.Materias)
+            .Include(c => c.EstudianteMateria)
+            .ThenInclude(em => em.Seccions)
+            .ThenInclude(s => s.MateriaDocentes)
+            .ThenInclude(md => md.Docentes)
             .Where(c => c.EstudianteMateria.PeriodoCursado == periodo && c.CodigoEstudiante == codigoEstudiante)
             .Select(c => new {
                 c.IdCuentaPorPagar,
                 c.CodigoMateria,
                 c.CodigoEstudiante,
                 c.MontoTotalaPagar,
-                Materia = c.EstudianteMateria.Materias.NombreMateria, // Assuming Materia has a Nombre property
-                Periodo = c.EstudianteMateria.PeriodoCursado
+                NombreMateria = c.EstudianteMateria.Materias.NombreMateria,
+                Periodo = c.EstudianteMateria.PeriodoCursado,
+                Seccion = c.EstudianteMateria.Seccions.CodigoSeccion,
+                Profesor = c.EstudianteMateria.Seccions.MateriaDocentes
+                    .FirstOrDefault(md => md.CodigoMateria == c.CodigoMateria).Docentes.NombreDocente,
+                Aula = c.EstudianteMateria.Seccions.CodigoAula,
+                Horario = c.EstudianteMateria.Seccions.Horario,
+                Cupo = c.EstudianteMateria.Seccions.Cupo
             });
 
         if (!obj.Any())
