@@ -248,7 +248,8 @@ namespace CRUD.Controllers
                     em.Estudiantes.NombreEstudiante,
                     em.Estudiantes.CorreoEstudiante,
                     em.Estudiantes.TelefonoEstudiante,
-                    em.Calificacion
+                    em.CalificacionMedioTermino,
+                    em.CalificacionFinal
                 })
                 .ToList();
 
@@ -285,7 +286,8 @@ namespace CRUD.Controllers
                 return NotFound("Estudiante no encontrado");
             }
 
-            existingEstudianteMateria.Calificacion = model.Calificacion;
+            existingEstudianteMateria.CalificacionMedioTermino = model.Calificacion;
+            existingEstudianteMateria.CalificacionFinal = model.Calificacion;
 
             _db.SaveChanges();
 

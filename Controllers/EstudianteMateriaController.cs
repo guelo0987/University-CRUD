@@ -64,7 +64,8 @@ namespace CRUD.Controllers
                 Seccions = estudianteMateria.Seccions,
                 PeriodoCursado = estudianteMateria.PeriodoCursado,
                 CodigoMateria = estudianteMateria.CodigoMateria,
-                Calificacion = estudianteMateria.Calificacion,
+                CalificacionMedioTermino = estudianteMateria.CalificacionMedioTermino,
+                CalificacionFinal = estudianteMateria.CalificacionFinal,
             };
 
             _db.EstudianteMaterias.Add(newEstudianteMateria);
@@ -164,7 +165,9 @@ namespace CRUD.Controllers
                 SeccionId = estudianteMateria.SeccionId,
                 Seccions = estudianteMateria.Seccions,
                 CodigoMateria = estudianteMateria.CodigoMateria,
-                Calificacion = estudianteMateria.Calificacion,
+                
+                CalificacionMedioTermino = estudianteMateria.CalificacionMedioTermino,
+                CalificacionFinal = estudianteMateria.CalificacionFinal,
             };
 
             _db.EstudianteMaterias.Add(nuevaEstudianteMateria);
@@ -201,7 +204,9 @@ namespace CRUD.Controllers
                 SeccionId = estudianteMateria.SeccionId,
                 Seccions = estudianteMateria.Seccions,
                 CodigoMateria = estudianteMateria.CodigoMateria,
-                Calificacion = estudianteMateria.Calificacion,
+                
+                CalificacionMedioTermino = estudianteMateria.CalificacionMedioTermino,
+                CalificacionFinal = estudianteMateria.CalificacionFinal,
             };
 
             patchDoc.ApplyTo(nuevoEstudianteMateria, ModelState);
@@ -269,6 +274,7 @@ namespace CRUD.Controllers
                     CodigoSeccion = em.Seccions.CodigoSeccion,
                     Horario = em.Seccions.Horario,
                     Aula = em.Seccions.Aulas.CodigoAula,
+                    Edificio = em.Seccions.Aulas.Edificio,
                     Profesor = em.Seccions.MateriaDocentes.Select(md => md.Docentes.NombreDocente).FirstOrDefault()
                 })
                 .ToList();
@@ -280,6 +286,12 @@ namespace CRUD.Controllers
 
             return Ok(materias);
         }
+        
+        
+        
+        
+        
+        
         
         //Obtener el record entero de del estudiantes de las materias que a cursado
         [HttpGet("GetMateriasYSeccionesPorEstudiante/{codigoEstudiante}")]
@@ -297,7 +309,8 @@ namespace CRUD.Controllers
                     em.Materias.NombreMateria,
                     em.Seccions.CodigoSeccion,
                     em.Seccions.Horario,
-                    em.Calificacion
+                    em.CalificacionMedioTermino,
+                    em.CalificacionFinal
                 })
                 .ToListAsync();
 
@@ -372,7 +385,8 @@ namespace CRUD.Controllers
                 SeccionId = seccionId,
                 CodigoEstudiante = estudianteId,
                 PeriodoCursado = estudiante.PeriodoActual,
-                Calificacion = "NA"
+                CalificacionMedioTermino = "NA",
+                CalificacionFinal = "NA",
             };
 
             _db.EstudianteMaterias.Add(estudianteMateria);
@@ -411,6 +425,61 @@ namespace CRUD.Controllers
 
             return Ok();
         }
+        
+        //Obtener calificaciones del estudiante por periodo y tipo de calificación
+[HttpGet("GetCalificacionesEstudiante/{codigoEstudiante}/{periodo}/{tipoCalificacion}")]
+[ProducesResponseType(StatusCodes.Status200OK)]
+[ProducesResponseType(StatusCodes.Status404NotFound)]
+public IActionResult GetCalificacionesEstudiante(int codigoEstudiante, string periodo, string tipoCalificacion)
+{
+    var calificaciones = _db.EstudianteMaterias
+        .Include(em => em.Materias)
+        .Include(em => em.Seccions)
+        .ThenInclude(s => s.MateriaDocentes)
+        .ThenInclude(md => md.Docentes)
+        .Where(em => em.CodigoEstudiante == codigoEstudiante && em.PeriodoCursado == periodo)
+        .Select(em => new
+        {
+            CodigoMateria = em.CodigoMateria,
+            NombreMateria = em.Materias.NombreMateria,
+            Seccion = em.Seccions.CodigoSeccion,
+            Creditos = em.Materias.CreditosMateria,
+            Profesor = em.Seccions.MateriaDocentes.Select(md => md.Docentes.NombreDocente).FirstOrDefault(),
+            Calificacion = tipoCalificacion.ToLower() == "medio termino" ? em.CalificacionMedioTermino : em.CalificacionFinal
+        })
+        .ToList();
+
+    if (!calificaciones.Any())
+    {
+        return NotFound($"No se encontraron calificaciones para el estudiante {codigoEstudiante} en el período {periodo} para el tipo de calificación {tipoCalificacion}.");
+    }
+
+    var estudiante = _db.Estudiantes
+        .Where(e => e.Id == codigoEstudiante)
+        .Select(e => new { e.NombreEstudiante, e.CarreraId })
+        .FirstOrDefault();
+
+    if (estudiante == null)
+    {
+        return NotFound($"No se encontró el estudiante con código {codigoEstudiante}.");
+    }
+
+    var resultado = new
+    {
+        Estudiante = new
+        {
+            Nombre = estudiante.NombreEstudiante,
+            Carrera = estudiante.CarreraId,
+            ID = codigoEstudiante
+        },
+        Periodo = periodo,
+        TipoCalificacion = tipoCalificacion,
+        Calificaciones = calificaciones,
+        TotalCreditos = calificaciones.Sum(c => c.Creditos)
+    };
+
+    return Ok(resultado);
+}
         
         
 

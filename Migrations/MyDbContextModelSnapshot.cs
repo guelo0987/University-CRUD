@@ -198,10 +198,14 @@ namespace CRUD.Migrations
                     b.Property<int>("CodigoEstudiante")
                         .HasColumnType("int");
 
-                    b.Property<string>("Calificacion")
+                    b.Property<string>("CalificacionFinal")
                         .IsRequired()
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
+
+                    b.Property<string>("CalificacionMedioTermino")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PeriodoCursado")
                         .IsRequired()

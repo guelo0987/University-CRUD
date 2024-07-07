@@ -24,8 +24,12 @@ public class EstudianteMateria
     [Required]
     public string PeriodoCursado { get; set; }
 
+    public string CalificacionMedioTermino { get; set; } = null!;
+    
     [MaxLength(2)] 
-    public string Calificacion { get; set; } = null!;
+    public string CalificacionFinal { get; set; } = null!;
+    
+    
     
     [JsonIgnore]
     public virtual ICollection<CuentaPorPagar>? CuentaPorPagars { get; set; }
