@@ -261,45 +261,109 @@ namespace CRUD.Controllers
 
             return Ok(estudiantes);
         }
-        
-        
-        
-        // Editar la calificación de un estudiante en una sección y materia
         [HttpPut("EditCalificacion/{codigoEstudiante}/{codigoMateria}/{seccionId}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult EditCalificacion(int codigoEstudiante, string codigoMateria, string seccionId, [FromBody] EditCalificacionModel model)
+[ProducesResponseType(StatusCodes.Status204NoContent)]
+[ProducesResponseType(StatusCodes.Status404NotFound)]
+[ProducesResponseType(StatusCodes.Status400BadRequest)]
+[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+public IActionResult EditCalificacion(int codigoEstudiante, string codigoMateria, string seccionId, [FromBody] EditCalificacionModel model)
+{
+    try
+    {
+        if (model == null)
         {
-            if (model == null || string.IsNullOrWhiteSpace(model.Calificacion))
-            {
-                _logger.LogError("Datos de calificación inválidos");
-                return BadRequest("Datos de calificación inválidos");
-            }
-
-            var existingEstudianteMateria = _db.EstudianteMaterias
-                .FirstOrDefault(em => em.CodigoMateria == codigoMateria && em.SeccionId == seccionId && em.CodigoEstudiante == codigoEstudiante);
-
-            if (existingEstudianteMateria == null)
-            {
-                _logger.LogError("Estudiante no encontrado");
-                return NotFound("Estudiante no encontrado");
-            }
-
-            existingEstudianteMateria.CalificacionMedioTermino = model.Calificacion;
-            existingEstudianteMateria.CalificacionFinal = model.Calificacion;
-
-            _db.SaveChanges();
-
-            _logger.LogInformation("Calificación editada exitosamente");
-            return NoContent();
+            _logger.LogError("Modelo de calificación nulo");
+            return BadRequest("Datos de calificación inválidos");
         }
+
+        var existingEstudianteMateria = _db.EstudianteMaterias
+            .FirstOrDefault(em => em.CodigoMateria == codigoMateria && em.SeccionId == seccionId && em.CodigoEstudiante == codigoEstudiante);
+
+        if (existingEstudianteMateria == null)
+        {
+            _logger.LogError($"Estudiante no encontrado: CodigoEstudiante={codigoEstudiante}, CodigoMateria={codigoMateria}, SeccionId={seccionId}");
+            return NotFound("Estudiante no encontrado");
+        }
+
+        bool updated = false;
+
+        if (!string.IsNullOrWhiteSpace(model.CalificacionMedioTermino))
+        {
+            existingEstudianteMateria.CalificacionMedioTermino = model.CalificacionMedioTermino;
+            _logger.LogInformation($"Calificación de Medio Término actualizada para el estudiante {codigoEstudiante}: {model.CalificacionMedioTermino}");
+            updated = true;
+        }
+
+        if (!string.IsNullOrWhiteSpace(model.CalificacionFinal))
+        {
+            existingEstudianteMateria.CalificacionFinal = model.CalificacionFinal;
+            _logger.LogInformation($"Calificación Final actualizada para el estudiante {codigoEstudiante}: {model.CalificacionFinal}");
+            updated = true;
+        }
+
+        if (!updated)
+        {
+            return BadRequest("No se proporcionaron calificaciones para actualizar");
+        }
+
+        _db.SaveChanges();
+
+        _logger.LogInformation("Calificación editada exitosamente");
+        return NoContent();
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError($"Error al editar calificación: {ex.Message}");
+        return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+    }
+}
+        
+
+       
+        
+        // Obtener todas las secciones y materias que imparte un docente
+        [HttpGet("GetMateriasYSeccionesPorDocente/{docenteId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult GetMateriasYSeccionesPorDocente(int docenteId)
+        {
+            var materiasYSecciones = _db.MateriaDocentes
+                .Where(md => md.DocenteId == docenteId)
+                .Include(md => md.Materias)
+                .Include(md => md.Seccions)
+                .ThenInclude(s => s.Aulas)
+                .Select(md => new
+                {
+                    CodigoMateria = md.CodigoMateria,
+                    NombreMateria = md.Materias.NombreMateria,
+                    TipoMateria = md.Materias.TipoMateria,
+                    CreditosMateria = md.Materias.CreditosMateria,
+                    AreaAcademica = md.Materias.AreaAcademica,
+                    CodigoSeccion = md.Seccions.CodigoSeccion,
+                    Horario = md.Seccions.Horario,
+                    Cupo = md.Seccions.Cupo,
+                    CodigoAula = md.Seccions.CodigoAula,
+                    NombreAula = md.Seccions.Aulas.CodigoAula
+                })
+                .ToList();
+
+            if (!materiasYSecciones.Any())
+            {
+                _logger.LogInformation($"No se encontraron materias y secciones para el docente con ID {docenteId}.");
+                return NotFound($"No se encontraron materias y secciones para el docente con ID {docenteId}.");
+            }
+
+            _logger.LogInformation($"Se obtuvieron las materias y secciones para el docente con ID {docenteId}.");
+            return Ok(materiasYSecciones);
+        }
+        
+        
     }
     
     
     public class EditCalificacionModel
     {
-        [Required]
-        public string Calificacion { get; set; }
+        public string? CalificacionMedioTermino { get; set; }
+        public string? CalificacionFinal { get; set; }
     }
 }
