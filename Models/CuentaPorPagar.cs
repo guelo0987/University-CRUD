@@ -25,6 +25,8 @@ public class CuentaPorPagar
     [Column(TypeName = "decimal(18,2)")]
     public decimal? MontoTotalaPagar { get; set; }
     
+    public string Estado { get; set; }
+    
     
     
     public virtual ICollection<Factura>? Facturas { get; set; }

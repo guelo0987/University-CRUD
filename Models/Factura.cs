@@ -21,6 +21,14 @@ namespace CRUD.Models
 
         public DateTime FechaCreacion { get; set; } = DateTime.UtcNow;
         
-        public string? Estado { get; set; } 
+        public string? Estado { get; set; }
+
+        // Campos adicionales para Stripe
+        public string? StripePaymentIntentId { get; set; }
+        public string? StripeCustomerId { get; set; }
+        public DateTime? FechaPago { get; set; }
+        public string? MetodoPago { get; set; }
+        public string? UltimosDigitosTarjeta { get; set; }
+        public string? MarcaTarjeta { get; set; }
     }
 }

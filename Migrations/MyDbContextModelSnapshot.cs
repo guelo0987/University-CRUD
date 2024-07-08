@@ -145,6 +145,10 @@ namespace CRUD.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal?>("MontoTotalaPagar")
                         .HasColumnType("decimal(18,2)");
 
@@ -244,11 +248,29 @@ namespace CRUD.Migrations
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("FechaPago")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MarcaTarjeta")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MetodoPago")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("MontoTotal")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Periodo")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StripeCustomerId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StripePaymentIntentId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UltimosDigitosTarjeta")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdFactura");

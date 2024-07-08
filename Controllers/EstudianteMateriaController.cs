@@ -326,60 +326,77 @@ namespace CRUD.Controllers
         
         
         
-        [HttpPost("SelectSeccion")]
-        public async Task<IActionResult> SelectSeccion(int estudianteId, string seccionId)
+       [HttpPost("SelectSeccion")]
+public async Task<IActionResult> SelectSeccion(int estudianteId, string seccionId)
+{
+    try
+    {
+        var estudiante = await _db.Estudiantes.FindAsync(estudianteId);
+        if (estudiante == null)
         {
-            var estudiante = await _db.Estudiantes.FindAsync(estudianteId);
-            if (estudiante == null)
-            {
-                _logger.LogError($"Estudiante con ID {estudianteId} no encontrado");
-                return NotFound("Estudiante no encontrado");
-            }
-
-            var seccion = await _db.Secciones.FindAsync(seccionId);
-            if (seccion == null)
-            {
-                _logger.LogError($"Sección con ID {seccionId} no encontrada");
-                return NotFound("Sección no encontrada");
-            }
-
-            var materia = await _db.Materias.FindAsync(seccion.CodigoMateria);
-            if (materia == null)
-            {
-                _logger.LogError($"Materia con código {seccion.CodigoMateria} no encontrada");
-                return NotFound("Materia no encontrada");
-            }
-
-            // Verificaciones existentes...
-
-            var estudianteMateria = new EstudianteMateria
-            {
-                CodigoMateria = seccion.CodigoMateria,
-                SeccionId = seccionId,
-                CodigoEstudiante = estudianteId,
-                PeriodoCursado = estudiante.PeriodoActual,
-                CalificacionMedioTermino = "NA",
-                CalificacionFinal = "NA",
-            };
-
-            _db.EstudianteMaterias.Add(estudianteMateria);
-
-            // Crear la cuenta por pagar
-            var nuevaCuentaPorPagar = new CuentaPorPagar
-            {
-                CodigoMateria = seccion.CodigoMateria,
-                CodigoEstudiante = estudianteId,
-                MontoTotalaPagar = 5000 * materia.CreditosMateria // Ajustar según la lógica de negocio
-            };
-
-            _db.CuentaPorPagars.Add(nuevaCuentaPorPagar);
-
-            await _db.SaveChangesAsync();
-
-            _logger.LogInformation($"El estudiante con ID {estudianteId} se ha inscrito en la sección {seccionId} y se ha creado una cuenta por pagar");
-
-            return Ok(new { estudianteMateria, cuentaPorPagar = nuevaCuentaPorPagar });
+            _logger.LogError($"Estudiante con ID {estudianteId} no encontrado");
+            return NotFound("Estudiante no encontrado");
         }
+
+        var seccion = await _db.Secciones.FindAsync(seccionId);
+        if (seccion == null)
+        {
+            _logger.LogError($"Sección con ID {seccionId} no encontrada");
+            return NotFound("Sección no encontrada");
+        }
+
+        var materia = await _db.Materias.FindAsync(seccion.CodigoMateria);
+        if (materia == null)
+        {
+            _logger.LogError($"Materia con código {seccion.CodigoMateria} no encontrada");
+            return NotFound("Materia no encontrada");
+        }
+
+        // Verificar si el estudiante ya está inscrito en esta materia
+        var inscripcionExistente = await _db.EstudianteMaterias
+            .FirstOrDefaultAsync(em => em.CodigoMateria == seccion.CodigoMateria && 
+                                       em.CodigoEstudiante == estudianteId &&
+                                       em.PeriodoCursado == estudiante.PeriodoActual);
+        if (inscripcionExistente != null)
+        {
+            return BadRequest("El estudiante ya está inscrito en esta materia para el período actual");
+        }
+
+        var estudianteMateria = new EstudianteMateria
+        {
+            CodigoMateria = seccion.CodigoMateria,
+            SeccionId = seccionId,
+            CodigoEstudiante = estudianteId,
+            PeriodoCursado = estudiante.PeriodoActual,
+            CalificacionMedioTermino = "NA",
+            CalificacionFinal = "NA",
+        };
+
+        _db.EstudianteMaterias.Add(estudianteMateria);
+
+        // Crear la cuenta por pagar
+        var nuevaCuentaPorPagar = new CuentaPorPagar
+        {
+            CodigoMateria = seccion.CodigoMateria,
+            CodigoEstudiante = estudianteId,
+            MontoTotalaPagar = 5000 * materia.CreditosMateria, // Ajustar según la lógica de negocio
+            Estado = "Pendiente" // Asegurarse de que el estado esté establecido
+        };
+
+        _db.CuentaPorPagars.Add(nuevaCuentaPorPagar);
+
+        await _db.SaveChangesAsync();
+
+        _logger.LogInformation($"El estudiante con ID {estudianteId} se ha inscrito en la sección {seccionId} y se ha creado una cuenta por pagar");
+
+        return Ok(new { estudianteMateria, cuentaPorPagar = nuevaCuentaPorPagar });
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError($"Error al inscribir al estudiante: {ex.Message}");
+        return StatusCode(500, "Error interno del servidor al procesar la inscripción");
+    }
+}
       
         
         // Estudiante retira una materia y seccion
