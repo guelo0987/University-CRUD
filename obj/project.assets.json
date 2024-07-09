@@ -5767,6 +5767,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0-preview.5.24306.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0-preview.5.24306.3",
       "Microsoft.Extensions.DependencyInjection >= 9.0.0-preview.5.24306.7",
+      "Newtonsoft.Json >= 13.0.3",
       "Serilog.AspNetCore >= 8.0.2-dev-00338",
       "Serilog.Sinks.File >= 5.0.1-dev-00972",
       "Stripe.net >= 45.3.0-beta.1",
@@ -5805,11 +5806,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5849,6 +5845,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[9.0.0-preview.5.24306.7, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",

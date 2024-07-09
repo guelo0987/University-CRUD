@@ -17,9 +17,22 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
+
+
+
+
+
+
+
 // Configuración de la base de datos
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+
+
+
+
 
 builder.Services.Configure<StripeSettings.StripeSettings>(builder.Configuration.GetSection("Stripe"));
 // Configuración de servicios

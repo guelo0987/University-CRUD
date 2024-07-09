@@ -24,6 +24,20 @@ namespace CRUD.Controllers
             StripeConfiguration.ApiKey = _configuration["Stripe:SecretKey"];
         }
 
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllFacturas()
+        {
+
+            var objs = await _db.Facturas.ToListAsync();
+
+            return Ok(objs);
+
+
+        }
+
         [HttpPost("generarFactura")]
         public async Task<IActionResult> GenerarFactura([FromBody] FacturaRequest request)
         {
@@ -160,6 +174,40 @@ namespace CRUD.Controllers
 
             return Ok(facturas);
         }
+        
+        [HttpPost("actualizarEstadoPago")]
+        public async Task<IActionResult> ActualizarEstadoPago([FromBody] ActualizarPagoRequest request)
+        {
+            var factura = await _db.Facturas.FindAsync(request.FacturaId);
+            if (factura == null)
+            {
+                return NotFound("Factura no encontrada");
+            }
+
+            factura.Estado = "Pagado";
+            factura.FechaPago = DateTime.UtcNow;
+            factura.MetodoPago = request.MetodoPago;
+            factura.StripePaymentIntentId = "No fue con stripe";
+
+            // Actualizar las cuentas por pagar
+            var cuentasPorPagar = await _db.CuentaPorPagars
+                .Where(c => c.CodigoEstudiante == factura.CodigoEstudiante && c.EstudianteMateria.PeriodoCursado == factura.Periodo)
+                .ToListAsync();
+
+            foreach (var cuenta in cuentasPorPagar)
+            {
+                cuenta.MontoTotalaPagar = 0;
+                cuenta.Estado = "Pagado";
+            }
+
+            await _db.SaveChangesAsync();
+
+            return Ok(new { Success = true });
+        }
+
+        
+        
+        
     }
 
     public class FacturaRequest
@@ -173,4 +221,13 @@ namespace CRUD.Controllers
         public int FacturaId { get; set; }
         public string PaymentMethodId { get; set; }
     }
+    
+    
+    public class ActualizarPagoRequest
+    {
+        public int FacturaId { get; set; }
+        public string PaymentIntentId { get; set; }
+        public string MetodoPago { get; set; }
+    }
+
 }
